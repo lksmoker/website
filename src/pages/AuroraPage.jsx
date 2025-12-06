@@ -19,7 +19,7 @@ export default function AuroraPage() {
             opacity: 0.85,
           }}
         >
-          What if the conversation was the development environment?
+          What if conversation was the development environment?
         </p>
       </section>
 
