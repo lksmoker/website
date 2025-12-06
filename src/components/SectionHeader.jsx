@@ -1,10 +1,12 @@
+// src/components/SectionHeader.jsx
 import React from "react";
 
-export default function SectionHeader({ title, eyebrow }) {
+export default function SectionHeader({ title }) {
+  if (!title) return null;
+
   return (
     <header className="section-header">
-      {eyebrow && <div className="section-eyebrow">{eyebrow}</div>}
-      <h2 className="heading-m">{title}</h2>
+      <h2 className="section-header__title">{title}</h2>
     </header>
   );
 }

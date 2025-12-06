@@ -18,6 +18,25 @@
   --color-surface: #fcfcfa;
   --color-text: #222222;
   --color-border: rgba(0, 0, 0, 0.06);
+  /* NEW: Aurora accents */
+  --accent-blue: #3A66D3;
+  --accent-blue-light: #E8F0FF;
+  --accent-orange: #D7832C;
+  --accent-orange-light: #FFF4E8;
+}
+
+/* Optional: shared page section spacing if not already present */
+.page-section {
+  margin: 0 auto var(--space-xl);
+  max-width: var(--max-width);
+  padding-inline: var(--space-m);
+}
+
+/* Optional: cards row – column stack for now */
+.card-row {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-m);
 }
 
 *,
@@ -36,5 +55,3 @@ body {
 a {
   color: inherit;
 }
-
-

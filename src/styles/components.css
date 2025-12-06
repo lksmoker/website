@@ -1,44 +1,106 @@
+/* ─────────────────────────────────────────────────────────────
+   HERO
+   ───────────────────────────────────────────────────────────── */
+
 .hero {
+  padding: var(--space-xl) var(--space-m) var(--space-xl);
+  max-width: var(--max-width);
+  margin: 0 auto var(--space-xl);
+}
+
+.hero-inner {
   display: flex;
   flex-direction: column;
   gap: var(--space-m);
-  margin-bottom: var(--space-xl);
+  max-width: 680px;
+}
+
+.hero-title {
+  font-size: 2.25rem;
+  font-weight: 600;
+  line-height: 1.1;
+  margin: 0 0 var(--space-s);
+  color: var(--accent-blue); /* Accent: structural blue */
 }
 
 .hero-subtitle {
+  font-size: 1.25rem;
   max-width: 60ch;
-}
-
-.hero-supporting {
-  max-width: 60ch;
+  margin: 0 0 var(--space-s);
   opacity: 0.9;
 }
+
+.hero-support,
+.hero-supporting {
+  /* support both class names */
+  font-size: 1rem;
+  max-width: 60ch;
+  margin: 0;
+  opacity: 0.9;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   SECTION HEADERS & TEXT BLOCKS
+   ───────────────────────────────────────────────────────────── */
 
 .section-header {
   margin-bottom: var(--space-s);
 }
 
+.section-header__title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0;
+  padding-left: var(--space-s);
+  border-left: 4px solid var(--accent-orange); /* Accent: warm moment */
+}
+
+/* Optional eyebrow line above a section heading */
 .section-eyebrow {
   font-size: 0.8rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   opacity: 0.6;
+  margin-bottom: var(--space-xs);
 }
+
+/* Generic text block wrapper (Home sections, etc.) */
+.text-block {
+  margin-bottom: var(--space-m);
+  max-width: 680px;
+}
+
+/* Writing list style used on Home */
+ul.text-body {
+  padding-left: 1.25rem;
+  margin-top: 0;
+  margin-bottom: var(--space-m);
+}
+
+ul.text-body li {
+  margin-bottom: var(--space-xs);
+}
+
+/* ─────────────────────────────────────────────────────────────
+   CARDS (generic) + PROJECT CARDS
+   ───────────────────────────────────────────────────────────── */
 
 .card {
   padding: var(--space-m);
   background: var(--color-surface);
   border-radius: 0.5rem;
-  border: 1px solid rgba(0, 0, 0, 0.04);
+  border: 1px solid var(--color-border);
   font-size: 0.95rem;
   line-height: 1.5;
 }
 
+/* Generic card title */
 .card-title {
   font-weight: 600;
   margin-bottom: 0.35rem;
 }
 
+/* Inline link inside cards (e.g., “View project”) */
 .card-link {
   display: inline-block;
   margin-top: var(--space-xs);
@@ -46,11 +108,47 @@
   text-decoration: underline;
 }
 
+/* ProjectCard-specific styling (uses same visual language) */
+.project-card {
+  background: var(--color-surface);
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-border);
+  padding: var(--space-m);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.project-card__title {
+  font-weight: 600;
+  margin: 0 0 var(--space-xs);
+  color: var(--accent-blue); /* Accent: blue for project titles */
+}
+
+.project-card__summary {
+  margin: 0;
+}
+
+/* Row of cards on Home */
+.card-row {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-m);
+}
+
+/* ─────────────────────────────────────────────────────────────
+   AURORA CALLOUT / BLOCKQUOTE STYLE
+   ───────────────────────────────────────────────────────────── */
+
 .aurora-callout {
   padding: var(--space-m);
-  border-left: 3px solid #bbbbbb;
-  background: #f9f9f7;
+  border-left: 3px solid var(--accent-orange);
+  background: var(--accent-orange-light);
+  border-radius: 0.5rem;
 }
+
+/* ─────────────────────────────────────────────────────────────
+   LAYOUT HELPERS
+   ───────────────────────────────────────────────────────────── */
 
 .project-layout__section {
   margin-bottom: var(--space-l);
@@ -61,6 +159,10 @@
   flex-direction: column;
   gap: var(--space-s);
 }
+
+/* ─────────────────────────────────────────────────────────────
+   CONTACT FORM
+   ───────────────────────────────────────────────────────────── */
 
 .contact-form {
   display: flex;
@@ -76,14 +178,27 @@
   font-size: 0.95rem;
 }
 
+.form-field label {
+  font-weight: 500;
+}
+
 .form-field input,
 .form-field textarea {
   padding: 0.5rem 0.6rem;
   border-radius: 0.35rem;
   border: 1px solid rgba(0, 0, 0, 0.15);
   font: inherit;
+  background: #ffffff;
 }
 
+/* Focus ring with subtle blue accent */
+.form-field input:focus,
+.form-field textarea:focus {
+  outline: 2px solid var(--accent-blue);
+  outline-offset: 1px;
+}
+
+/* Primary button with calm dark background */
 .primary-button {
   padding: 0.55rem 1.2rem;
   border-radius: 999px;
@@ -92,22 +207,36 @@
   cursor: pointer;
   background: #222222;
   color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
+/* Hover: slight lift + softer opacity */
 .primary-button:hover {
-  opacity: 0.9;
+  opacity: 0.92;
+}
+
+/* Focus visible: blue ring */
+.primary-button:focus-visible {
+  outline: 2px solid var(--accent-blue);
+  outline-offset: 2px;
 }
 
 .contact-confirmation {
   margin-top: var(--space-s);
 }
 
-/* Aurora — Signal Cards */
+/* ─────────────────────────────────────────────────────────────
+   AURORA — SIGNAL CARDS
+   ───────────────────────────────────────────────────────────── */
+
 .aurora-signals {
   display: grid;
   gap: var(--space-l);
 }
 
+/* Uses base “card” feel, slightly elevated */
 .aurora-signal.card {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
@@ -116,16 +245,24 @@
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
 }
 
+/* Source link — subtle blue, no heavy underline */
 .aurora-signal__source a {
   font-weight: 600;
   text-decoration: none;
+  color: var(--accent-blue);
 }
 
+.aurora-signal__source a:hover {
+  text-decoration: underline;
+}
+
+/* Idea text: italic, as before */
 .aurora-signal__idea {
   margin: var(--space-s) 0;
   font-style: italic;
 }
 
+/* Answer / commentary */
 .aurora-signal__answer {
   margin-top: var(--space-s);
 }

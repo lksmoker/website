@@ -1,5 +1,8 @@
+// src/components/TextBlock.jsx
 import React from "react";
 
 export default function TextBlock({ children }) {
-  return <p className="text-body text-block">{children}</p>;
+  if (!children) return null;
+
+  return <div className="text-block">{children}</div>;
 }
