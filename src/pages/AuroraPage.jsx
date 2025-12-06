@@ -9,6 +9,20 @@ export default function AuroraPage() {
 
   return (
     <>
+      {/* Leading conceptual question */}
+      <section className="page-section">
+        <p
+          style={{
+            fontStyle: "italic",
+            fontSize: "1.25rem",
+            marginBottom: "2.5rem",
+            opacity: 0.85,
+          }}
+        >
+          What if the conversation was the development environment?
+        </p>
+      </section>
+
       {/* Top intro: what Aurora is */}
       <section className="page-section">
         <SectionHeader title="Aurora" />
@@ -47,8 +61,7 @@ export default function AuroraPage() {
                 </p>
                 <p className="aurora-signal__idea">{item.idea}</p>
                 <p className="aurora-signal__answer">
-                  <strong>Aurora’s answer:</strong>{" "}
-                  {item.auroraAnswer}
+                  <strong>Aurora’s answer:</strong> {item.auroraAnswer}
                 </p>
               </article>
             ))}
