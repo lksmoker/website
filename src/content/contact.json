@@ -4,8 +4,8 @@
     "description": "Get in touch about roles, projects, or ideas."
   },
   "sections": {
-    "intro": "If you\u2019d like to talk about a role, a project, or an idea, feel free to reach out. I\u2019m always open to a conversation.",
     "workWithMe": "I work at the intersection of operations, systems, and software \u2014 helping organizations build clarity into complex work.",
+    "intro": "If you\u2019d like to talk about a role, a project, or an idea, feel free to reach out. I\u2019m always open to a conversation.",
     "auroraNote": "If you\u2019re curious about Aurora, I\u2019m happy to talk about its concepts and direction at a high level.",
     "confirmationMessage": "Thank you for reaching out \u2014 I\u2019ll get back to you soon."
   }
