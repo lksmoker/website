@@ -11,8 +11,8 @@ export default function ContactPage() {
     <>
       <section className="page-section">
         <SectionHeader title="Contact" />
-        <TextBlock>{sections.intro}</TextBlock>
         {sections.workWithMe && <TextBlock>{sections.workWithMe}</TextBlock>}
+        <TextBlock>{sections.intro}</TextBlock>
         {sections.auroraNote && <TextBlock>{sections.auroraNote}</TextBlock>}
       </section>
 
