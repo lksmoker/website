@@ -53,7 +53,7 @@ export default function AuroraPage() {
           <SectionHeader title="Signals from the Field" />
           <div className="aurora-signals">
             {sections.signals.map((item) => (
-              <article key={item.id} className="aurora-signal">
+              <article key={item.id} className="aurora-signal card">
                 <p className="aurora-signal__source">
                   <a href={item.href} target="_blank" rel="noreferrer">
                     {item.source}

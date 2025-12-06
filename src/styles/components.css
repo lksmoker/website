@@ -101,3 +101,31 @@
 .contact-confirmation {
   margin-top: var(--space-s);
 }
+
+/* Aurora — Signal Cards */
+.aurora-signals {
+  display: grid;
+  gap: var(--space-l);
+}
+
+.aurora-signal.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: var(--space-l);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.aurora-signal__source a {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.aurora-signal__idea {
+  margin: var(--space-s) 0;
+  font-style: italic;
+}
+
+.aurora-signal__answer {
+  margin-top: var(--space-s);
+}
