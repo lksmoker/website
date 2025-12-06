@@ -22,7 +22,7 @@ export default function MainHeader() {
       <div className="header-inner">
         <div className="brand-block">
           <div className="site-title">LUKE SMOKER</div>
-          <div className="site-subtitle">Architect · Operator · Clarity</div>
+          <div className="site-subtitle">Architect · Operations · Clarity</div>
         </div>
         <button
           className="menu-toggle"
