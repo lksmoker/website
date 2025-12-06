@@ -17,7 +17,8 @@
       "I noticed a pattern repeating itself: a human speaks to an AI, the AI interprets the human’s intention, and then translates that understanding into Python, JavaScript, HTML, and so on. Each step is another layer where meaning can drift. We’re forcing AI to operate inside architectures that were never designed with AI in mind.",
       "And that raised a question: what if we didn’t need all those layers at all? What if AI could work in an environment native to its reasoning — one where human intent could translate directly into software without detouring through multiple languages and frameworks?",
       "What if the conversation was the development environment?",
-      "As I began Aurora, I began to see trends pointing at the same issues, validating my intuition and direction:"    ],
+      "As Aurora took shape, I began seeing the same challenges reflected in emerging articles and research, validating my intuition and direction:"
+    ],
     "signals": [
       {
         "id": "ai-coding-tools-observability",
