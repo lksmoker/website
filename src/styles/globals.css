@@ -1,0 +1,40 @@
+/* globals.css
+ * Base colors, typography, and spacing.
+ */
+ @import "./site-shell.css";
+ @import "./main-header.css";
+ @import "./typography.css";
+ @import "./layout.css";
+ @import "./components.css";
+ 
+:root {
+  --space-xs: 0.5rem;
+  --space-s: 0.75rem;
+  --space-m: 1.25rem;
+  --space-l: 2rem;
+  --space-xl: 3rem;
+  --max-width: 900px;
+  --color-bg: #f7f7f5;
+  --color-surface: #fcfcfa;
+  --color-text: #222222;
+  --color-border: rgba(0, 0, 0, 0.06);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+a {
+  color: inherit;
+}
+
+

@@ -1,0 +1,29 @@
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import SiteShell from "./components/SiteShell.jsx";
+
+import HomePage from "./pages/HomePage.jsx";
+import AboutPage from "./pages/AboutPage.jsx";
+import WorkIndexPage from "./pages/WorkIndexPage.jsx";
+import WorkProjectPage from "./pages/WorkProjectPage.jsx";
+import AuroraPage from "./pages/AuroraPage.jsx";
+import WritingIndexPage from "./pages/WritingIndexPage.jsx";
+import WritingArticlePage from "./pages/WritingArticlePage.jsx";
+import ContactPage from "./pages/ContactPage.jsx";
+
+export default function App() {
+  return (
+    <SiteShell>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/work" element={<WorkIndexPage />} />
+        <Route path="/work/:slug" element={<WorkProjectPage />} />
+        <Route path="/aurora" element={<AuroraPage />} />
+        <Route path="/writing" element={<WritingIndexPage />} />
+        <Route path="/writing/:slug" element={<WritingArticlePage />} />
+        <Route path="/contact" element={<ContactPage />} />
+      </Routes>
+    </SiteShell>
+  );
+}

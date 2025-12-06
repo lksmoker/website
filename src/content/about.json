@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "title": "About",
+    "description": "Learn about my background in operations, leadership, and software development."
+  },
+  "sections": {
+    "summary": {
+      "body": "My career has moved through several domains: operations, leadership, business systems, and software development. I\u2019ve supervised teams, coached and developed people, handled complex workflows, and created tools to help work happen with more clarity and less friction."
+    },
+    "story": [
+      "I began in hands-on operational roles where clarity and structure were essential. Managing people taught me how systems break down at the human level: misaligned expectations, unclear responsibilities, and missing feedback loops.",
+      "Later, I started developing software independently. Without a team to divide responsibilities, I had to design architecture, implement features, manage complexity, and refine systems on my own. This taught me to approach problems holistically \u2014 carrying both the technical and operational perspectives simultaneously.",
+      "Today, I rely on both sides of that background. I build systems that help people do meaningful work with clarity and confidence."
+    ],
+    "skills": {
+      "systemsAndOperations": [
+        "Designing clear workflows and processes",
+        "Improving team communication and alignment",
+        "Translating real-world requirements into actionable structure"
+      ],
+      "leadershipAndPeople": [
+        "Supervising, coaching, mentoring",
+        "Supporting team members through change",
+        "Creating clarity in moments of uncertainty"
+      ],
+      "softwareAndArchitecture": [
+        "Independently building internal tools and platforms",
+        "Designing developer workflows and reasoning structures",
+        "Full-stack development (solo)"
+      ],
+      "conceptualAndStrategic": [
+        "Systems thinking",
+        "High-level reasoning about software creation",
+        "Vision development (Aurora, App Kernel)"
+      ]
+    },
+    "values": [
+      "Clarity \u2014 People work best when expectations and systems are simple and honest.",
+      "Calm Structure \u2014 Good systems reduce noise and help people focus.",
+      "Transparency \u2014 Understanding should be visible and shared.",
+      "Human-Centered Design \u2014 Tools should support the work, not complicate it."
+    ],
+    "auroraOriginSafe": [
+      "Aurora began as a series of questions about clarity, communication, and workflow.",
+      "Aurora grew from the idea that software creation could feel more conversational, more explainable, and more aligned with how people naturally communicate."
+    ],
+    "personalNotes": [
+      "I enjoy designing systems in any context \u2014 work, tools, writing, or personal organization.",
+      "I appreciate environments where clarity and purpose matter, and where thoughtful design makes work feel lighter."
+    ]
+  }
+}

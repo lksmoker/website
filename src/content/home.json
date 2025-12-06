@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "title": "Home",
+    "description": "I build systems that bring clarity to complex work."
+  },
+  "hero": {
+    "title": "I build systems that bring clarity to complex work.",
+    "subtitle": "Across operations, team environments, internal tools, and software, I focus on helping people work with greater structure, transparency, and confidence.",
+    "supportingLine": "My background blends operational leadership with technical architecture and independent software development \u2014 a combination that shapes how I design systems for real-world use."
+  },
+  "sections": {
+    "selectedWork": {
+      "heading": "Selected Work",
+      "intro": "A few representative projects across operations, systems, and software.",
+      "projectSlugs": [
+        "dev-toolbox",
+        "operations-workflow",
+        "simplicity"
+      ]
+    },
+    "aboutPreview": {
+      "heading": "About",
+      "body": "I\u2019ve worked in roles that required leadership, systems awareness, and deep clarity \u2014 and eventually turned those lessons into the software and tools I now build."
+    },
+    "writingPreview": {
+      "heading": "Writing",
+      "items": [
+        "Clarity as a Leadership Skill",
+        "Why Systems Break, and How to Keep Them Honest",
+        "Designing Workflows for Real People"
+      ]
+    },
+    "contactCta": {
+      "body": "If you\u2019d like to talk about a role, a system, or an idea, I\u2019m always open to a conversation."
+    }
+  }
+}

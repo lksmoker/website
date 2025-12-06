@@ -1,0 +1,21 @@
+{
+  "meta": {
+    "title": "Work & Projects",
+    "description": "Selected work across operations, systems, and software."
+  },
+  "sections": {
+    "intro": "My work spans operations, management, internal tools, and full-stack software development. The projects below represent systems I\u2019ve shaped or built \u2014 sometimes through process improvement, sometimes through leadership, sometimes through independent technical development.",
+    "categories": [
+      "Operations",
+      "Business Systems",
+      "Internal Tools",
+      "Software",
+      "Conceptual Work"
+    ],
+    "featuredSlugs": [
+      "dev-toolbox",
+      "operations-workflow",
+      "simplicity"
+    ]
+  }
+}

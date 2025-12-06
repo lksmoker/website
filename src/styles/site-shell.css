@@ -1,0 +1,36 @@
+.site-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+.site-main {
+  flex: 1;
+  padding: var(--space-xl) var(--space-m) var(--space-l);
+}
+
+.page {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.site-footer {
+  padding: var(--space-m);
+  background: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  font-size: 0.85rem;
+  color: #666666;
+}
+
+.footer-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+@media (max-width: 640px) {
+  .site-main {
+    padding-inline: var(--space-s);
+  }
+}

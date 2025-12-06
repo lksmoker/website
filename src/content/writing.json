@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "title": "Writing",
+    "description": "Essays and notes on systems, clarity, operations, and software."
+  },
+  "sections": {
+    "intro": "Writing is where I explore systems, operations, clarity, and the relationship between people and tools.",
+    "categories": [
+      "Systems & Clarity",
+      "Operations & Management",
+      "Software & Tools",
+      "Aurora Concepts (Safe)",
+      "Personal Reflections"
+    ],
+    "articles": [
+      {
+        "slug": "clarity-as-a-leadership-skill",
+        "title": "Clarity as a Leadership Skill",
+        "summary": "A short reflection on how clarity affects teams and systems.",
+        "date": "",
+        "category": "Operations & Management",
+        "body": []
+      },
+      {
+        "slug": "patterns-that-make-work-feel-lighter",
+        "title": "Patterns That Make Work Feel Lighter",
+        "summary": "How small shifts in process and structure reduce friction.",
+        "date": "",
+        "category": "Systems & Clarity",
+        "body": []
+      },
+      {
+        "slug": "why-systems-drift",
+        "title": "Why Systems Drift (and How to Keep Them Honest)",
+        "summary": "Exploring how systems naturally lose alignment over time.",
+        "date": "",
+        "category": "Systems & Clarity",
+        "body": []
+      }
+    ]
+  }
+}

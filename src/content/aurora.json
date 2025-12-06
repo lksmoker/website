@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "title": "Aurora",
+    "description": "Aurora is a conceptual approach to building software through conversation."
+  },
+  "sections": {
+    "whatItIs": [
+      "Aurora is a conceptual approach to building software through conversation.",
+      "It\u2019s centered on the idea that people should be able to express intentions clearly, receive understandable feedback, and guide systems through a shared understanding."
+    ],
+    "whyItMatters": [
+      "Software creation today is fragmented across documents, tools, and communication channels.",
+      "Aurora explores a more natural path \u2014 one where clarity, reasoning, and understanding are part of the process itself."
+    ],
+    "origin": [
+      "Aurora emerged from years of working in both operational environments and independent software development.",
+      "It is an exploration of how clarity and conversation could shape the way we build and refine software."
+    ],
+    "whatItIsNot": [
+      "Not a no-code tool",
+      "Not an IDE",
+      "Not an assistant",
+      "Not a rules engine",
+      "Not a schema or protocol",
+      "Not a product announcement"
+    ],
+    "howItWorksSafe": [
+      "Aurora uses a conversational workflow: people describe what they want, the system expresses its understanding, and both work together to shape the result.",
+      "This is a conceptual framing, without revealing internal structures or technical mechanisms."
+    ],
+    "futureDirection": [
+      "Aurora will evolve gradually, beginning with narrative descriptions and eventually expanding to high-level examples.",
+      "Technical details, internals, and system mechanics will remain undisclosed."
+    ],
+    "cta": "If you\u2019re interested in the ideas behind Aurora, I\u2019m always open to high-level conversations about the concepts and vision."
+  }
+}

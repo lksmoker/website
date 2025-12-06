@@ -1,0 +1,41 @@
+[
+  {
+    "slug": "dev-toolbox",
+    "title": "Dev Toolbox",
+    "summary": "Developer environment and internal tools platform focused on clarity, structure, and explainability.",
+    "tags": [
+      "Internal Tools",
+      "Software"
+    ],
+    "problem": "",
+    "role": "Independent designer and developer.",
+    "solution": "",
+    "impact": ""
+  },
+  {
+    "slug": "operations-workflow",
+    "title": "Operations & Workflow Design",
+    "summary": "Improving cross-team communication, workflow structure, and day-to-day execution in operational roles.",
+    "tags": [
+      "Operations",
+      "Workflow"
+    ],
+    "problem": "",
+    "role": "Supervisor, coach, and workflow designer.",
+    "solution": "",
+    "impact": ""
+  },
+  {
+    "slug": "simplicity",
+    "title": "Finance Tools / Simplicity",
+    "summary": "A budgeting and financial tracking tool designed for calm visibility and personal clarity.",
+    "tags": [
+      "Finance",
+      "Internal Tools"
+    ],
+    "problem": "",
+    "role": "Independent designer and developer.",
+    "solution": "",
+    "impact": ""
+  }
+]
