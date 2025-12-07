@@ -20,7 +20,7 @@
     },
     "aboutPreview": {
       "heading": "About",
-      "body": "I’ve worked in roles that required leadership, systems awareness, and deep clarity — and eventually turned those lessons into the software and tools I now build.\n\nThis text is a test"
+      "body": "I’ve worked in roles that required leadership, systems awareness, and deep clarity — and eventually turned those lessons into the software and tools I now build."
     },
     "writingPreview": {
       "heading": "Writing",
@@ -31,7 +31,7 @@
       ]
     },
     "contactCta": {
-      "body": "Talk to me!"
+      "body": ""
     }
   }
 }
