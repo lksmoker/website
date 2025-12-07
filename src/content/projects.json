@@ -9,7 +9,19 @@
     "problem": "Developers often lack structured tools that surface context, reduce cognitive load, and support explainable workflows.",
     "context": "Created as a solo project to explore better ways of organizing development work, surfacing context, and supporting reasoning.",
     "solution": "Designed and built a modular internal tooling environment that makes project context, workflows, and changes more visible and easier to reason about.",
-    "impact": "Improved structure and visibility during development, making it easier to understand what’s happening in the system and why."
+    "impact": "Improved structure and visibility during development, making it easier to understand what’s happening in the system and why.",
+    "screenshots": [
+      {
+        "src": "/images/dev-toolbox/dashboard.png",
+        "alt": "Dev Toolbox main dashboard showing project list and context panel",
+        "caption": "The Dev Toolbox dashboard surfaces project context, active work, and tools in a single view."
+      },
+      {
+        "src": "/images/dev-toolbox/planner.png",
+        "alt": "Sprint planner view with work items organized in lanes",
+        "caption": "Planner view for structuring sprints, work items, and day-to-day flow."
+      }
+    ]
   },
   {
     "slug": "operations-workflow",
@@ -33,7 +45,19 @@
     "problem": "Personal budgeting tools often create noise instead of clarity, making it harder for people to understand where their money is going.",
     "context": "Built as a practical system to support real-world budgeting and monthly planning, with an emphasis on calm, reliable visibility.",
     "solution": "Created a budgeting and occurrence-tracking flow that highlights what matters each month, keeps categories honest, and reduces friction in daily use.",
-    "impact": "Supports more confident financial decisions by making obligations, patterns, and tradeoffs easier to see at a glance."
+    "impact": "Supports more confident financial decisions by making obligations, patterns, and tradeoffs easier to see at a glance.",
+    "screenshots": [
+      {
+        "src": "/images/simplicity/monthly-budget.png",
+        "alt": "Monthly budget overview with categories and planned amounts",
+        "caption": "Monthly budget view showing planned amounts, actuals, and remaining headroom."
+      },
+      {
+        "src": "/images/simplicity/occurrences.png",
+        "alt": "List of bill and spending occurrences across the month",
+        "caption": "Occurrences list surfaces upcoming obligations so nothing slips through."
+      }
+    ]
   },
   {
     "slug": "aurora",
