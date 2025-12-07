@@ -107,7 +107,7 @@
     "solution": "Explores a conversational workflow where people express what they want, the system reflects its understanding, and results evolve through shared reasoning — without revealing technical mechanisms, schema, or internals.",
     "impact": "Provides a direction for future tools that prioritize clarity, explainability, and human-centered interaction with complex systems. Aurora is narrative-first, focused on concepts rather than implementation.",
     "link": {
-      "href": "/aurora",
+      "href": "#/aurora",
       "label": "Read the full Aurora page"
     },
     "screenshots": []
