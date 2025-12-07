@@ -2,70 +2,71 @@
   {
     "slug": "dev-toolbox",
     "title": "Dev Toolbox",
-    "summary": "A developer environment and internal tools platform built around clarity, structure, and explainability.",
+    "summary": "A mobile-first, self-hosted developer environment that unifies project management, context, and code editing into a single, integrated workspace.",
     "role": "Independent designer and developer",
     "timeline": "2022–Present",
     "tags": ["Internal tools", "Developer experience", "Full-stack"],
-    "problem": "Developers often lack structured tools that surface context, reduce cognitive load, and support explainable workflows.",
-    "context": "Created as a solo project to explore better ways of organizing development work, surfacing context, and supporting reasoning.",
-    "solution": "Designed and built a modular internal tooling environment that makes project context, workflows, and changes more visible and easier to reason about.",
-    "impact": "Improved structure and visibility during development, making it easier to understand what’s happening in the system and why.",
+    "problem": "Traditional developer environments scatter context across multiple tools — IDEs, planners, terminals, logs, GitHub, and documentation — increasing cognitive load and slowing down reasoning.",
+    "context": "Built as a deeply personal exploration into what a unified, explainable development environment could look like, especially when working solo across multiple systems and projects.",
+    "solution": "Designed and built a mobile-first, self-hosted IDE that integrates code editing, GitHub activity, structured logs, live console output, sprint planning, and project context into a single environment. Everything stays close at hand, reducing switching costs and making system reasoning more natural.",
+    "impact": "By bringing development tools and project structure into one coherent workspace, Dev Toolbox improves focus, reduces friction, and makes day-to-day work more structured, explainable, and predictable.",
     "screenshots": [
       {
         "src": "/images/dev-toolbox/dashboard1.png",
         "alt": "Dev Toolbox main dashboard showing project list and context panel",
-        "caption": "The Dev Toolbox dashboard surfaces project context, active work, and tools in a single view."
+        "caption": "The dashboard brings together project context, active work, navigation, and tools in a unified, mobile-first interface."
       },
       {
         "src": "/images/dev-toolbox/planner1.png",
         "alt": "Sprint planner view with work items organized in lanes",
-        "caption": "Planner view for structuring sprints, work items, and day-to-day flow."
+        "caption": "Integrated sprint planner for structuring work, focusing daily flow, and keeping reasoning close to the work."
       },
       {
         "src": "/images/dev-toolbox/file-editor.png",
         "alt": "File editor view with project files and code open in the main panel",
-        "caption": "The file editor provides a focused space for working on code with project-aware context."
+        "caption": "Self-hosted code editor with project-aware context surfaces and mobile-optimized UX."
       },
       {
         "src": "/images/dev-toolbox/github.png",
-        "alt": "GitHub integration tab showing commit history and repository status",
-        "caption": "GitHub tab brings commit history and repository status into the same environment."
+        "alt": "GitGitHub integration tab showing commit history and repository status",
+        "caption": "GitHub tab surfaces commit history, diffs, and repository state without leaving the environment."
       },
       {
         "src": "/images/dev-toolbox/logs.png",
         "alt": "Logs tab showing structured logs from the running system",
-        "caption": "Logs tab surfaces structured logs so behavior and issues stay visible while you work."
+        "caption": "Structured logs stay visible as you work, keeping system behavior understandable and explainable."
       },
       {
         "src": "/images/dev-toolbox/console.png",
         "alt": "Console tab showing live console output from the backend",
-        "caption": "Console view keeps live backend output close at hand for quick feedback during development."
+        "caption": "Live backend console output integrated directly into the workspace for immediate feedback."
       }
     ]
   },
   {
     "slug": "operations-workflow",
     "title": "Operations & Workflow Design",
-    "summary": "Improving team clarity and execution by shaping workflows, expectations, and feedback loops in operational roles.",
+    "summary": "Improving clarity, structure, and alignment in operational environments by shaping workflows, expectations, and communication loops.",
     "role": "Supervisor, coach, and workflow designer",
     "timeline": "2015–2022 (various roles)",
     "tags": ["Operations", "Workflow design", "Leadership"],
-    "problem": "Teams were working in high-variance environments with unclear expectations, unstable processes, and communication gaps that made day-to-day execution harder than it needed to be.",
-    "context": "In operational and leadership roles, I was responsible not just for outcomes, but for how people moved through their work — how information flowed, how handoffs worked, and how changes were communicated.",
-    "solution": "Clarified expectations, designed and refined workflows, and coached people through transitions, focusing on making responsibilities visible and reducing friction in handoffs.",
-    "impact": "Improved alignment, fewer surprises, and more stable day-to-day operations, with teams having clearer expectations and a more predictable way of working."
+    "problem": "Teams were operating in high-variance environments with unclear expectations, uneven communication, and workflows that generated unnecessary friction and mistakes.",
+    "context": "In operational and leadership roles, I was responsible for both outcomes and the systems that supported day-to-day work — how information flowed, how handoffs worked, and how people stayed aligned.",
+    "solution": "Clarified expectations, redesigned workflows, created stable routines, and coached people through transitions. Focused on reducing ambiguity, strengthening communication loops, and making responsibilities visible at every level.",
+    "impact": "Teams experienced fewer surprises, smoother handoffs, clearer responsibility boundaries, and more predictable day-to-day execution. The result was calmer operations and more trust in the system.",
+    "screenshots": []
   },
   {
     "slug": "simplicity",
     "title": "Finance Tools / Simplicity",
-    "summary": "A budgeting and financial-tracking system designed for calm visibility into day-to-day money decisions.",
+    "summary": "A budgeting and financial-tracking system designed for calm visibility and confident day-to-day money decisions.",
     "role": "Designer and full-stack developer",
     "timeline": "2023–Present",
     "tags": ["Personal finance", "Product design", "Full-stack"],
-    "problem": "Personal budgeting tools often create noise instead of clarity, making it harder for people to understand where their money is going.",
-    "context": "Built as a practical system to support real-world budgeting and monthly planning, with an emphasis on calm, reliable visibility.",
-    "solution": "Created a budgeting and occurrence-tracking flow that highlights what matters each month, keeps categories honest, and reduces friction in daily use.",
-    "impact": "Supports more confident financial decisions by making obligations, patterns, and tradeoffs easier to see at a glance.",
+    "problem": "Most budgeting tools generate noise instead of clarity. They surface too much, too little, or the wrong information at the wrong moment — making it harder to understand what’s actually happening with your money.",
+    "context": "Built as a real-world system to support monthly planning, recurring bills, flexible spending, and daily decision-making with as little friction as possible.",
+    "solution": "Created a calm, mobile-first budgeting environment that highlights what matters: upcoming obligations, category health, patterns, and day-to-day occurrences. The flow is designed to stay honest, predictable, and easy to revisit.",
+    "impact": "Simplicity supports more confident financial decisions by surfacing the right information at the right time, giving users a grounded sense of where they stand and what needs attention.",
     "screenshots": [
       {
         "src": "/images/simplicity/monthly-budget1.png",
@@ -75,22 +76,22 @@
       {
         "src": "/images/simplicity/occurrences1.png",
         "alt": "Home screen showing snapshot of account balances and upcoming bills",
-        "caption": "Home screen provides a quick glance at where you stand and upcoming bills."
+        "caption": "Home screen provides a quick glance at where you stand and upcoming obligations."
       },
       {
         "src": "/images/simplicity/add.png",
         "alt": "Add item screen for creating a new bill or spending entry",
-        "caption": "Add screen for creating new budget or occurrence items without breaking the monthly flow."
+        "caption": "Add screen designed for quick entry without breaking the monthly flow."
       },
       {
         "src": "/images/simplicity/review.png",
         "alt": "Review screen showing new transactions needing categorization",
-        "caption": "Review view helps you stay on top of transactions as they come in."
+        "caption": "Review view helps keep new transactions organized and categorized."
       },
       {
         "src": "/images/simplicity/menu.png",
         "alt": "Navigation menu showing main sections of the app",
-        "caption": "The main menu keeps core views close at hand while staying visually quiet."
+        "caption": "A quiet, structured menu that keeps core views accessible without noise."
       }
     ]
   },
@@ -101,9 +102,10 @@
     "role": "Concept originator and systems designer",
     "timeline": "Long-term exploration",
     "tags": ["Conceptual", "Systems thinking", "Human–AI collaboration"],
-    "problem": "Software creation today is fragmented across tools, documents, and communication channels, making it hard to maintain clarity and shared understanding.",
-    "context": "Emerging from years of operational work and independent software development, focused on clarity, explanation, and how people naturally express intent.",
-    "solution": "Explores a conversational workflow for software: people express intent, the system reflects its understanding, and results evolve through shared reasoning.",
-    "impact": "Provides a direction for future tools and platforms that prioritize clarity, explainability, and human-centered interaction with complex systems."
+    "problem": "Software creation today is fragmented across documents, tools, and communication channels, making it difficult to maintain clarity and shared understanding.",
+    "context": "Aurora emerged from years of operational work and independent software development, shaped by questions around clarity, communication, and how people naturally express intent.",
+    "solution": "Explores a conversational workflow where people express what they want, the system reflects its understanding, and results evolve through shared reasoning — without revealing technical mechanisms, schema, or internals.",
+    "impact": "Provides a direction for future tools that prioritize clarity, explainability, and human-centered interaction with complex systems. Aurora is narrative-first, focused on concepts rather than implementation.",
+    "screenshots": []
   }
 ]
