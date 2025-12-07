@@ -20,6 +20,26 @@
         "src": "/images/dev-toolbox/planner.png",
         "alt": "Sprint planner view with work items organized in lanes",
         "caption": "Planner view for structuring sprints, work items, and day-to-day flow."
+      },
+      {
+        "src": "/images/dev-toolbox/file-editor.png",
+        "alt": "File editor view with project files and code open in the main panel",
+        "caption": "The file editor provides a focused space for working on code with project-aware context."
+      },
+      {
+        "src": "/images/dev-toolbox/github.png",
+        "alt": "GitHub integration tab showing commit history and repository status",
+        "caption": "GitHub tab brings commit history and repository status into the same environment."
+      },
+      {
+        "src": "/images/dev-toolbox/logs.png",
+        "alt": "Logs tab showing structured logs from the running system",
+        "caption": "Logs tab surfaces structured logs so behavior and issues stay visible while you work."
+      },
+      {
+        "src": "/images/dev-toolbox/console.png",
+        "alt": "Console tab showing live console output from the backend",
+        "caption": "Console view keeps live backend output close at hand for quick feedback during development."
       }
     ]
   },
@@ -56,6 +76,21 @@
         "src": "/images/simplicity/occurrences.png",
         "alt": "List of bill and spending occurrences across the month",
         "caption": "Occurrences list surfaces upcoming obligations so nothing slips through."
+      },
+      {
+        "src": "/images/simplicity/add.png",
+        "alt": "Add item screen for creating a new bill or spending entry",
+        "caption": "Add screen for creating new budget or occurrence items without breaking the monthly flow."
+      },
+      {
+        "src": "/images/simplicity/review.png",
+        "alt": "Review screen summarizing recent activity and category performance",
+        "caption": "Review view helps you step back and see how the month is tracking across categories."
+      },
+      {
+        "src": "/images/simplicity/menu.png",
+        "alt": "Navigation menu showing main sections of the app",
+        "caption": "The main menu keeps core views close at hand while staying visually quiet."
       }
     ]
   },
