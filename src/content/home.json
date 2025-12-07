@@ -6,7 +6,7 @@
   "hero": {
     "title": "I build systems that bring clarity to complex work.",
     "subtitle": "Across operations, team environments, internal tools, and software, I focus on helping people work with greater structure, transparency, and confidence.",
-    "supportingLine": "My background blends operational leadership with technical architecture and independent software development \u2014 a combination that shapes how I design systems for real-world use."
+    "supportingLine": "My background blends operational leadership with technical architecture and independent software development — a combination that shapes how I design systems for real-world use."
   },
   "sections": {
     "selectedWork": {
@@ -20,7 +20,7 @@
     },
     "aboutPreview": {
       "heading": "About",
-      "body": "I\u2019ve worked in roles that required leadership, systems awareness, and deep clarity \u2014 and eventually turned those lessons into the software and tools I now build."
+      "body": "I’ve worked in roles that required leadership, systems awareness, and deep clarity — and eventually turned those lessons into the software and tools I now build.\n\nThis text is a test"
     },
     "writingPreview": {
       "heading": "Writing",
@@ -31,7 +31,7 @@
       ]
     },
     "contactCta": {
-      "body": "If you'd like to talk about a role, a system, or an idea, I\u2019m always open to a conversation."
+      "body": "Talk to me!"
     }
   }
 }
