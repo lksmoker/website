@@ -12,12 +12,12 @@
     "impact": "Improved structure and visibility during development, making it easier to understand what’s happening in the system and why.",
     "screenshots": [
       {
-        "src": "/images/dev-toolbox/dashboard.png",
+        "src": "/images/dev-toolbox/dashboard1.png",
         "alt": "Dev Toolbox main dashboard showing project list and context panel",
         "caption": "The Dev Toolbox dashboard surfaces project context, active work, and tools in a single view."
       },
       {
-        "src": "/images/dev-toolbox/planner.png",
+        "src": "/images/dev-toolbox/planner1.png",
         "alt": "Sprint planner view with work items organized in lanes",
         "caption": "Planner view for structuring sprints, work items, and day-to-day flow."
       },
