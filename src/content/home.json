@@ -11,10 +11,9 @@
   "sections": {
     "selectedWork": {
       "heading": "Selected Work",
-      "intro": "A few representative projects across operations, systems, and software.",
+      "intro": "A small sample of projects that show how I approach systems, tools, and real-world workflows.",
       "projectSlugs": [
         "dev-toolbox",
-        "operations-workflow",
         "simplicity",
         "aurora"
       ]
