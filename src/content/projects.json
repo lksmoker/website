@@ -68,12 +68,12 @@
     "impact": "Supports more confident financial decisions by making obligations, patterns, and tradeoffs easier to see at a glance.",
     "screenshots": [
       {
-        "src": "/images/simplicity/monthly-budget.png",
+        "src": "/images/simplicity/monthly-budget1.png",
         "alt": "Monthly budget overview with categories and planned amounts",
         "caption": "Monthly budget view showing planned amounts, actuals, and remaining headroom."
       },
       {
-        "src": "/images/simplicity/occurrences.png",
+        "src": "/images/simplicity/occurrences1.png",
         "alt": "List of bill and spending occurrences across the month",
         "caption": "Occurrences list surfaces upcoming obligations so nothing slips through."
       },
