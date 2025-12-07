@@ -15,7 +15,8 @@
       "projectSlugs": [
         "dev-toolbox",
         "operations-workflow",
-        "simplicity"
+        "simplicity",
+        "aurora"
       ]
     },
     "aboutPreview": {
@@ -31,7 +32,7 @@
       ]
     },
     "contactCta": {
-      "body": ""
+      "body": "If you’d like to talk about a role, a system, or an idea, I’m always open to a conversation."
     }
   }
 }

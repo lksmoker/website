@@ -4,7 +4,7 @@
     "description": "Selected work across operations, systems, and software."
   },
   "sections": {
-    "intro": "My work spans operations, management, internal tools, and full-stack software development. The projects below represent systems I\u2019ve shaped or built \u2014 sometimes through process improvement, sometimes through leadership, sometimes through independent technical development.",
+    "intro": "My work spans operations, management, internal tools, and full-stack software development. The projects below represent systems I’ve shaped or built — sometimes through process improvement, sometimes through coaching and leadership, sometimes through independent technical development.",
     "categories": [
       "Operations",
       "Business Systems",
@@ -15,7 +15,8 @@
     "featuredSlugs": [
       "dev-toolbox",
       "operations-workflow",
-      "simplicity"
+      "simplicity",
+      "aurora"
     ]
   }
 }

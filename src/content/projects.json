@@ -2,40 +2,49 @@
   {
     "slug": "dev-toolbox",
     "title": "Dev Toolbox",
-    "summary": "Developer environment and internal tools platform focused on clarity, structure, and explainability.",
-    "tags": [
-      "Internal Tools",
-      "Software"
-    ],
-    "problem": "",
-    "role": "Independent designer and developer.",
-    "solution": "",
-    "impact": ""
+    "summary": "A developer environment and internal tools platform built around clarity, structure, and explainability.",
+    "role": "Independent designer and developer",
+    "timeline": "2022–Present",
+    "tags": ["Internal tools", "Developer experience", "Full-stack"],
+    "problem": "Developers often lack structured tools that surface context, reduce cognitive load, and support explainable workflows.",
+    "context": "Created as a solo project to explore better ways of organizing development work, surfacing context, and supporting reasoning.",
+    "solution": "Designed and built a modular internal tooling environment that makes project context, workflows, and changes more visible and easier to reason about.",
+    "impact": "Improved structure and visibility during development, making it easier to understand what’s happening in the system and why."
   },
   {
     "slug": "operations-workflow",
     "title": "Operations & Workflow Design",
-    "summary": "Improving cross-team communication, workflow structure, and day-to-day execution in operational roles.",
-    "tags": [
-      "Operations",
-      "Workflow"
-    ],
-    "problem": "",
-    "role": "Supervisor, coach, and workflow designer.",
-    "solution": "",
-    "impact": ""
+    "summary": "Improving team clarity and execution by shaping workflows, expectations, and feedback loops in operational roles.",
+    "role": "Supervisor, coach, and workflow designer",
+    "timeline": "2015–2022 (various roles)",
+    "tags": ["Operations", "Workflow design", "Leadership"],
+    "problem": "Teams were working in high-variance environments with unclear expectations, unstable processes, and communication gaps that made day-to-day execution harder than it needed to be.",
+    "context": "In operational and leadership roles, I was responsible not just for outcomes, but for how people moved through their work — how information flowed, how handoffs worked, and how changes were communicated.",
+    "solution": "Clarified expectations, designed and refined workflows, and coached people through transitions, focusing on making responsibilities visible and reducing friction in handoffs.",
+    "impact": "Improved alignment, fewer surprises, and more stable day-to-day operations, with teams having clearer expectations and a more predictable way of working."
   },
   {
     "slug": "simplicity",
     "title": "Finance Tools / Simplicity",
-    "summary": "A budgeting and financial tracking tool designed for calm visibility and personal clarity.",
-    "tags": [
-      "Finance",
-      "Internal Tools"
-    ],
-    "problem": "",
-    "role": "Independent designer and developer.",
-    "solution": "",
-    "impact": ""
+    "summary": "A budgeting and financial-tracking system designed for calm visibility into day-to-day money decisions.",
+    "role": "Designer and full-stack developer",
+    "timeline": "2023–Present",
+    "tags": ["Personal finance", "Product design", "Full-stack"],
+    "problem": "Personal budgeting tools often create noise instead of clarity, making it harder for people to understand where their money is going.",
+    "context": "Built as a practical system to support real-world budgeting and monthly planning, with an emphasis on calm, reliable visibility.",
+    "solution": "Created a budgeting and occurrence-tracking flow that highlights what matters each month, keeps categories honest, and reduces friction in daily use.",
+    "impact": "Supports more confident financial decisions by making obligations, patterns, and tradeoffs easier to see at a glance."
+  },
+  {
+    "slug": "aurora",
+    "title": "Aurora",
+    "summary": "A conceptual approach to building software through conversation, centered on intent, understanding, and transparent results.",
+    "role": "Concept originator and systems designer",
+    "timeline": "Long-term exploration",
+    "tags": ["Conceptual", "Systems thinking", "Human–AI collaboration"],
+    "problem": "Software creation today is fragmented across tools, documents, and communication channels, making it hard to maintain clarity and shared understanding.",
+    "context": "Emerging from years of operational work and independent software development, focused on clarity, explanation, and how people naturally express intent.",
+    "solution": "Explores a conversational workflow for software: people express intent, the system reflects its understanding, and results evolve through shared reasoning.",
+    "impact": "Provides a direction for future tools and platforms that prioritize clarity, explainability, and human-centered interaction with complex systems."
   }
 ]
