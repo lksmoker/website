@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 
+const FUNCTION_URL =
+  "https://kckvqtgdwjuesbgngywt.functions.supabase.co/contact-submit";
+const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY;
+
 export default function ContactForm() {
   const [form, setForm] = useState({
     name: "",
@@ -7,7 +11,6 @@ export default function ContactForm() {
     message: "",
   });
 
-  // Simple JS object state (no TypeScript syntax)
   const [status, setStatus] = useState({
     type: "idle", // "idle" | "submitting" | "success" | "error"
     message: "",
@@ -26,14 +29,15 @@ export default function ContactForm() {
     setStatus({ type: "submitting", message: "" });
 
     try {
-      const res = await fetch(
-        "https://kckvqtgdwjuesbgngywt.functions.supabase.co/contact-submit",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(form),
-        }
-      );
+      const res = await fetch(FUNCTION_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          apikey: SUPABASE_ANON_KEY,
+          Authorization: `Bearer ${SUPABASE_ANON_KEY}`,
+        },
+        body: JSON.stringify(form),
+      });
 
       if (!res.ok) throw new Error("Request failed");
 
