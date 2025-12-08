@@ -326,3 +326,8 @@ ul.text-body li {
   content: "→";
   font-size: 0.9em;
 }
+
+/* Reduce top spacing on project pages (aligns with About page spacing) */
+.project-layout {
+  padding-top: var(--space-l); /* was space-xl */
+}
