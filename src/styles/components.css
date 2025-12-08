@@ -329,5 +329,5 @@ ul.text-body li {
 
 /* Reduce top spacing on project pages (aligns with About page spacing) */
 .project-layout {
-  padding-top: var(--space-l); /* was space-xl */
+  padding-top: var(--space-m); /* was space-xl */
 }
