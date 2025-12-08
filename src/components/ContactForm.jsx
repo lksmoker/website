@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const FUNCTION_URL =
-  "https://kckvqtgdwjuesbgngywt.functions.supabase.co/contact-submit";
+  "https://kckvqtgdwjuesbgngywt.supabase.co/functions/v1/contact-submit";
 const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY;
 
 export default function ContactForm() {
@@ -94,7 +94,7 @@ export default function ContactForm() {
         className="primary-button"
         disabled={status.type === "submitting"}
       >
-        {status.type === "submitting" ? "Sending…" : "Send"}
+        {status.type === "submitting" ? "Sending..." : "Send"}
       </button>
 
       {status.type === "success" && (
