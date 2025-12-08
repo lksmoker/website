@@ -11,9 +11,18 @@ export default function ContactForm() {
     message: "",
   });
 
+  // UI status for humans
   const [status, setStatus] = useState({
     type: "idle", // "idle" | "submitting" | "success" | "error"
     message: "",
+  });
+
+  // Extra debug info so you can see what's happening without DevTools
+  const [debug, setDebug] = useState({
+    lastStatusCode: null,
+    lastOk: null,
+    lastError: "",
+    lastBody: "",
   });
 
   function handleChange(e) {
@@ -27,6 +36,11 @@ export default function ContactForm() {
     if (!form.message.trim()) return;
 
     setStatus({ type: "submitting", message: "" });
+    setDebug((prev) => ({
+      ...prev,
+      lastError: "",
+      lastBody: "",
+    }));
 
     try {
       const res = await fetch(FUNCTION_URL, {
@@ -39,7 +53,18 @@ export default function ContactForm() {
         body: JSON.stringify(form),
       });
 
-      if (!res.ok) throw new Error("Request failed");
+      const bodyText = await res.text().catch(() => "");
+
+      setDebug({
+        lastStatusCode: res.status,
+        lastOk: res.ok,
+        lastError: res.ok ? "" : "Non-OK HTTP response",
+        lastBody: bodyText,
+      });
+
+      if (!res.ok) {
+        throw new Error(`HTTP ${res.status}`);
+      }
 
       setStatus({
         type: "success",
@@ -47,63 +72,111 @@ export default function ContactForm() {
       });
       setForm({ name: "", email: "", message: "" });
     } catch (err) {
-      console.error(err);
       setStatus({
         type: "error",
         message:
           "Something went wrong sending your message. You can also email me directly.",
       });
+
+      setDebug((prev) => ({
+        ...prev,
+        lastError: err?.message || String(err),
+      }));
     }
   }
 
   return (
-    <form className="contact-form" onSubmit={handleSubmit}>
-      <label className="form-field">
-        <span>Name</span>
-        <input
-          type="text"
-          name="name"
-          value={form.name}
-          onChange={handleChange}
-        />
-      </label>
+    <div className="contact-form-wrapper">
+      <form className="contact-form" onSubmit={handleSubmit}>
+        <label className="form-field">
+          <span>Name</span>
+          <input
+            type="text"
+            name="name"
+            value={form.name}
+            onChange={handleChange}
+          />
+        </label>
 
-      <label className="form-field">
-        <span>Email</span>
-        <input
-          type="email"
-          name="email"
-          value={form.email}
-          onChange={handleChange}
-        />
-      </label>
+        <label className="form-field">
+          <span>Email</span>
+          <input
+            type="email"
+            name="email"
+            value={form.email}
+            onChange={handleChange}
+          />
+        </label>
 
-      <label className="form-field">
-        <span>Message</span>
-        <textarea
-          name="message"
-          rows={4}
-          value={form.message}
-          onChange={handleChange}
-          required
-        />
-      </label>
+        <label className="form-field">
+          <span>Message</span>
+          <textarea
+            name="message"
+            rows={4}
+            value={form.message}
+            onChange={handleChange}
+            required
+          />
+        </label>
 
-      <button
-        type="submit"
-        className="primary-button"
-        disabled={status.type === "submitting"}
+        <button
+          type="submit"
+          className="primary-button"
+          disabled={status.type === "submitting"}
+        >
+          {status.type === "submitting" ? "Sending..." : "Send"}
+        </button>
+
+        {/* Human-facing status */}
+        {status.type === "success" && (
+          <p className="text-body contact-confirmation">{status.message}</p>
+        )}
+
+        {status.type === "error" && (
+          <p className="text-body contact-error">{status.message}</p>
+        )}
+      </form>
+
+      {/* Debug panel so you can see what’s going on from your phone */}
+      <div
+        className="contact-debug"
+        style={{
+          marginTop: "1rem",
+          padding: "0.75rem",
+          fontSize: "0.8rem",
+          borderRadius: "0.5rem",
+          border: "1px dashed rgba(0,0,0,0.2)",
+          opacity: 0.9,
+        }}
       >
-        {status.type === "submitting" ? "Sending..." : "Send"}
-      </button>
-
-      {status.type === "success" && (
-        <p className="text-body contact-confirmation">{status.message}</p>
-      )}
-
-      {status.type === "error" && (
-        <p className="text-body contact-error">{status.message}</p>
-      )}
-    </form>
+        <strong>Debug info</strong>
+        <div>Status type: {status.type}</div>
+        {status.message && <div>Message: {status.message}</div>}
+        <div>
+          Anon key present:
+          {" "}
+          {SUPABASE_ANON_KEY
+            ? `yes (${SUPABASE_ANON_KEY.slice(0, 8)}...)`
+            : "NO (undefined)"}
+        </div>
+        <div>HTTP status: {debug.lastStatusCode ?? "—"}</div>
+        <div>OK: {debug.lastOk === null ? "—" : String(debug.lastOk)}</div>
+        {debug.lastError && <div>Error: {debug.lastError}</div>}
+        {debug.lastBody && (
+          <div style={{ marginTop: "0.5rem" }}>
+            <div>Response body:</div>
+            <pre
+              style={{
+                whiteSpace: "pre-wrap",
+                wordBreak: "break-word",
+                margin: 0,
+              }}
+            >
+              {debug.lastBody}
+            </pre>
+          </div>
+        )}
+      </div>
+    </div>
   );
 }
