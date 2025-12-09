@@ -2,14 +2,14 @@
   {
     "slug": "dev-toolbox",
     "title": "Dev Toolbox",
-    "summary": "A mobile-first, self-hosted developer environment that unifies project management, context, and code editing into a single, integrated workspace.",
+    "summary": "A mobile-first, self-hosted developer environment built to make real software development possible on the go — with context, planning, editing, and reasoning all in one place.",
     "role": "Independent designer and developer",
     "timeline": "2022–Present",
     "tags": ["Internal tools", "Developer experience", "Full-stack"],
-    "problem": "Traditional developer environments scatter context across multiple tools — IDEs, planners, terminals, logs, GitHub, and documentation — increasing cognitive load and slowing down reasoning.",
-    "context": "Built as a deeply personal exploration into what a unified, explainable development environment could look like, especially when working solo across multiple systems and projects.",
-    "solution": "Designed and built a mobile-first, self-hosted IDE that integrates code editing, GitHub activity, structured logs, live console output, sprint planning, and project context into a single environment. Everything stays close at hand, reducing switching costs and making system reasoning more natural.",
-    "impact": "By bringing development tools and project structure into one coherent workspace, Dev Toolbox improves focus, reduces friction, and makes day-to-day work more structured, explainable, and predictable.",
+    "problem": "There are very few good coding environments for mobile. Existing apps are limited, disconnected, and lack the tools needed to actually build real software on a phone. Switching between editors, logs, planners, and GitHub made mobile development nearly impossible.",
+    "context": "Dev Toolbox started as a response to a simple frustration: coding on the go just wasn’t feasible. I wanted something that would let me work wherever I was — with real context, real tools, and a workflow that didn’t fall apart outside a desktop setup.",
+    "solution": "I designed and built a self-hosted, mobile-first environment centered on the essentials: a clean file editor, integrated logging, and an innovative block selector for working with code blocks. Over time it expanded with GitHub and Trello integration, project planning tools, and an AI context packet downloader — all unified into a single workspace that keeps reasoning close at hand.",
+    "impact": "By bringing editing, planning, logs, GitHub, and project context together in one place, Dev Toolbox makes mobile development not just possible but productive. It reduces cognitive load, removes tool switching, and makes the entire workflow more structured, explainable, and portable.",
     "screenshots": [
       {
         "src": "/images/dev-toolbox/dashboard1.png",
@@ -43,6 +43,7 @@
       }
     ]
   },
+  
   {
     "slug": "operations-workflow",
     "title": "Operations & Workflow Design",
