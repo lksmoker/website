@@ -19,17 +19,7 @@ export default function ProjectScreenshotCarousel({ screenshots }) {
 
   return (
     <section className="project-screenshots">
-      <header className="project-screenshots__header">
-        <h2 className="project-screenshots__title">Screenshots</h2>
-        {screenshots.length > 1 && (
-          <div className="project-screenshots__meta">
-            <span>
-              {index + 1} / {screenshots.length}
-            </span>
-          </div>
-        )}
-      </header>
-
+      
       <figure className="project-screenshots__figure">
         <img
           src={current.src}
