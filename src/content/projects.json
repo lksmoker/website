@@ -6,9 +6,16 @@
     "role": "Independent designer and developer",
     "timeline": "2022–Present",
     "tags": ["Internal tools", "Developer experience", "Full-stack"],
-    "problem": "There are very few good coding environments for mobile. Existing apps are limited, disconnected, and lack the tools needed to actually build real software on a phone. Switching between editors, logs, planners, and GitHub made mobile development nearly impossible.",
-    "context": "Dev Toolbox started as a response to a simple frustration: coding on the go just wasn’t feasible. I wanted something that would let me work wherever I was — with real context, real tools, and a workflow that didn’t fall apart outside a desktop setup.",
+    "problem": "There are very few good coding environments for mobile. And I kept exceeding the limits of the free-tier plan on Replit.",
+    "context": "Dev Toolbox started as a response to a simple frustration: coding on the go just wasn’t feasible. I wanted something that would let me work wherever I was — with real context, real tools, and a workflow that didn’t fall apart outside a desktop setup, and didn't charge me monthly.",
     "solution": "I designed and built a self-hosted, mobile-first environment centered on the essentials: a clean file editor, integrated logging, and an innovative block selector for working with code blocks. Over time it expanded with GitHub and Trello integration, project planning tools, and an AI context packet downloader — all unified into a single workspace that keeps reasoning close at hand.",
+    "innovations": [
+      "Mobile-optimized code block selector for navigating and manipulating structured code",
+      "Integrated, always-visible structured logs and console output",
+      "Self-hosted GitHub integration for commits, diffs, and repository insights",
+      "Unified project planner with sprints, sessions, and context surfaces",
+      "AI context packet downloader for explainable, project-aware reasoning"
+    ],
     "impact": "By bringing editing, planning, logs, GitHub, and project context together in one place, Dev Toolbox makes mobile development not just possible but productive. It reduces cognitive load, removes tool switching, and makes the entire workflow more structured, explainable, and portable.",
     "screenshots": [
       {
@@ -55,6 +62,12 @@
     "context": "In operational and leadership roles, I was responsible for both outcomes and the systems that supported day-to-day work — how information flowed, how handoffs worked, and how people stayed aligned.",
     "solution": "Clarified expectations, redesigned workflows, created stable routines, and coached people through transitions. Focused on reducing ambiguity, strengthening communication loops, and making responsibilities visible at every level.",
     "impact": "Teams experienced fewer surprises, smoother handoffs, clearer responsibility boundaries, and more predictable day-to-day execution. The result was calmer operations and more trust in the system.",
+    "innovations": [
+      "Introduced clear, stable workflows that reduced variance and improved day-to-day consistency",
+      "Designed communication loops that strengthened alignment across teams",
+      "Created structured expectations and responsibility boundaries to reduce ambiguity",
+      "Developed coaching frameworks that supported people through transitions and clarified roles"
+    ],
     "screenshots": []
   },
   {
@@ -68,6 +81,12 @@
     "context": "Built as a real-world system to support monthly planning, recurring bills, flexible spending, and daily decision-making with as little friction as possible.",
     "solution": "Created a calm, mobile-first budgeting environment that highlights what matters: upcoming obligations, category health, patterns, and day-to-day occurrences. The flow is designed to stay honest, predictable, and easy to revisit.",
     "impact": "Simplicity supports more confident financial decisions by surfacing the right information at the right time, giving users a grounded sense of where they stand and what needs attention.",
+    "innovations": [
+      "A calm, mobile-first budgeting interface focused on clarity rather than noise",
+      "Daily and monthly workflows built around real financial behavior instead of abstract categories",
+      "A predictable, honest model for obligations, category health, and recurring patterns",
+      "A review flow that keeps new transactions organized without overwhelming the user"
+    ],
     "screenshots": [
       {
         "src": "/images/simplicity/monthly-budget1.png",
@@ -106,6 +125,12 @@
     "problem": "Software creation today is fragmented across documents, tools, and communication channels, making it difficult to maintain clarity and shared understanding.",
     "context": "Aurora emerged from years of operational work and independent software development, shaped by questions around clarity, communication, and how people naturally express intent.",
     "solution": "Explores a conversational workflow where people express what they want, the system reflects its understanding, and results evolve through shared reasoning — without revealing technical mechanisms, schema, or internals.",
+    "innovations": [
+      "A conceptual approach to software shaped through conversation instead of traditional development steps",
+      "A workflow centered on intent → understanding → result, emphasizing clarity and shared reasoning",
+      "An exploration of explainability as a foundational property of software creation",
+      "A vision for more natural, transparent human–AI collaboration in shaping digital systems"
+    ],
     "impact": "Provides a direction for future tools that prioritize clarity, explainability, and human-centered interaction with complex systems. Aurora is narrative-first, focused on concepts rather than implementation.",
     "link": {
       "href": "#/aurora",
