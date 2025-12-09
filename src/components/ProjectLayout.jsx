@@ -57,7 +57,7 @@ export default function ProjectLayout({ project }) {
       {/* Core narrative sections */}
       <section className="project-layout__section">
         <header className="section-header">
-          <h2 className="heading-m section-title">Problem</h2>
+          <h2 className="heading-m section-header__title">Problem</h2>
         </header>
         <p className="text-body">
           {problem || "TODO: Add problem description."}
@@ -66,7 +66,7 @@ export default function ProjectLayout({ project }) {
 
       <section className="project-layout__section">
         <header className="section-header">
-          <h2 className="heading-m section-title">Role</h2>
+          <h2 className="heading-m section-header__title">Role</h2>
         </header>
         <p className="text-body">
           {role || "TODO: Add role description."}
@@ -75,7 +75,7 @@ export default function ProjectLayout({ project }) {
 
       <section className="project-layout__section">
         <header className="section-header">
-          <h2 className="heading-m section-title">Solution</h2>
+          <h2 className="heading-m section-header__title">Solution</h2>
         </header>
         <p className="text-body">
           {solution || "TODO: Add solution description."}
@@ -86,7 +86,7 @@ export default function ProjectLayout({ project }) {
       {innovationsList.length > 0 && (
         <section className="project-layout__section">
           <header className="section-header">
-            <h2 className="heading-m section-title">Innovations</h2>
+            <h2 className="heading-m section-header__title">Innovations</h2>
           </header>
           {innovationsList.length === 1 ? (
             <p className="text-body">{innovationsList[0]}</p>
@@ -102,7 +102,7 @@ export default function ProjectLayout({ project }) {
 
       <section className="project-layout__section">
         <header className="section-header">
-          <h2 className="heading-m section-title">Impact</h2>
+          <h2 className="heading-m section-header__title">Impact</h2>
         </header>
         <p className="text-body">
           {impact || "TODO: Add impact description."}
@@ -113,7 +113,7 @@ export default function ProjectLayout({ project }) {
       {screenshots && screenshots.length > 0 && (
         <section className="project-layout__section project-layout__section--screenshots">
           <header className="section-header">
-            <h2 className="heading-m section-title">Screenshots</h2>
+            <h2 className="heading-m section-header__title">Screenshots</h2>
           </header>
           <ProjectScreenshotCarousel screenshots={screenshots} />
         </section>
@@ -123,7 +123,7 @@ export default function ProjectLayout({ project }) {
       {link && link.href && (
         <section className="project-layout__section project-layout__section--cta">
           <header className="section-header">
-            <h2 className="heading-m section-title">Learn More</h2>
+            <h2 className="heading-m section-header__title">Learn More</h2>
           </header>
           <a href={link.href} className="project-layout__link-cta">
             {link.label || "Open related page"}
