@@ -54,16 +54,7 @@ export default function ProjectLayout({ project }) {
         {summary && <p className="text-body">{summary}</p>}
       </header>
 
-      {/* Core narrative sections */}
-      <section className="project-layout__section">
-        <header className="section-header">
-          <h2 className="heading-m section-header__title">Problem</h2>
-        </header>
-        <p className="text-body">
-          {problem || "TODO: Add problem description."}
-        </p>
-      </section>
-
+      {/* Role (moved above Problem) */}
       <section className="project-layout__section">
         <header className="section-header">
           <h2 className="heading-m section-header__title">Role</h2>
@@ -73,6 +64,17 @@ export default function ProjectLayout({ project }) {
         </p>
       </section>
 
+      {/* Problem (now below Role) */}
+      <section className="project-layout__section">
+        <header className="section-header">
+          <h2 className="heading-m section-header__title">Problem</h2>
+        </header>
+        <p className="text-body">
+          {problem || "TODO: Add problem description."}
+        </p>
+      </section>
+
+      {/* Solution */}
       <section className="project-layout__section">
         <header className="section-header">
           <h2 className="heading-m section-header__title">Solution</h2>
@@ -100,6 +102,7 @@ export default function ProjectLayout({ project }) {
         </section>
       )}
 
+      {/* Impact */}
       <section className="project-layout__section">
         <header className="section-header">
           <h2 className="heading-m section-header__title">Impact</h2>
@@ -109,7 +112,7 @@ export default function ProjectLayout({ project }) {
         </p>
       </section>
 
-      {/* Optional screenshots */}
+      {/* Screenshots */}
       {screenshots && screenshots.length > 0 && (
         <section className="project-layout__section project-layout__section--screenshots">
           <header className="section-header">
@@ -119,7 +122,7 @@ export default function ProjectLayout({ project }) {
         </section>
       )}
 
-      {/* Optional project-level CTA (e.g., link to Aurora page) */}
+      {/* CTA */}
       {link && link.href && (
         <section className="project-layout__section project-layout__section--cta">
           <header className="section-header">
