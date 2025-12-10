@@ -50,7 +50,7 @@ export default function AboutPage() {
       </section>
 
       <section className="page-section">
-        <SectionHeader title="Aurora: Origin (Safe)" />
+        <SectionHeader title="Aurora: Origin" />
         {sections.auroraOriginSafe.map((para, idx) => (
           <TextBlock key={idx}>{para}</TextBlock>
         ))}
