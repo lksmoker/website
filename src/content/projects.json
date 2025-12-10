@@ -8,15 +8,15 @@
     "tags": ["Internal tools", "Developer experience", "Full-stack"],
     "problem": "There were very few reliable ways to develop software on mobile, and existing tools made the workflow feel fragmented, unpredictable, and detached from real project context. I wanted something calmer, clearer, and closer to the way I actually think.",
     "context": "Dev Toolbox began as a response to friction I felt personally: coding on the go wasn't feasible, and switching tools constantly created cognitive drift. My strengths in systems thinking and restorative problem-solving pushed me toward a unified workspace — something self-hosted, adaptable, and designed so that reasoning stayed visible rather than buried.",
-    "solution": "I designed and built a self-hosted, mobile-first environment centered on the essentials: a clean file editor, integrated logging, and an innovative block selector for navigating structured code. Over time it evolved — guided by real usage, adaptability, and my instinct to reduce friction — gaining GitHub and Trello integration, project planning tools, and an AI context packet downloader that keeps reasoning close to the work.",
+    "solution": "I designed and built a self-hosted, mobile-first environment centered on the essentials: a clean file editor, integrated logging, and a mobile-optimized block selector for navigating structured code. Over time — guided by real usage and the goal of reducing friction — it evolved to include GitHub and Trello integration, a structured project planner, and an AI context packet downloader.",
     "innovations": [
       "Mobile-optimized code block selector for navigating and manipulating structured code",
-      "Integrated, always-visible structured logs and console output for continuous clarity",
+      "Integrated, always-visible structured logs and console output",
       "Self-hosted GitHub integration for commits, diffs, and repository insights",
       "Unified project planner with sprints, sessions, and context surfaces",
       "AI context packet downloader for explainable, project-aware reasoning"
     ],
-    "impact": "By bringing editing, planning, logs, GitHub, and project context into one coherent environment, Dev Toolbox reduces cognitive load and restores flow to mobile development. It makes the workflow calmer, more predictable, and easier to understand — aligning with how people naturally reason about their work.",
+    "impact": "By bringing editing, planning, logs, GitHub, and context into one coherent environment, Dev Toolbox reduces cognitive load and restores flow to mobile development. It makes the workflow calmer, more predictable, and more aligned with how people reason about their work.",
     "screenshots": [
       {
         "src": "/images/dev-toolbox/dashboard1.png",
@@ -58,17 +58,17 @@
     "role": "Supervisor, workflow designer, and systems-minded operations lead",
     "timeline": "2000–2016 (various roles)",
     "tags": ["Operations", "Workflow design", "Leadership", "Systems thinking"],
-    "problem": "Teams were operating in high-variance environments with unclear expectations, gaps in communication, and workflows that generated unnecessary friction, rework, and unpredictability. People felt the strain — and the systems beneath the work weren't supporting them.",
-    "context": "In my operations and leadership roles across higher-education facilities and campus services, I was responsible not just for outputs, but for the human and structural factors driving them. My strengths in empathy, connectedness, and restorative thinking consistently pulled me toward diagnosing patterns, clarifying expectations, and reshaping workflows so teams could perform with more confidence and less stress.",
-    "solution": "I redesigned workflows, clarified expectations, introduced stable routines, and built early automation tools to increase visibility. This included Google Apps Script integrations for schedules and reporting, structured communication loops that kept teams aligned, and responsibility frameworks that made ownership clear at every level. Each change aimed to restore clarity and make day-to-day work feel calmer and more predictable.",
+    "problem": "Teams were operating across large, distributed campus environments with inconsistent routines, unclear expectations, and communication gaps that led to rework, delays, and unpredictable outcomes. Coverage patterns shifted daily, student labor varied across semesters, and no underlying system supported consistency or clarity.",
+    "context": "Across my roles in higher-education facilities, I supervised teams responsible for more than 450,000 cleanable square feet. I led 40 student housekeepers, coached full-time custodial staff, managed CMMS workflows, coordinated large event and summer conference schedules, and integrated HR, payroll, and transportation systems into daily operations. My strengths in empathy, connectedness, and restorative thinking consistently pulled me toward diagnosing workflow drift and redesigning underlying routines so teams could perform with clarity and confidence.",
+    "solution": "I redesigned workflows, clarified expectations, introduced stable routines, and built automation tools to increase visibility. This included implementing ISSA’s CIMS program (earning certification with honors), designing route structures and coverage plans, strengthening communication loops between shifts, and creating reporting automations with Google Apps Script. These systems made work more predictable, clarified ownership, and reduced the friction teams encountered day to day.",
     "innovations": [
       "Workflow designs that improved productivity and reduced operational variance",
-      "Structured communication loops that strengthened alignment between teams",
-      "Clear responsibility boundaries that reduced ambiguity and improved execution",
-      "Automation tools built with Google Apps Script to streamline reporting and communication",
-      "Performance systems that enabled teams to consistently operate 22% above industry productivity benchmarks"
+      "Structured communication loops that strengthened alignment between teams and shifts",
+      "Clear responsibility boundaries that improved accountability and execution",
+      "Automation tools using Google Apps Script to streamline reporting and communication",
+      "Performance systems that enabled teams to consistently operate at 43,000 square feet per FTE"
     ],
-    "impact": "Teams experienced smoother handoffs, fewer surprises, and clearer expectations. Communication stabilized, responsibilities became visible, and day-to-day work became more predictable and calm. These years formed the foundation of my systems thinking — and established the strengths I now bring into internal tools, workflows, and software design.",
+    "impact": "Teams experienced smoother handoffs, clearer responsibilities, higher standards, and more predictable days. Communication stabilized, rework decreased, and the department achieved full CIMS certification with honors while operating significantly above industry productivity benchmarks. These roles formed the foundation of my systems thinking — blending leadership, human behavior, operational structure, and clarity long before I began building software.",
     "screenshots": []
   },
 
