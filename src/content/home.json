@@ -5,13 +5,13 @@
   },
   "hero": {
     "title": "I build systems that bring clarity to complex work.",
-    "subtitle": "Across operations, team environments, internal tools, and software, I focus on helping people work with greater structure, transparency, and confidence.",
-    "supportingLine": "My background blends operational leadership with technical architecture and independent software development — a combination that shapes how I design systems for real-world use."
+    "subtitle": "Across operations, team environments, internal tools, and software, I help people navigate complexity with calm, structure, and confidence.",
+    "supportingLine": "My work is shaped by a blend of operational leadership, human-centered insight, and independent software development — and guided by a natural instinct to restore clarity wherever systems or workflows start to break down."
   },
   "sections": {
     "selectedWork": {
       "heading": "Selected Work",
-      "intro": "A small sample of projects that show how I approach systems, tools, and real-world workflows.",
+      "intro": "A small sample of projects that show how I approach systems, tools, people, and real-world workflows — always with an eye toward clarity and meaningful improvement.",
       "projectSlugs": [
         "dev-toolbox",
         "simplicity",
@@ -20,7 +20,7 @@
     },
     "aboutPreview": {
       "heading": "About",
-      "body": "I’ve worked in roles that required leadership, systems awareness, and deep clarity — and eventually turned those lessons into the software and tools I now build."
+      "body": "My background spans leadership, coaching, systems thinking, and software — a combination that lets me understand both how people experience their work and how to design tools that genuinely support them."
     },
     "writingPreview": {
       "heading": "Writing",

@@ -6,17 +6,17 @@
     "role": "Independent designer and developer",
     "timeline": "2022–Present",
     "tags": ["Internal tools", "Developer experience", "Full-stack"],
-    "problem": "There are very few good coding environments for mobile. And I kept exceeding the limits of the free-tier plan on Replit.",
-    "context": "Dev Toolbox started as a response to a simple frustration: coding on the go just wasn’t feasible. I wanted something that would let me work wherever I was — with real context, real tools, and a workflow that didn’t fall apart outside a desktop setup, and didn't charge me monthly.",
-    "solution": "I designed and built a self-hosted, mobile-first environment centered on the essentials: a clean file editor, integrated logging, and an innovative block selector for working with code blocks. Over time it expanded with GitHub and Trello integration, project planning tools, and an AI context packet downloader — all unified into a single workspace that keeps reasoning close at hand.",
+    "problem": "There were very few reliable ways to develop software on mobile, and existing tools made the workflow feel fragmented, unpredictable, and detached from real project context. I wanted something calmer, clearer, and closer to the way I actually think.",
+    "context": "Dev Toolbox began as a response to friction I felt personally: coding on the go wasn't feasible, and switching tools constantly created cognitive drift. My strengths in systems thinking and restorative problem-solving pushed me toward a unified workspace — something self-hosted, adaptable, and designed so that reasoning stayed visible rather than buried.",
+    "solution": "I designed and built a self-hosted, mobile-first environment centered on the essentials: a clean file editor, integrated logging, and an innovative block selector for navigating structured code. Over time it evolved — guided by real usage, adaptability, and my instinct to reduce friction — gaining GitHub and Trello integration, project planning tools, and an AI context packet downloader that keeps reasoning close to the work.",
     "innovations": [
       "Mobile-optimized code block selector for navigating and manipulating structured code",
-      "Integrated, always-visible structured logs and console output",
+      "Integrated, always-visible structured logs and console output for continuous clarity",
       "Self-hosted GitHub integration for commits, diffs, and repository insights",
       "Unified project planner with sprints, sessions, and context surfaces",
       "AI context packet downloader for explainable, project-aware reasoning"
     ],
-    "impact": "By bringing editing, planning, logs, GitHub, and project context together in one place, Dev Toolbox makes mobile development not just possible but productive. It reduces cognitive load, removes tool switching, and makes the entire workflow more structured, explainable, and portable.",
+    "impact": "By bringing editing, planning, logs, GitHub, and project context into one coherent environment, Dev Toolbox reduces cognitive load and restores flow to mobile development. It makes the workflow calmer, more predictable, and easier to understand — aligning with how people naturally reason about their work.",
     "screenshots": [
       {
         "src": "/images/dev-toolbox/dashboard1.png",
@@ -58,9 +58,9 @@
     "role": "Supervisor, workflow designer, and systems-minded operations lead",
     "timeline": "2000–2016 (various roles)",
     "tags": ["Operations", "Workflow design", "Leadership", "Systems thinking"],
-    "problem": "Teams were operating in high-variance environments with unclear expectations, gaps in communication, and workflows that generated unnecessary friction, rework, and unpredictability.",
-    "context": "In my operations and leadership roles across higher-education facilities and campus services, I was responsible not only for outcomes, but for the systems beneath them — how work was structured, how information moved, and how people stayed aligned day to day.",
-    "solution": "I redesigned workflows, clarified expectations, introduced stable routines, and built early automation tools to increase visibility. This included Google Apps Script integrations for schedules and reporting, communication loops that kept teams aligned, and responsibility structures that made ownership visible at every level.",
+    "problem": "Teams were operating in high-variance environments with unclear expectations, gaps in communication, and workflows that generated unnecessary friction, rework, and unpredictability. People felt the strain — and the systems beneath the work weren't supporting them.",
+    "context": "In my operations and leadership roles across higher-education facilities and campus services, I was responsible not just for outputs, but for the human and structural factors driving them. My strengths in empathy, connectedness, and restorative thinking consistently pulled me toward diagnosing patterns, clarifying expectations, and reshaping workflows so teams could perform with more confidence and less stress.",
+    "solution": "I redesigned workflows, clarified expectations, introduced stable routines, and built early automation tools to increase visibility. This included Google Apps Script integrations for schedules and reporting, structured communication loops that kept teams aligned, and responsibility frameworks that made ownership clear at every level. Each change aimed to restore clarity and make day-to-day work feel calmer and more predictable.",
     "innovations": [
       "Workflow designs that improved productivity and reduced operational variance",
       "Structured communication loops that strengthened alignment between teams",
@@ -68,7 +68,7 @@
       "Automation tools built with Google Apps Script to streamline reporting and communication",
       "Performance systems that enabled teams to consistently operate 22% above industry productivity benchmarks"
     ],
-    "impact": "Teams experienced smoother handoffs, fewer surprises, and clearer expectations. Communication stabilized, responsibilities became visible, and day-to-day work became more predictable and calm. These years formed the foundation of my systems thinking — the same principles that now shape the internal tools and software I build.",
+    "impact": "Teams experienced smoother handoffs, fewer surprises, and clearer expectations. Communication stabilized, responsibilities became visible, and day-to-day work became more predictable and calm. These years formed the foundation of my systems thinking — and established the strengths I now bring into internal tools, workflows, and software design.",
     "screenshots": []
   },
 
@@ -79,10 +79,10 @@
     "role": "Designer and full-stack developer",
     "timeline": "2023–Present",
     "tags": ["Personal finance", "Product design", "Full-stack"],
-    "problem": "Most budgeting tools generate noise instead of clarity. They surface too much, too little, or the wrong information at the wrong moment — making it harder to understand what’s actually happening with your money.",
-    "context": "Built as a real-world system to support monthly planning, recurring bills, flexible spending, and daily decision-making with as little friction as possible.",
-    "solution": "Created a calm, mobile-first budgeting environment that highlights what matters: upcoming obligations, category health, patterns, and day-to-day occurrences. The flow is designed to stay honest, predictable, and easy to revisit.",
-    "impact": "Simplicity supports more confident financial decisions by surfacing the right information at the right time, giving users a grounded sense of where they stand and what needs attention.",
+    "problem": "Most budgeting tools generate noise instead of clarity. They surface too much, too little, or the wrong information at the wrong moment — creating stress rather than restoring confidence.",
+    "context": "Simplicity was built to support real financial behavior: recurring bills, flexible spending, shifting obligations, and daily decisions. My adaptive approach to systems and focus on reducing cognitive load shaped the entire flow — designed to meet people where they are, not force them into a rigid model.",
+    "solution": "I created a calm, mobile-first budgeting environment that highlights what matters: upcoming obligations, category health, patterns, and day-to-day occurrences. The flow stays honest, predictable, and easy to revisit — bringing clarity back to areas of life that easily become overwhelming.",
+    "impact": "Simplicity supports more confident financial decisions by surfacing the right information at the right time. It provides a grounded sense of where things stand and what needs attention, restoring clarity to an area where people often feel stress or uncertainty.",
     "innovations": [
       "A calm, mobile-first budgeting interface focused on clarity rather than noise",
       "Daily and monthly workflows built around real financial behavior instead of abstract categories",
@@ -125,16 +125,16 @@
     "role": "Concept originator and systems designer",
     "timeline": "Long-term exploration",
     "tags": ["Conceptual", "Systems thinking", "Human–AI collaboration"],
-    "problem": "Software creation today is fragmented across documents, tools, and communication channels, making it difficult to maintain clarity and shared understanding.",
-    "context": "Aurora emerged from years of operational work and independent software development, shaped by questions around clarity, communication, and how people naturally express intent.",
-    "solution": "Explores a conversational workflow where people express what they want, the system reflects its understanding, and results evolve through shared reasoning — without revealing technical mechanisms, schema, or internals.",
+    "problem": "Software creation today is fragmented across documents, tools, and communication channels, making it difficult to maintain clarity, shared understanding, and a coherent path from intention to result.",
+    "context": "Aurora emerged from years of operational work and independent software development, shaped by questions around clarity, communication, and how people naturally express intent. My connectedness and restorative instincts made the friction especially visible — systems drifted, reasoning wasn’t transparent, and meaning often became diluted across layers.",
+    "solution": "Aurora explores a conversational workflow where people express what they want, the system reflects its understanding, and results evolve through shared reasoning. This mirrors how people naturally collaborate — through dialogue, refinement, and relational clarity — without revealing any internal mechanisms or technical structures.",
     "innovations": [
       "A conceptual approach to software shaped through conversation instead of traditional development steps",
       "A workflow centered on intent → understanding → result, emphasizing clarity and shared reasoning",
       "An exploration of explainability as a foundational property of software creation",
       "A vision for more natural, transparent human–AI collaboration in shaping digital systems"
     ],
-    "impact": "Provides a direction for future tools that prioritize clarity, explainability, and human-centered interaction with complex systems. Aurora is narrative-first, focused on concepts rather than implementation.",
+    "impact": "Aurora offers a direction for future tools that prioritize clarity, explainability, and human-centered interaction with complex systems. It reframes how software could be shaped — focusing on meaning, reasoning, and alignment rather than layers of translation.",
     "link": {
       "href": "#/aurora",
       "label": "Read the full Aurora page"

@@ -6,16 +6,18 @@
   "sections": {
     "whatItIs": [
       "Aurora is a conceptual approach to building software through conversation.",
-      "It’s centered on the idea that people should be able to express intent in natural language, see clear, inspectable feedback, and guide systems through a shared understanding."
+      "It’s centered on the idea that people should be able to express intent in natural language, see clear, inspectable feedback, and guide systems through a shared understanding — a workflow that mirrors the way people naturally think, collaborate, and adapt."
     ],
     "whyItMatters": [
-      "Software creation today is fragmented across documents, tools, and communication channels.",
-      "Aurora explores a more natural path — one where clarity, reasoning, and understanding are part of the process itself."
+      "Software creation today is fragmented across documents, tools, and communication channels. People express meaning one way, systems expect something else, and clarity often gets lost in the translation.",
+      "Aurora explores a more natural path — one where clarity, reasoning, and understanding are part of the process itself. It’s motivated by a desire to reduce drift, restore alignment between what people mean and what systems do, and make the development experience feel more human and less adversarial."
     ],
     "origin": [
       "After building several apps with AI assistance, I ran into the same frustrations many others have described: bugs that didn’t make sense, feedback loops that went nowhere, and long chains of fixes that seemed disconnected from what I actually meant. Tools are improving — some models now sit right next to your code — but the process still feels murky and overly complicated.",
       "I noticed a pattern repeating itself: a human speaks to an AI, the AI interprets the human’s intention, and then translates that understanding into Python, JavaScript, HTML, and so on. Each step is another layer where meaning can drift. We’re forcing AI to operate inside architectures that were never designed with AI in mind.",
-      "And that raised a question: what if we didn’t need all those layers at all? What if AI could work in an environment native to its reasoning — one where human intent could translate directly into software without detouring through multiple languages and frameworks?",
+      "My background in operations and systems design made the gaps especially visible: unclear communication, unclear reasoning, unclear connections between cause and effect. My restorative instincts pushed me toward a simple question — how do we reduce this friction and bring systems back into alignment with human intention?",
+      "At the same time, my strengths in empathy and connectedness kept highlighting the human side of the problem: people think conversationally, relationally, iteratively. We clarify through dialogue. We refine meaning together. So why shouldn’t software follow the same pattern?",
+      "And that raised a new possibility: what if AI could work in an environment native to its reasoning — one where human intent could translate more directly into behavior, without detouring through multiple disconnected layers?",
       "What if the conversation was the development environment?",
       "As Aurora took shape, I began seeing the same challenges reflected in emerging articles and research, validating my intuition and direction:"
     ],
@@ -52,7 +54,7 @@
     ],
     "howItWorksSafe": [
       "Aurora uses a conversational workflow: people describe what they’re trying to achieve, the system reflects and refines its understanding, and both work together to shape the result.",
-      "This is a conceptual framing, without revealing internal structures or technical mechanisms."
+      "This mirrors the way people naturally collaborate — through dialogue, shared meaning, and steady refinement — without revealing internal structures or technical mechanisms."
     ],
     "futureDirection": [
       "Aurora will evolve gradually, beginning with narrative descriptions and eventually expanding to high-level examples.",
