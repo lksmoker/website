@@ -50,26 +50,28 @@
       }
     ]
   },
-  
+
   {
     "slug": "operations-workflow",
     "title": "Operations & Workflow Design",
-    "summary": "Improving clarity, structure, and alignment in operational environments by shaping workflows, expectations, and communication loops.",
-    "role": "Supervisor, coach, and workflow designer",
-    "timeline": "2015–2022 (various roles)",
-    "tags": ["Operations", "Workflow design", "Leadership"],
-    "problem": "Teams were operating in high-variance environments with unclear expectations, uneven communication, and workflows that generated unnecessary friction and mistakes.",
-    "context": "In operational and leadership roles, I was responsible for both outcomes and the systems that supported day-to-day work — how information flowed, how handoffs worked, and how people stayed aligned.",
-    "solution": "Clarified expectations, redesigned workflows, created stable routines, and coached people through transitions. Focused on reducing ambiguity, strengthening communication loops, and making responsibilities visible at every level.",
-    "impact": "Teams experienced fewer surprises, smoother handoffs, clearer responsibility boundaries, and more predictable day-to-day execution. The result was calmer operations and more trust in the system.",
+    "summary": "Designing and improving real-world systems by shaping workflows, expectations, visibility, and communication loops — long before I began building software.",
+    "role": "Supervisor, workflow designer, and systems-minded operations lead",
+    "timeline": "2000–2016 (various roles)",
+    "tags": ["Operations", "Workflow design", "Leadership", "Systems thinking"],
+    "problem": "Teams were operating in high-variance environments with unclear expectations, gaps in communication, and workflows that generated unnecessary friction, rework, and unpredictability.",
+    "context": "In my operations and leadership roles across higher-education facilities and campus services, I was responsible not only for outcomes, but for the systems beneath them — how work was structured, how information moved, and how people stayed aligned day to day.",
+    "solution": "I redesigned workflows, clarified expectations, introduced stable routines, and built early automation tools to increase visibility. This included Google Apps Script integrations for schedules and reporting, communication loops that kept teams aligned, and responsibility structures that made ownership visible at every level.",
     "innovations": [
-      "Introduced clear, stable workflows that reduced variance and improved day-to-day consistency",
-      "Designed communication loops that strengthened alignment across teams",
-      "Created structured expectations and responsibility boundaries to reduce ambiguity",
-      "Developed coaching frameworks that supported people through transitions and clarified roles"
+      "Workflow designs that improved productivity and reduced operational variance",
+      "Structured communication loops that strengthened alignment between teams",
+      "Clear responsibility boundaries that reduced ambiguity and improved execution",
+      "Automation tools built with Google Apps Script to streamline reporting and communication",
+      "Performance systems that enabled teams to consistently operate 22% above industry productivity benchmarks"
     ],
+    "impact": "Teams experienced smoother handoffs, fewer surprises, and clearer expectations. Communication stabilized, responsibilities became visible, and day-to-day work became more predictable and calm. These years formed the foundation of my systems thinking — the same principles that now shape the internal tools and software I build.",
     "screenshots": []
   },
+
   {
     "slug": "simplicity",
     "title": "Finance Tools / Simplicity",
@@ -115,6 +117,7 @@
       }
     ]
   },
+
   {
     "slug": "aurora",
     "title": "Aurora",
