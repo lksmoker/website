@@ -1,6 +1,7 @@
 // src/components/ProjectLayout.jsx
 import React from "react";
 import ProjectScreenshotCarousel from "./ProjectScreenshotCarousel.jsx";
+import TechStackIcons from "./TechStackIcons.jsx";
 
 export default function ProjectLayout({ project }) {
   if (!project) {
@@ -23,6 +24,7 @@ export default function ProjectLayout({ project }) {
     tags,
     link,
     innovations,
+    tech, // 👈 NEW: tech block from projects.json
   } = project;
 
   // Normalize innovations so we can handle either a string or an array
@@ -119,6 +121,33 @@ export default function ProjectLayout({ project }) {
             <h2 className="heading-m section-header__title">Screenshots</h2>
           </header>
           <ProjectScreenshotCarousel screenshots={screenshots} />
+        </section>
+      )}
+
+      {/* ⭐ NEW: Tech stack & implementation */}
+      {tech && (tech.ids || tech.bullets) && (
+        <section className="project-layout__section project-layout__section--tech">
+          <header className="section-header">
+            <h2 className="heading-m section-header__title">
+              Tech stack &amp; implementation
+            </h2>
+          </header>
+
+          {/* Icons row */}
+          {tech.ids && tech.ids.length > 0 && (
+            <div className="project-layout__tech-icons">
+              <TechStackIcons ids={tech.ids} label={`Tech stack for ${title}`} />
+            </div>
+          )}
+
+          {/* Bullets */}
+          {tech.bullets && tech.bullets.length > 0 && (
+            <ul className="tech-bullets-list">
+              {tech.bullets.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          )}
         </section>
       )}
 
