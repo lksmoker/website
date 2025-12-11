@@ -49,9 +49,17 @@
         "alt": "Console tab showing live console output from the backend",
         "caption": "Live backend console output integrated directly into the workspace for immediate feedback."
       }
-    ]
+    ],
+    "tech": {
+      "ids": ["typescript", "react", "vite", "supabase", "postgres", "github", "cloudflare"],
+      "bullets": [
+        "Frontend: React & TypeScript single-page app bundled with Vite.",
+        "Backend & data: Supabase (PostgreSQL + auth) with row-level security and group_id-scoped tables for sprints, sessions, work items, and events.",
+        "Infrastructure: Deployed via Cloudflare Pages and Tunnels for secure access to local services.",
+        "Developer workflow: GitHub for version control, structured logs for sessions/events, and AI context packets that bundle code, schema, and history for explainable reasoning."
+      ]
+    }
   },
-
   {
     "slug": "simplicity",
     "title": "Finance Tools / Simplicity",
@@ -96,9 +104,17 @@
         "alt": "Navigation menu showing main sections of the app",
         "caption": "A quiet, structured menu that keeps core views accessible without noise."
       }
-    ]
+    ],
+    "tech": {
+      "ids": ["typescript", "react", "supabase", "postgres", "github"],
+      "bullets": [
+        "Frontend: React & TypeScript with a mobile-first layout and adaptive card system.",
+        "Backend & data: Supabase with Postgres RLS enforcing group_id-based data isolation.",
+        "Infrastructure: Uses Supabase Auth for multi-user support and Cloudflare tunneling for local testing.",
+        "Developer workflow: Built alongside Dev Toolbox to share schema introspection, session, and documentation tools."
+      ]
+    }
   },
-  
   {
     "slug": "operations-workflow",
     "title": "Operations & Workflow Design",
@@ -117,9 +133,17 @@
       "Performance systems that enabled teams to consistently operate at 43,000 square feet per FTE"
     ],
     "impact": "Teams experienced smoother handoffs, clearer responsibilities, higher standards, and more predictable days. Communication stabilized, rework decreased, and the department achieved full CIMS certification with honors while operating significantly above industry productivity benchmarks. These roles formed the foundation of my systems thinking — blending leadership, human behavior, operational structure, and clarity long before I began building software.",
-    "screenshots": []
+    "screenshots": [],
+    "tech": {
+      "ids": ["google-apps-script", "sheets", "forms"],
+      "bullets": [
+        "Workflow automation built using Google Apps Script, Sheets, and Forms.",
+        "CMMS data reporting integrated into automated dashboards and summaries.",
+        "Used spreadsheets and Apps Script to replace manual reporting loops.",
+        "Created communication tools linking HR, payroll, and transportation data into one workflow."
+      ]
+    }
   },
-
   {
     "slug": "aurora",
     "title": "Aurora",
@@ -141,6 +165,15 @@
       "href": "#/aurora",
       "label": "Read the full Aurora page"
     },
-    "screenshots": []
+    "screenshots": [],
+    "tech": {
+      "ids": ["python", "supabase", "postgres", "github"],
+      "bullets": [
+        "Prototype engine implemented in Python for kernel logic and structured logging.",
+        "Uses Supabase (Postgres) as the underlying data and provenance store.",
+        "Focus on explainability, context bundling, and provenance-aware state management.",
+        "Conceptually extends Dev Toolbox and Simplicity into a unified conversational system design."
+      ]
+    }
   }
 ]

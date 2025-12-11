@@ -121,6 +121,12 @@ ul.text-body li {
   margin: 0;
 }
 
+.project-card-tech {
+  margin-top: var(--space-s);
+  display: flex;
+  align-items: center;
+}
+
 /* ───────── Homepage Card Grids (Selected Projects, Product Pillars, Skills) ───────── */
 
 .card-row {

@@ -1,0 +1,68 @@
+[
+  {
+    "id": "typescript",
+    "label": "TypeScript",
+    "kind": "language",
+    "icon": "/assets/tech/typescript.svg"
+  },
+  {
+    "id": "react",
+    "label": "React",
+    "kind": "frontend",
+    "icon": "/assets/tech/react.svg"
+  },
+  {
+    "id": "vite",
+    "label": "Vite",
+    "kind": "tooling",
+    "icon": "/assets/tech/vite.svg"
+  },
+  {
+    "id": "supabase",
+    "label": "Supabase",
+    "kind": "backend",
+    "icon": "/assets/tech/supabase.svg"
+  },
+  {
+    "id": "postgres",
+    "label": "PostgreSQL",
+    "kind": "database",
+    "icon": "/assets/tech/postgres.svg"
+  },
+  {
+    "id": "github",
+    "label": "GitHub",
+    "kind": "tooling",
+    "icon": "/assets/tech/github.svg"
+  },
+  {
+    "id": "cloudflare",
+    "label": "Cloudflare",
+    "kind": "infrastructure",
+    "icon": "/assets/tech/cloudflare.svg"
+  },
+  {
+    "id": "python",
+    "label": "Python",
+    "kind": "language",
+    "icon": "/assets/tech/python.svg"
+  },
+  {
+    "id": "sheets",
+    "label": "Google Sheets",
+    "kind": "productivity",
+    "icon": "/assets/tech/sheets.svg"
+  },
+  {
+    "id": "google-apps-script",
+    "label": "Google Apps Script",
+    "kind": "automation",
+    "icon": "/assets/tech/google-apps-script.svg"
+  },
+  {
+    "id": "forms",
+    "label": "Google Forms",
+    "kind": "productivity",
+    "icon": "/assets/tech/forms.svg"
+  }
+]

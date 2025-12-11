@@ -9,10 +9,23 @@ import SectionHeader from "../components/SectionHeader.jsx";
 import TextBlock from "../components/TextBlock.jsx";
 import ProjectCard from "../components/ProjectCard.jsx";
 
-// Flip this to true when you're ready to show the writing section
-const SHOW_WRITING_PREVIEW = false;
+// @context: {
+//   "kind": "frontend.page",
+//   "layer": "frontend",
+//   "name": "HomePage",
+//   "route": "/",
+//   "domains": ["marketing", "portfolio", "navigation"],
+//   "description": "Homepage for hire.lukesmoker.com, featuring hero, selected work, product approach, skills, Aurora preview, About preview, optional writing, and contact CTA."
+// }
+
+// ─── BLOCK: configuration ─────────────────────────────────────
+
+const SHOW_WRITING_PREVIEW = false; // Flip to true when you're ready to show the writing section
+
+// ─── BLOCK: component ─────────────────────────────────────────
 
 export default function HomePage() {
+  // ── SECTION: content unpacking ──────────────────────────────
   const { hero, sections } = homeContent;
 
   const {
@@ -30,16 +43,17 @@ export default function HomePage() {
     selectedWork.projectSlugs.includes(project.slug)
   );
 
+  // ── SECTION: render ─────────────────────────────────────────
   return (
     <>
-      {/* Hero */}
+      {/* ── HERO ──────────────────────────────────────────────── */}
       <Hero
         title={hero.title}
         subtitle={hero.subtitle}
         supportingLine={hero.supportingLine}
       />
 
-      {/* Selected Projects */}
+      {/* ── SELECTED PROJECTS / PORTFOLIO STRIP ───────────────── */}
       <section className="page-section">
         <SectionHeader eyebrow="Portfolio" title={selectedWork.heading} />
         {selectedWork.intro && <TextBlock>{selectedWork.intro}</TextBlock>}
@@ -51,7 +65,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Product Approach (pillars) */}
+      {/* ── PRODUCT APPROACH (PILLARS) ───────────────────────── */}
       {productApproach && (
         <section className="page-section">
           <SectionHeader
@@ -71,13 +85,10 @@ export default function HomePage() {
         </section>
       )}
 
-      {/* Skills & Capabilities */}
+      {/* ── SKILLS & CAPABILITIES ─────────────────────────────── */}
       {skillsGrid && (
         <section className="page-section">
-          <SectionHeader
-            eyebrow="Capabilities"
-            title={skillsGrid.heading}
-          />
+          <SectionHeader eyebrow="Capabilities" title={skillsGrid.heading} />
           {skillsGrid.intro && <TextBlock>{skillsGrid.intro}</TextBlock>}
 
           {skillsGrid.categories && skillsGrid.categories.length > 0 && (
@@ -97,7 +108,7 @@ export default function HomePage() {
         </section>
       )}
 
-      {/* Aurora preview */}
+      {/* ── AURORA PREVIEW ────────────────────────────────────── */}
       {auroraPreview && (
         <section className="page-section">
           <Link to="/aurora" className="no-decoration">
@@ -110,7 +121,7 @@ export default function HomePage() {
         </section>
       )}
 
-      {/* About preview */}
+      {/* ── ABOUT PREVIEW ─────────────────────────────────────── */}
       {aboutPreview && (
         <section className="page-section">
           <Link to="/about" className="no-decoration">
@@ -120,13 +131,10 @@ export default function HomePage() {
         </section>
       )}
 
-      {/* Optional Writing preview */}
+      {/* ── OPTIONAL WRITING PREVIEW ──────────────────────────── */}
       {SHOW_WRITING_PREVIEW && writingPreview && (
         <section className="page-section">
-          <SectionHeader
-            eyebrow="Writing"
-            title={writingPreview.heading}
-          />
+          <SectionHeader eyebrow="Writing" title={writingPreview.heading} />
           <ul className="text-body">
             {writingPreview.items.map((item, idx) => (
               <li key={idx}>{item}</li>
@@ -135,7 +143,7 @@ export default function HomePage() {
         </section>
       )}
 
-      {/* Contact CTA */}
+      {/* ── CONTACT CTA ───────────────────────────────────────── */}
       {contactCta && (
         <section className="page-section">
           <TextBlock>{contactCta.body}</TextBlock>
