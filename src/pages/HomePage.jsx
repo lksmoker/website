@@ -8,7 +8,7 @@ import SectionHeader from "../components/SectionHeader.jsx";
 import TextBlock from "../components/TextBlock.jsx";
 import ProjectCard from "../components/ProjectCard.jsx";
 
-// Flip this to true when you're ready to show the writing section
+// Flip this to true when you're ready to show the writing section ,
 const SHOW_WRITING_PREVIEW = false;
 
 export default function HomePage() {
