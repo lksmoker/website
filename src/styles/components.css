@@ -127,6 +127,34 @@ ul.text-body li {
   align-items: center;
 }
 
+/* ─────────────────────────────────────────────────────────────
+   TECH STACK ICONS (cards + project pages)
+   ───────────────────────────────────────────────────────────── */
+
+.tech-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  align-items: center;
+}
+
+.tech-strip__item {
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.tech-strip__icon {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
 /* ───────── Homepage Card Grids (Selected Projects, Product Pillars, Skills) ───────── */
 
 .card-row {
@@ -314,6 +342,11 @@ ul.text-body li {
   padding: var(--space-xl) var(--space-m) var(--space-xl);
 }
 
+/* Reduce top spacing on project pages (aligns with About page spacing) */
+.project-layout {
+  padding-top: var(--space-s); /* was space-xl */
+}
+
 .project-layout__header {
   margin-bottom: var(--space-l);
 }
@@ -361,6 +394,29 @@ ul.text-body li {
   margin: 0 0 var(--space-xs);
 }
 
+/* Project tech section layout */
+.project-layout__section--tech .project-layout__tech-icons {
+  margin-bottom: 0.5rem;
+}
+
+.tech-bullets-list {
+  margin: 0;
+  padding-left: 1.15rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.tech-bullets-list li + li {
+  margin-top: 0.25rem;
+}
+
+/* Make tech feel visually grouped with screenshots */
+.project-layout__section--screenshots + .project-layout__section--tech {
+  margin-top: var(--space-m);
+  padding-top: 0;
+  border-top: none;
+}
+
 /* CTA link styling */
 .project-layout__link-cta {
   display: inline-flex;
@@ -378,9 +434,4 @@ ul.text-body li {
 .project-layout__link-cta::after {
   content: "→";
   font-size: 0.9em;
-}
-
-/* Reduce top spacing on project pages (aligns with About page spacing) */
-.project-layout {
-  padding-top: var(--space-s); /* was space-xl */
 }

@@ -24,10 +24,9 @@ export default function ProjectLayout({ project }) {
     tags,
     link,
     innovations,
-    tech, // 👈 NEW: tech block from projects.json
+    tech,
   } = project;
 
-  // Normalize innovations so we can handle either a string or an array
   const innovationsList = Array.isArray(innovations)
     ? innovations
     : innovations
@@ -36,7 +35,7 @@ export default function ProjectLayout({ project }) {
 
   return (
     <article className="project-layout">
-      {/* Header / overview */}
+      {/* ── HEADER: title, meta, summary ─────────────────────── */}
       <header className="project-layout__header">
         <h1 className="heading-l">{title}</h1>
 
@@ -56,7 +55,39 @@ export default function ProjectLayout({ project }) {
         {summary && <p className="text-body">{summary}</p>}
       </header>
 
-      {/* Role (moved above Problem) */}
+      {/* ── SCREENSHOTS NEAR TOP ─────────────────────────────── */}
+      {screenshots && screenshots.length > 0 && (
+        <section className="project-layout__section project-layout__section--screenshots">
+          <ProjectScreenshotCarousel screenshots={screenshots} />
+        </section>
+      )}
+
+      {/* ── TECH STACK DIRECTLY UNDER SCREENSHOTS ───────────── */}
+      {tech && (tech.ids || tech.bullets) && (
+        <section className="project-layout__section project-layout__section--tech">
+          <header className="section-header">
+            <h2 className="heading-m section-header__title">
+              Tech stack &amp; implementation
+            </h2>
+          </header>
+
+          {tech.ids && tech.ids.length > 0 && (
+            <div className="project-layout__tech-icons">
+              <TechStackIcons ids={tech.ids} label={`Tech stack for ${title}`} />
+            </div>
+          )}
+
+          {tech.bullets && tech.bullets.length > 0 && (
+            <ul className="tech-bullets-list">
+              {tech.bullets.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          )}
+        </section>
+      )}
+
+      {/* ── ROLE ─────────────────────────────────────────────── */}
       <section className="project-layout__section">
         <header className="section-header">
           <h2 className="heading-m section-header__title">Role</h2>
@@ -66,7 +97,7 @@ export default function ProjectLayout({ project }) {
         </p>
       </section>
 
-      {/* Problem (now below Role) */}
+      {/* ── PROBLEM ──────────────────────────────────────────── */}
       <section className="project-layout__section">
         <header className="section-header">
           <h2 className="heading-m section-header__title">Problem</h2>
@@ -76,7 +107,7 @@ export default function ProjectLayout({ project }) {
         </p>
       </section>
 
-      {/* Solution */}
+      {/* ── SOLUTION ─────────────────────────────────────────── */}
       <section className="project-layout__section">
         <header className="section-header">
           <h2 className="heading-m section-header__title">Solution</h2>
@@ -86,7 +117,7 @@ export default function ProjectLayout({ project }) {
         </p>
       </section>
 
-      {/* Innovations (optional) */}
+      {/* ── INNOVATIONS (optional) ───────────────────────────── */}
       {innovationsList.length > 0 && (
         <section className="project-layout__section">
           <header className="section-header">
@@ -104,7 +135,7 @@ export default function ProjectLayout({ project }) {
         </section>
       )}
 
-      {/* Impact */}
+      {/* ── IMPACT ───────────────────────────────────────────── */}
       <section className="project-layout__section">
         <header className="section-header">
           <h2 className="heading-m section-header__title">Impact</h2>
@@ -114,44 +145,7 @@ export default function ProjectLayout({ project }) {
         </p>
       </section>
 
-      {/* Screenshots */}
-      {screenshots && screenshots.length > 0 && (
-        <section className="project-layout__section project-layout__section--screenshots">
-          <header className="section-header">
-            <h2 className="heading-m section-header__title">Screenshots</h2>
-          </header>
-          <ProjectScreenshotCarousel screenshots={screenshots} />
-        </section>
-      )}
-
-      {/* ⭐ NEW: Tech stack & implementation */}
-      {tech && (tech.ids || tech.bullets) && (
-        <section className="project-layout__section project-layout__section--tech">
-          <header className="section-header">
-            <h2 className="heading-m section-header__title">
-              Tech stack &amp; implementation
-            </h2>
-          </header>
-
-          {/* Icons row */}
-          {tech.ids && tech.ids.length > 0 && (
-            <div className="project-layout__tech-icons">
-              <TechStackIcons ids={tech.ids} label={`Tech stack for ${title}`} />
-            </div>
-          )}
-
-          {/* Bullets */}
-          {tech.bullets && tech.bullets.length > 0 && (
-            <ul className="tech-bullets-list">
-              {tech.bullets.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
-          )}
-        </section>
-      )}
-
-      {/* CTA */}
+      {/* ── CTA / LINK ──────────────────────────────────────── */}
       {link && link.href && (
         <section className="project-layout__section project-layout__section--cta">
           <header className="section-header">
