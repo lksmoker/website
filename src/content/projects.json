@@ -17,6 +17,7 @@
       "AI context packet downloader for explainable, project-aware reasoning"
     ],
     "impact": "By bringing editing, planning, logs, GitHub, and context into one coherent environment, Dev Toolbox reduces cognitive load and restores flow to mobile development. It makes the workflow calmer, more predictable, and more aligned with how people reason about their work.",
+    "thumbnail": "/images/dev-toolbox/dev-toolbox-thumb.webp",
     "screenshots": [
       {
         "src": "/images/dev-toolbox/dashboard1.png",
@@ -68,6 +69,7 @@
       "A predictable, honest model for obligations, category health, and recurring patterns",
       "A review flow that keeps new transactions organized without overwhelming the user"
     ],
+    "thumbnail": "/images/simplicity/simplicity-thumb.webp",
     "screenshots": [
       {
         "src": "/images/simplicity/monthly-budget1.png",
