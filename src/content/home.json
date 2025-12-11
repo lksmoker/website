@@ -9,11 +9,6 @@
     "supportingLine": "I’m currently looking for product management and internal tools roles where clarity, reasoning, and explainability matter."
   },
   "sections": {
-    "resumeCta": {
-      "buttonLabel": "Download Resume (PDF)",
-      "resumeUrl": "/assets/Luke_Smoker_Resume.pdf",
-      "note": "Open to Product Management, Systems, and Internal Tools roles."
-    },
     "selectedWork": {
       "heading": "Selected Projects",
       "intro": "A few product-focused projects that show how I think about clarity, systems, and tools.",
@@ -24,7 +19,7 @@
       "pillars": [
         {
           "title": "Start from real workflows",
-          "body": "Understand how work actually happens before shaping the product around it."
+          "body": "Observe how work actually happens, then frame problems and requirements from that ground truth."
         },
         {
           "title": "Design for clarity",
@@ -36,7 +31,7 @@
         },
         {
           "title": "Iterate with structure",
-          "body": "Use lightweight structure—checkpoints, experiments, and metrics—to guide change."
+          "body": "Use lightweight structure—checkpoints, experiments, and metrics—to guide change without creating noise."
         }
       ]
     },
@@ -71,11 +66,11 @@
       ]
     },
     "auroraPreview": {
-      "heading": "Aurora: Conversational Software, Not Just Tools",
+      "heading": "Aurora: Conversational Software",
       "body": "Aurora is a conceptual approach to building software through conversation—intent, understanding, and result tied together with clarity and explanation. It influences how I design products to be transparent, explainable, and aligned with how people actually think."
     },
     "aboutPreview": {
-      "heading": "About My Background",
+      "heading": "My Background",
       "body": "My work sits at the intersection of systems and people. I’ve led teams, refined workflows, and independently built tools and platforms. That mix of operations and software shapes how I approach product decisions."
     },
     "writingPreview": {

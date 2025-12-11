@@ -52,27 +52,6 @@
   },
 
   {
-    "slug": "operations-workflow",
-    "title": "Operations & Workflow Design",
-    "summary": "Designing and improving real-world systems by shaping workflows, expectations, visibility, and communication loops — long before I began building software.",
-    "role": "Supervisor, workflow designer, and systems-minded operations lead",
-    "timeline": "2000–2016 (various roles)",
-    "tags": ["Operations", "Workflow design", "Leadership", "Systems thinking"],
-    "problem": "Teams were operating across large, distributed campus environments with inconsistent routines, unclear expectations, and communication gaps that led to rework, delays, and unpredictable outcomes. Coverage patterns shifted daily, student labor varied across semesters, and no underlying system supported consistency or clarity.",
-    "context": "Across my roles in higher-education facilities, I supervised teams responsible for more than 450,000 cleanable square feet. I led 40 student housekeepers, coached full-time custodial staff, managed CMMS workflows, coordinated large event and summer conference schedules, and integrated HR, payroll, and transportation systems into daily operations. My strengths in empathy, connectedness, and restorative thinking consistently pulled me toward diagnosing workflow drift and redesigning underlying routines so teams could perform with clarity and confidence.",
-    "solution": "I redesigned workflows, clarified expectations, introduced stable routines, and built automation tools to increase visibility. This included implementing ISSA’s CIMS program (earning certification with honors), designing route structures and coverage plans, strengthening communication loops between shifts, and creating reporting automations with Google Apps Script. These systems made work more predictable, clarified ownership, and reduced the friction teams encountered day to day.",
-    "innovations": [
-      "Workflow designs that improved productivity and reduced operational variance",
-      "Structured communication loops that strengthened alignment between teams and shifts",
-      "Clear responsibility boundaries that improved accountability and execution",
-      "Automation tools using Google Apps Script to streamline reporting and communication",
-      "Performance systems that enabled teams to consistently operate at 43,000 square feet per FTE"
-    ],
-    "impact": "Teams experienced smoother handoffs, clearer responsibilities, higher standards, and more predictable days. Communication stabilized, rework decreased, and the department achieved full CIMS certification with honors while operating significantly above industry productivity benchmarks. These roles formed the foundation of my systems thinking — blending leadership, human behavior, operational structure, and clarity long before I began building software.",
-    "screenshots": []
-  },
-
-  {
     "slug": "simplicity",
     "title": "Finance Tools / Simplicity",
     "summary": "A budgeting and financial-tracking system designed for calm visibility and confident day-to-day money decisions.",
@@ -116,6 +95,27 @@
         "caption": "A quiet, structured menu that keeps core views accessible without noise."
       }
     ]
+  },
+  
+  {
+    "slug": "operations-workflow",
+    "title": "Operations & Workflow Design",
+    "summary": "Designing and improving real-world systems by shaping workflows, expectations, visibility, and communication loops — long before I began building software.",
+    "role": "Supervisor, workflow designer, and systems-minded operations lead",
+    "timeline": "2000–2016 (various roles)",
+    "tags": ["Operations", "Workflow design", "Leadership", "Systems thinking"],
+    "problem": "Teams were operating across large, distributed campus environments with inconsistent routines, unclear expectations, and communication gaps that led to rework, delays, and unpredictable outcomes. Coverage patterns shifted daily, student labor varied across semesters, and no underlying system supported consistency or clarity.",
+    "context": "Across my roles in higher-education facilities, I supervised teams responsible for more than 450,000 cleanable square feet. I led 40 student housekeepers, coached full-time custodial staff, managed CMMS workflows, coordinated large event and summer conference schedules, and integrated HR, payroll, and transportation systems into daily operations. My strengths in empathy, connectedness, and restorative thinking consistently pulled me toward diagnosing workflow drift and redesigning underlying routines so teams could perform with clarity and confidence.",
+    "solution": "I redesigned workflows, clarified expectations, introduced stable routines, and built automation tools to increase visibility. This included implementing ISSA’s CIMS program (earning certification with honors), designing route structures and coverage plans, strengthening communication loops between shifts, and creating reporting automations with Google Apps Script. These systems made work more predictable, clarified ownership, and reduced the friction teams encountered day to day.",
+    "innovations": [
+      "Workflow designs that improved productivity and reduced operational variance",
+      "Structured communication loops that strengthened alignment between teams and shifts",
+      "Clear responsibility boundaries that improved accountability and execution",
+      "Automation tools using Google Apps Script to streamline reporting and communication",
+      "Performance systems that enabled teams to consistently operate at 43,000 square feet per FTE"
+    ],
+    "impact": "Teams experienced smoother handoffs, clearer responsibilities, higher standards, and more predictable days. Communication stabilized, rework decreased, and the department achieved full CIMS certification with honors while operating significantly above industry productivity benchmarks. These roles formed the foundation of my systems thinking — blending leadership, human behavior, operational structure, and clarity long before I began building software.",
+    "screenshots": []
   },
 
   {

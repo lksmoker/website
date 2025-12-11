@@ -5,26 +5,50 @@ import { Link } from "react-router-dom";
 export default function ProjectCard({ project }) {
   if (!project) return null;
 
-  const { slug, title, summary } = project;
+  const {
+    slug,
+    title,
+    summary,
+    thumbnail,
+    outcome,     // NEW: optional outcome field in projects.json
+    meta,
+    tags,
+    category,
+  } = project;
 
-  if (!slug) {
-    // Fails safe if a project is missing its slug
-    return (
-      <article className="project-card">
-        <h3 className="project-card__title">{title}</h3>
-        {summary && <p className="project-card__summary">{summary}</p>}
-      </article>
-    );
-  }
+  const metaLabel =
+    meta ||
+    category ||
+    (Array.isArray(tags) && tags.length > 0 ? tags.join(" · ") : null);
+
+  const linkTo = `/work/${slug}`;
 
   return (
-    <article className="project-card">
-      <h3 className="project-card__title">
-        <Link to={`/work/${slug}`} className="project-card__link">
-          {title}
-        </Link>
-      </h3>
-      {summary && <p className="project-card__summary">{summary}</p>}
+    <article className="card project-card">
+      <h3 className="card-title">{title}</h3>
+
+      {thumbnail && (
+        <div className="project-card-thumb-wrapper">
+          <img
+            src={thumbnail}
+            alt={`${title} screenshot`}
+            className="project-card-thumb"
+            loading="lazy"
+          />
+        </div>
+      )}
+
+      {summary && <p className="project-summary">{summary}</p>}
+
+      {outcome && (
+        <p className="project-outcome">
+          <strong>Outcome:</strong> {outcome}
+        </p>
+      )}
+
+      <Link to={linkTo} className="project-link">
+        View project →
+      </Link>
     </article>
   );
 }

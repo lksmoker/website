@@ -121,10 +121,60 @@ ul.text-body li {
   margin: 0;
 }
 
+/* ───────── Homepage Card Grids (Selected Projects, Product Pillars, Skills) ───────── */
+
 .card-row {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: var(--space-m);
+}
+
+.pillars-grid,
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: var(--space-m);
+}
+
+/* ───────── Project Card (Preview Style) ───────── */
+
+.card-meta {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  opacity: 0.7;
+  margin-bottom: 0.35rem;
+}
+
+.project-card-thumb-wrapper {
+  margin: 0 0 var(--space-s);
+}
+
+.project-card-thumb {
+  display: block;
+  width: 100%;
+  border-radius: 0.6rem;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  background: linear-gradient(
+    135deg,
+    rgba(34, 75, 143, 0.08),
+    rgba(200, 106, 42, 0.14)
+  );
+  object-fit: cover;
+  min-height: 140px;
+}
+
+.project-summary {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.project-link {
+  display: inline-block;
+  font-size: 0.85rem;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
 }
 
 /* ─────────────────────────────────────────────────────────────
