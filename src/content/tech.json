@@ -3,66 +3,66 @@
     "id": "typescript",
     "label": "TypeScript",
     "kind": "language",
-    "icon": "/assets/tech/typescript.svg"
+    "icon": "https://cdn.simpleicons.org/typescript"
   },
   {
     "id": "react",
     "label": "React",
     "kind": "frontend",
-    "icon": "/assets/tech/react.svg"
+    "icon": "https://cdn.simpleicons.org/react"
   },
   {
     "id": "vite",
     "label": "Vite",
     "kind": "tooling",
-    "icon": "/assets/tech/vite.svg"
+    "icon": "https://cdn.simpleicons.org/vite"
   },
   {
     "id": "supabase",
     "label": "Supabase",
     "kind": "backend",
-    "icon": "/assets/tech/supabase.svg"
+    "icon": "https://cdn.simpleicons.org/supabase"
   },
   {
     "id": "postgres",
     "label": "PostgreSQL",
     "kind": "database",
-    "icon": "/assets/tech/postgres.svg"
+    "icon": "https://cdn.simpleicons.org/postgresql"
   },
   {
     "id": "github",
     "label": "GitHub",
     "kind": "tooling",
-    "icon": "/assets/tech/github.svg"
+    "icon": "https://cdn.simpleicons.org/github"
   },
   {
     "id": "cloudflare",
     "label": "Cloudflare",
     "kind": "infrastructure",
-    "icon": "/assets/tech/cloudflare.svg"
+    "icon": "https://cdn.simpleicons.org/cloudflare"
   },
   {
     "id": "python",
     "label": "Python",
     "kind": "language",
-    "icon": "/assets/tech/python.svg"
+    "icon": "https://cdn.simpleicons.org/python"
   },
   {
     "id": "sheets",
     "label": "Google Sheets",
     "kind": "productivity",
-    "icon": "/assets/tech/sheets.svg"
+    "icon": "https://cdn.simpleicons.org/googlesheets"
   },
   {
     "id": "google-apps-script",
     "label": "Google Apps Script",
     "kind": "automation",
-    "icon": "/assets/tech/google-apps-script.svg"
+    "icon": "https://cdn.simpleicons.org/googleappsscript"
   },
   {
     "id": "forms",
     "label": "Google Forms",
     "kind": "productivity",
-    "icon": "/assets/tech/forms.svg"
+    "icon": "https://cdn.simpleicons.org/googleforms"
   }
 ]
