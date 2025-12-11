@@ -1,29 +1,85 @@
 {
   "meta": {
     "title": "Home",
-    "description": "I build systems that bring clarity to complex work."
+    "description": "Product-minded systems builder across operations, internal tools, and software."
   },
   "hero": {
-    "title": "I build systems that bring clarity to complex work.",
-    "subtitle": "Across operations, team environments, internal tools, and software, I help people navigate complexity with calm, structure, and confidence.",
-    "supportingLine": "My work is shaped by a blend of operational leadership, human-centered insight, and independent software development — and guided by a natural instinct to restore clarity wherever systems or workflows start to break down."
+    "title": "I build product, systems, and tools that bring clarity to complex work.",
+    "subtitle": "I’m a systems-minded builder with experience in operations leadership, internal tools, and independent software development.",
+    "supportingLine": "I’m currently looking for product management and internal tools roles where clarity, reasoning, and explainability matter."
   },
   "sections": {
+    "resumeCta": {
+      "buttonLabel": "Download Resume (PDF)",
+      "resumeUrl": "/assets/Luke_Smoker_Resume.pdf",
+      "note": "Open to Product Management, Systems, and Internal Tools roles."
+    },
     "selectedWork": {
-      "heading": "Selected Work",
-      "intro": "A small sample of projects that show how I approach systems, tools, people, and real-world workflows — always with an eye toward clarity and meaningful improvement.",
-      "projectSlugs": [
-        "dev-toolbox",
-        "simplicity",
-        "aurora"
+      "heading": "Selected Projects",
+      "intro": "A few product-focused projects that show how I think about clarity, systems, and tools.",
+      "projectSlugs": ["dev-toolbox", "operations-workflow", "simplicity"]
+    },
+    "productApproach": {
+      "heading": "How I Approach Product Work",
+      "pillars": [
+        {
+          "title": "Start from real workflows",
+          "body": "Understand how work actually happens before shaping the product around it."
+        },
+        {
+          "title": "Design for clarity",
+          "body": "Make states, responsibilities, and feedback loops obvious to the people using the system."
+        },
+        {
+          "title": "Build explainable tools",
+          "body": "Favor systems where it’s always clear why something happened, not just what happened."
+        },
+        {
+          "title": "Iterate with structure",
+          "body": "Use lightweight structure—checkpoints, experiments, and metrics—to guide change."
+        }
       ]
     },
+    "skillsGrid": {
+      "heading": "Skills & Capabilities",
+      "intro": "A mix of operations, systems thinking, and independent software development.",
+      "categories": [
+        {
+          "label": "Product & Systems",
+          "items": [
+            "Problem framing and discovery",
+            "Workflow and process design",
+            "Translating operations into product requirements"
+          ]
+        },
+        {
+          "label": "Operations & Leadership",
+          "items": [
+            "Team supervision and coaching",
+            "Change management",
+            "Designing calm, repeatable workflows"
+          ]
+        },
+        {
+          "label": "Software & Tools",
+          "items": [
+            "Full-stack solo development",
+            "Internal tools and developer workflows",
+            "Reasoning structures and explainability"
+          ]
+        }
+      ]
+    },
+    "auroraPreview": {
+      "heading": "Aurora: Conversational Software, Not Just Tools",
+      "body": "Aurora is a conceptual approach to building software through conversation—intent, understanding, and result tied together with clarity and explanation. It influences how I design products to be transparent, explainable, and aligned with how people actually think."
+    },
     "aboutPreview": {
-      "heading": "About",
-      "body": "My background spans leadership, coaching, systems thinking, and software — a combination that lets me understand both how people experience their work and how to design tools that genuinely support them."
+      "heading": "About My Background",
+      "body": "My work sits at the intersection of systems and people. I’ve led teams, refined workflows, and independently built tools and platforms. That mix of operations and software shapes how I approach product decisions."
     },
     "writingPreview": {
-      "heading": "Writing",
+      "heading": "Writing on Systems and Product",
       "items": [
         "Clarity as a Leadership Skill",
         "Why Systems Break, and How to Keep Them Honest",
