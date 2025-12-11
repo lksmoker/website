@@ -1,4 +1,4 @@
-// src/components/Hero.jsx
+// src/components/Hero.jsx v7
 import React from "react";
 
 export default function Hero({ title, subtitle, supportingLine }) {
