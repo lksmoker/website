@@ -6,6 +6,7 @@ const NAV_ITEMS = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About" },
   { to: "/work", label: "Work & Projects" },
+  { to: "/reflections", label: "Reflections" },
   { to: "/aurora", label: "Aurora" },
   { to: "/contact", label: "Contact" },
 ];
@@ -38,20 +39,20 @@ export default function MainHeader() {
 
       <div className="header-inner header-inner--nav">
         <nav className={`main-nav ${open ? "is-open" : ""}`}>
-          {NAV_ITEMS.map((item) => (
-            <Link
-              key={item.to}
-              to={item.to}
-              className={
-                location.pathname === item.to
-                  ? "nav-link nav-link--active"
-                  : "nav-link"
-              }
-              onClick={() => setOpen(false)}
-            >
-              {item.label}
-            </Link>
-          ))}
+          {NAV_ITEMS.map((item) => {
+            const isActive = location.pathname === item.to;
+
+            return (
+              <Link
+                key={item.to}
+                to={item.to}
+                className={`nav-link ${isActive ? "nav-link--active" : ""}`}
+                onClick={() => setOpen(false)}
+              >
+                {item.label}
+              </Link>
+            );
+          })}
         </nav>
       </div>
     </header>

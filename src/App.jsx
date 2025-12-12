@@ -21,8 +21,11 @@ export default function App() {
         <Route path="/work" element={<WorkIndexPage />} />
         <Route path="/work/:slug" element={<WorkProjectPage />} />
         <Route path="/aurora" element={<AuroraPage />} />
-        <Route path="/writing" element={<WritingIndexPage />} />
-        <Route path="/writing/:slug" element={<WritingArticlePage />} />
+
+        {/* Reflections (formerly Writing) */}
+        <Route path="/reflections" element={<WritingIndexPage />} />
+        <Route path="/reflections/:slug" element={<WritingArticlePage />} />
+
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </SiteShell>
