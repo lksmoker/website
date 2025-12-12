@@ -208,6 +208,22 @@ ul.text-body li {
   text-underline-offset: 0.15em;
 }
 
+.role-header {
+  position: relative;
+  padding-left: var(--space-s);
+  margin-top: var(--space-m);
+}
+
+.role-header::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.35em;
+  width: 3px;
+  height: 1em;
+  background: var(--accent-orange);
+  border-radius: 2px;
+}
 /* ─────────────────────────────────────────────────────────────
    AURORA CALLOUT
    ───────────────────────────────────────────────────────────── */

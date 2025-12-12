@@ -50,7 +50,9 @@ export default function ProjectLayout({ project }) {
         {summary && <p className="text-body">{summary}</p>}
       </header>
 
-      {/* SPECIAL LAYOUT FOR OPERATIONS & LOGISTICS */}
+      {/* ────────────────────────────────────────────────
+         SPECIAL LAYOUT FOR OPERATIONS & LOGISTICS
+         ──────────────────────────────────────────────── */}
       {isOpsLogistics ? (
         <>
           {/* Experience by Role FIRST */}
@@ -59,9 +61,10 @@ export default function ProjectLayout({ project }) {
               <h2 className="heading-m section-header">Experience by Role</h2>
               {experience.map((roleItem, idx) => (
                 <div key={idx} className="experience-block">
-                  <h3 className="heading-s">
+                  <h3 className="heading-s role-header">
                     {roleItem.role} — {roleItem.organization}
                   </h3>
+
                   {roleItem.highlights && roleItem.highlights.length > 0 && (
                     <ul className="project-list">
                       {roleItem.highlights.map((item, index) => (
@@ -78,7 +81,9 @@ export default function ProjectLayout({ project }) {
         </>
       ) : (
         <>
-          {/* DEFAULT LAYOUT FOR OTHER PROJECTS */}
+          {/* ────────────────────────────────────────────────
+             DEFAULT LAYOUT FOR OTHER PROJECTS
+             ──────────────────────────────────────────────── */}
 
           {/* Problem */}
           {problem && (
@@ -132,15 +137,16 @@ export default function ProjectLayout({ project }) {
             </section>
           )}
 
-          {/* Experience blocks (if any on other projects) */}
+          {/* Optional Experience Section for Other Projects */}
           {experience && experience.length > 0 && (
             <section className="project-layout__section">
               <h2 className="heading-m section-header">Experience</h2>
               {experience.map((roleItem, idx) => (
                 <div key={idx} className="experience-block">
-                  <h3 className="heading-s">
+                  <h3 className="heading-s role-header">
                     {roleItem.role} — {roleItem.organization}
                   </h3>
+
                   {roleItem.highlights && roleItem.highlights.length > 0 && (
                     <ul className="project-list">
                       {roleItem.highlights.map((item, index) => (
