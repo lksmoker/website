@@ -10,7 +10,7 @@ export default function WritingIndexPage() {
   return (
     <>
       <section className="page-section">
-        <SectionHeader title="Writing" />
+        <SectionHeader title="Reflections" />
         {sections.intro && <TextBlock>{sections.intro}</TextBlock>}
       </section>
 

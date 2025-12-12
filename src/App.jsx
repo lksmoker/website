@@ -1,6 +1,6 @@
 // App.jsx
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import SiteShell from "./components/SiteShell.jsx";
 
 import HomePage from "./pages/HomePage.jsx";
@@ -22,9 +22,16 @@ export default function App() {
         <Route path="/work/:slug" element={<WorkProjectPage />} />
         <Route path="/aurora" element={<AuroraPage />} />
 
-        {/* Reflections (formerly Writing) */}
+        {/* Reflections */}
         <Route path="/reflections" element={<WritingIndexPage />} />
         <Route path="/reflections/:slug" element={<WritingArticlePage />} />
+
+        {/* Backward compatibility for old links */}
+        <Route path="/writing" element={<Navigate to="/reflections" replace />} />
+        <Route
+          path="/writing/:slug"
+          element={<Navigate to="/reflections/:slug" replace />}
+        />
 
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
