@@ -19,7 +19,6 @@ export default function ProjectLayout({ project }) {
     role,
     solution,
     impact,
-    coreCompetencies,
     experience,
     screenshots,
     timeline,
@@ -66,27 +65,6 @@ export default function ProjectLayout({ project }) {
                   {roleItem.highlights && roleItem.highlights.length > 0 && (
                     <ul className="project-list">
                       {roleItem.highlights.map((item, index) => (
-                        <li key={index} className="text-body">
-                          {item}
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </div>
-              ))}
-            </section>
-          )}
-
-          {/* Core Competencies SECOND */}
-          {coreCompetencies && coreCompetencies.length > 0 && (
-            <section className="project-layout__section">
-              <h2 className="heading-m section-header">Core Competencies</h2>
-              {coreCompetencies.map((group, idx) => (
-                <div key={idx} className="competency-group">
-                  <h3 className="heading-s">{group.category}</h3>
-                  {group.items && group.items.length > 0 && (
-                    <ul className="project-list">
-                      {group.items.map((item, index) => (
                         <li key={index} className="text-body">
                           {item}
                         </li>
@@ -151,27 +129,6 @@ export default function ProjectLayout({ project }) {
               ) : (
                 <p className="text-body">{impact}</p>
               )}
-            </section>
-          )}
-
-          {/* Core Competencies (if any on other projects) */}
-          {coreCompetencies && coreCompetencies.length > 0 && (
-            <section className="project-layout__section">
-              <h2 className="heading-m section-header">Core Competencies</h2>
-              {coreCompetencies.map((group, idx) => (
-                <div key={idx} className="competency-group">
-                  <h3 className="heading-s">{group.category}</h3>
-                  {group.items && group.items.length > 0 && (
-                    <ul className="project-list">
-                      {group.items.map((item, index) => (
-                        <li key={index} className="text-body">
-                          {item}
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </div>
-              ))}
             </section>
           )}
 
