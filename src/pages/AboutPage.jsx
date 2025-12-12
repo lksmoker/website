@@ -8,11 +8,13 @@ export default function AboutPage() {
 
   return (
     <>
+      {/* Summary */}
       <section className="page-section">
         <SectionHeader title="About" />
         <TextBlock>{sections.summary.body}</TextBlock>
       </section>
 
+      {/* Career Story */}
       <section className="page-section">
         <SectionHeader title="Career Story" />
         {sections.story.map((para, idx) => (
@@ -20,6 +22,17 @@ export default function AboutPage() {
         ))}
       </section>
 
+      {/* How I Work (NEW SECTION) */}
+      {sections.howIWork && (
+        <section className="page-section">
+          <SectionHeader title="How I Work" />
+          {sections.howIWork.map((para, idx) => (
+            <TextBlock key={idx}>{para}</TextBlock>
+          ))}
+        </section>
+      )}
+
+      {/* Skills & Capabilities */}
       <section className="page-section">
         <SectionHeader title="Skills & Capabilities" />
         <div className="skills-grid">
@@ -40,6 +53,7 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Values & Principles */}
       <section className="page-section">
         <SectionHeader title="Values & Principles" />
         <ul className="text-body">
@@ -49,6 +63,7 @@ export default function AboutPage() {
         </ul>
       </section>
 
+      {/* Aurora Origin */}
       <section className="page-section">
         <SectionHeader title="Aurora: Origin" />
         {sections.auroraOriginSafe.map((para, idx) => (
@@ -56,6 +71,7 @@ export default function AboutPage() {
         ))}
       </section>
 
+      {/* Personal Notes */}
       <section className="page-section">
         <SectionHeader title="Personal Notes" />
         {sections.personalNotes.map((para, idx) => (
