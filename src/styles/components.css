@@ -3,9 +3,9 @@
    ───────────────────────────────────────────────────────────── */
 
 .hero {
-  padding: var(--space-xl) var(--space-m) var(--space-xl);
+  padding: var(--space-s) var(--space-s) var(--space-xl);
   max-width: var(--max-width);
-  margin: 0 auto var(--space-xl);
+  margin: 0 auto var(--space-m);
 }
 
 .hero-inner {
@@ -36,6 +36,12 @@
   max-width: 60ch;
   margin: 0;
   opacity: 0.9;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: var(--space-m) var(--space-m) var(--space-l);
+  }
 }
 
 /* ─────────────────────────────────────────────────────────────
@@ -364,8 +370,9 @@ ul.text-body li {
 }
 
 .project-layout__header {
-  margin-bottom: var(--space-l);
+  padding-top: var(--space-m); /* or even var(--space-s) */
 }
+
 
 .project-layout__header h1 {
   margin-bottom: var(--space-xs);

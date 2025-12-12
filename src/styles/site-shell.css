@@ -7,9 +7,9 @@
 }
 
 .site-main {
-  flex: 1;
-  padding: var(--space-xl) var(--space-m) var(--space-l);
+  padding: var(--space-s) var(--space-m) var(--space-m);
 }
+
 
 .page {
   max-width: var(--max-width);
