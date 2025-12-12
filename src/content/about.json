@@ -1,9 +1,56 @@
-"story": [
-  "My career began in environments where clarity and structure were essential to keeping daily operations running. In custodial and facilities management roles across multiple university campuses, I supervised large teams, coordinated coverage across high-variance spaces, and maintained productivity levels significantly above industry benchmarks. Over time, I became responsible for the operational systems beneath the work — CMMS workflows, payroll and HR processes, accounts receivable, transportation coordination, and other information flows that kept teams moving. These roles gave me a deep understanding of how performance depends on workflow design, clear expectations, and the systems people rely on every day.",
-  
-  "That instinct to strengthen and clarify systems eventually led me toward building tools myself — first through workflow automations and internal reporting scripts, and later through full-stack application development. I’ve since designed budgeting tools, workflow systems, developer environments like Dev Toolbox, and conceptual models for conversational software through Aurora. What looks like a career shift is really a continuation of the same work: understanding how people interact with systems, and creating structures that make that interaction calmer, clearer, and more aligned with real-world needs."
-],
-
-"howIWork": [
-  "As I moved from operations into software, I carried the same commitment to clarity and structure. I build in a clarity-first way — starting with briefs, system outlines, and narrative framing before implementation — so the work stays intentional and aligned across the entire project."
-],
+{
+  "meta": {
+    "title": "About",
+    "description": "Learn about my background in systems, operations, leadership, and software development — and how those experiences shaped the way I build tools and platforms today."
+  },
+  "sections": {
+    "summary": {
+      "body": "My career has always centered on building systems that help people work with clarity. I’ve led teams, shaped large-scale operations, created workflow automations, and developed internal tools and software platforms — all guided by a calm, adaptive approach to complexity and a strong belief that systems should support people, not the other way around."
+    },
+    "story": [
+      "My career began in environments where clarity and structure were essential to keeping daily operations running. In custodial and facilities management roles across multiple university campuses, I supervised large teams, coordinated coverage across high-variance spaces, and maintained productivity levels significantly above industry benchmarks. Over time, I became responsible for the operational systems beneath the work — CMMS workflows, payroll and HR processes, accounts receivable, transportation coordination, and other information flows that kept teams moving. These roles gave me a deep understanding of how performance depends on workflow design, clear expectations, and the systems people rely on every day.",
+      "That instinct to strengthen and clarify systems eventually led me toward building tools myself — first through workflow automations and internal reporting scripts, and later through full-stack application development. I’ve since designed budgeting tools, workflow systems, developer environments like Dev Toolbox, and conceptual models for conversational software through Aurora. What looks like a career shift is really a continuation of the same work: understanding how people interact with systems, and creating structures that make that interaction calmer, clearer, and more aligned with real-world needs."
+    ],
+    "howIWork": [
+      "As I moved from operations into software, I carried the same commitment to clarity and structure. I build in a clarity-first way — starting with briefs, system outlines, and narrative framing before implementation — so the work stays intentional and aligned across the entire project."
+    ],
+    "skills": {
+      "systemsAndOperations": [
+        "Designing clear workflows and repeatable processes",
+        "Improving team communication and operational alignment",
+        "Building structure around complex or variable work",
+        "Translating real-world constraints into actionable systems"
+      ],
+      "leadershipAndPeople": [
+        "Supervising, coaching, and mentoring teams",
+        "Supporting people through change and ambiguity with empathy and clarity",
+        "Creating shared understanding in moments where expectations or goals are shifting"
+      ],
+      "softwareAndArchitecture": [
+        "Independently building internal tools and full-stack applications",
+        "Designing developer workflows and structured reasoning systems",
+        "Automation and integration (Google Apps Script, internal tools)",
+        "End-to-end development of conceptual platforms (Dev Toolbox, Simplicity)"
+      ],
+      "conceptualAndStrategic": [
+        "Systems thinking across operational and technical domains",
+        "High-level reasoning about software creation, clarity, and explainability",
+        "Vision development for emerging concepts (Aurora, App Kernel)"
+      ]
+    },
+    "values": [
+      "Clarity — People work best when expectations and systems are simple, honest, and direct.",
+      "Calm Structure — Good systems reduce noise, support adaptability, and help people focus on what matters.",
+      "Transparency — Understanding should be visible, shared, and built into the work.",
+      "Human-Centered Design — Tools should support people, their goals, and the realities of their day-to-day workflow."
+    ],
+    "auroraOriginSafe": [
+      "Aurora began as a series of questions about clarity, communication, and the gap between how people think and how software expects us to think.",
+      "It grew from the idea that software creation could feel more conversational, more explainable, and more aligned with natural human reasoning — without exposing technical internals or implementation details."
+    ],
+    "personalNotes": [
+      "I enjoy designing systems in any context — work, tools, writing, or personal organization.",
+      "I gravitate toward environments where clarity and purpose matter, and where thoughtful design makes work feel lighter for everyone involved."
+    ]
+  }
+}
