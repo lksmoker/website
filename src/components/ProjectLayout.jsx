@@ -1,7 +1,6 @@
 // src/components/ProjectLayout.jsx
 import React from "react";
 import ProjectScreenshotCarousel from "./ProjectScreenshotCarousel.jsx";
-import TechStackIcons from "./TechStackIcons.jsx";
 
 export default function ProjectLayout({ project }) {
   if (!project) {
@@ -19,141 +18,95 @@ export default function ProjectLayout({ project }) {
     role,
     solution,
     impact,
+    coreCompetencies,
+    experience,
     screenshots,
     timeline,
     tags,
-    link,
-    innovations,
-    tech,
+    link
   } = project;
-
-  const innovationsList = Array.isArray(innovations)
-    ? innovations
-    : innovations
-    ? [innovations]
-    : [];
 
   return (
     <article className="project-layout">
-      {/* ── HEADER: title, meta, summary ─────────────────────── */}
+      {/* Header */}
       <header className="project-layout__header">
         <h1 className="heading-l">{title}</h1>
-
-        {(timeline || (tags && tags.length > 0)) && (
-          <div className="project-layout__meta">
-            {timeline && (
-              <span className="project-layout__meta-item">{timeline}</span>
-            )}
-            {tags && tags.length > 0 && (
-              <span className="project-layout__meta-item project-layout__meta-tags">
-                {tags.join(" · ")}
-              </span>
-            )}
-          </div>
-        )}
-
         {summary && <p className="text-body">{summary}</p>}
       </header>
 
-      {/* ── SCREENSHOTS NEAR TOP ─────────────────────────────── */}
-      {screenshots && screenshots.length > 0 && (
-        <section className="project-layout__section project-layout__section--screenshots">
-          <ProjectScreenshotCarousel screenshots={screenshots} />
-        </section>
-      )}
-
-      {/* ── TECH STACK DIRECTLY UNDER SCREENSHOTS ───────────── */}
-      {tech && (tech.ids || tech.bullets) && (
-        <section className="project-layout__section project-layout__section--tech">
-          <header className="section-header">
-            <h2 className="heading-m section-header__title">
-              Tech stack &amp; implementation
-            </h2>
-          </header>
-
-          {tech.ids && tech.ids.length > 0 && (
-            <div className="project-layout__tech-icons">
-              <TechStackIcons ids={tech.ids} label={`Tech stack for ${title}`} />
-            </div>
-          )}
-
-          {tech.bullets && tech.bullets.length > 0 && (
-            <ul className="tech-bullets-list">
-              {tech.bullets.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
-          )}
-        </section>
-      )}
-
-      {/* ── ROLE ─────────────────────────────────────────────── */}
+      {/* Problem */}
       <section className="project-layout__section">
-        <header className="section-header">
-          <h2 className="heading-m section-header__title">Role</h2>
-        </header>
-        <p className="text-body">
-          {role || "TODO: Add role description."}
-        </p>
+        <h2 className="heading-m section-header">Problem</h2>
+        <p className="text-body">{problem}</p>
       </section>
 
-      {/* ── PROBLEM ──────────────────────────────────────────── */}
+      {/* Role */}
       <section className="project-layout__section">
-        <header className="section-header">
-          <h2 className="heading-m section-header__title">Problem</h2>
-        </header>
-        <p className="text-body">
-          {problem || "TODO: Add problem description."}
-        </p>
+        <h2 className="heading-m section-header">Role</h2>
+        <p className="text-body">{role}</p>
       </section>
 
-      {/* ── SOLUTION ─────────────────────────────────────────── */}
+      {/* Solution */}
       <section className="project-layout__section">
-        <header className="section-header">
-          <h2 className="heading-m section-header__title">Solution</h2>
-        </header>
-        <p className="text-body">
-          {solution || "TODO: Add solution description."}
-        </p>
+        <h2 className="heading-m section-header">Solution</h2>
+        <ul className="project-list">
+          {solution?.map((item, idx) => (
+            <li key={idx} className="text-body">{item}</li>
+          ))}
+        </ul>
       </section>
 
-      {/* ── INNOVATIONS (optional) ───────────────────────────── */}
-      {innovationsList.length > 0 && (
+      {/* Impact */}
+      <section className="project-layout__section">
+        <h2 className="heading-m section-header">Impact</h2>
+        <ul className="project-list">
+          {impact?.map((item, idx) => (
+            <li key={idx} className="text-body">{item}</li>
+          ))}
+        </ul>
+      </section>
+
+      {/* Core Competencies */}
+      {coreCompetencies && (
         <section className="project-layout__section">
-          <header className="section-header">
-            <h2 className="heading-m section-header__title">Innovations</h2>
-          </header>
-          {innovationsList.length === 1 ? (
-            <p className="text-body">{innovationsList[0]}</p>
-          ) : (
-            <ul className="text-body">
-              {innovationsList.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
-          )}
+          <h2 className="heading-m section-header">Core Competencies</h2>
+          {coreCompetencies.map((group, idx) => (
+            <div key={idx} className="competency-group">
+              <h3 className="heading-s">{group.category}</h3>
+              <ul className="project-list">
+                {group.items.map((item, index) => (
+                  <li key={index} className="text-body">{item}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </section>
       )}
 
-      {/* ── IMPACT ───────────────────────────────────────────── */}
-      <section className="project-layout__section">
-        <header className="section-header">
-          <h2 className="heading-m section-header__title">Impact</h2>
-        </header>
-        <p className="text-body">
-          {impact || "TODO: Add impact description."}
-        </p>
-      </section>
+      {/* Experience by Role */}
+      {experience && (
+        <section className="project-layout__section">
+          <h2 className="heading-m section-header">Experience by Role</h2>
+          {experience.map((roleItem, idx) => (
+            <div key={idx} className="experience-block">
+              <h3 className="heading-s">
+                {roleItem.role} — {roleItem.organization}
+              </h3>
+              <ul className="project-list">
+                {roleItem.highlights.map((item, index) => (
+                  <li key={index} className="text-body">{item}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </section>
+      )}
 
-      {/* ── CTA / LINK ──────────────────────────────────────── */}
-      {link && link.href && (
-        <section className="project-layout__section project-layout__section--cta">
-          <header className="section-header">
-            <h2 className="heading-m section-header__title">Learn More</h2>
-          </header>
-          <a href={link.href} className="project-layout__link-cta">
-            {link.label || "Open related page"}
-          </a>
+      {/* Screenshots */}
+      {screenshots && screenshots.length > 0 && (
+        <section className="project-layout__section">
+          <h2 className="heading-m section-header">Screenshots</h2>
+          <ProjectScreenshotCarousel images={screenshots} />
         </section>
       )}
     </article>

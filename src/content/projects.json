@@ -8,7 +8,9 @@
     "tags": ["Internal tools", "Developer experience", "Full-stack"],
     "problem": "There were very few reliable ways to develop software on mobile, and existing tools made the workflow feel fragmented, unpredictable, and detached from real project context. I wanted something calmer, clearer, and closer to the way I actually think.",
     "context": "Dev Toolbox began as a response to friction I felt personally: coding on the go wasn't feasible, and switching tools constantly created cognitive drift. My strengths in systems thinking and restorative problem-solving pushed me toward a unified workspace — something self-hosted, adaptable, and designed so that reasoning stayed visible rather than buried.",
-    "solution": "I designed and built a self-hosted, mobile-first environment centered on the essentials: a clean file editor, integrated logging, and a mobile-optimized block selector for navigating structured code. Over time — guided by real usage and the goal of reducing friction — it evolved to include GitHub and Trello integration, a structured project planner, and an AI context packet downloader.",
+    "solution": [
+      "I designed and built a self-hosted, mobile-first environment centered on the essentials: a clean file editor, integrated logging, and a mobile-optimized block selector for navigating structured code. Over time — guided by real usage and the goal of reducing friction — it evolved to include GitHub and Trello integration, a structured project planner, and an AI context packet downloader."
+    ],
     "innovations": [
       "Mobile-optimized code block selector for navigating and manipulating structured code",
       "Integrated, always-visible structured logs and console output",
@@ -16,7 +18,9 @@
       "Unified project planner with sprints, sessions, and context surfaces",
       "AI context packet downloader for explainable, project-aware reasoning"
     ],
-    "impact": "By bringing editing, planning, logs, GitHub, and context into one coherent environment, Dev Toolbox reduces cognitive load and restores flow to mobile development. It makes the workflow calmer, more predictable, and more aligned with how people reason about their work.",
+    "impact": [
+      "By bringing editing, planning, logs, GitHub, and context into one coherent environment, Dev Toolbox reduces cognitive load and restores flow to mobile development. It makes the workflow calmer, more predictable, and more aligned with how people reason about their work."
+    ],
     "thumbnail": "/images/dev-toolbox/dev-toolbox-thumb.webp",
     "screenshots": [
       {
@@ -69,8 +73,12 @@
     "tags": ["Personal finance", "Product design", "Full-stack"],
     "problem": "Most budgeting tools generate noise instead of clarity. They surface too much, too little, or the wrong information at the wrong moment — creating stress rather than restoring confidence.",
     "context": "Simplicity was built to support real financial behavior: recurring bills, flexible spending, shifting obligations, and daily decisions. My adaptive approach to systems and focus on reducing cognitive load shaped the entire flow — designed to meet people where they are, not force them into a rigid model.",
-    "solution": "I created a calm, mobile-first budgeting environment that highlights what matters: upcoming obligations, category health, patterns, and day-to-day occurrences. The flow stays honest, predictable, and easy to revisit — bringing clarity back to areas of life that easily become overwhelming.",
-    "impact": "Simplicity supports more confident financial decisions by surfacing the right information at the right time. It provides a grounded sense of where things stand and what needs attention, restoring clarity to an area where people often feel stress or uncertainty.",
+    "solution": [
+      "I created a calm, mobile-first budgeting environment that highlights what matters: upcoming obligations, category health, patterns, and day-to-day occurrences. The flow stays honest, predictable, and easy to revisit — bringing clarity back to areas of life that easily become overwhelming."
+    ],
+    "impact": [
+      "Simplicity supports more confident financial decisions by surfacing the right information at the right time. It provides a grounded sense of where things stand and what needs attention, restoring clarity to an area where people often feel stress or uncertainty."
+    ],
     "innovations": [
       "A calm, mobile-first budgeting interface focused on clarity rather than noise",
       "Daily and monthly workflows built around real financial behavior instead of abstract categories",
@@ -117,22 +125,144 @@
   },
   {
     "slug": "operations-workflow",
-    "title": "Operations & Workflow Design",
-    "summary": "Designing and improving real-world systems by shaping workflows, expectations, visibility, and communication loops — long before I began building software.",
-    "role": "Supervisor, workflow designer, and systems-minded operations lead",
-    "timeline": "2000–2016 (various roles)",
-    "tags": ["Operations", "Workflow design", "Leadership", "Systems thinking"],
-    "problem": "Teams were operating across large, distributed campus environments with inconsistent routines, unclear expectations, and communication gaps that led to rework, delays, and unpredictable outcomes. Coverage patterns shifted daily, student labor varied across semesters, and no underlying system supported consistency or clarity.",
-    "context": "Across my roles in higher-education facilities, I supervised teams responsible for more than 450,000 cleanable square feet. I led 40 student housekeepers, coached full-time custodial staff, managed CMMS workflows, coordinated large event and summer conference schedules, and integrated HR, payroll, and transportation systems into daily operations. My strengths in empathy, connectedness, and restorative thinking consistently pulled me toward diagnosing workflow drift and redesigning underlying routines so teams could perform with clarity and confidence.",
-    "solution": "I redesigned workflows, clarified expectations, introduced stable routines, and built automation tools to increase visibility. This included implementing ISSA’s CIMS program (earning certification with honors), designing route structures and coverage plans, strengthening communication loops between shifts, and creating reporting automations with Google Apps Script. These systems made work more predictable, clarified ownership, and reduced the friction teams encountered day to day.",
+    "title": "Operations & Logistics",
+    "summary": "A cross-functional body of work focused on designing workflows, coordinating complex operations, leading teams, and improving clarity across systems — with direct relevance to product and program management.",
+    "role": "Operations leader, workflow designer, logistics coordinator, and cross-functional partner",
+    "timeline": "2000–Present (operations & logistics roles)",
+    "tags": ["Operations", "Logistics", "Workflow design", "Leadership", "Systems thinking"],
+    "problem": "Operational environments — from campus facilities to logistics networks — relied on clarity, predictable workflows, and consistent execution. Teams often faced misaligned expectations, limited visibility, and inconsistent processes that created friction and reduced effectiveness.",
+    "context": "Across higher-education facilities and logistics environments, I led teams responsible for large facility footprints, campus operations, transportation coordination, and last-mile delivery. I supervised and coached staff, managed CMMS workflows, coordinated events and renovations, and integrated HR, payroll, and transportation systems into daily operations. Those roles sharpened the same skills I use in product and systems work today: diagnosing workflow drift, designing structure, and helping people operate with clarity and confidence.",
+    "solution": [
+      "Designed clear workflows and operational processes to improve reliability, visibility, and execution.",
+      "Coordinated cross-functional logistics involving Residence Life, Athletics, Events, Administration, and external partners.",
+      "Led teams through coaching, structured performance expectations, and quality standards such as CIMS certification with honors.",
+      "Implemented digital tools including CMMS, WMS/RF, payroll systems, and automated reporting to improve decision-making and reduce manual work.",
+      "Delivered time-sensitive logistics operations while maintaining accuracy and customer satisfaction."
+    ],
     "innovations": [
       "Workflow designs that improved productivity and reduced operational variance",
       "Structured communication loops that strengthened alignment between teams and shifts",
       "Clear responsibility boundaries that improved accountability and execution",
-      "Automation tools using Google Apps Script to streamline reporting and communication",
-      "Performance systems that enabled teams to consistently operate at 43,000 square feet per FTE"
+      "Automation tools to streamline reporting and communication",
+      "Performance systems that enabled teams to consistently operate at high productivity per FTE"
     ],
-    "impact": "Teams experienced smoother handoffs, clearer responsibilities, higher standards, and more predictable days. Communication stabilized, rework decreased, and the department achieved full CIMS certification with honors while operating significantly above industry productivity benchmarks. These roles formed the foundation of my systems thinking — blending leadership, human behavior, operational structure, and clarity long before I began building software.",
+    "impact": [
+      "Built a deep foundation in systems design, workflow optimization, and operational leadership.",
+      "Directed operations across 250,000–450,000 sq. ft. of facilities while maintaining service quality.",
+      "Achieved industry-recognized CIMS certification with honors.",
+      "Created automated reporting tools that increased operational visibility and reduced errors.",
+      "Led and coached teams of 28–40+ employees, improving reliability and clarity across day-to-day operations."
+    ],
+    "coreCompetencies": [
+      {
+        "category": "Systems & Process Design",
+        "items": [
+          "Designed and refined workflows and inspection processes to ensure consistent quality across large operational footprints.",
+          "Implemented and maintained industry standards, achieving CIMS certification with honors.",
+          "Developed automated reporting tools integrating multiple platforms to improve visibility and reduce manual steps.",
+          "Used CMMS to structure work orders, scheduling, and quality feedback loops."
+        ]
+      },
+      {
+        "category": "Execution & Delivery",
+        "items": [
+          "Directed daily operations across facilities and logistics environments ensuring compliance, quality, and timeliness.",
+          "Coordinated transportation logistics for athletics, academic departments, and student activities.",
+          "Supported construction, renovation, and campus event operations through resource planning and cross-department alignment."
+        ]
+      },
+      {
+        "category": "Cross-Functional Collaboration",
+        "items": [
+          "Served as the operational liaison between Custodial Operations, Residence Life, Events, Athletics, and Administration.",
+          "Partnered with campus leaders to support major events and operational planning."
+        ]
+      },
+      {
+        "category": "Leadership & People Development",
+        "items": [
+          "Supervised teams of 28–40+ employees, providing structured coaching and performance development.",
+          "Mentored student Team Leads to improve leadership, organization, and time management.",
+          "Led labor conversion efforts including onboarding, training, and systems adoption."
+        ]
+      },
+      {
+        "category": "Customer-Centered Decision Making",
+        "items": [
+          "Maintained high customer satisfaction through inspections, coaching, and responsive issue resolution.",
+          "Delivered accurate, timely service under strict logistics and delivery constraints."
+        ]
+      },
+      {
+        "category": "Operational Tools & Data",
+        "items": [
+          "Managed employee databases, payroll tools, CMMS workflows, AP/AR systems, and preventive maintenance schedules.",
+          "Worked with WMS and RF scanning tools to ensure accuracy in logistics operations.",
+          "Built automated reports to support better operational insight and decisions."
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "role": "Custodial Manager",
+        "organization": "Marian University",
+        "highlights": [
+          "Directed daily operations and served as liaison to Residence Life.",
+          "Conducted structured inspections and coached staff to improve consistency.",
+          "Ensured OSHA and regulatory compliance.",
+          "Managed payroll systems and employee databases (Kronos, HCMS).",
+          "Used CMMS for scheduling, assignment, and tracking of work orders."
+        ]
+      },
+      {
+        "role": "Office Manager & Transportation Coordinator",
+        "organization": "Grace College",
+        "highlights": [
+          "Coordinated transportation logistics for athletics, departments, and student activities.",
+          "Managed CMMS, payroll, AP/AR, procurement, and customer service workflows.",
+          "Created automated reporting tools to improve operational visibility.",
+          "Managed hiring workflows and supported employee engagement efforts."
+        ]
+      },
+      {
+        "role": "Housekeeping Supervisor",
+        "organization": "Grace College",
+        "highlights": [
+          "Supervised and coached 40+ staff with structured expectations and quality controls.",
+          "Conducted inspections and implemented corrective workflows.",
+          "Mentored five team leads, improving leadership and consistency.",
+          "Implemented CIMS standards, earning full certification with honors."
+        ]
+      },
+      {
+        "role": "Custodial Manager",
+        "organization": "Grace College (2003–2010)",
+        "highlights": [
+          "Directed operations for 450,000 sq. ft. of facilities.",
+          "Supported campus events, alumni functions, and summer conferences.",
+          "Maintained productivity at 43,000 sq. ft. per FTE with high satisfaction.",
+          "Participated in labor conversion efforts creating student employment opportunities."
+        ]
+      },
+      {
+        "role": "Physical Plant Director",
+        "organization": "Taylor University",
+        "highlights": [
+          "Directed custodial, maintenance, and grounds operations for a 250,000 sq. ft. campus.",
+          "Coordinated construction, renovation projects, and facility planning.",
+          "Managed equipment maintenance contracts and operational budgeting."
+        ]
+      },
+      {
+        "role": "Delivery Driver",
+        "organization": "FedEx Ground",
+        "highlights": [
+          "Executed high-volume delivery operations using RF/WMS technology.",
+          "Maintained accuracy and timeliness under strict delivery constraints.",
+          "Provided reliable customer service in fast-paced logistics environments."
+        ]
+      }
+    ],
     "screenshots": [],
     "tech": {
       "ids": ["google-apps-script", "sheets", "forms"],
@@ -153,14 +283,18 @@
     "tags": ["Conceptual", "Systems thinking", "Human–AI collaboration"],
     "problem": "Software creation today is fragmented across documents, tools, and communication channels, making it difficult to maintain clarity, shared understanding, and a coherent path from intention to result.",
     "context": "Aurora emerged from years of operational work and independent software development, shaped by questions around clarity, communication, and how people naturally express intent. My connectedness and restorative instincts made the friction especially visible — systems drifted, reasoning wasn’t transparent, and meaning often became diluted across layers.",
-    "solution": "Aurora explores a conversational workflow where people express what they want, the system reflects its understanding, and results evolve through shared reasoning. This mirrors how people naturally collaborate — through dialogue, refinement, and relational clarity — without revealing any internal mechanisms or technical structures.",
+    "solution": [
+      "Aurora explores a conversational workflow where people express what they want, the system reflects its understanding, and results evolve through shared reasoning. This mirrors how people naturally collaborate — through dialogue, refinement, and relational clarity — without revealing any internal mechanisms or technical structures."
+    ],
     "innovations": [
       "A conceptual approach to software shaped through conversation instead of traditional development steps",
       "A workflow centered on intent → understanding → result, emphasizing clarity and shared reasoning",
       "An exploration of explainability as a foundational property of software creation",
       "A vision for more natural, transparent human–AI collaboration in shaping digital systems"
     ],
-    "impact": "Aurora offers a direction for future tools that prioritize clarity, explainability, and human-centered interaction with complex systems. It reframes how software could be shaped — focusing on meaning, reasoning, and alignment rather than layers of translation.",
+    "impact": [
+      "Aurora offers a direction for future tools that prioritize clarity, explainability, and human-centered interaction with complex systems. It reframes how software could be shaped — focusing on meaning, reasoning, and alignment rather than layers of translation."
+    ],
     "link": {
       "href": "#/aurora",
       "label": "Read the full Aurora page"
