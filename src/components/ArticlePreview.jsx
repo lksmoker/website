@@ -12,7 +12,7 @@ export default function ArticlePreview({ article }) {
         {category && <span> • {category}</span>}
       </div>
       {slug && (
-        <Link to={`/writing/${slug}`} className="card-link">
+        <Link to={`/reflections/${slug}`} className="card-link">
           Read article
         </Link>
       )}
