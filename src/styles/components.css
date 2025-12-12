@@ -370,7 +370,7 @@ ul.text-body li {
 }
 
 .project-layout__header {
-  padding-top: var(--space-m); /* or even var(--space-s) */
+  padding-top: var(--space-xs); /* or even var(--space-s) */
 }
 
 

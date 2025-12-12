@@ -23,7 +23,8 @@ export default function ProjectLayout({ project }) {
     screenshots,
     timeline,
     tags,
-    link
+    link,
+    tech
   } = project;
 
   const isOpsLogistics = slug === "operations-workflow";
@@ -55,10 +56,10 @@ export default function ProjectLayout({ project }) {
          ──────────────────────────────────────────────── */}
       {isOpsLogistics ? (
         <>
-          {/* Experience by Role FIRST */}
           {experience && experience.length > 0 && (
             <section className="project-layout__section">
               <h2 className="heading-m section-header">Experience by Role</h2>
+
               {experience.map((roleItem, idx) => (
                 <div key={idx} className="experience-block">
                   <h3 className="heading-s role-header">
@@ -83,13 +84,41 @@ export default function ProjectLayout({ project }) {
         <>
           {/* ────────────────────────────────────────────────
              DEFAULT LAYOUT FOR OTHER PROJECTS
+             order: screenshots → tech → role → problem → solution → impact
              ──────────────────────────────────────────────── */}
 
-          {/* Problem */}
-          {problem && (
+          {/* Screenshots */}
+          {screenshots && screenshots.length > 0 && (
             <section className="project-layout__section">
-              <h2 className="heading-m section-header">Problem</h2>
-              <p className="text-body">{problem}</p>
+              <h2 className="heading-m section-header">Screenshots</h2>
+              <ProjectScreenshotCarousel screenshots={screenshots} />
+            </section>
+          )}
+
+          {/* Tech stack */}
+          {tech && (tech.ids?.length > 0 || tech.bullets?.length > 0) && (
+            <section className="project-layout__section">
+              <h2 className="heading-m section-header">Tech Stack</h2>
+
+              {tech.ids && tech.ids.length > 0 && (
+                <div className="project-layout__meta project-layout__meta--tech">
+                  {tech.ids.map((id) => (
+                    <span key={id} className="project-layout__meta-item">
+                      {id}
+                    </span>
+                  ))}
+                </div>
+              )}
+
+              {tech.bullets && tech.bullets.length > 0 && (
+                <ul className="project-list">
+                  {tech.bullets.map((item, idx) => (
+                    <li key={idx} className="text-body">
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              )}
             </section>
           )}
 
@@ -98,6 +127,14 @@ export default function ProjectLayout({ project }) {
             <section className="project-layout__section">
               <h2 className="heading-m section-header">Role</h2>
               <p className="text-body">{role}</p>
+            </section>
+          )}
+
+          {/* Problem */}
+          {problem && (
+            <section className="project-layout__section">
+              <h2 className="heading-m section-header">Problem</h2>
+              <p className="text-body">{problem}</p>
             </section>
           )}
 
@@ -136,39 +173,7 @@ export default function ProjectLayout({ project }) {
               )}
             </section>
           )}
-
-          {/* Optional Experience Section for Other Projects */}
-          {experience && experience.length > 0 && (
-            <section className="project-layout__section">
-              <h2 className="heading-m section-header">Experience</h2>
-              {experience.map((roleItem, idx) => (
-                <div key={idx} className="experience-block">
-                  <h3 className="heading-s role-header">
-                    {roleItem.role} — {roleItem.organization}
-                  </h3>
-
-                  {roleItem.highlights && roleItem.highlights.length > 0 && (
-                    <ul className="project-list">
-                      {roleItem.highlights.map((item, index) => (
-                        <li key={index} className="text-body">
-                          {item}
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </div>
-              ))}
-            </section>
-          )}
         </>
-      )}
-
-      {/* Screenshots (shared for all projects) */}
-      {screenshots && screenshots.length > 0 && (
-        <section className="project-layout__section">
-          <h2 className="heading-m section-header">Screenshots</h2>
-          <ProjectScreenshotCarousel images={screenshots} />
-        </section>
       )}
 
       {/* Optional external link */}
