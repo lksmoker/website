@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import aboutContent from "../content/about.json";
 import SectionHeader from "../components/SectionHeader.jsx";
 import TextBlock from "../components/TextBlock.jsx";
@@ -22,7 +23,7 @@ export default function AboutPage() {
         ))}
       </section>
 
-      {/* How I Work (NEW SECTION) */}
+      {/* How I Work */}
       {sections.howIWork && (
         <section className="page-section">
           <SectionHeader title="How I Work" />
@@ -31,6 +32,19 @@ export default function AboutPage() {
           ))}
         </section>
       )}
+
+      {/* Reflections link */}
+      <section className="page-section">
+        <TextBlock>
+          I've written some reflections on how I work — tracing where things
+          broke, what changed, and what eventually held. A few of those
+          reflections live{" "}
+          <Link to="/reflections" className="inline-link">
+            here
+          </Link>
+          .
+        </TextBlock>
+      </section>
 
       {/* Skills & Capabilities */}
       <section className="page-section">
