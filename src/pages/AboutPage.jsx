@@ -13,6 +13,16 @@ export default function AboutPage() {
       <section className="page-section">
         <SectionHeader title="About" />
         <TextBlock>{sections.summary.body}</TextBlock>
+
+        <TextBlock>
+          I also write short reflections on how I approach systems and work —
+          tracing where things broke, what changed, and what eventually held. A
+          few of those reflections live{" "}
+          <Link to="/reflections" className="inline-link">
+            here
+          </Link>
+          .
+        </TextBlock>
       </section>
 
       {/* Career Story */}
@@ -32,19 +42,6 @@ export default function AboutPage() {
           ))}
         </section>
       )}
-
-      {/* Reflections link */}
-      <section className="page-section">
-        <TextBlock>
-          I've written some reflections on how I work — tracing where things
-          broke, what changed, and what eventually held. A few of those
-          reflections live{" "}
-          <Link to="/reflections" className="inline-link">
-            here
-          </Link>
-          .
-        </TextBlock>
-      </section>
 
       {/* Skills & Capabilities */}
       <section className="page-section">
