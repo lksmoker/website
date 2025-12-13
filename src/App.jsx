@@ -11,10 +11,12 @@ import AuroraPage from "./pages/AuroraPage.jsx";
 import WritingIndexPage from "./pages/WritingIndexPage.jsx";
 import WritingArticlePage from "./pages/WritingArticlePage.jsx";
 import ContactPage from "./pages/ContactPage.jsx";
+import ScrollToTop from "./components/ScrollToTop.jsx";
 
 export default function App() {
   return (
     <SiteShell>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
