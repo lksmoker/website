@@ -2,291 +2,328 @@
    HERO
    ───────────────────────────────────────────────────────────── */
 
-.hero {
-  padding: var(--space-s) var(--space-s) var(--space-xl);
-  max-width: var(--max-width);
-  margin: 0 auto var(--space-m);
-}
-
-.hero-inner {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-m);
-  max-width: 680px;
-}
-
-.hero-title {
-  font-size: 2.25rem;
-  font-weight: 600;
-  line-height: 1.1;
-  margin: 0 0 var(--space-s);
-  color: var(--accent-blue); /* Accent: structural blue */
-}
-
-.hero-subtitle {
-  font-size: 1.25rem;
-  max-width: 60ch;
-  margin: 0 0 var(--space-s);
-  opacity: 0.9;
-}
-
-.hero-support,
-.hero-supporting {
-  font-size: 1rem;
-  max-width: 60ch;
-  margin: 0;
-  opacity: 0.9;
-}
-
-@media (max-width: 600px) {
-  .hero {
-    padding: var(--space-m) var(--space-m) var(--space-l);
-  }
-}
-
-/* ─────────────────────────────────────────────────────────────
-   SECTION HEADERS & TEXT BLOCKS
-   ───────────────────────────────────────────────────────────── */
-
-.section-header {
-  margin-bottom: var(--space-s);
-}
-
-.section-header__title {
-  font-size: 1.4rem;
-  font-weight: 600;
-  margin: 0;
-  padding-left: var(--space-s);
-  border-left: 4px solid var(--accent-orange);
-}
-
-.section-eyebrow {
-  font-size: 0.8rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  opacity: 0.6;
-  margin-bottom: var(--space-xs);
-}
-
-.section-header__row {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: var(--space-m);
-}
-
-.section-header__hint {
-  font-size: 0.85rem;
-  color: var(--color-muted);
-  text-decoration: none;
-  white-space: nowrap;
-}
-
-.section-header__hint:hover {
-  color: var(--color-text);
-  text-decoration: underline;
-}
-
-.text-block {
-  margin-bottom: var(--space-m);
-  max-width: 680px;
-}
-
-ul.text-body {
-  padding-left: 1.25rem;
-  margin-top: 0;
-  margin-bottom: var(--space-m);
-}
-
-ul.text-body li {
-  margin-bottom: var(--space-xs);
-}
-
-/* ─────────────────────────────────────────────────────────────
-   CARDS + PROJECT CARDS
-   ───────────────────────────────────────────────────────────── */
-
-.card {
-  padding: var(--space-m);
-  background: var(--color-surface);
-  border-radius: 0.5rem;
-  border: 1px solid var(--color-border);
-  font-size: 0.95rem;
-  line-height: 1.5;
-}
-
-.card-title {
-  font-weight: 600;
-  margin-bottom: 0.35rem;
-}
-
-.card-link {
-  display: inline-block;
-  margin-top: var(--space-xs);
-  font-size: 0.9rem;
-  text-decoration: underline;
-}
-
-.project-card {
-  background: var(--color-surface);
-  border-radius: 0.5rem;
-  border: 1px solid var(--color-border);
-  padding: var(--space-m);
-  font-size: 0.95rem;
-  line-height: 1.5;
-}
-
-.project-card__title {
-  font-weight: 600;
-  margin: 0 0 var(--space-xs);
-  color: var(--accent-blue);
-}
-
-.project-card__summary {
-  margin: 0;
-}
-
-.project-card-tech {
-  margin-top: var(--space-s);
-  display: flex;
-  align-items: center;
-}
-
-/* ─────────────────────────────────────────────────────────────
-   TECH STACK ICONS (cards + project pages)
-   ───────────────────────────────────────────────────────────── */
-
-.tech-strip {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.35rem;
-  align-items: center;
-}
-
-.tech-strip__item {
-  width: 24px;
-  height: 24px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 999px;
-  overflow: hidden;
-}
-
-.tech-strip__icon {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: contain;
-}
-
-/* ───────── Homepage Card Grids (Selected Projects, Product Pillars, Skills) ───────── */
-
-.card-row {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: var(--space-m);
-}
-
-.pillars-grid,
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: var(--space-m);
-}
-
-/* ───────── Project Card (Preview Style) ───────── */
-
-.card-meta {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  opacity: 0.7;
-  margin-bottom: 0.35rem;
-}
-
-.project-card-thumb-wrapper {
-  display: flex;
-  justify-content: center;
-}
-
-.project-card-thumb {
-  width: 100%;
-  max-height: 500px;
-  object-fit: contain;
-  border-radius: 0.6rem;
-  padding: 0.35rem;
-  background: #fff;
-  border: 1px solid rgba(0,0,0,0.05);
-}
-
-.project-summary {
-  margin: 0 0 0.5rem;
-  font-size: 0.95rem;
-  line-height: 1.5;
-}
-
-.project-link {
-  display: inline-block;
-  font-size: 0.85rem;
-  text-decoration: underline;
-  text-underline-offset: 0.15em;
-}
-
-.role-header {
-  position: relative;
-  padding-left: var(--space-s);
-  margin-top: var(--space-m);
-}
-
-.role-header::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.35em;
-  width: 3px;
-  height: 1em;
-  background: var(--accent-orange);
-  border-radius: 2px;
-}
-/* ─────────────────────────────────────────────────────────────
-   AURORA CALLOUT
-   ───────────────────────────────────────────────────────────── */
-
-.aurora-callout {
-  padding: var(--space-m);
-  border-left: 3px solid var(--accent-orange);
-  background: var(--accent-orange-light);
-  border-radius: 0.5rem;
-}
-
-/* ─────────────────────────────────────────────────────────────
-   LAYOUT HELPERS
-   ───────────────────────────────────────────────────────────── */
-
-.project-layout__section {
-  margin-bottom: var(--space-l);
-}
-
-.article-layout__body {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-s);
-}
-
-/* ─────────────────────────────────────────────────────────────
-   PROJECT LAYOUT — 2-COLUMN DESKTOP GRID (MAIN + ASIDE)
-   Keeps narrative readable; uses desktop width better.
-   ───────────────────────────────────────────────────────────── */
-
-   .project-layout__grid {
-    display: grid;
-    grid-template-columns: 1fr; /* mobile default */
-    gap: var(--space-l);
+   .hero {
+    padding: var(--space-s) var(--space-s) var(--space-xl);
+    max-width: var(--max-width);
+    margin: 0 auto var(--space-m);
   }
   
+  .hero-inner {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-m);
+    max-width: 680px;
+  }
+  
+  .hero-title {
+    font-size: 2.25rem;
+    font-weight: 600;
+    line-height: 1.1;
+    margin: 0 0 var(--space-s);
+    color: var(--accent-blue); /* Accent: structural blue */
+  }
+  
+  .hero-subtitle {
+    font-size: 1.25rem;
+    max-width: 60ch;
+    margin: 0 0 var(--space-s);
+    opacity: 0.9;
+  }
+  
+  .hero-support,
+  .hero-supporting {
+    font-size: 1rem;
+    max-width: 60ch;
+    margin: 0;
+    opacity: 0.9;
+  }
+  
+  @media (max-width: 600px) {
+    .hero {
+      padding: var(--space-m) var(--space-m) var(--space-l);
+    }
+  }
+  
+  /* ─────────────────────────────────────────────────────────────
+     SECTION HEADERS & TEXT BLOCKS
+     ───────────────────────────────────────────────────────────── */
+  
+  .section-header {
+    margin-bottom: var(--space-s);
+  }
+  
+  .section-header__title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0;
+    padding-left: var(--space-s);
+    border-left: 4px solid var(--accent-orange);
+  }
+  
+  .section-eyebrow {
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    opacity: 0.6;
+    margin-bottom: var(--space-xs);
+  }
+  
+  .section-header__row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--space-m);
+  }
+  
+  .section-header__hint {
+    font-size: 0.85rem;
+    color: var(--color-muted);
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  
+  .section-header__hint:hover {
+    color: var(--color-text);
+    text-decoration: underline;
+  }
+  
+  .text-block {
+    margin-bottom: var(--space-m);
+    max-width: 680px;
+  }
+  
+  ul.text-body {
+    padding-left: 1.25rem;
+    margin-top: 0;
+    margin-bottom: var(--space-m);
+  }
+  
+  ul.text-body li {
+    margin-bottom: var(--space-xs);
+  }
+  
+  /* ─────────────────────────────────────────────────────────────
+     CARDS + PROJECT CARDS
+     ───────────────────────────────────────────────────────────── */
+  
+  .card {
+    padding: var(--space-m);
+    background: var(--color-surface);
+    border-radius: 0.5rem;
+    border: 1px solid var(--color-border);
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  .card-title {
+    font-weight: 600;
+    margin-bottom: 0.35rem;
+  }
+  
+  .card-link {
+    display: inline-block;
+    margin-top: var(--space-xs);
+    font-size: 0.9rem;
+    text-decoration: underline;
+  }
+  
+  .project-card {
+    background: var(--color-surface);
+    border-radius: 0.5rem;
+    border: 1px solid var(--color-border);
+    padding: var(--space-m);
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  .project-card__title {
+    font-weight: 600;
+    margin: 0 0 var(--space-xs);
+    color: var(--accent-blue);
+  }
+  
+  .project-card__summary {
+    margin: 0;
+  }
+  
+  .project-card-tech {
+    margin-top: var(--space-s);
+    display: flex;
+    align-items: center;
+  }
+  
+  /* ─────────────────────────────────────────────────────────────
+     TECH STACK ICONS (cards + project pages)
+     ───────────────────────────────────────────────────────────── */
+  
+  .tech-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    align-items: center;
+  }
+  
+  .tech-strip__item {
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    overflow: hidden;
+  }
+  
+  .tech-strip__icon {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+  }
+  
+  /* ───────── Homepage Card Grids (Selected Projects, Product Pillars, Skills) ───────── */
+  
+  .card-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: var(--space-m);
+  }
+  
+  .pillars-grid,
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: var(--space-m);
+  }
+  
+  /* ───────── Project Card (Preview Style) ───────── */
+  
+  .card-meta {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    opacity: 0.7;
+    margin-bottom: 0.35rem;
+  }
+  
+  .project-card-thumb-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .project-card-thumb {
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+    border-radius: 0.6rem;
+    padding: 0.35rem;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+  }
+  
+  .project-summary {
+    margin: 0 0 0.5rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  .project-link {
+    display: inline-block;
+    font-size: 0.85rem;
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
+  
+  .role-header {
+    position: relative;
+    padding-left: var(--space-s);
+    margin-top: var(--space-m);
+  }
+  
+  .role-header::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.35em;
+    width: 3px;
+    height: 1em;
+    background: var(--accent-orange);
+    border-radius: 2px;
+  }
+  
+  /* ─────────────────────────────────────────────────────────────
+     AURORA CALLOUT
+     ───────────────────────────────────────────────────────────── */
+  
+  .aurora-callout {
+    padding: var(--space-m);
+    border-left: 3px solid var(--accent-orange);
+    background: var(--accent-orange-light);
+    border-radius: 0.5rem;
+  }
+  
+  /* ─────────────────────────────────────────────────────────────
+     LAYOUT HELPERS
+     ───────────────────────────────────────────────────────────── */
+  
+  .article-layout__body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-s);
+  }
+  
+  /* ─────────────────────────────────────────────────────────────
+     PROJECT LAYOUT — HEADER / GRID / SECTIONS
+     ───────────────────────────────────────────────────────────── */
+  
+  .project-layout {
+    max-width: var(--max-width);
+    margin: 0 auto var(--space-xl);
+    padding: var(--space-s) var(--space-m) var(--space-xl);
+  }
+  
+  .project-layout__header {
+    padding-top: var(--space-xs);
+  }
+  
+  .project-layout__header h1 {
+    margin-bottom: var(--space-xs);
+  }
+  
+  /* Meta: timeline + tags */
+  .project-layout__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+    margin-bottom: var(--space-s);
+  }
+  
+  .project-layout__meta-item {
+    font-size: 0.9rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.65;
+  }
+  
+  /* Summary paragraph under meta */
+  .project-layout__header .text-body {
+    margin-top: var(--space-xs);
+    max-width: 60ch;
+    opacity: 0.9;
+  }
+  
+  /* Mobile shows the explicit stack */
+  .project-layout__mobile {
+    display: block;
+  }
+  
+  /* Desktop grid hidden by default (mobile) */
+  .project-layout__grid {
+    display: none;
+  }
+  
+  /* Ensure main column can shrink inside grid layouts */
   .project-layout__main {
-    min-width: 0; /* prevents overflow in grids */
+    min-width: 0;
   }
   
   /* Keep narrative blocks from becoming too wide */
@@ -295,15 +332,13 @@ ul.text-body li {
     max-width: 60ch;
   }
   
-  /* Screenshots should be allowed to breathe */
-  .project-layout__main .project-layout__section:first-child .project-carousel,
-  .project-layout__main .project-layout__section:first-child .project-screenshot-carousel,
-  .project-layout__main .project-layout__section:first-child img {
-    max-width: 100%;
-  }
-  
   @media (min-width: 960px) {
+    .project-layout__mobile {
+      display: none;
+    }
+  
     .project-layout__grid {
+      display: grid;
       grid-template-columns: minmax(0, 1fr) 360px;
       align-items: start;
       gap: var(--space-xl);
@@ -314,7 +349,13 @@ ul.text-body li {
       top: var(--space-l);
     }
   
-    /* Sidebar spacing: use same divider rhythm, but a bit tighter */
+    /* Sidebar text shouldn't be a narrow 60ch column */
+    .project-layout__aside .text-body,
+    .project-layout__aside .project-list {
+      max-width: none;
+    }
+  
+    /* Sidebar spacing rhythm */
     .project-layout__section--aside {
       margin-bottom: 0;
     }
@@ -325,234 +366,198 @@ ul.text-body li {
       border-top: 1px solid var(--color-border);
     }
   
-    /* Sidebar text shouldn't be a narrow 60ch column */
-    .project-layout__aside .text-body,
-    .project-layout__aside .project-list {
-      max-width: none;
-    }
-  
-    /* Optional: make tech “tags” wrap nicely in sidebar */
     .project-layout__meta--tech {
       margin-bottom: var(--space-s);
     }
   }
   
-/* ─────────────────────────────────────────────────────────────
-   CONTACT FORM
-   ───────────────────────────────────────────────────────────── */
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-m);
-  max-width: 480px;
-}
-
-.form-field {
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
-  font-size: 0.95rem;
-}
-
-.form-field label {
-  font-weight: 500;
-}
-
-.form-field input,
-.form-field textarea {
-  padding: 0.5rem 0.6rem;
-  border-radius: 0.35rem;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  font: inherit;
-  background: #ffffff;
-}
-
-.form-field input:focus,
-.form-field textarea:focus {
-  outline: 2px solid var(--accent-blue);
-  outline-offset: 1px;
-}
-
-.primary-button {
-  padding: 0.55rem 1.2rem;
-  border-radius: 999px;
-  border: none;
-  font: inherit;
-  cursor: pointer;
-  background: #222222;
-  color: #ffffff;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.primary-button:hover {
-  opacity: 0.92;
-}
-
-.primary-button:focus-visible {
-  outline: 2px solid var(--accent-blue);
-  outline-offset: 2px;
-}
-
-.contact-confirmation {
-  margin-top: var(--space-s);
-}
-
-/* ─────────────────────────────────────────────────────────────
-   AURORA SIGNAL CARDS
-   ───────────────────────────────────────────────────────────── */
-
-.aurora-signals {
-  display: grid;
-  gap: var(--space-l);
-}
-
-.aurora-signal.card {
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: 12px;
-  padding: var(--space-l);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
-}
-
-.aurora-signal__source a {
-  font-weight: 600;
-  text-decoration: none;
-  color: var(--accent-blue);
-}
-
-.aurora-signal__source a:hover {
-  text-decoration: underline;
-}
-
-.aurora-signal__idea {
-  margin: var(--space-s) 0;
-  font-style: italic;
-}
-
-.aurora-signal__answer {
-  margin-top: var(--space-s);
-}
-
-/* ─────────────────────────────────────────────────────────────
-   PROJECT LAYOUT — HEADER / META / SUMMARY
-   ───────────────────────────────────────────────────────────── */
-
-.project-layout {
-  max-width: var(--max-width);
-  margin: 0 auto var(--space-xl);
-  padding: var(--space-xl) var(--space-m) var(--space-xl);
-}
-
-/* Reduce top spacing on project pages (aligns with About page spacing) */
-.project-layout {
-  padding-top: var(--space-s); /* was space-xl */
-}
-
-.project-layout__header {
-  padding-top: var(--space-xs); /* or even var(--space-s) */
-}
-
-
-.project-layout__header h1 {
-  margin-bottom: var(--space-xs);
-}
-
-/* Meta: timeline + tags */
-.project-layout__meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-xs);
-  margin-bottom: var(--space-s);
-}
-
-.project-layout__meta-item {
-  font-size: 0.9rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  opacity: 0.65;
-}
-
-/* Summary paragraph under meta */
-.project-layout__header .text-body {
-  margin-top: var(--space-xs);
-  max-width: 60ch;
-  opacity: 0.9;
-}
-
-/* Make each project section a white card */
-.project-layout__section {
-  background: var(--color-bg-muted); /* white */
-  border: 1px solid var(--color-border);
-  border-radius: 12px;
-  padding: var(--space-l) var(--space-m);
-  margin-bottom: 0; /* override the old margin-bottom rule */
-}
-
-/* Use spacing between cards instead of divider lines */
-.project-layout__section + .project-layout__section {
-  margin-top: var(--space-m);
-  padding-top: 0;
-  border-top: none;
-}
-
-
-.project-layout__section h2 {
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin: 0 0 var(--space-xs);
-}
-
-/* Mobile shows the explicit stack */
-.project-layout__mobile {
-  display: block;
-}
-
-/* Desktop grid hidden by default (mobile) */
-.project-layout__grid {
-  display: none;
-}
-
-@media (min-width: 960px) {
-  .project-layout__mobile {
-    display: none;
+  /* Section “cards” */
+  .project-layout__section {
+    background: var(--color-bg-muted);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+  
+    /* Adds breathing room so headings don't hug the top edge */
+    padding: calc(var(--space-l) + var(--space-xs)) var(--space-m) var(--space-l);
+  
+    /* Spacing between cards */
+    margin: 0;
+  
+    /* Protects mobile layout from long strings/URLs */
+    overflow-wrap: anywhere;
+  
+    /* If used inside grid/flex, allow content to shrink */
+    min-width: 0;
   }
-
-  .project-layout__grid {
+  
+  .project-layout__section + .project-layout__section {
+    margin-top: var(--space-m);
+  }
+  
+  .project-layout__section h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 0 var(--space-xs);
+  }
+  
+  /* Screenshots / carousel safety */
+  
+  /* Keep the "first section breathe" rule focused on the actual screenshot image class */
+  .project-layout__main .project-layout__section:first-child .project-carousel,
+  .project-layout__main .project-layout__section:first-child .project-screenshot-carousel,
+  .project-layout__main .project-layout__section:first-child .project-screenshots__image {
+    max-width: 100%;
+  }
+  
+  /* Fix mobile right-edge overflow in screenshots */
+  .project-screenshots__figure {
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .project-screenshots__image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* If any parent is flex/grid, allow children to shrink instead of overflow */
+  .project-screenshots {
+    min-width: 0;
+  }
+  
+  /* Project tech section layout */
+  .project-layout__section--tech .project-layout__tech-icons {
+    margin-bottom: 0.5rem;
+  }
+  
+  .tech-bullets-list {
+    margin: 0;
+    padding-left: 1.15rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  .tech-bullets-list li + li {
+    margin-top: 0.25rem;
+  }
+  
+  /* Make tech feel visually grouped with screenshots */
+  .project-layout__section--screenshots + .project-layout__section--tech {
+    margin-top: var(--space-m);
+    padding-top: 0;
+    border-top: none;
+  }
+  
+  /* ─────────────────────────────────────────────────────────────
+     CONTACT FORM
+     ───────────────────────────────────────────────────────────── */
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-m);
+    max-width: 480px;
+  }
+  
+  .form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    font-size: 0.95rem;
+  }
+  
+  .form-field label {
+    font-weight: 500;
+  }
+  
+  .form-field input,
+  .form-field textarea {
+    padding: 0.5rem 0.6rem;
+    border-radius: 0.35rem;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    font: inherit;
+    background: #ffffff;
+  }
+  
+  .form-field input:focus,
+  .form-field textarea:focus {
+    outline: 2px solid var(--accent-blue);
+    outline-offset: 1px;
+  }
+  
+  .primary-button {
+    padding: 0.55rem 1.2rem;
+    border-radius: 999px;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    background: #222222;
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .primary-button:hover {
+    opacity: 0.92;
+  }
+  
+  .primary-button:focus-visible {
+    outline: 2px solid var(--accent-blue);
+    outline-offset: 2px;
+  }
+  
+  .contact-confirmation {
+    margin-top: var(--space-s);
+  }
+  
+  /* ─────────────────────────────────────────────────────────────
+     AURORA SIGNAL CARDS
+     ───────────────────────────────────────────────────────────── */
+  
+  .aurora-signals {
     display: grid;
+    gap: var(--space-l);
   }
-}
-
-
-/* Project tech section layout */
-.project-layout__section--tech .project-layout__tech-icons {
-  margin-bottom: 0.5rem;
-}
-
-.tech-bullets-list {
-  margin: 0;
-  padding-left: 1.15rem;
-  font-size: 0.95rem;
-  line-height: 1.5;
-}
-
-.tech-bullets-list li + li {
-  margin-top: 0.25rem;
-}
-
-/* Make tech feel visually grouped with screenshots */
-.project-layout__section--screenshots + .project-layout__section--tech {
-  margin-top: var(--space-m);
-  padding-top: 0;
-  border-top: none;
-}
-
-/* About: Skills cards */
-.skills-group {
-  background: var(--color-bg-muted); /* white */
-  border: 1px solid var(--color-border);
-  border-radius: 12px;
-  padding: var(--space-m);
-}
+  
+  .aurora-signal.card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    padding: var(--space-l);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  }
+  
+  .aurora-signal__source a {
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--accent-blue);
+  }
+  
+  .aurora-signal__source a:hover {
+    text-decoration: underline;
+  }
+  
+  .aurora-signal__idea {
+    margin: var(--space-s) 0;
+    font-style: italic;
+  }
+  
+  .aurora-signal__answer {
+    margin-top: var(--space-s);
+  }
+  
+  /* ─────────────────────────────────────────────────────────────
+     ABOUT: SKILLS CARDS
+     ───────────────────────────────────────────────────────────── */
+  
+  .skills-group {
+    background: var(--color-bg-muted); /* white */
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    padding: var(--space-m);
+  }
+  
