@@ -68,6 +68,25 @@
   margin-bottom: var(--space-xs);
 }
 
+.section-header__row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-m);
+}
+
+.section-header__hint {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.section-header__hint:hover {
+  color: var(--color-text);
+  text-decoration: underline;
+}
+
 .text-block {
   margin-bottom: var(--space-m);
   max-width: 680px;
@@ -463,12 +482,22 @@ ul.text-body li {
   opacity: 0.9;
 }
 
-/* Section dividers & spacing */
-.project-layout__section + .project-layout__section {
-  margin-top: var(--space-l);
-  padding-top: var(--space-l);
-  border-top: 1px solid var(--color-border);
+/* Make each project section a white card */
+.project-layout__section {
+  background: var(--color-bg-muted); /* white */
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: var(--space-l) var(--space-m);
+  margin-bottom: 0; /* override the old margin-bottom rule */
 }
+
+/* Use spacing between cards instead of divider lines */
+.project-layout__section + .project-layout__section {
+  margin-top: var(--space-m);
+  padding-top: 0;
+  border-top: none;
+}
+
 
 .project-layout__section h2 {
   font-size: 1.1rem;
@@ -518,4 +547,12 @@ ul.text-body li {
   margin-top: var(--space-m);
   padding-top: 0;
   border-top: none;
+}
+
+/* About: Skills cards */
+.skills-group {
+  background: var(--color-bg-muted); /* white */
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: var(--space-m);
 }

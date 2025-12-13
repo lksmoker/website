@@ -56,3 +56,34 @@ body {
 a {
   color: inherit;
 }
+
+/* globals.css */
+.surface-card {
+  background: var(--color-bg-muted); /* white */
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: var(--space-l) var(--space-m);
+}
+
+.site-footer {
+  border-top: 1px solid var(--color-border);
+  margin-top: var(--space-xl);
+}
+
+.footer-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-m);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-resume-link {
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.footer-resume-link:hover {
+  text-decoration: underline;
+}

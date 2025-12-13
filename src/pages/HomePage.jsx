@@ -20,7 +20,7 @@ import ProjectCard from "../components/ProjectCard.jsx";
 
 // ─── BLOCK: configuration ─────────────────────────────────────
 
-const SHOW_WRITING_PREVIEW = false; // Flip to true when you're ready to show the writing section
+const SHOW_WRITING_PREVIEW = true; // Flip to true when you're ready to show the writing section
 
 // ─── BLOCK: component ─────────────────────────────────────────
 
@@ -111,35 +111,60 @@ export default function HomePage() {
       {/* ── AURORA PREVIEW ────────────────────────────────────── */}
       {auroraPreview && (
         <section className="page-section">
-          <Link to="/aurora" className="no-decoration">
-            <SectionHeader
-              eyebrow="Concept Work"
-              title={auroraPreview.heading}
-            />
-            <TextBlock>{auroraPreview.body}</TextBlock>
-          </Link>
+          <SectionHeader
+            eyebrow="Concept Work"
+            title={auroraPreview.heading}
+          />
+
+          <TextBlock>{auroraPreview.body}</TextBlock>
+
+          <div className="text-body">
+            <Link to="/aurora" className="inline-link">
+              Explore →
+            </Link>
+          </div>
         </section>
       )}
+
+
 
       {/* ── ABOUT PREVIEW ─────────────────────────────────────── */}
       {aboutPreview && (
         <section className="page-section">
-          <Link to="/about" className="no-decoration">
-            <SectionHeader eyebrow="About" title={aboutPreview.heading} />
-            <TextBlock>{aboutPreview.body}</TextBlock>
-          </Link>
+          <SectionHeader
+            eyebrow="About"
+            title={aboutPreview.heading}
+          />
+
+          <TextBlock>{aboutPreview.body}</TextBlock>
+
+          <div className="text-body">
+            <Link to="/about" className="inline-link">
+              Learn more →
+            </Link>
+          </div>
         </section>
       )}
 
       {/* ── OPTIONAL WRITING PREVIEW ──────────────────────────── */}
       {SHOW_WRITING_PREVIEW && writingPreview && (
         <section className="page-section">
-          <SectionHeader eyebrow="Writing" title={writingPreview.heading} />
+          <SectionHeader
+            eyebrow="Writing"
+            title={writingPreview.heading}
+          />
+
           <ul className="text-body">
             {writingPreview.items.map((item, idx) => (
               <li key={idx}>{item}</li>
             ))}
           </ul>
+
+          <div className="text-body">
+            <Link to="/reflections" className="inline-link">
+              Read more →
+            </Link>
+          </div>
         </section>
       )}
 

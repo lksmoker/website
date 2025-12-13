@@ -21,10 +21,7 @@
           "title": "Start from real workflows",
           "body": "Observe how work actually happens, then frame problems and requirements from that ground truth."
         },
-        {
-          "title": "Design for clarity",
-          "body": "Make states, responsibilities, and feedback loops obvious to the people using the system."
-        },
+        
         {
           "title": "Build explainable tools",
           "body": "Favor systems where it’s always clear why something happened, not just what happened."
