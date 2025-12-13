@@ -476,6 +476,27 @@ ul.text-body li {
   margin: 0 0 var(--space-xs);
 }
 
+/* Mobile shows the explicit stack */
+.project-layout__mobile {
+  display: block;
+}
+
+/* Desktop grid hidden by default (mobile) */
+.project-layout__grid {
+  display: none;
+}
+
+@media (min-width: 960px) {
+  .project-layout__mobile {
+    display: none;
+  }
+
+  .project-layout__grid {
+    display: grid;
+  }
+}
+
+
 /* Project tech section layout */
 .project-layout__section--tech .project-layout__tech-icons {
   margin-bottom: 0.5rem;

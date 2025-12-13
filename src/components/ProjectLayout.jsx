@@ -32,20 +32,16 @@ export default function ProjectLayout({ project }) {
   const hasTech = tech && (tech.ids?.length > 0 || tech.bullets?.length > 0);
   const hasRole = Boolean(role);
   const hasLink = Boolean(link && link.href);
-  const hasAside = hasTech || hasRole || hasLink || impact;
+  const hasKeyDecisions = project.keyDecisions?.length > 0;
 
-  // Helpers
-  const toBullets = (val) => (Array.isArray(val) ? val : val ? [val] : []);
-  const solutionBullets = toBullets(solution);
-  const impactBullets = toBullets(impact);
-
-  const glanceItems = solutionBullets.slice(0, 4);
+  // Sidebar only exists if there is something meaningful to show.
+  const hasAside = hasTech || hasKeyDecisions || hasLink || impact;
 
   const renderListOrText = (items) => {
     if (!items) return null;
     if (!Array.isArray(items)) return <p className="text-body">{items}</p>;
     if (items.length === 1) return <p className="text-body">{items[0]}</p>;
-  
+
     return (
       <ul className="project-list">
         {items.map((item, idx) => (
@@ -56,7 +52,81 @@ export default function ProjectLayout({ project }) {
       </ul>
     );
   };
-  
+
+  // ─────────────────────────────────────────────────────────────
+  // SECTIONS (reuse across mobile + desktop without duplicating logic)
+  // ─────────────────────────────────────────────────────────────
+
+  const ScreenshotsSection =
+    screenshots && screenshots.length > 0 ? (
+      <section className="project-layout__section">
+        <h2 className="heading-m section-header">Screenshots</h2>
+        <ProjectScreenshotCarousel screenshots={screenshots} />
+      </section>
+    ) : null;
+
+  const RoleSection = hasRole ? (
+    <section className="project-layout__section">
+      <h2 className="heading-m section-header">Role</h2>
+      <p className="text-body">{role}</p>
+    </section>
+  ) : null;
+
+  const ProblemSection = problem ? (
+    <section className="project-layout__section">
+      <h2 className="heading-m section-header">Problem</h2>
+      <p className="text-body">{problem}</p>
+    </section>
+  ) : null;
+
+  const SolutionSection = solution ? (
+    <section className="project-layout__section">
+      <h2 className="heading-m section-header">Solution</h2>
+      {renderListOrText(solution)}
+    </section>
+  ) : null;
+
+  const TechSection = hasTech ? (
+    <section className="project-layout__section project-layout__section--aside">
+      <h2 className="heading-m section-header">Tech Stack</h2>
+
+      {tech.ids && tech.ids.length > 0 && (
+        <div className="project-layout__meta project-layout__meta--tech">
+          {tech.ids.map((id) => (
+            <span key={id} className="project-layout__meta-item">
+              {id}
+            </span>
+          ))}
+        </div>
+      )}
+
+      {tech.bullets && tech.bullets.length > 0 && (
+        <div>{renderListOrText(tech.bullets)}</div>
+      )}
+    </section>
+  ) : null;
+
+  const KeyDecisionsSection = hasKeyDecisions ? (
+    <section className="project-layout__section project-layout__section--aside">
+      <h2 className="heading-m section-header">Key product decisions</h2>
+      {renderListOrText(project.keyDecisions)}
+    </section>
+  ) : null;
+
+  const ImpactSection = impact ? (
+    <section className="project-layout__section project-layout__section--aside">
+      <h2 className="heading-m section-header">Impact</h2>
+      {renderListOrText(impact)}
+    </section>
+  ) : null;
+
+  const LinkSection = hasLink ? (
+    <section className="project-layout__section project-layout__section--aside">
+      <a href={link.href} className="project-layout__link">
+        {link.label || "View related link"}
+      </a>
+    </section>
+  ) : null;
 
   return (
     <article className="project-layout">
@@ -120,9 +190,22 @@ export default function ProjectLayout({ project }) {
       ) : (
         <>
           {/* ────────────────────────────────────────────────
-             DEFAULT PROJECT LAYOUT (2-column desktop)
+             MOBILE STACK (explicit order)
              ──────────────────────────────────────────────── */}
+          <div className="project-layout__mobile">
+            {ScreenshotsSection}
+            {RoleSection}
+            {TechSection}
+            {KeyDecisionsSection}
+            {ProblemSection}
+            {SolutionSection}
+            {ImpactSection}
+            {LinkSection}
+          </div>
 
+          {/* ────────────────────────────────────────────────
+             DESKTOP GRID (current behavior)
+             ──────────────────────────────────────────────── */}
           <div
             className={
               hasAside
@@ -130,98 +213,23 @@ export default function ProjectLayout({ project }) {
                 : "project-layout__grid project-layout__grid--no-aside"
             }
           >
-            {/* Main column */}
             <div className="project-layout__main">
-              {/* Screenshots */}
-              {screenshots && screenshots.length > 0 && (
-                <section className="project-layout__section">
-                  <h2 className="heading-m section-header">Screenshots</h2>
-                  <ProjectScreenshotCarousel screenshots={screenshots} />
-                </section>
-              )}
-
-              {/* Role — moved directly under screenshots */}
-              {hasRole && (
-                <section className="project-layout__section">
-                  <h2 className="heading-m section-header">Role</h2>
-                  <p className="text-body">{role}</p>
-                </section>
-              )}
-
-              {/* Problem */}
-              {problem && (
-                <section className="project-layout__section">
-                  <h2 className="heading-m section-header">Problem</h2>
-                  <p className="text-body">{problem}</p>
-                </section>
-              )}
-
-              {/* Solution */}
-              {solution && (
-                <section className="project-layout__section">
-                  <h2 className="heading-m section-header">Solution</h2>
-                  {renderListOrText(solution)}
-                </section>
-              )}
+              {ScreenshotsSection}
+              {RoleSection}
+              {ProblemSection}
+              {SolutionSection}
             </div>
 
-            {/* Sidebar */}
             {hasAside && (
               <aside
                 className="project-layout__aside"
                 aria-label="Project details"
               >
                 <div className="project-layout__aside-inner">
-                  {/* Tech stack */}
-                  {hasTech && (
-                    <section className="project-layout__section project-layout__section--aside">
-                      <h2 className="heading-m section-header">Tech Stack</h2>
-
-                      {tech.ids && tech.ids.length > 0 && (
-                        <div className="project-layout__meta project-layout__meta--tech">
-                          {tech.ids.map((id) => (
-                            <span key={id} className="project-layout__meta-item">
-                              {id}
-                            </span>
-                          ))}
-                        </div>
-                      )}
-
-                      {tech.bullets && tech.bullets.length > 0 && (
-                        <ul className="project-list">
-                          {tech.bullets.map((item, idx) => (
-                            <li key={idx} className="text-body">
-                              {item}
-                            </li>
-                          ))}
-                        </ul>
-                      )}
-                    </section>
-                  )}
-
-                  {project.keyDecisions?.length > 0 && (
-                    <section className="project-layout__section project-layout__section--aside">
-                      <h2 className="heading-m section-header">Key product decisions</h2>
-                      {renderListOrText(project.keyDecisions)}
-                    </section>
-                  )}
-
-                  {/* Impact — moved under At a glance */}
-                  {impact && (
-                    <section className="project-layout__section project-layout__section--aside">
-                      <h2 className="heading-m section-header">Impact</h2>
-                      {renderListOrText(impact)}
-                    </section>
-                  )}
-
-                  {/* Link */}
-                  {hasLink && (
-                    <section className="project-layout__section project-layout__section--aside">
-                      <a href={link.href} className="project-layout__link">
-                        {link.label || "View related link"}
-                      </a>
-                    </section>
-                  )}
+                  {TechSection}
+                  {KeyDecisionsSection}
+                  {ImpactSection}
+                  {LinkSection}
                 </div>
               </aside>
             )}
