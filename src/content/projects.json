@@ -8,9 +8,16 @@
     "tags": ["Internal tools", "Developer experience", "Full-stack"],
     "problem": "There were very few reliable ways to develop software on mobile, and existing tools made the workflow feel fragmented, unpredictable, and detached from real project context. I wanted something calmer, clearer, and closer to the way I actually think.",
     "context": "Dev Toolbox began as a response to friction I felt personally: coding on the go wasn't feasible, and switching tools constantly created cognitive drift. My strengths in systems thinking and restorative problem-solving pushed me toward a unified workspace — something self-hosted, adaptable, and designed so that reasoning stayed visible rather than buried.",
-    "solution": [
-      "I designed and built a self-hosted, mobile-first environment centered on the essentials: a clean file editor, integrated logging, and a mobile-optimized block selector for navigating structured code. Over time — guided by real usage and the goal of reducing friction — it evolved to include GitHub and Trello integration, a structured project planner, and an AI context packet downloader."
+    "solution": "I designed and built a self-hosted, mobile-first developer environment focused on reducing context switching and preserving clarity. Starting with core essentials — editing, logs, and navigation — the system evolved through real usage to support planning, version control, and explainable reasoning.",
+    "keyDecisions": [
+      "Optimized for mobile-first development instead of desktop parity",
+      "Consolidated editing, planning, logs, and context to reduce cognitive switching",
+      "Favored structured workflows (sessions, sprints, work items) over ad-hoc flexibility",
+      "Chose a self-hosted architecture to preserve control, extensibility, and data ownership"
     ],
+
+    "impact": "Dev Toolbox made sustained mobile development practical by reducing cognitive load and restoring predictable, focused workflows aligned with how developers reason about their work.",
+
     "innovations": [
       "Mobile-optimized code block selector for navigating and manipulating structured code",
       "Integrated, always-visible structured logs and console output",
@@ -18,9 +25,7 @@
       "Unified project planner with sprints, sessions, and context surfaces",
       "AI context packet downloader for explainable, project-aware reasoning"
     ],
-    "impact": [
-      "By bringing editing, planning, logs, GitHub, and context into one coherent environment, Dev Toolbox reduces cognitive load and restores flow to mobile development. It makes the workflow calmer, more predictable, and more aligned with how people reason about their work."
-    ],
+   
     "thumbnail": "/images/dev-toolbox/dev-toolbox-thumb.webp",
     "screenshots": [
       {
@@ -73,12 +78,17 @@
     "tags": ["Personal finance", "Product design", "Full-stack"],
     "problem": "Most budgeting tools generate noise instead of clarity. They surface too much, too little, or the wrong information at the wrong moment — creating stress rather than restoring confidence.",
     "context": "Simplicity was built to support real financial behavior: recurring bills, flexible spending, shifting obligations, and daily decisions. My adaptive approach to systems and focus on reducing cognitive load shaped the entire flow — designed to meet people where they are, not force them into a rigid model.",
-    "solution": [
-      "I created a calm, mobile-first budgeting environment that highlights what matters: upcoming obligations, category health, patterns, and day-to-day occurrences. The flow stays honest, predictable, and easy to revisit — bringing clarity back to areas of life that easily become overwhelming."
+    "solution": "I designed and built a mobile-first budgeting system focused on calm visibility rather than exhaustive reporting. The product highlights what matters most in the moment — upcoming obligations, category health, and patterns — while keeping the data honest and predictable over time.",
+
+    "keyDecisions": [
+      "Prioritized signal over comprehensive dashboards",
+      "Designed for frequent, lightweight mobile check-ins",
+      "Made category health and headroom immediately visible",
+      "Favored predictable, revisitable flows over complex interactions"
     ],
-    "impact": [
-      "Simplicity supports more confident financial decisions by surfacing the right information at the right time. It provides a grounded sense of where things stand and what needs attention, restoring clarity to an area where people often feel stress or uncertainty."
-    ],
+
+    "impact": "Simplicity helps users make more confident day-to-day financial decisions by reducing cognitive load and focusing attention on what actually needs action.",
+
     "innovations": [
       "A calm, mobile-first budgeting interface focused on clarity rather than noise",
       "Daily and monthly workflows built around real financial behavior instead of abstract categories",

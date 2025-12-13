@@ -256,6 +256,69 @@ ul.text-body li {
 }
 
 /* ─────────────────────────────────────────────────────────────
+   PROJECT LAYOUT — 2-COLUMN DESKTOP GRID (MAIN + ASIDE)
+   Keeps narrative readable; uses desktop width better.
+   ───────────────────────────────────────────────────────────── */
+
+   .project-layout__grid {
+    display: grid;
+    grid-template-columns: 1fr; /* mobile default */
+    gap: var(--space-l);
+  }
+  
+  .project-layout__main {
+    min-width: 0; /* prevents overflow in grids */
+  }
+  
+  /* Keep narrative blocks from becoming too wide */
+  .project-layout__main .text-body,
+  .project-layout__main .project-list {
+    max-width: 60ch;
+  }
+  
+  /* Screenshots should be allowed to breathe */
+  .project-layout__main .project-layout__section:first-child .project-carousel,
+  .project-layout__main .project-layout__section:first-child .project-screenshot-carousel,
+  .project-layout__main .project-layout__section:first-child img {
+    max-width: 100%;
+  }
+  
+  @media (min-width: 960px) {
+    .project-layout__grid {
+      grid-template-columns: minmax(0, 1fr) 360px;
+      align-items: start;
+      gap: var(--space-xl);
+    }
+  
+    .project-layout__aside-inner {
+      position: sticky;
+      top: var(--space-l);
+    }
+  
+    /* Sidebar spacing: use same divider rhythm, but a bit tighter */
+    .project-layout__section--aside {
+      margin-bottom: 0;
+    }
+  
+    .project-layout__section--aside + .project-layout__section--aside {
+      margin-top: var(--space-l);
+      padding-top: var(--space-l);
+      border-top: 1px solid var(--color-border);
+    }
+  
+    /* Sidebar text shouldn't be a narrow 60ch column */
+    .project-layout__aside .text-body,
+    .project-layout__aside .project-list {
+      max-width: none;
+    }
+  
+    /* Optional: make tech “tags” wrap nicely in sidebar */
+    .project-layout__meta--tech {
+      margin-bottom: var(--space-s);
+    }
+  }
+  
+/* ─────────────────────────────────────────────────────────────
    CONTACT FORM
    ───────────────────────────────────────────────────────────── */
 
@@ -393,10 +456,6 @@ ul.text-body li {
   opacity: 0.65;
 }
 
-.project-layout__meta-tags {
-  opacity: 0.55;
-}
-
 /* Summary paragraph under meta */
 .project-layout__header .text-body {
   margin-top: var(--space-xs);
@@ -438,23 +497,4 @@ ul.text-body li {
   margin-top: var(--space-m);
   padding-top: 0;
   border-top: none;
-}
-
-/* CTA link styling */
-.project-layout__link-cta {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  font-weight: 500;
-  text-decoration: none;
-  color: var(--accent-blue);
-}
-
-.project-layout__link-cta:hover {
-  text-decoration: underline;
-}
-
-.project-layout__link-cta::after {
-  content: "→";
-  font-size: 0.9em;
 }

@@ -14,7 +14,8 @@
   --space-l: 2rem;
   --space-xl: 3rem;
   --max-width: 900px;
-  --color-bg: #f7f7f5;
+  --color-bg: #f3f4f6;
+  --color-bg-muted: #ffffff;
   --color-surface: #fcfcfa;
   --color-text: #222222;
   --color-border: rgba(0, 0, 0, 0.06);

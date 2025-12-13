@@ -24,14 +24,43 @@ export default function ProjectLayout({ project }) {
     timeline,
     tags,
     link,
-    tech
+    tech,
   } = project;
 
   const isOpsLogistics = slug === "operations-workflow";
 
+  const hasTech = tech && (tech.ids?.length > 0 || tech.bullets?.length > 0);
+  const hasRole = Boolean(role);
+  const hasLink = Boolean(link && link.href);
+  const hasAside = hasTech || hasRole || hasLink || impact;
+
+  // Helpers
+  const toBullets = (val) => (Array.isArray(val) ? val : val ? [val] : []);
+  const solutionBullets = toBullets(solution);
+  const impactBullets = toBullets(impact);
+
+  const glanceItems = solutionBullets.slice(0, 4);
+
+  const renderListOrText = (items) => {
+    if (!items) return null;
+    if (!Array.isArray(items)) return <p className="text-body">{items}</p>;
+    if (items.length === 1) return <p className="text-body">{items[0]}</p>;
+  
+    return (
+      <ul className="project-list">
+        {items.map((item, idx) => (
+          <li key={idx} className="text-body">
+            {item}
+          </li>
+        ))}
+      </ul>
+    );
+  };
+  
+
   return (
     <article className="project-layout">
-      {/* Header / overview */}
+      {/* Header */}
       <header className="project-layout__header">
         <h1 className="heading-l">{title}</h1>
 
@@ -52,7 +81,7 @@ export default function ProjectLayout({ project }) {
       </header>
 
       {/* ────────────────────────────────────────────────
-         SPECIAL LAYOUT FOR OPERATIONS & LOGISTICS
+         OPERATIONS / LOGISTICS SPECIAL LAYOUT
          ──────────────────────────────────────────────── */}
       {isOpsLogistics ? (
         <>
@@ -79,110 +108,125 @@ export default function ProjectLayout({ project }) {
               ))}
             </section>
           )}
+
+          {hasLink && (
+            <section className="project-layout__section">
+              <a href={link.href} className="project-layout__link">
+                {link.label || "View related link"}
+              </a>
+            </section>
+          )}
         </>
       ) : (
         <>
           {/* ────────────────────────────────────────────────
-             DEFAULT LAYOUT FOR OTHER PROJECTS
-             order: screenshots → tech → role → problem → solution → impact
+             DEFAULT PROJECT LAYOUT (2-column desktop)
              ──────────────────────────────────────────────── */}
 
-          {/* Screenshots */}
-          {screenshots && screenshots.length > 0 && (
-            <section className="project-layout__section">
-              <h2 className="heading-m section-header">Screenshots</h2>
-              <ProjectScreenshotCarousel screenshots={screenshots} />
-            </section>
-          )}
+          <div
+            className={
+              hasAside
+                ? "project-layout__grid"
+                : "project-layout__grid project-layout__grid--no-aside"
+            }
+          >
+            {/* Main column */}
+            <div className="project-layout__main">
+              {/* Screenshots */}
+              {screenshots && screenshots.length > 0 && (
+                <section className="project-layout__section">
+                  <h2 className="heading-m section-header">Screenshots</h2>
+                  <ProjectScreenshotCarousel screenshots={screenshots} />
+                </section>
+              )}
 
-          {/* Tech stack */}
-          {tech && (tech.ids?.length > 0 || tech.bullets?.length > 0) && (
-            <section className="project-layout__section">
-              <h2 className="heading-m section-header">Tech Stack</h2>
+              {/* Role — moved directly under screenshots */}
+              {hasRole && (
+                <section className="project-layout__section">
+                  <h2 className="heading-m section-header">Role</h2>
+                  <p className="text-body">{role}</p>
+                </section>
+              )}
 
-              {tech.ids && tech.ids.length > 0 && (
-                <div className="project-layout__meta project-layout__meta--tech">
-                  {tech.ids.map((id) => (
-                    <span key={id} className="project-layout__meta-item">
-                      {id}
-                    </span>
-                  ))}
+              {/* Problem */}
+              {problem && (
+                <section className="project-layout__section">
+                  <h2 className="heading-m section-header">Problem</h2>
+                  <p className="text-body">{problem}</p>
+                </section>
+              )}
+
+              {/* Solution */}
+              {solution && (
+                <section className="project-layout__section">
+                  <h2 className="heading-m section-header">Solution</h2>
+                  {renderListOrText(solution)}
+                </section>
+              )}
+            </div>
+
+            {/* Sidebar */}
+            {hasAside && (
+              <aside
+                className="project-layout__aside"
+                aria-label="Project details"
+              >
+                <div className="project-layout__aside-inner">
+                  {/* Tech stack */}
+                  {hasTech && (
+                    <section className="project-layout__section project-layout__section--aside">
+                      <h2 className="heading-m section-header">Tech Stack</h2>
+
+                      {tech.ids && tech.ids.length > 0 && (
+                        <div className="project-layout__meta project-layout__meta--tech">
+                          {tech.ids.map((id) => (
+                            <span key={id} className="project-layout__meta-item">
+                              {id}
+                            </span>
+                          ))}
+                        </div>
+                      )}
+
+                      {tech.bullets && tech.bullets.length > 0 && (
+                        <ul className="project-list">
+                          {tech.bullets.map((item, idx) => (
+                            <li key={idx} className="text-body">
+                              {item}
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </section>
+                  )}
+
+                  {project.keyDecisions?.length > 0 && (
+                    <section className="project-layout__section project-layout__section--aside">
+                      <h2 className="heading-m section-header">Key product decisions</h2>
+                      {renderListOrText(project.keyDecisions)}
+                    </section>
+                  )}
+
+                  {/* Impact — moved under At a glance */}
+                  {impact && (
+                    <section className="project-layout__section project-layout__section--aside">
+                      <h2 className="heading-m section-header">Impact</h2>
+                      {renderListOrText(impact)}
+                    </section>
+                  )}
+
+                  {/* Link */}
+                  {hasLink && (
+                    <section className="project-layout__section project-layout__section--aside">
+                      <a href={link.href} className="project-layout__link">
+                        {link.label || "View related link"}
+                      </a>
+                    </section>
+                  )}
                 </div>
-              )}
-
-              {tech.bullets && tech.bullets.length > 0 && (
-                <ul className="project-list">
-                  {tech.bullets.map((item, idx) => (
-                    <li key={idx} className="text-body">
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </section>
-          )}
-
-          {/* Role */}
-          {role && (
-            <section className="project-layout__section">
-              <h2 className="heading-m section-header">Role</h2>
-              <p className="text-body">{role}</p>
-            </section>
-          )}
-
-          {/* Problem */}
-          {problem && (
-            <section className="project-layout__section">
-              <h2 className="heading-m section-header">Problem</h2>
-              <p className="text-body">{problem}</p>
-            </section>
-          )}
-
-          {/* Solution */}
-          {solution && (
-            <section className="project-layout__section">
-              <h2 className="heading-m section-header">Solution</h2>
-              {Array.isArray(solution) ? (
-                <ul className="project-list">
-                  {solution.map((item, idx) => (
-                    <li key={idx} className="text-body">
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              ) : (
-                <p className="text-body">{solution}</p>
-              )}
-            </section>
-          )}
-
-          {/* Impact */}
-          {impact && (
-            <section className="project-layout__section">
-              <h2 className="heading-m section-header">Impact</h2>
-              {Array.isArray(impact) ? (
-                <ul className="project-list">
-                  {impact.map((item, idx) => (
-                    <li key={idx} className="text-body">
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              ) : (
-                <p className="text-body">{impact}</p>
-              )}
-            </section>
-          )}
+              </aside>
+            )}
+          </div>
         </>
-      )}
-
-      {/* Optional external link */}
-      {link && link.href && (
-        <section className="project-layout__section">
-          <a href={link.href} className="project-layout__link">
-            {link.label || "View related link"}
-          </a>
-        </section>
       )}
     </article>
   );
