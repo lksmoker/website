@@ -26,35 +26,39 @@ export default function ProjectLayout({ project }) {
     link,
     tech,
     keyDecisions,
-    tradeoffs,
+    tradeoffs, // NEW: Constraints & Tradeoffs content
   } = project;
 
   const isOpsLogistics = slug === "operations-workflow";
 
+  // ─────────────────────────────────────────────────────────────
   // Helpers
+  // ─────────────────────────────────────────────────────────────
+
   const toList = (val) => (Array.isArray(val) ? val : val ? [val] : []);
   const hasList = (val) => toList(val).length > 0;
 
   const hasTech = Boolean(tech && (tech.ids?.length > 0 || tech.bullets?.length > 0));
   const hasRole = Boolean(role);
-  const hasLink = Boolean(link && link.href);
+  const hasProblem = Boolean(problem);
+  const hasSolution = Boolean(solution);
   const hasKeyDecisions = hasList(keyDecisions);
   const hasImpact = hasList(impact);
   const hasTradeoffs = hasList(tradeoffs);
+  const hasLink = Boolean(link && link.href);
 
-  // Sidebar only exists if there is something meaningful to show.
-  // (We keep it mostly “utility” so the layout doesn’t feel lopsided.)
-  const hasAside = hasTech || hasLink;
+  // Option A: Right column is the "Evidence" column.
+  const hasAside = hasTech || hasKeyDecisions || hasImpact || hasTradeoffs || hasLink;
 
-  const renderBody = (items, { listClass = "project-list", itemClass = "text-body" } = {}) => {
+  const renderBody = (items) => {
     const list = toList(items);
     if (list.length === 0) return null;
     if (list.length === 1) return <p className="text-body">{list[0]}</p>;
 
     return (
-      <ul className={listClass}>
+      <ul className="project-list">
         {list.map((item, idx) => (
-          <li key={idx} className={itemClass}>
+          <li key={idx} className="text-body">
             {item}
           </li>
         ))}
@@ -76,7 +80,7 @@ export default function ProjectLayout({ project }) {
   );
 
   // ─────────────────────────────────────────────────────────────
-  // SECTIONS (reused across mobile + desktop without duplicating logic)
+  // Sections (reused across mobile + desktop)
   // ─────────────────────────────────────────────────────────────
 
   const ScreenshotsSection =
@@ -92,27 +96,14 @@ export default function ProjectLayout({ project }) {
     </Section>
   ) : null;
 
-  const ProblemSection = problem ? (
+  const ProblemSection = hasProblem ? (
     <Section title="Problem">
       <p className="text-body">{problem}</p>
     </Section>
   ) : null;
 
-  const SolutionSection = solution ? (
+  const SolutionSection = hasSolution ? (
     <Section title="Solution">{renderBody(solution)}</Section>
-  ) : null;
-
-  // NEW: Constraints & Tradeoffs
-  const TradeoffsSection = hasTradeoffs ? (
-    <Section title="Constraints &amp; Tradeoffs">{renderBody(tradeoffs)}</Section>
-  ) : null;
-
-  const ImpactSection = hasImpact ? (
-    <Section title="Impact">{renderBody(impact)}</Section>
-  ) : null;
-
-  const KeyDecisionsSection = hasKeyDecisions ? (
-    <Section title="Key product decisions">{renderBody(keyDecisions)}</Section>
   ) : null;
 
   const TechSection = hasTech ? (
@@ -131,6 +122,24 @@ export default function ProjectLayout({ project }) {
     </Section>
   ) : null;
 
+  const KeyDecisionsSection = hasKeyDecisions ? (
+    <Section title="Key product decisions" aside>
+      {renderBody(keyDecisions)}
+    </Section>
+  ) : null;
+
+  const ImpactSection = hasImpact ? (
+    <Section title="Impact" aside>
+      {renderBody(impact)}
+    </Section>
+  ) : null;
+
+  const TradeoffsSection = hasTradeoffs ? (
+    <Section title="Constraints &amp; Tradeoffs" aside>
+      {renderBody(tradeoffs)}
+    </Section>
+  ) : null;
+
   const LinkSection = hasLink ? (
     <section className="project-layout__section project-layout__section--aside">
       <a href={link.href} className="project-layout__link">
@@ -140,38 +149,12 @@ export default function ProjectLayout({ project }) {
   ) : null;
 
   // ─────────────────────────────────────────────────────────────
-  // BALANCED DESKTOP GROUPING
-  // ─────────────────────────────────────────────────────────────
-  //
-  // The “main” column should hold the narrative + the beefy evidence sections
-  // so the layout doesn’t feel like a thin sidebar.
-  //
-  const DesktopMainSections = (
-    <>
-      {ScreenshotsSection}
-      {RoleSection}
-      {ProblemSection}
-      {SolutionSection}
-      {KeyDecisionsSection}
-      {ImpactSection}
-      {TradeoffsSection}
-    </>
-  );
-
-  const DesktopAsideSections = (
-    <>
-      {TechSection}
-      {LinkSection}
-    </>
-  );
-
-  // ─────────────────────────────────────────────────────────────
-  // RENDER
+  // Render
   // ─────────────────────────────────────────────────────────────
 
   return (
     <article className="project-layout">
-      {/* Header */}
+      {/* Header / overview */}
       <header className="project-layout__header">
         <h1 className="heading-l">{title}</h1>
 
@@ -244,7 +227,7 @@ export default function ProjectLayout({ project }) {
           </div>
 
           {/* ────────────────────────────────────────────────
-             DESKTOP GRID (balanced)
+             DESKTOP GRID (Option A: Evidence on the right)
              ──────────────────────────────────────────────── */}
           <div
             className={
@@ -253,11 +236,22 @@ export default function ProjectLayout({ project }) {
                 : "project-layout__grid project-layout__grid--no-aside"
             }
           >
-            <div className="project-layout__main">{DesktopMainSections}</div>
+            <div className="project-layout__main">
+              {ScreenshotsSection}
+              {RoleSection}
+              {ProblemSection}
+              {SolutionSection}
+            </div>
 
             {hasAside && (
-              <aside className="project-layout__aside" aria-label="Project details">
-                <div className="project-layout__aside-inner">{DesktopAsideSections}</div>
+              <aside className="project-layout__aside" aria-label="Project evidence">
+                <div className="project-layout__aside-inner">
+                  {TechSection}
+                  {KeyDecisionsSection}
+                  {ImpactSection}
+                  {TradeoffsSection}
+                  {LinkSection}
+                </div>
               </aside>
             )}
           </div>

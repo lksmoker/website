@@ -318,8 +318,12 @@
   
   /* Desktop grid hidden by default (mobile) */
   .project-layout__grid {
-    display: none;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) clamp(320px, 30vw, 440px);
+    align-items: start;
+    gap: var(--space-xl);
   }
+  
   
   /* Ensure main column can shrink inside grid layouts */
   .project-layout__main {
