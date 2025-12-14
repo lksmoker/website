@@ -267,8 +267,76 @@
         "Used spreadsheets and Apps Script to replace manual reporting loops.",
         "Created communication tools linking HR, payroll, and transportation data into one workflow."
       ]
-    }
+    },
+    "link": { "href": "#/work/gas-transportation-workflow", "label": "Featured case: Transportation Scheduling Workflow →" }
+
   },
+
+  {
+    "slug": "gas-transportation-workflow",
+    "title": "Transportation Scheduling Workflow (GAS)",
+    "summary": "Unified schedules, requests, and driver assignments into a single workflow — reducing data issues, schedule conflicts, and dropped handoffs.",
+    "role": "Office Manager & Transportation Coordinator",
+    "timeline": "Grace College",
+    "tags": ["Operations", "Workflow design", "Automation", "Scheduling"],
+  
+    "problem": [
+      "Transportation coordination was affected by messy workflows: schedules, updates, and communication were spread across emails, spreadsheets, and verbal handoffs.",
+      "This led to poor data, schedule issues, and communication gaps — and created daily friction and avoidable rework.",
+      "The outcome was predictable: details fell through the cracks and dropped balls became a recurring risk."
+    ],
+  
+    "solution": [
+      "Introduced a single, clear scheduling workflow with defined steps and one consistent place for schedule data and updates.",
+      "Unified vehicle schedules, driver assignments, and departmental requests into a shared system so updates stayed reliable and visible.",
+      "Centralized all transportation-related costs in the same workflow, enabling consistent tracking and downstream reporting.",
+      "Reduced manual coordination by making the workflow easier to follow and harder to misunderstand."
+    ],
+  
+    "keyDecisions": [
+      "Treat schedule issues as workflow and data integrity problems, not individual mistakes.",
+      "Consolidated where information lives so everyone works from the same truth.",
+      "Favor a repeatable process over informal workarounds to prevent dropped handoffs."
+    ],
+  
+    "impact": [
+      "More complete and reliable schedule data",
+      "Reduced reconciliation effort and billing errors by keeping scheduling and cost data in a single, reliable workflow.",
+      "Fewer scheduling conflicts and missed assignments",
+      "Fewer communication gaps and fewer dropped balls",
+      "Less day-to-day friction and fewer interruptions"
+    ],
+  
+    "tradeoffs": [
+      "Required behavior change and more consistent update discipline.",
+      "Reduced informal workarounds in favor of a shared process everyone could follow."
+    ],
+  
+    "tech": {
+      "ids": ["google-apps-script", "sheets", "forms", "calendar"],
+      "bullets": [
+        "Form submissions fed a Sheets-based request log and triggered Calendar events with request details; the requester was automatically added as a guest for visibility.",
+        "All transportation costs flowed into the same Sheet, from which receipt emails and chargeback reports were automatically generated.",
+        "Consolidated scheduling, communication, and cost data into a single reporting surface to reduce errors and reconciliation work."
+      ]
+    },
+    "thumbnail": "/images/gas/gas-thumb.svg",
+    "screenshots": [
+    {
+      "src": "/images/gas/gas-sheet.png",
+      "alt": "Transportation request responses captured in a shared spreadsheet used as the operational source of truth",
+      "caption": "Form submissions flowed into a shared sheet, keeping requests and schedule data consistent and visible."
+    },
+    {
+      "src": "/images/gas/gas-thumb.svg",
+      "alt": "Workflow diagram showing Form → Sheets → Calendar automation for transportation scheduling",
+      "caption": "Apps Script connected Forms, Sheets, and Calendar so requests created schedule events automatically and stayed in sync."
+    }
+  ],
+    "link": { "href": "#/work/operations-workflow", "label": "See broader Operations & Logistics work →" }
+
+  },
+  
   {
     "slug": "aurora",
     "title": "Aurora",

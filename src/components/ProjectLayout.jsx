@@ -40,8 +40,8 @@ export default function ProjectLayout({ project }) {
 
   const hasTech = Boolean(tech && (tech.ids?.length > 0 || tech.bullets?.length > 0));
   const hasRole = Boolean(role);
-  const hasProblem = Boolean(problem);
-  const hasSolution = Boolean(solution);
+  const hasProblem = hasList(problem);
+  const hasSolution = hasList(solution);
   const hasKeyDecisions = hasList(keyDecisions);
   const hasImpact = hasList(impact);
   const hasTradeoffs = hasList(tradeoffs);
@@ -97,9 +97,7 @@ export default function ProjectLayout({ project }) {
   ) : null;
 
   const ProblemSection = hasProblem ? (
-    <Section title="Problem">
-      <p className="text-body">{problem}</p>
-    </Section>
+    <Section title="Problem">{renderBody(problem)}</Section>
   ) : null;
 
   const SolutionSection = hasSolution ? (
@@ -177,6 +175,40 @@ export default function ProjectLayout({ project }) {
          ──────────────────────────────────────────────── */}
       {isOpsLogistics ? (
         <>
+          {/* Narrative first (now supports the GAS mini-case fields) */}
+          {ProblemSection}
+          {SolutionSection}
+
+          {/* Evidence block (rendered inline for Ops since we don't use the grid layout here) */}
+          {hasTech && (
+            <section className="project-layout__section">
+              <h2 className="heading-m section-header">Evidence</h2>
+
+              {/* Reuse the same section blocks but keep them visually grouped */}
+              <div className="project-layout__aside-inner">
+                {TechSection}
+                {KeyDecisionsSection}
+                {ImpactSection}
+                {TradeoffsSection}
+                {LinkSection}
+              </div>
+            </section>
+          )}
+
+          {/* If no tech, still show the evidence sections that exist */}
+          {!hasTech && (hasKeyDecisions || hasImpact || hasTradeoffs || hasLink) && (
+            <section className="project-layout__section">
+              <h2 className="heading-m section-header">Evidence</h2>
+              <div className="project-layout__aside-inner">
+                {KeyDecisionsSection}
+                {ImpactSection}
+                {TradeoffsSection}
+                {LinkSection}
+              </div>
+            </section>
+          )}
+
+          {/* Experience stays where it was (and now comes after the mini-case) */}
           {experience && experience.length > 0 && (
             <section className="project-layout__section">
               <h2 className="heading-m section-header">Experience by Role</h2>
@@ -198,14 +230,6 @@ export default function ProjectLayout({ project }) {
                   )}
                 </div>
               ))}
-            </section>
-          )}
-
-          {hasLink && (
-            <section className="project-layout__section">
-              <a href={link.href} className="project-layout__link">
-                {link.label || "View related link"}
-              </a>
             </section>
           )}
         </>
