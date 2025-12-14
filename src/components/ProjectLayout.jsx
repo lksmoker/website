@@ -19,6 +19,7 @@ export default function ProjectLayout({ project }) {
     role,
     solution,
     impact,
+    evidence,
     experience,
     screenshots,
     timeline,
@@ -46,6 +47,7 @@ export default function ProjectLayout({ project }) {
   const hasImpact = hasList(impact);
   const hasTradeoffs = hasList(tradeoffs);
   const hasLink = Boolean(link && link.href);
+  const hasEvidence = hasList(evidence);
 
   // Option A: Right column is the "Evidence" column.
   const hasAside = hasTech || hasKeyDecisions || hasImpact || hasTradeoffs || hasLink;
@@ -179,34 +181,22 @@ export default function ProjectLayout({ project }) {
           {ProblemSection}
           {SolutionSection}
 
-          {/* Evidence block (rendered inline for Ops since we don't use the grid layout here) */}
-          {hasTech && (
+          {/* Evidence (skimmable proof bullets) */}
+          {hasEvidence && (
             <section className="project-layout__section">
               <h2 className="heading-m section-header">Evidence</h2>
+              {renderBody(evidence)}
 
-              {/* Reuse the same section blocks but keep them visually grouped */}
-              <div className="project-layout__aside-inner">
-                {TechSection}
-                {KeyDecisionsSection}
-                {ImpactSection}
-                {TradeoffsSection}
-                {LinkSection}
-              </div>
+              {hasLink && (
+                <div style={{ marginTop: "0.75rem" }}>
+                  <a href={link.href} className="inline-link">
+                    {link.label || "Featured case"} →
+                  </a>
+                </div>
+              )}
             </section>
           )}
 
-          {/* If no tech, still show the evidence sections that exist */}
-          {!hasTech && (hasKeyDecisions || hasImpact || hasTradeoffs || hasLink) && (
-            <section className="project-layout__section">
-              <h2 className="heading-m section-header">Evidence</h2>
-              <div className="project-layout__aside-inner">
-                {KeyDecisionsSection}
-                {ImpactSection}
-                {TradeoffsSection}
-                {LinkSection}
-              </div>
-            </section>
-          )}
 
           {/* Experience stays where it was (and now comes after the mini-case) */}
           {experience && experience.length > 0 && (

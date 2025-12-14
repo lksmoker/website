@@ -120,40 +120,43 @@
   {
     "slug": "operations-workflow",
     "title": "Operations & Logistics",
-    "summary": "A cross-functional body of work focused on designing workflows, coordinating complex operations, leading teams, and improving clarity across systems.",
+    "summary": "A cross-functional body of work focused on building clarity in complex, people-driven environments — through workflow design, coordination, team leadership, and reliable execution.",
     "role": "Operations leader, workflow designer, logistics coordinator, and cross-functional partner",
     "timeline": "2000–Present (operations & logistics roles)",
     "tags": ["Operations", "Logistics", "Workflow design", "Leadership", "Systems thinking"],
-    "problem": "Operational environments — from campus facilities to logistics networks — relied on clarity, predictable workflows, and consistent execution. Teams often faced misaligned expectations, limited visibility, and inconsistent processes that created friction and reduced effectiveness.",
-    "context": "Across higher-education facilities and logistics environments, I led teams responsible for large facility footprints, campus operations, transportation coordination, and last-mile delivery. I supervised and coached staff, managed CMMS workflows, coordinated events and renovations, and integrated HR, payroll, and transportation systems into daily operations. Those roles sharpened the same skills I use in product and systems work today: diagnosing workflow drift, designing structure, and helping people operate with clarity and confidence.",
-    "solution": [
-      "Designed clear workflows and operational processes to improve reliability, visibility, and execution.",
-      "Coordinated cross-functional logistics involving Residence Life, Athletics, Events, Administration, and external partners.",
-      "Led teams through coaching, structured performance expectations, and quality standards such as CIMS certification with honors.",
-      "Implemented digital tools including CMMS, WMS/RF, payroll systems, and automated reporting to improve decision-making and reduce manual work.",
-      "Delivered time-sensitive logistics operations while maintaining accuracy and customer satisfaction."
+  
+    "framing": "Across higher-education facilities and logistics environments, I helped teams operate with clarity under real constraints — shifting priorities, distributed stakeholders, limited visibility, and high standards for reliability.",
+  
+    "themes": [
+      "Workflow clarity: make expectations and handoffs visible",
+      "Reliability under pressure: reduce variance and rework",
+      "Systems thinking in human environments: align tools, process, and behavior",
+      "Cross-functional coordination: keep many stakeholders moving together",
+      "People development: coach teams toward consistent execution"
     ],
-    "innovations": [
-      "Workflow designs that improved productivity and reduced operational variance",
-      "Structured communication loops that strengthened alignment between teams and shifts",
-      "Clear responsibility boundaries that improved accountability and execution",
-      "Automation tools to streamline reporting and communication",
-      "Performance systems that enabled teams to consistently operate at high productivity per FTE"
+  
+    "outcomes": [
+      "Directed operations across 250,000–450,000 sq. ft. while maintaining service quality.",
+      "Led and coached teams of 28–40+ employees, improving consistency and day-to-day reliability.",
+      "Implemented industry standards, earning CIMS certification with honors.",
+      "Improved operational visibility through structured reporting and clearer feedback loops.",
+      "Coordinated time-sensitive logistics work with strong customer satisfaction."
     ],
-    "impact": [
-      "Built a deep foundation in systems design, workflow optimization, and operational leadership.",
+    "evidence": [
       "Directed operations across 250,000–450,000 sq. ft. of facilities while maintaining service quality.",
+      "Led and coached teams of 28–40+ employees, improving day-to-day reliability and clarity.",
       "Achieved industry-recognized CIMS certification with honors.",
-      "Created automated reporting tools that increased operational visibility and reduced errors.",
-      "Led and coached teams of 28–40+ employees, improving reliability and clarity across day-to-day operations."
+      "Sustained productivity at 43,000 sq. ft. per FTE with high customer satisfaction.",
+      "Built automated reporting + workflow tools (including a Google Apps Script scheduling system) that improved visibility and reduced errors."
     ],
+
     "coreCompetencies": [
       {
         "category": "Systems & Process Design",
         "items": [
           "Designed and refined workflows and inspection processes to ensure consistent quality across large operational footprints.",
           "Implemented and maintained industry standards, achieving CIMS certification with honors.",
-          "Developed automated reporting tools integrating multiple platforms to improve visibility and reduce manual steps.",
+          "Developed reporting tools that improved visibility and reduced manual steps.",
           "Used CMMS to structure work orders, scheduling, and quality feedback loops."
         ]
       },
@@ -166,36 +169,15 @@
         ]
       },
       {
-        "category": "Cross-Functional Collaboration",
-        "items": [
-          "Served as the operational liaison between Custodial Operations, Residence Life, Events, Athletics, and Administration.",
-          "Partnered with campus leaders to support major events and operational planning."
-        ]
-      },
-      {
-        "category": "Leadership & People Development",
+        "category": "Leadership & Collaboration",
         "items": [
           "Supervised teams of 28–40+ employees, providing structured coaching and performance development.",
-          "Mentored student Team Leads to improve leadership, organization, and time management.",
-          "Led labor conversion efforts including onboarding, training, and systems adoption."
-        ]
-      },
-      {
-        "category": "Customer-Centered Decision Making",
-        "items": [
-          "Maintained high customer satisfaction through inspections, coaching, and responsive issue resolution.",
-          "Delivered accurate, timely service under strict logistics and delivery constraints."
-        ]
-      },
-      {
-        "category": "Operational Tools & Data",
-        "items": [
-          "Managed employee databases, payroll tools, CMMS workflows, AP/AR systems, and preventive maintenance schedules.",
-          "Worked with WMS and RF scanning tools to ensure accuracy in logistics operations.",
-          "Built automated reports to support better operational insight and decisions."
+          "Served as operational liaison across Residence Life, Events, Athletics, and Administration.",
+          "Led onboarding, training, and systems adoption during staffing changes."
         ]
       }
     ],
+  
     "experience": [
       {
         "role": "Custodial Manager",
@@ -258,15 +240,11 @@
         ]
       }
     ],
+  
     "screenshots": [],
-    "tech": {
-      "ids": ["google-apps-script", "google sheets", "google forms", "google calendar"],
-      "bullets": []
-    },
     "link": { "href": "#/work/gas-transportation-workflow", "label": "Featured case: Transportation Scheduling Workflow →" }
-
   },
-
+  
   {
     "slug": "gas-transportation-workflow",
     "title": "Transportation Scheduling Workflow (GAS)",
