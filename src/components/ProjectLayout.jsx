@@ -181,13 +181,13 @@ export default function ProjectLayout({ project }) {
           {/* Evidence (skimmable proof bullets) */}
           {(hasEvidence || hasLink) && (
             <section className="project-layout__section">
-              <h2 className="heading-m section-header">Evidence</h2>
+              <h2 className="heading-m section-header">Highlights</h2>
               {renderBody(evidence)}
 
               {hasLink && (
                 <div style={{ marginTop: "0.75rem" }}>
                   <a href={link.href} className="inline-link">
-                    {link.label || "Featured case"} →
+                    {link.label || "Featured case"}
                   </a>
                 </div>
               )}
