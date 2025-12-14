@@ -25,27 +25,36 @@ export default function ProjectLayout({ project }) {
     tags,
     link,
     tech,
+    keyDecisions,
+    tradeoffs,
   } = project;
 
   const isOpsLogistics = slug === "operations-workflow";
 
-  const hasTech = tech && (tech.ids?.length > 0 || tech.bullets?.length > 0);
+  // Helpers
+  const toList = (val) => (Array.isArray(val) ? val : val ? [val] : []);
+  const hasList = (val) => toList(val).length > 0;
+
+  const hasTech = Boolean(tech && (tech.ids?.length > 0 || tech.bullets?.length > 0));
   const hasRole = Boolean(role);
   const hasLink = Boolean(link && link.href);
-  const hasKeyDecisions = project.keyDecisions?.length > 0;
+  const hasKeyDecisions = hasList(keyDecisions);
+  const hasImpact = hasList(impact);
+  const hasTradeoffs = hasList(tradeoffs);
 
   // Sidebar only exists if there is something meaningful to show.
-  const hasAside = hasTech || hasKeyDecisions || hasLink || impact;
+  // (We keep it mostly “utility” so the layout doesn’t feel lopsided.)
+  const hasAside = hasTech || hasLink;
 
-  const renderListOrText = (items) => {
-    if (!items) return null;
-    if (!Array.isArray(items)) return <p className="text-body">{items}</p>;
-    if (items.length === 1) return <p className="text-body">{items[0]}</p>;
+  const renderBody = (items, { listClass = "project-list", itemClass = "text-body" } = {}) => {
+    const list = toList(items);
+    if (list.length === 0) return null;
+    if (list.length === 1) return <p className="text-body">{list[0]}</p>;
 
     return (
-      <ul className="project-list">
-        {items.map((item, idx) => (
-          <li key={idx} className="text-body">
+      <ul className={listClass}>
+        {list.map((item, idx) => (
+          <li key={idx} className={itemClass}>
             {item}
           </li>
         ))}
@@ -53,44 +62,62 @@ export default function ProjectLayout({ project }) {
     );
   };
 
+  const Section = ({ title, children, aside = false }) => (
+    <section
+      className={
+        aside
+          ? "project-layout__section project-layout__section--aside"
+          : "project-layout__section"
+      }
+    >
+      <h2 className="heading-m section-header">{title}</h2>
+      {children}
+    </section>
+  );
+
   // ─────────────────────────────────────────────────────────────
-  // SECTIONS (reuse across mobile + desktop without duplicating logic)
+  // SECTIONS (reused across mobile + desktop without duplicating logic)
   // ─────────────────────────────────────────────────────────────
 
   const ScreenshotsSection =
     screenshots && screenshots.length > 0 ? (
-      <section className="project-layout__section">
-        <h2 className="heading-m section-header">Screenshots</h2>
+      <Section title="Screenshots">
         <ProjectScreenshotCarousel screenshots={screenshots} />
-      </section>
+      </Section>
     ) : null;
 
   const RoleSection = hasRole ? (
-    <section className="project-layout__section">
-      <h2 className="heading-m section-header">Role</h2>
+    <Section title="Role">
       <p className="text-body">{role}</p>
-    </section>
+    </Section>
   ) : null;
 
   const ProblemSection = problem ? (
-    <section className="project-layout__section">
-      <h2 className="heading-m section-header">Problem</h2>
+    <Section title="Problem">
       <p className="text-body">{problem}</p>
-    </section>
+    </Section>
   ) : null;
 
   const SolutionSection = solution ? (
-    <section className="project-layout__section">
-      <h2 className="heading-m section-header">Solution</h2>
-      {renderListOrText(solution)}
-    </section>
+    <Section title="Solution">{renderBody(solution)}</Section>
+  ) : null;
+
+  // NEW: Constraints & Tradeoffs
+  const TradeoffsSection = hasTradeoffs ? (
+    <Section title="Constraints &amp; Tradeoffs">{renderBody(tradeoffs)}</Section>
+  ) : null;
+
+  const ImpactSection = hasImpact ? (
+    <Section title="Impact">{renderBody(impact)}</Section>
+  ) : null;
+
+  const KeyDecisionsSection = hasKeyDecisions ? (
+    <Section title="Key product decisions">{renderBody(keyDecisions)}</Section>
   ) : null;
 
   const TechSection = hasTech ? (
-    <section className="project-layout__section project-layout__section--aside">
-      <h2 className="heading-m section-header">Tech Stack</h2>
-
-      {tech.ids && tech.ids.length > 0 && (
+    <Section title="Tech Stack" aside>
+      {tech?.ids && tech.ids.length > 0 && (
         <div className="project-layout__meta project-layout__meta--tech">
           {tech.ids.map((id) => (
             <span key={id} className="project-layout__meta-item">
@@ -100,24 +127,8 @@ export default function ProjectLayout({ project }) {
         </div>
       )}
 
-      {tech.bullets && tech.bullets.length > 0 && (
-        <div>{renderListOrText(tech.bullets)}</div>
-      )}
-    </section>
-  ) : null;
-
-  const KeyDecisionsSection = hasKeyDecisions ? (
-    <section className="project-layout__section project-layout__section--aside">
-      <h2 className="heading-m section-header">Key product decisions</h2>
-      {renderListOrText(project.keyDecisions)}
-    </section>
-  ) : null;
-
-  const ImpactSection = impact ? (
-    <section className="project-layout__section project-layout__section--aside">
-      <h2 className="heading-m section-header">Impact</h2>
-      {renderListOrText(impact)}
-    </section>
+      {tech?.bullets && tech.bullets.length > 0 && <div>{renderBody(tech.bullets)}</div>}
+    </Section>
   ) : null;
 
   const LinkSection = hasLink ? (
@@ -128,6 +139,36 @@ export default function ProjectLayout({ project }) {
     </section>
   ) : null;
 
+  // ─────────────────────────────────────────────────────────────
+  // BALANCED DESKTOP GROUPING
+  // ─────────────────────────────────────────────────────────────
+  //
+  // The “main” column should hold the narrative + the beefy evidence sections
+  // so the layout doesn’t feel like a thin sidebar.
+  //
+  const DesktopMainSections = (
+    <>
+      {ScreenshotsSection}
+      {RoleSection}
+      {ProblemSection}
+      {SolutionSection}
+      {KeyDecisionsSection}
+      {ImpactSection}
+      {TradeoffsSection}
+    </>
+  );
+
+  const DesktopAsideSections = (
+    <>
+      {TechSection}
+      {LinkSection}
+    </>
+  );
+
+  // ─────────────────────────────────────────────────────────────
+  // RENDER
+  // ─────────────────────────────────────────────────────────────
+
   return (
     <article className="project-layout">
       {/* Header */}
@@ -136,9 +177,7 @@ export default function ProjectLayout({ project }) {
 
         {(timeline || (tags && tags.length > 0)) && (
           <div className="project-layout__meta">
-            {timeline && (
-              <span className="project-layout__meta-item">{timeline}</span>
-            )}
+            {timeline && <span className="project-layout__meta-item">{timeline}</span>}
             {tags && tags.length > 0 && (
               <span className="project-layout__meta-item project-layout__tags">
                 {tags.join(" · ")}
@@ -200,11 +239,12 @@ export default function ProjectLayout({ project }) {
             {ProblemSection}
             {SolutionSection}
             {ImpactSection}
+            {TradeoffsSection}
             {LinkSection}
           </div>
 
           {/* ────────────────────────────────────────────────
-             DESKTOP GRID (current behavior)
+             DESKTOP GRID (balanced)
              ──────────────────────────────────────────────── */}
           <div
             className={
@@ -213,24 +253,11 @@ export default function ProjectLayout({ project }) {
                 : "project-layout__grid project-layout__grid--no-aside"
             }
           >
-            <div className="project-layout__main">
-              {ScreenshotsSection}
-              {RoleSection}
-              {ProblemSection}
-              {SolutionSection}
-            </div>
+            <div className="project-layout__main">{DesktopMainSections}</div>
 
             {hasAside && (
-              <aside
-                className="project-layout__aside"
-                aria-label="Project details"
-              >
-                <div className="project-layout__aside-inner">
-                  {TechSection}
-                  {KeyDecisionsSection}
-                  {ImpactSection}
-                  {LinkSection}
-                </div>
+              <aside className="project-layout__aside" aria-label="Project details">
+                <div className="project-layout__aside-inner">{DesktopAsideSections}</div>
               </aside>
             )}
           </div>

@@ -17,7 +17,14 @@
     ],
 
     "impact": "Dev Toolbox made sustained mobile development practical by reducing cognitive load and restoring predictable, focused workflows aligned with how developers reason about their work.",
-
+    
+    "tradeoffs": [
+    "Dev Toolbox intentionally prioritizes mobile-first workflows rather than full desktop parity. This meant leaving out some advanced editing and visualization features in favor of predictability, low cognitive load, and real usability on smaller screens.",
+    "The system was designed primarily for solo and small-team use. Multi-user collaboration features were deferred in favor of strengthening core planning, session logging, and context preservation workflows.",
+    "Dev Toolbox favors structured concepts like sessions, sprints, and work items over open-ended flexibility. While this reduces customization, it reinforces clarity, traceability, and explainability in day-to-day work.",
+    "Choosing a self-hosted architecture increased setup complexity but preserved data ownership, extensibility, and long-term control — priorities that aligned with the project’s goals even at the cost of onboarding friction."
+    ],
+    
     "innovations": [
       "Mobile-optimized code block selector for navigating and manipulating structured code",
       "Integrated, always-visible structured logs and console output",
