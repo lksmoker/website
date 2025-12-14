@@ -310,9 +310,6 @@
     "tech": {
       "ids": ["google-apps-script", "sheets", "forms", "calendar"],
       "bullets": [
-        "Form submissions fed a Sheets-based request log and triggered Calendar events with request details; the requester was automatically added as a guest for visibility.",
-        "All transportation costs flowed into the same Sheet, from which receipt emails and chargeback reports were automatically generated.",
-        "Consolidated scheduling, communication, and cost data into a single reporting surface to reduce errors and reconciliation work."
       ]
     },
     "thumbnail": "/images/gas/gas-thumb.svg",
