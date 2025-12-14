@@ -260,13 +260,8 @@
     ],
     "screenshots": [],
     "tech": {
-      "ids": ["google-apps-script", "sheets", "forms"],
-      "bullets": [
-        "Workflow automation built using Google Apps Script, Sheets, and Forms.",
-        "CMMS data reporting integrated into automated dashboards and summaries.",
-        "Used spreadsheets and Apps Script to replace manual reporting loops.",
-        "Created communication tools linking HR, payroll, and transportation data into one workflow."
-      ]
+      "ids": ["google-apps-script", "google sheets", "google forms", "google calendar"],
+      "bullets": []
     },
     "link": { "href": "#/work/gas-transportation-workflow", "label": "Featured case: Transportation Scheduling Workflow →" }
 
