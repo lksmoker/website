@@ -178,11 +178,8 @@ export default function ProjectLayout({ project }) {
       {isOpsLogistics ? (
         <>
           {/* Narrative first (now supports the GAS mini-case fields) */}
-          {ProblemSection}
-          {SolutionSection}
-
           {/* Evidence (skimmable proof bullets) */}
-          {hasEvidence && (
+          {(hasEvidence || hasLink) && (
             <section className="project-layout__section">
               <h2 className="heading-m section-header">Evidence</h2>
               {renderBody(evidence)}
@@ -233,8 +230,6 @@ export default function ProjectLayout({ project }) {
             {RoleSection}
             {TechSection}
             {KeyDecisionsSection}
-            {ProblemSection}
-            {SolutionSection}
             {ImpactSection}
             {TradeoffsSection}
             {LinkSection}
