@@ -217,6 +217,7 @@
   /* Sections */
   .project-layout__section {
     margin-top: 0;
+    background-color: white;
   }
   
   .project-layout__section--aside {
