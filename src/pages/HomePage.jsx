@@ -126,8 +126,6 @@ export default function HomePage() {
         </section>
       )}
 
-
-
       {/* ── ABOUT PREVIEW ─────────────────────────────────────── */}
       {aboutPreview && (
         <section className="page-section">
@@ -176,4 +174,5 @@ export default function HomePage() {
       )}
     </>
   );
+// ─── END: component ─────────────────────────────────────────
 }

@@ -80,6 +80,14 @@ export default function AboutPage() {
         {sections.auroraOriginSafe.map((para, idx) => (
           <TextBlock key={idx}>{para}</TextBlock>
         ))}
+        <TextBlock className="text-muted">
+          If you’re curious about where these ideas lead, I’ve written a
+          higher-level overview of Aurora{" "}
+          <Link to="/aurora" className="inline-link">
+            here
+          </Link>
+          .
+        </TextBlock>
       </section>
 
       {/* Personal Notes */}
