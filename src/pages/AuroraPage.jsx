@@ -1,11 +1,16 @@
+// src/pages/AuroraPage.jsx
 import React from "react";
 import auroraContent from "../content/aurora.json";
+import projects from "../content/projects.json";
 import SectionHeader from "../components/SectionHeader.jsx";
 import TextBlock from "../components/TextBlock.jsx";
-import AuroraCallout from "../components/AuroraCallout.jsx";
 
 export default function AuroraPage() {
   const { sections } = auroraContent;
+
+  // Pull PM-bridge framing from the portfolio/project model
+  const auroraProject = projects.find((p) => p.slug === "aurora");
+  const pmBridge = auroraProject?.pmBridge;
 
   return (
     <>
@@ -39,6 +44,20 @@ export default function AuroraPage() {
         ))}
       </section>
 
+      {/* Aurora → PM thinking bridge (from projects.json) */}
+      {pmBridge?.bullets?.length > 0 && (
+        <section className="page-section">
+          <SectionHeader
+            title={pmBridge.title || "How Aurora Shapes My Product Thinking"}
+          />
+          <ul className="simple-list">
+            {pmBridge.bullets.map((item, idx) => (
+              <li key={idx}>{item}</li>
+            ))}
+          </ul>
+        </section>
+      )}
+
       {/* Origin story */}
       <section className="page-section">
         <SectionHeader title="Where Aurora Came From" />
@@ -48,7 +67,7 @@ export default function AuroraPage() {
       </section>
 
       {/* Signals from the field: external articles + Aurora's answer */}
-      {sections.signals && (
+      {sections.signals?.length > 0 && (
         <section className="page-section">
           <SectionHeader title="Signals from the Field" />
           <div className="aurora-signals">

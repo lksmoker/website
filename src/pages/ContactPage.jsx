@@ -107,6 +107,24 @@ export default function ContactForm() {
         {status.type === "error" && (
           <p className="text-body contact-error">{status.message}</p>
         )}
+
+        {/* Resume CTA */}
+        <p className="text-body contact-resume">
+          Prefer a resume?{" "}
+          <a
+            href="/Luke-Smoker-Resume.pdf"
+            className="inline-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Download resume (PDF) →
+          </a>
+        </p>
+
+        {/* Optional subtle positioning line */}
+        <p className="text-body contact-subtle">
+          Open to PM, Systems, and Internal Tools roles.
+        </p>
       </form>
     </div>
   );

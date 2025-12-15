@@ -13,10 +13,11 @@
       "Optimized for mobile-first development instead of desktop parity",
       "Consolidated editing, planning, logs, and context to reduce cognitive switching",
       "Favored structured workflows (sessions, sprints, work items) over ad-hoc flexibility",
-      "Chose a self-hosted architecture to preserve control, extensibility, and data ownership"
+      "Chose a self-hosted architecture to preserve control, extensibility, and data ownership",
+      "Validated decisions through daily personal use rather than speculative feature planning"
     ],
 
-    "impact": "Dev Toolbox made sustained mobile development practical by reducing cognitive load and restoring predictable, focused workflows aligned with how developers reason about their work.",
+    "impact": "Dev Toolbox made sustained mobile development practical by reducing cognitive load and restoring predictable workflows. Before Dev Toolbox, development on the go was fragmented across tools and rarely sustained; with a unified editor, planner, and logging system, work sessions became more focused, repeatable, and easier to resume without losing context.",
     
     "tradeoffs": [
     "Dev Toolbox intentionally prioritizes mobile-first workflows rather than full desktop parity. This meant leaving out some advanced editing and visualization features in favor of predictability, low cognitive load, and real usability on smaller screens.",
@@ -80,7 +81,7 @@
       "Favored predictable, revisitable flows over complex interactions"
     ],
 
-    "impact": "Simplicity helps users make more confident day-to-day financial decisions by reducing cognitive load and focusing attention on what actually needs action.",
+    "impact": "Simplicity helps users make more confident day-to-day financial decisions by reducing noise and focusing attention on what actually needs action. Instead of reacting to alerts or reconciling dashboards, users can quickly see upcoming obligations, available headroom, and category health — making short check-ins sufficient for staying oriented and in control.",
 
     "innovations": [
       "A calm, mobile-first budgeting interface focused on clarity rather than noise",
@@ -315,6 +316,15 @@
     "role": "Concept originator and systems designer",
     "timeline": "Long-term exploration",
     "tags": ["Conceptual", "Systems thinking", "Human–AI collaboration"],
+    "pmBridge": {
+      "title": "How Aurora Shapes My Product Thinking",
+      "bullets": [
+        "Focuses product work on making decisions and system behavior explainable, not just functional.",
+        "Encourages framing problems in terms of intent, understanding, and outcome before implementation.",
+        "Reinforces systems thinking across tools, workflows, and human behavior.",
+        "Emphasizes calm, human-centered design when working with complex or ambiguous systems."
+      ]
+    },
     "problem": "Software creation today is fragmented across documents, tools, and communication channels, making it difficult to maintain clarity, shared understanding, and a coherent path from intention to result.",
     "context": "Aurora emerged from years of operational work and independent software development, shaped by questions around clarity, communication, and how people naturally express intent. My connectedness and restorative instincts made the friction especially visible — systems drifted, reasoning wasn’t transparent, and meaning often became diluted across layers.",
     "solution": [
