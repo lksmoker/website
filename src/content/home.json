@@ -1,85 +1,94 @@
 {
   "meta": {
     "title": "Home",
-    "description": "Product-minded systems builder across operations, internal tools, and software."
+    "description": "Technical + product leadership across operations, internal tools, and software — built around feedback loops, clarity, and revisable systems."
   },
   "hero": {
-    "title": "I build product, systems, and tools that bring clarity to complex work.",
-    "subtitle": "I’m a systems-minded builder with experience in operations leadership, internal tools, and independent software development.",
-    "supportingLine": "I’m currently looking for product management and internal tools roles where clarity, reasoning, and explainability matter."
+    "title": "I lead and build systems that stay honest under change.",
+    "subtitle": "Technical + product leadership across operations, internal tools, and independent software development.",
+    "supportingLine": "I design feedback loops, clear reasoning, and revisable workflows—so teams can adapt without losing integrity."
   },
   "sections": {
     "selectedWork": {
       "heading": "Selected Projects",
-      "intro": "A few product-focused projects that show how I think about clarity, systems, and tools.",
-      "projectSlugs": ["dev-toolbox", "gas-transportation-workflow", "simplicity"]
+      "intro": "A few projects that show how I build: clarity through structure, feedback loops that actually close, and systems that can evolve without drifting.",
+      "projectSlugs": "dev-toolbox gas-transportation-workflow simplicity"
     },
     "productApproach": {
       "heading": "How I Approach Product Work",
       "pillars": [
         {
-          "title": "Start from real workflows",
-          "body": "Observe how work actually happens, then frame problems and requirements from that ground truth."
-        },
-        
-        {
-          "title": "Build explainable tools",
-          "body": "Favor systems where it’s always clear why something happened, not just what happened."
+          "title": "Start with intent, not output",
+          "body": "I frame the job to be done, success conditions, and constraints early—so implementation stays aligned with what people actually need."
         },
         {
-          "title": "Iterate with structure",
-          "body": "Use lightweight structure—checkpoints, experiments, and metrics—to guide change without creating noise."
+          "title": "Design feedback as a system property",
+          "body": "I prefer structural inclusion over “bring people in.” The work should naturally surface signal: usage, outcomes, and why decisions were made."
+        },
+        {
+          "title": "Make reasoning and behavior explainable",
+          "body": "If a system can’t explain itself, it can’t be trusted. I build traceability into decisions, changes, and outcomes."
+        },
+        {
+          "title": "Build for revision, not perfection",
+          "body": "I treat systems as living. The goal is stable improvement: iterate with integrity, reduce drift, and keep change safe."
         }
       ]
     },
     "skillsGrid": {
       "heading": "Skills & Capabilities",
-      "intro": "A mix of operations, systems thinking, and independent software development.",
+      "intro": "A mix of operations leadership, systems design, and full-stack building—applied with product judgment and a bias toward clarity and revision.",
       "categories": [
         {
-          "label": "Product & Systems",
+          "title": "Technical & Architecture",
           "items": [
-            "Problem framing and discovery",
-            "Workflow and process design",
-            "Translating operations into product requirements"
+            "Full-stack web apps (React + TypeScript, Supabase/Postgres)",
+            "System design for clarity, traceability, and maintainability",
+            "Structured logging and observability-first workflows",
+            "Automation and integration (Google Apps Script, Forms/Sheets/Calendar)",
+            "Self-hosted and cloud-adjacent infrastructure (Cloudflare, GitHub)"
           ]
         },
         {
-          "label": "Operations & Leadership",
+          "title": "Product & System Leadership",
           "items": [
-            "Team supervision and coaching",
-            "Change management",
-            "Designing calm, repeatable workflows"
+            "Problem framing, constraints, and success conditions",
+            "Decision-making that stays visible and revisitable",
+            "Feedback loops that connect intent → behavior → outcome",
+            "Designing systems to evolve without losing integrity",
+            "Reducing drift between what people mean and what systems do"
           ]
         },
         {
-          "label": "Software & Tools",
+          "title": "Operations & People",
           "items": [
-            "Full-stack solo development",
-            "Internal tools and developer workflows",
-            "Reasoning structures and explainability"
+            "Leading teams in high-variance environments",
+            "Workflow design that reduces dropped handoffs",
+            "Clarity in expectations, communication, and coordination",
+            "Reliable execution under real constraints",
+            "Calm structure through change and ambiguity"
           ]
         }
       ]
     },
     "auroraPreview": {
       "heading": "Aurora: Conversational Software",
-      "body": "Aurora is a conceptual approach to building software through conversation—intent, understanding, and result tied together with clarity and explanation. It influences how I design products to be transparent, explainable, and aligned with how people actually think."
+      "body": "Aurora is a conceptual approach to building software through conversation—intent, shared understanding, and results tied together with clear feedback. It influences how I design products to be explainable, revisable, and structurally aligned with how people actually think."
     },
     "aboutPreview": {
       "heading": "My Background",
-      "body": "My work sits at the intersection of systems and people. I’ve led teams, refined workflows, and independently built tools and platforms. That mix of operations and software shapes how I approach product decisions."
+      "body": "Before I wrote software, I led large-scale operations and redesigned the workflows beneath the work. That same instinct now shows up in tools and platforms: build the structure, close the loop, and keep the system honest as conditions change."
     },
     "writingPreview": {
       "heading": "Writing on Systems and Product",
       "items": [
         "Clarity as a Leadership Skill",
-        "Why Systems Break, and How to Keep Them Honest",
-        "Designing Workflows for Real People"
+        "Why Systems Break—and How to Keep Them Honest",
+        "Designing Feedback Loops That Actually Close"
       ]
     },
     "contactCta": {
-      "body": "If you’d like to talk about a role, a system, or an idea, I’m always open to a conversation."
+      "body": "If you’d like to talk about a role, a system, or an idea—especially work where feedback, explainability, and revisable design matter—I’m always open to a conversation."
     }
   }
 }
