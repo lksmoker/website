@@ -50,7 +50,11 @@
 
       "tech": {
         "ids": "typescript react vite supabase postgres github cloudflare",
-        "bullets": "Frontend: React & TypeScript bundled with Vite. Backend & data: Supabase (Postgres + auth) with RLS and group-scoped tables. Infrastructure: Cloudflare Pages and Tunnels. Workflow: GitHub integration, structured logs, and AI context packets."
+        "bullets": [
+          "Frontend: React & TypeScript bundled with Vite.",
+          "Backend & data: Supabase (Postgres + auth) with RLS and group-scoped tables.",
+          "Infrastructure: Cloudflare Pages and Tunnels. Workflow: GitHub integration, structured logs, and AI context packets."
+          ]
       }
     },
     {
@@ -95,7 +99,10 @@
     ],
       "tech": {
         "ids": "typescript react supabase postgres github",
-        "bullets": "React + TypeScript frontend with Supabase backend and Postgres RLS. Built alongside Dev Toolbox to share schema introspection and documentation workflows."
+        "bullets": [
+          "React + TypeScript frontend with Supabase backend and Postgres RLS.",
+          "Built alongside Dev Toolbox to share schema introspection and documentation workflows."
+        ]
       }
     },
     {
@@ -165,6 +172,103 @@
         "Improved operational visibility through structured reporting and feedback loops",
         "Reduced rework and day-to-day friction"
       ],
+      "evidence": [
+        "Directed operations across 250,000–450,000 sq. ft. of facilities while maintaining service quality.",
+        "Led and coached teams of 28–40+ employees, improving day-to-day reliability and clarity.",
+        "Achieved industry-recognized CIMS certification with honors.",
+        "Sustained productivity at 43,000 sq. ft. per FTE with high customer satisfaction.",
+        "Built automated reporting + workflow tools (including a Google Apps Script scheduling system) that improved visibility and reduced errors."
+      ],
+      "coreCompetencies": [
+        {
+          "category": "Systems & Process Design",
+          "items": [
+            "Designed and refined workflows and inspection processes to ensure consistent quality across large operational footprints.",
+            "Implemented and maintained industry standards, achieving CIMS certification with honors.",
+            "Developed reporting tools that improved visibility and reduced manual steps.",
+            "Used CMMS to structure work orders, scheduling, and quality feedback loops."
+          ]
+        },
+        {
+          "category": "Execution & Delivery",
+          "items": [
+            "Directed daily operations across facilities and logistics environments ensuring compliance, quality, and timeliness.",
+            "Coordinated transportation logistics for athletics, academic departments, and student activities.",
+            "Supported construction, renovation, and campus event operations through resource planning and cross-department alignment."
+          ]
+        },
+        {
+          "category": "Leadership & Collaboration",
+          "items": [
+            "Supervised teams of 28–40+ employees, providing structured coaching and performance development.",
+            "Served as operational liaison across Residence Life, Events, Athletics, and Administration.",
+            "Led onboarding, training, and systems adoption during staffing changes."
+          ]
+        }
+      ],
+      "experience": [
+        {
+          "role": "Custodial Manager",
+          "organization": "Marian University",
+          "highlights": [
+            "Directed daily operations and served as liaison to Residence Life.",
+            "Conducted structured inspections and coached staff to improve consistency.",
+            "Ensured OSHA and regulatory compliance.",
+            "Managed payroll systems and employee databases (Kronos, HCMS).",
+            "Used CMMS for scheduling, assignment, and tracking of work orders."
+          ]
+        },
+        {
+          "role": "Office Manager & Transportation Coordinator",
+          "organization": "Grace College",
+          "highlights": [
+            "Coordinated transportation logistics for athletics, departments, and student activities.",
+            "Developed a Google Apps Script workflow that unified vehicle schedules, driver assignments, and departmental requests into a single automated reporting system, reducing manual coordination effort and improving visibility.",
+            "Managed CMMS, payroll, AP/AR, and customer service workflows.",
+            "Created automated reporting tools to improve operational visibility.",
+            "Managed hiring workflows and supported employee engagement efforts."
+          ]
+        },
+        {
+          "role": "Housekeeping Supervisor",
+          "organization": "Grace College",
+          "highlights": [
+            "Supervised and coached 40+ staff with structured expectations and quality controls.",
+            "Conducted inspections and implemented corrective workflows.",
+            "Mentored five team leads, improving leadership and consistency.",
+            "Implemented CIMS standards, earning full certification with honors."
+          ]
+        },
+        {
+          "role": "Custodial Manager",
+          "organization": "Grace College",
+          "highlights": [
+            "Directed operations for 450,000 sq. ft. of facilities.",
+            "Supported campus events, alumni functions, and summer conferences.",
+            "Maintained productivity at 43,000 sq. ft. per FTE with high satisfaction.",
+            "Participated in labor conversion efforts creating student employment opportunities."
+          ]
+        },
+        {
+          "role": "Physical Plant Director",
+          "organization": "Taylor University",
+          "highlights": [
+            "Directed custodial, maintenance, and grounds operations for a 250,000 sq. ft. campus.",
+            "Coordinated construction, renovation projects, and facility planning.",
+            "Managed equipment maintenance contracts and operational budgeting."
+          ]
+        },
+        {
+          "role": "Delivery Driver",
+          "organization": "FedEx Ground",
+          "highlights": [
+            "Executed high-volume delivery operations using RF/WMS technology.",
+            "Maintained accuracy and timeliness under strict delivery constraints.",
+            "Provided reliable customer service in fast-paced logistics environments."
+          ]
+        }
+      ],
+
       "screenshots": [],
       "link": {
         "href": "#/work/gas-transportation-workflow",
