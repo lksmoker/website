@@ -1,10 +1,10 @@
 {
   "meta": {
     "title": "Work & Projects",
-    "description": "Selected work across operations, systems, and software."
+    "description": "Selected work across operations, internal tools, and software — built around clear feedback loops, explainable systems, and revisable design."
   },
   "sections": {
-    "intro": "This page gives a clearer picture of the systems I’ve shaped or built — from large-scale operational workflows to internal tools, full-stack applications, and conceptual platforms. Before I wrote software, I was redesigning real-world systems: leading teams responsible for hundreds of thousands of square feet, clarifying workflows, stabilizing communication loops, and improving performance in high-variance environments. That same instinct now drives my work in tools, platforms, and conceptual models like Aurora — building systems that bring clarity, structure, and explainability to complex work.",
+    "intro": "This page highlights systems I’ve led, shaped, or built — from large-scale operations and logistics workflows to internal tools, full-stack applications, and conceptual product work. Before I wrote software, I was redesigning real-world systems: leading teams responsible for hundreds of thousands of square feet, clarifying handoffs, stabilizing communication loops, and improving reliability in high-variance environments. That same approach now shows up in software: build the structure, make reasoning visible, close the feedback loop, and design the system so it can change without losing integrity.",
     "categories": [
       "Operations",
       "Business Systems",

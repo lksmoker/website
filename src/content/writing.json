@@ -1,71 +1,40 @@
 {
   "meta": {
     "title": "Reflections",
-    "description": "Reflections on building systems, clarifying intent, and shaping ways of working that hold up over time."
+    "description": "Reflections on building systems, clarifying intent, and designing ways of working that hold up under change."
   },
   "sections": {
-    "intro": "Most of what I’ve learned building systems hasn’t come from getting things right the first time. It’s come from noticing where friction kept appearing — and then tracing it backward. The pieces here are reflections on that process. Each one starts with a problem I thought was about execution, and ends with something I realized needed to move earlier: direction, context, and eventually the way I worked altogether.",
+    "intro": "Most of what I’ve learned about building systems hasn’t come from getting things right the first time. It’s come from noticing where friction kept appearing — and then tracing it backward. Writing is part of how I close that loop. These pieces reflect on moments where execution struggled, clarity broke down, or systems drifted — and what changed once intent, context, and structure moved earlier in the process.",
     "categories": [
       "Systems & Clarity",
-      "Process & Practice",
+      "Product & Practice",
+      "Leadership & Feedback",
       "Personal Reflections"
     ],
     "articles": [
       {
         "slug": "defining-direction-before-building",
         "title": "The More Time We Spent Defining the Direction, the Better the Outcome",
-        "summary": "A reflection on how slowing down early to clarify intent consistently led to calmer, more durable outcomes.",
+        "summary": "A reflection on how slowing down early to clarify intent consistently led to calmer execution and more durable systems.",
         "date": "",
         "category": "Systems & Clarity",
-        "body": [
-          "Much of my recent work has involved building systems and tools in close conversation — not just with people, but with an AI system that I use as a thinking and clarification partner.",
-          "Rather than treating AI as a shortcut or a generator of answers, I use it to externalize ideas early: to talk through direction, write down assumptions, surface gaps, and test whether something actually makes sense when it’s explained out loud. The quality of the output has consistently tracked with the quality of the direction I put in.",
-          "That experience made one pattern especially obvious to me: the more time we spent at the beginning defining the direction, the better the outcome was — almost every time.",
-          "Early on, I tended to equate progress with movement. If something was being built, written, or implemented, it felt like things were advancing. But the results were often uneven. Things technically worked, yet felt fragile or misaligned.",
-          "Over time, I noticed a contrast. Projects where I slowed down at the start — talking things through, writing things down, and testing whether the direction was actually clear — felt calmer. Decisions stuck. Fewer things needed to be undone later.",
-          "The difference wasn’t effort. It was direction.",
-          "Defining the direction didn’t mean producing a perfect plan. It meant noticing when something felt vague, surfacing assumptions early, and letting uncertainty show up before it became expensive.",
-          "When I didn’t spend that time upfront, the cost showed up later as rework, drift, and heavier progress.",
-          "Once the direction was clearer, everything downstream moved with less resistance. The work didn’t just move faster. It moved with confidence."
-        ]
+        "body": []
       },
       {
         "slug": "when-precision-turns-into-omission",
         "title": "When Precision Turns Into Omission",
-        "summary": "A reflection on low-context communication, troubleshooting loops, and why prep work is a form of communication.",
+        "summary": "On low-context communication, broken troubleshooting loops, and why preparation is itself a form of leadership.",
         "date": "",
-        "category": "Systems & Clarity",
-        "body": [
-          "I learned this lesson once refinishing floors, and then again years later working with an AI system. The environments couldn’t have been more different, but the failure mode was the same.",
-          "In floor refinishing, the outcome is decided long before the finish goes on. If you rush the stripping process, it shows up later. Residue you didn’t quite remove doesn’t disappear — it waits.",
-          "Years later, I ran into the same pattern while building systems on my own and working in close co-development with an AI.",
-          "What caught my attention wasn’t slow progress. It was getting stuck in the same troubleshooting loops. Fixes made sense individually, but didn’t hold over time.",
-          "Eventually, I realized this wasn’t a technical issue. It was a communication problem — just not one between two people. It was between me and the system.",
-          "I tend to communicate in a low-context way. I aim for precision and efficiency, often leaving out what feels implied or redundant to me.",
-          "That works well when context is shared. It breaks down when it isn’t.",
-          "The AI wasn’t misunderstanding me. It was responding accurately to what I’d said, not to what I’d meant. The gap between those two was where the loops lived.",
-          "Things changed when I started treating prep work as communication. Writing down intent, assumptions, and constraints made the work steadier.",
-          "Looking back, it was the same lesson as floor refinishing: precision at the end doesn’t compensate for missing prep. The work always reveals what you skipped."
-        ]
+        "category": "Leadership & Feedback",
+        "body": []
       },
       {
         "slug": "practice-before-projects",
         "title": "I Didn’t Just Want to Build an App",
-        "summary": "Why shifting focus from individual outcomes to repeatable practice changed how I approach building software.",
+        "summary": "Why shifting focus from one-off outcomes to repeatable practice changed how I approach product and systems work.",
         "date": "",
-        "category": "Process & Practice",
-        "body": [
-          "At some point, I realized I didn’t just want to build an app. I wanted to be able to do it again.",
-          "Early on, each project felt heavy. Even successful outcomes required reinvention and constant attention.",
-          "What started to bother me wasn’t failure. It was repetition. The same kinds of friction kept appearing.",
-          "I didn’t want every app to depend on how sharp or motivated I happened to be. I wanted a way of working that could reliably produce results.",
-          "That’s when my focus shifted from outcomes to process — not ceremony, but the shape of how work moved forward.",
-          "I began addressing recurring problems upstream instead of fixing them each time they appeared. This led to a lightweight, flexible approach to keeping direction, context, and progress visible.",
-          "The real relief came when I stopped relying entirely on myself to remember everything. Once intent and decisions had a place to live, the work felt calmer.",
-          "Eventually, I built those workflows directly into the tools I was using, so the system could support the way I worked.",
-          "Looking back, the change wasn’t about scale or ambition. It was about alignment. I wanted effort to compound.",
-          "Getting the process right didn’t guarantee success — but it made success repeatable."
-        ]
+        "category": "Product & Practice",
+        "body": []
       }
     ]
   }

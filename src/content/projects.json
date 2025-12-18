@@ -1,357 +1,153 @@
-[
-  {
-    "slug": "dev-toolbox",
-    "title": "Dev Toolbox",
-    "summary": "A mobile-first, self-hosted developer environment built to make real software development possible on the go — with context, planning, editing, and reasoning all in one place.",
-    "role": "Independent designer and developer",
-    "timeline": "2022–Present",
-    "tags": ["Internal tools", "Developer experience", "Full-stack"],
-    "problem": "There were very few reliable ways to develop software on mobile, and existing tools made the workflow feel fragmented, unpredictable, and detached from real project context. I wanted something calmer, clearer, and closer to the way I actually think.",
-    "context": "Dev Toolbox began as a response to friction I felt personally: coding on the go wasn't feasible, and switching tools constantly created cognitive drift. My strengths in systems thinking and restorative problem-solving pushed me toward a unified workspace — something self-hosted, adaptable, and designed so that reasoning stayed visible rather than buried.",
-    "solution": "I designed and built a self-hosted, mobile-first developer environment focused on reducing context switching and preserving clarity. Starting with core essentials — editing, logs, and navigation — the system evolved through real usage to support planning, version control, and explainable reasoning.",
-    "keyDecisions": [
-      "Optimized for mobile-first development instead of desktop parity",
-      "Consolidated editing, planning, logs, and context to reduce cognitive switching",
-      "Favored structured workflows (sessions, sprints, work items) over ad-hoc flexibility",
-      "Chose a self-hosted architecture to preserve control, extensibility, and data ownership",
-      "Validated decisions through daily personal use rather than speculative feature planning"
-    ],
-
-    "impact": "Dev Toolbox made sustained mobile development practical by reducing cognitive load and restoring predictable workflows. Before Dev Toolbox, development on the go was fragmented across tools and rarely sustained; with a unified editor, planner, and logging system, work sessions became more focused, repeatable, and easier to resume without losing context.",
-    
-    "tradeoffs": [
-    "Dev Toolbox intentionally prioritizes mobile-first workflows rather than full desktop parity. This meant leaving out some advanced editing and visualization features in favor of predictability, low cognitive load, and real usability on smaller screens.",
-    "The system was designed primarily for solo and small-team use. Multi-user collaboration features were deferred in favor of strengthening core planning, session logging, and context preservation workflows.",
-    "Dev Toolbox favors structured concepts like sessions, sprints, and work items over open-ended flexibility. While this reduces customization, it reinforces clarity, traceability, and explainability in day-to-day work.",
-    "Choosing a self-hosted architecture increased setup complexity but preserved data ownership, extensibility, and long-term control — priorities that aligned with the project’s goals even at the cost of onboarding friction."
-    ],
-    
-    "innovations": [
-      "Mobile-optimized code block selector for navigating and manipulating structured code",
-      "Integrated, always-visible structured logs and console output",
-      "Self-hosted GitHub integration for commits, diffs, and repository insights",
-      "Unified project planner with sprints, sessions, and context surfaces",
-      "AI context packet downloader for explainable, project-aware reasoning"
-    ],
-   
-    "thumbnail": "/images/dev-toolbox/dev-toolbox-thumb.webp",
-    "screenshots": [
-      {
-        "src": "/images/dev-toolbox/dev-toolbox-editor-context.webp",
-        "alt": "Code editor showing structured context metadata and backend route definitions",
-        "caption": "The editor pairs code with explicit contextual metadata, keeping structure, intent, and implementation visible together."
-      },
-      {
-        "src": "/images/dev-toolbox/dev-toolbox-project-planner.webp",
-        "alt": "Project planner showing active sprint status and work item progress",
-        "caption": "The project planner surfaces sprint state and work-in-progress, grounding daily execution in clear structure."
-      },
-      {
-        "src": "/images/dev-toolbox/dev-toolbox-logs.webp",
-        "alt": "Live logs view showing structured backend activity and request traces",
-        "caption": "Live, structured logs make system behavior observable and explainable while you work."
-      }
-    ],
-
-    "tech": {
-      "ids": ["typescript", "react", "vite", "supabase", "postgres", "github", "cloudflare"],
-      "bullets": [
-        "Frontend: React & TypeScript single-page app bundled with Vite.",
-        "Backend & data: Supabase (PostgreSQL + auth) with row-level security and group_id-scoped tables for sprints, sessions, work items, and events.",
-        "Infrastructure: Deployed via Cloudflare Pages and Tunnels for secure access to local services.",
-        "Developer workflow: GitHub for version control, structured logs for sessions/events, and AI context packets that bundle code, schema, and history for explainable reasoning."
-      ]
-    }
-  },
-  {
-    "slug": "simplicity",
-    "title": "Finance Tools / Simplicity",
-    "summary": "A budgeting and financial-tracking system designed for calm visibility and confident day-to-day money decisions.",
-    "role": "Designer and full-stack developer",
-    "timeline": "2023–Present",
-    "tags": ["Personal finance", "Product design", "Full-stack"],
-    "problem": "Most budgeting tools generate noise instead of clarity. They surface too much, too little, or the wrong information at the wrong moment — creating stress rather than restoring confidence.",
-    "context": "Simplicity was built to support real financial behavior: recurring bills, flexible spending, shifting obligations, and daily decisions. My adaptive approach to systems and focus on reducing cognitive load shaped the entire flow — designed to meet people where they are, not force them into a rigid model.",
-    "solution": "I designed and built a mobile-first budgeting system focused on calm visibility rather than exhaustive reporting. The product highlights what matters most in the moment — upcoming obligations, category health, and patterns — while keeping the data honest and predictable over time.",
-
-    "keyDecisions": [
-      "Prioritized signal over comprehensive dashboards",
-      "Designed for frequent, lightweight mobile check-ins",
-      "Made category health and headroom immediately visible",
-      "Favored predictable, revisitable flows over complex interactions"
-    ],
-
-    "impact": "Simplicity helps users make more confident day-to-day financial decisions by reducing noise and focusing attention on what actually needs action. Instead of reacting to alerts or reconciling dashboards, users can quickly see upcoming obligations, available headroom, and category health — making short check-ins sufficient for staying oriented and in control.",
-
-    "innovations": [
-      "A calm, mobile-first budgeting interface focused on clarity rather than noise",
-      "Daily and monthly workflows built around real financial behavior instead of abstract categories",
-      "A predictable, honest model for obligations, category health, and recurring patterns",
-      "A review flow that keeps new transactions organized without overwhelming the user"
-    ],
-    "thumbnail": "/images/simplicity/simplicity-thumb.webp",
-    "screenshots": [
-      {
-        "src": "/images/simplicity/simplicity-home.webp",
-        "alt": "Home dashboard showing bank balances, credit cards, and cash outlook",
-        "caption": "Home dashboard provides a calm snapshot of balances, credit cards, and estimated cash after bills."
-      },
-      {
-        "src": "/images/simplicity/simplicity-transactions.webp",
-        "alt": "Transaction history with categorized spending and income entries",
-        "caption": "Transaction history emphasizes clarity and organization through consistent categorization."
-      },
-      {
-        "src": "/images/simplicity/simplicity-budget.webp",
-        "alt": "Monthly budget view with income items and bills",
-        "caption": "Budget view supports forward-looking planning by showing income items and bills in a single timeline."
-      }
-    ],
-
-    "tech": {
-      "ids": ["typescript", "react", "supabase", "postgres", "github"],
-      "bullets": [
-        "Frontend: React & TypeScript with a mobile-first layout and adaptive card system.",
-        "Backend & data: Supabase with Postgres RLS enforcing group_id-based data isolation.",
-        "Infrastructure: Uses Supabase Auth for multi-user support and Cloudflare tunneling for local testing.",
-        "Developer workflow: Built alongside Dev Toolbox to share schema introspection, session, and documentation tools."
-      ]
-    }
-  },
-
-  {
-    "slug": "gas-transportation-workflow",
-    "title": "Transportation Scheduling Workflow (GAS)",
-    "summary": "Unified schedules, requests, and driver assignments into a single workflow — reducing data issues, schedule conflicts, and dropped handoffs.",
-    "role": "Office Manager & Transportation Coordinator",
-    "timeline": "Grace College",
-    "tags": ["Operations", "Workflow design", "Automation", "Scheduling"],
-  
-    "problem": [
-      "Transportation coordination was affected by messy workflows: schedules, updates, and communication were spread across emails, spreadsheets, and verbal handoffs.",
-      "This led to poor data, schedule issues, and communication gaps — and created daily friction and avoidable rework.",
-      "The outcome was predictable: details fell through the cracks and dropped balls became a recurring risk."
-    ],
-  
-    "solution": [
-      "Introduced a single, clear scheduling workflow with defined steps and one consistent place for schedule data and updates.",
-      "Unified vehicle schedules, driver assignments, and departmental requests into a shared system so updates stayed reliable and visible.",
-      "Centralized all transportation-related costs in the same workflow, enabling consistent tracking and downstream reporting.",
-      "Reduced manual coordination by making the workflow easier to follow and harder to misunderstand."
-    ],
-  
-    "keyDecisions": [
-      "Treat schedule issues as workflow and data integrity problems, not individual mistakes.",
-      "Consolidated where information lives so everyone works from the same truth.",
-      "Favor a repeatable process over informal workarounds to prevent dropped handoffs."
-    ],
-  
-    "impact": [
-      "More complete and reliable schedule data",
-      "Reduced reconciliation effort and billing errors by keeping scheduling and cost data in a single, reliable workflow.",
-      "Fewer scheduling conflicts and missed assignments",
-      "Fewer communication gaps and fewer dropped balls",
-      "Less day-to-day friction and fewer interruptions"
-    ],
-  
-    "tradeoffs": [
-      "Required behavior change and more consistent update discipline.",
-      "Reduced informal workarounds in favor of a shared process everyone could follow."
-    ],
-  
-    "tech": {
-      "ids": ["google-apps-script", "sheets", "forms", "calendar"],
-      "bullets": [
-      ]
-    },
-    "thumbnail": "/images/gas/gas-thumb.svg",
-    "screenshots": [
+{
+  "value": [
     {
-      "src": "/images/gas/gas-sheet.png",
-      "alt": "Transportation request responses captured in a shared spreadsheet used as the operational source of truth",
-      "caption": "Form submissions flowed into a shared sheet, keeping requests and schedule data consistent and visible."
+      "slug": "dev-toolbox",
+      "title": "Dev Toolbox",
+      "summary": "A mobile-first, self-hosted developer environment designed to keep context, reasoning, and feedback visible — enabling real software development on the go without cognitive drift.",
+      "role": "Independent designer and developer",
+      "timeline": "2022–Present",
+      "tags": ["Internal tools", "Developer experience", "Full-stack"],
+      "problem": "Mobile software development was fragmented and unreliable. Existing tools buried context, obscured system behavior, and made it difficult to resume work without losing reasoning or intent. Feedback existed, but it was scattered and disconnected from decision-making.",
+      "context": "Dev Toolbox began as a response to friction I experienced personally. My systems-thinking and restorative instincts pushed me toward a unified workspace — one where planning, execution, logs, and reasoning stayed connected so learning could feed directly back into the work.",
+      "solution": "I designed and built a self-hosted, mobile-first developer environment that treats feedback and context as first-class system properties. The platform evolved through real daily use to support planning, version control, structured logs, and explainable reasoning — keeping intent, behavior, and outcome aligned.",
+      "keyDecisions": [
+        "Optimized for mobile-first development rather than desktop parity",
+        "Consolidated editing, planning, logs, and context to reduce cognitive switching",
+        "Favored structured workflows (sessions, sprints, work items) over ad-hoc flexibility",
+        "Chose a self-hosted architecture to preserve control, extensibility, and data ownership",
+        "Validated decisions through sustained personal use rather than speculative feature planning"
+      ],
+      "impact": "Dev Toolbox made sustained mobile development practical by restoring predictable feedback loops and preserving reasoning across sessions. Work became easier to resume, decisions more traceable, and iteration safer — reducing drift between intent and implementation.",
+      "tradeoffs": [
+        "Prioritized mobile-first predictability over full desktop feature parity",
+        "Deferred multi-user collaboration to strengthen core planning and feedback workflows",
+        "Accepted higher setup complexity in exchange for long-term control and data ownership"
+      ],
+      "innovations": [
+        "Mobile-optimized structured code navigation",
+        "Always-visible structured logs and system traces",
+        "Unified planning with sprints, sessions, and work items",
+        "AI context packet bundling for explainable reasoning"
+      ],
+      "thumbnail": "/images/dev-toolbox/dev-toolbox-thumb.webp",
+      "screenshots": [],
+      "tech": {
+        "ids": "typescript react vite supabase postgres github cloudflare",
+        "bullets": "Frontend: React & TypeScript bundled with Vite. Backend & data: Supabase (Postgres + auth) with RLS and group-scoped tables. Infrastructure: Cloudflare Pages and Tunnels. Workflow: GitHub integration, structured logs, and AI context packets."
+      }
     },
     {
-      "src": "/images/gas/gas-thumb.svg",
-      "alt": "Workflow diagram showing Form → Sheets → Calendar automation for transportation scheduling",
-      "caption": "Apps Script connected Forms, Sheets, and Calendar so requests created schedule events automatically and stayed in sync."
+      "slug": "simplicity",
+      "title": "Finance Tools / Simplicity",
+      "summary": "A calm, mobile-first budgeting system that emphasizes signal over noise — helping users make confident decisions through clear, revisitable financial feedback.",
+      "role": "Designer and full-stack developer",
+      "timeline": "2023–Present",
+      "tags": ["Personal finance", "Product design", "Full-stack"],
+      "problem": "Most budgeting tools overwhelm users with dashboards and alerts while failing to support real financial behavior. Feedback is either too noisy or too late, making it difficult to understand what actually needs attention.",
+      "context": "Simplicity was shaped by an adaptive systems mindset: meet people where they are, reduce cognitive load, and make financial state understandable at a glance. The goal was not exhaustive reporting, but honest, actionable feedback.",
+      "solution": "I designed and built a mobile-first budgeting system focused on clarity and revisability. The product highlights upcoming obligations, category health, and headroom — allowing users to orient quickly, adjust plans, and learn from patterns over time.",
+      "keyDecisions": [
+        "Prioritized signal over comprehensive dashboards",
+        "Designed for frequent, lightweight mobile check-ins",
+        "Made category health immediately visible",
+        "Favored predictable, revisitable flows over complex interactions"
+      ],
+      "impact": "Simplicity helps users make calmer, more confident day-to-day decisions by closing the loop between financial intent and actual behavior. Instead of reacting to alerts, users can understand their situation and adjust proactively.",
+      "innovations": [
+        "Calm, mobile-first interface designed to reduce stress",
+        "Forward-looking obligation and headroom modeling",
+        "Predictable review flows that reinforce learning over time"
+      ],
+      "thumbnail": "/images/simplicity/simplicity-thumb.webp",
+      "screenshots": [],
+      "tech": {
+        "ids": "typescript react supabase postgres github",
+        "bullets": "React + TypeScript frontend with Supabase backend and Postgres RLS. Built alongside Dev Toolbox to share schema introspection and documentation workflows."
+      }
+    },
+    {
+      "slug": "gas-transportation-workflow",
+      "title": "Transportation Scheduling Workflow (GAS)",
+      "summary": "A unified scheduling and coordination workflow that reduced dropped handoffs by treating feedback and data integrity as system responsibilities.",
+      "role": "Office Manager & Transportation Coordinator",
+      "timeline": "Grace College",
+      "tags": ["Operations", "Workflow design", "Automation", "Scheduling"],
+      "problem": "Transportation coordination relied on fragmented communication across emails, spreadsheets, and verbal handoffs. Feedback was delayed or lost entirely, leading to conflicts, errors, and repeated rework.",
+      "solution": "Introduced a single, shared workflow that centralized requests, schedules, assignments, and costs. By consolidating where information lived, the system made state visible and errors harder to miss.",
+      "keyDecisions": [
+        "Treat coordination failures as workflow problems, not people problems",
+        "Consolidate information into a single source of truth",
+        "Favor repeatable structure over informal workarounds"
+      ],
+      "impact": [
+        "More complete and reliable schedule data",
+        "Fewer dropped handoffs and scheduling conflicts",
+        "Reduced reconciliation effort and billing errors",
+        "Lower day-to-day coordination friction"
+      ],
+      "tradeoffs": [
+        "Required behavior change and more consistent update discipline",
+        "Reduced informal flexibility in favor of reliability"
+      ],
+      "tech": {
+        "ids": "google-apps-script sheets forms calendar",
+        "bullets": ""
+      },
+      "thumbnail": "/images/gas/gas-thumb.svg",
+      "screenshots": [],
+      "link": {
+        "href": "#/work/operations-workflow",
+        "label": "See broader Operations & Logistics work →"
+      }
+    },
+    {
+      "slug": "operations-workflow",
+      "title": "Operations & Logistics",
+      "summary": "A body of operations leadership focused on clarity, feedback, and reliable execution in complex, people-driven environments.",
+      "role": "Operations leader, workflow designer, logistics coordinator",
+      "timeline": "2000–Present",
+      "tags": ["Operations", "Leadership", "Systems thinking"],
+      "framing": "Across higher-education facilities and logistics environments, I led teams and redesigned workflows so expectations, handoffs, and feedback stayed visible under real constraints.",
+      "themes": [
+        "Workflow clarity and visible expectations",
+        "Reliability under pressure",
+        "Systems thinking in human environments",
+        "Cross-functional coordination",
+        "People development through structure"
+      ],
+      "outcomes": [
+        "Led teams of 28–40+ employees with improved consistency and reliability",
+        "Maintained productivity above industry benchmarks",
+        "Improved operational visibility through structured reporting and feedback loops",
+        "Reduced rework and day-to-day friction"
+      ],
+      "screenshots": [],
+      "link": {
+        "href": "#/work/gas-transportation-workflow",
+        "label": "Featured case: Transportation Scheduling Workflow →"
+      }
+    },
+    {
+      "slug": "aurora",
+      "title": "Aurora",
+      "summary": "A conceptual approach to building software through conversation, centered on intent, shared understanding, and explainable outcomes.",
+      "role": "Concept originator and systems designer",
+      "timeline": "Long-term exploration",
+      "tags": ["Conceptual", "Systems thinking", "Human–AI collaboration"],
+      "pmBridge": {
+        "title": "How Aurora Shapes My Product Thinking",
+        "bullets": "Focuses product work on making decisions and system behavior explainable. Encourages framing problems in terms of intent, understanding, and outcome before implementation. Reinforces designing for revision and alignment over time."
+      },
+      "impact": [
+        "Provides a conceptual lens for designing feedback-rich, explainable systems",
+        "Informs how I approach product decisions across tools and workflows"
+      ],
+      "link": {
+        "href": "#/aurora",
+        "label": "Read the full Aurora page"
+      },
+      "screenshots": []
     }
   ],
-    "link": { "href": "#/work/operations-workflow", "label": "See broader Operations & Logistics work →" }
-
-  },
-
-  {
-    "slug": "operations-workflow",
-    "title": "Operations & Logistics",
-    "summary": "A cross-functional body of work focused on building clarity in complex, people-driven environments — through workflow design, coordination, team leadership, and reliable execution.",
-    "role": "Operations leader, workflow designer, logistics coordinator, and cross-functional partner",
-    "timeline": "2000–Present (operations & logistics roles)",
-    "tags": ["Operations", "Logistics", "Workflow design", "Leadership", "Systems thinking"],
-  
-    "framing": "Across higher-education facilities and logistics environments, I helped teams operate with clarity under real constraints — shifting priorities, distributed stakeholders, limited visibility, and high standards for reliability.",
-  
-    "themes": [
-      "Workflow clarity: make expectations and handoffs visible",
-      "Reliability under pressure: reduce variance and rework",
-      "Systems thinking in human environments: align tools, process, and behavior",
-      "Cross-functional coordination: keep many stakeholders moving together",
-      "People development: coach teams toward consistent execution"
-    ],
-  
-    "outcomes": [
-      "Directed operations across 250,000–450,000 sq. ft. while maintaining service quality.",
-      "Led and coached teams of 28–40+ employees, improving consistency and day-to-day reliability.",
-      "Implemented industry standards, earning CIMS certification with honors.",
-      "Improved operational visibility through structured reporting and clearer feedback loops.",
-      "Coordinated time-sensitive logistics work with strong customer satisfaction."
-    ],
-    "evidence": [
-      "Directed operations across 250,000–450,000 sq. ft. of facilities while maintaining service quality.",
-      "Led and coached teams of 28–40+ employees, improving day-to-day reliability and clarity.",
-      "Achieved industry-recognized CIMS certification with honors.",
-      "Sustained productivity at 43,000 sq. ft. per FTE with high customer satisfaction.",
-      "Built automated reporting + workflow tools (including a Google Apps Script scheduling system) that improved visibility and reduced errors."
-    ],
-
-    "coreCompetencies": [
-      {
-        "category": "Systems & Process Design",
-        "items": [
-          "Designed and refined workflows and inspection processes to ensure consistent quality across large operational footprints.",
-          "Implemented and maintained industry standards, achieving CIMS certification with honors.",
-          "Developed reporting tools that improved visibility and reduced manual steps.",
-          "Used CMMS to structure work orders, scheduling, and quality feedback loops."
-        ]
-      },
-      {
-        "category": "Execution & Delivery",
-        "items": [
-          "Directed daily operations across facilities and logistics environments ensuring compliance, quality, and timeliness.",
-          "Coordinated transportation logistics for athletics, academic departments, and student activities.",
-          "Supported construction, renovation, and campus event operations through resource planning and cross-department alignment."
-        ]
-      },
-      {
-        "category": "Leadership & Collaboration",
-        "items": [
-          "Supervised teams of 28–40+ employees, providing structured coaching and performance development.",
-          "Served as operational liaison across Residence Life, Events, Athletics, and Administration.",
-          "Led onboarding, training, and systems adoption during staffing changes."
-        ]
-      }
-    ],
-  
-    "experience": [
-      {
-        "role": "Custodial Manager",
-        "organization": "Marian University",
-        "highlights": [
-          "Directed daily operations and served as liaison to Residence Life.",
-          "Conducted structured inspections and coached staff to improve consistency.",
-          "Ensured OSHA and regulatory compliance.",
-          "Managed payroll systems and employee databases (Kronos, HCMS).",
-          "Used CMMS for scheduling, assignment, and tracking of work orders."
-        ]
-      },
-      {
-        "role": "Office Manager & Transportation Coordinator",
-        "organization": "Grace College",
-        "highlights": [
-          "Coordinated transportation logistics for athletics, departments, and student activities.",
-          "Developed a Google Apps Script workflow that unified vehicle schedules, driver assignments, and departmental requests into a single automated reporting system, reducing manual coordination effort and improving visibility.",
-          "Managed CMMS, payroll, AP/AR, and customer service workflows.",
-          "Created automated reporting tools to improve operational visibility.",
-          "Managed hiring workflows and supported employee engagement efforts."
-        ]
-      },
-      {
-        "role": "Housekeeping Supervisor",
-        "organization": "Grace College",
-        "highlights": [
-          "Supervised and coached 40+ staff with structured expectations and quality controls.",
-          "Conducted inspections and implemented corrective workflows.",
-          "Mentored five team leads, improving leadership and consistency.",
-          "Implemented CIMS standards, earning full certification with honors."
-        ]
-      },
-      {
-        "role": "Custodial Manager",
-        "organization": "Grace College",
-        "highlights": [
-          "Directed operations for 450,000 sq. ft. of facilities.",
-          "Supported campus events, alumni functions, and summer conferences.",
-          "Maintained productivity at 43,000 sq. ft. per FTE with high satisfaction.",
-          "Participated in labor conversion efforts creating student employment opportunities."
-        ]
-      },
-      {
-        "role": "Physical Plant Director",
-        "organization": "Taylor University",
-        "highlights": [
-          "Directed custodial, maintenance, and grounds operations for a 250,000 sq. ft. campus.",
-          "Coordinated construction, renovation projects, and facility planning.",
-          "Managed equipment maintenance contracts and operational budgeting."
-        ]
-      },
-      {
-        "role": "Delivery Driver",
-        "organization": "FedEx Ground",
-        "highlights": [
-          "Executed high-volume delivery operations using RF/WMS technology.",
-          "Maintained accuracy and timeliness under strict delivery constraints.",
-          "Provided reliable customer service in fast-paced logistics environments."
-        ]
-      }
-    ],
-  
-    "screenshots": [],
-    "link": { "href": "#/work/gas-transportation-workflow", "label": "Featured case: Transportation Scheduling Workflow →" }
-  },
-  
-  {
-    "slug": "aurora",
-    "title": "Aurora",
-    "summary": "A conceptual approach to building software through conversation, centered on intent, understanding, and transparent results.",
-    "role": "Concept originator and systems designer",
-    "timeline": "Long-term exploration",
-    "tags": ["Conceptual", "Systems thinking", "Human–AI collaboration"],
-    "pmBridge": {
-      "title": "How Aurora Shapes My Product Thinking",
-      "bullets": [
-        "Focuses product work on making decisions and system behavior explainable, not just functional.",
-        "Encourages framing problems in terms of intent, understanding, and outcome before implementation.",
-        "Reinforces systems thinking across tools, workflows, and human behavior.",
-        "Emphasizes calm, human-centered design when working with complex or ambiguous systems."
-      ]
-    },
-    "problem": "Software creation today is fragmented across documents, tools, and communication channels, making it difficult to maintain clarity, shared understanding, and a coherent path from intention to result.",
-    "context": "Aurora emerged from years of operational work and independent software development, shaped by questions around clarity, communication, and how people naturally express intent. My connectedness and restorative instincts made the friction especially visible — systems drifted, reasoning wasn’t transparent, and meaning often became diluted across layers.",
-    "solution": [
-      "Aurora explores a conversational workflow where people express what they want, the system reflects its understanding, and results evolve through shared reasoning. This mirrors how people naturally collaborate — through dialogue, refinement, and relational clarity — without revealing any internal mechanisms or technical structures."
-    ],
-    "innovations": [
-      "A conceptual approach to software shaped through conversation instead of traditional development steps",
-      "A workflow centered on intent → understanding → result, emphasizing clarity and shared reasoning",
-      "An exploration of explainability as a foundational property of software creation",
-      "A vision for more natural, transparent human–AI collaboration in shaping digital systems"
-    ],
-    "impact": [
-      "Aurora offers a direction for future tools that prioritize clarity, explainability, and human-centered interaction with complex systems. It reframes how software could be shaped — focusing on meaning, reasoning, and alignment rather than layers of translation."
-    ],
-    "link": {
-      "href": "#/aurora",
-      "label": "Read the full Aurora page"
-    },
-    "screenshots": [],
-    "tech": {
-      "ids": ["python", "supabase", "postgres", "github"],
-      "bullets": [
-        "Prototype engine implemented in Python for kernel logic and structured logging.",
-        "Uses Supabase (Postgres) as the underlying data and provenance store.",
-        "Focus on explainability, context bundling, and provenance-aware state management.",
-        "Conceptually extends Dev Toolbox and Simplicity into a unified conversational system design."
-      ]
-    }
-  }
-]
+  "Count": 5
+}
