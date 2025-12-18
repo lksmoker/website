@@ -12,7 +12,7 @@
     "selectedWork": {
       "heading": "Selected Projects",
       "intro": "A few projects that show how I build: clarity through structure, feedback loops that actually close, and systems that can evolve without drifting.",
-      "projectSlugs": "dev-toolbox gas-transportation-workflow simplicity"
+      "projectSlugs": ["dev-toolbox", "gas-transportation-workflow", "simplicity"]
     },
     "productApproach": {
       "heading": "How I Approach Product Work",
