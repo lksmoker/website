@@ -1,131 +1,42 @@
-import React, { useState } from "react";
+// src/pages/ContactPage.jsx
+import React from "react";
+import contactContent from "../content/contact.json";
+import SectionHeader from "../components/SectionHeader.jsx";
+import TextBlock from "../components/TextBlock.jsx";
+import ContactForm from "../components/ContactForm.jsx";
 
-const FUNCTION_URL =
-  "https://kckvqtgdwjuesbgngywt.supabase.co/functions/v1/contact-submit";
-const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY;
-
-export default function ContactForm() {
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const [status, setStatus] = useState({
-    type: "idle", // "idle" | "submitting" | "success" | "error"
-    message: "",
-  });
-
-  function handleChange(e) {
-    const { name, value } = e.target;
-    setForm((prev) => ({ ...prev, [name]: value }));
-  }
-
-  async function handleSubmit(e) {
-    e.preventDefault();
-
-    if (!form.message.trim()) return;
-
-    setStatus({ type: "submitting", message: "" });
-
-    try {
-      const res = await fetch(FUNCTION_URL, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          apikey: SUPABASE_ANON_KEY,
-          Authorization: `Bearer ${SUPABASE_ANON_KEY}`,
-        },
-        body: JSON.stringify(form),
-      });
-
-      if (!res.ok) {
-        throw new Error(`HTTP ${res.status}`);
-      }
-
-      setStatus({
-        type: "success",
-        message: "Thank you for reaching out — I’ll get back to you soon.",
-      });
-
-      setForm({ name: "", email: "", message: "" });
-    } catch (err) {
-      setStatus({
-        type: "error",
-        message:
-          "Something went wrong sending your message. You can also email me directly.",
-      });
-    }
-  }
+export default function ContactPage() {
+  const { sections } = contactContent;
 
   return (
-    <div className="contact-form-wrapper">
-      <form className="contact-form" onSubmit={handleSubmit}>
-        <label className="form-field">
-          <span>Name</span>
-          <input
-            type="text"
-            name="name"
-            value={form.name}
-            onChange={handleChange}
-          />
-        </label>
+    <>
+      <section className="page-section">
+        <SectionHeader title="Contact" />
 
-        <label className="form-field">
-          <span>Email</span>
-          <input
-            type="email"
-            name="email"
-            value={form.email}
-            onChange={handleChange}
-          />
-        </label>
-
-        <label className="form-field">
-          <span>Message</span>
-          <textarea
-            name="message"
-            rows={4}
-            value={form.message}
-            onChange={handleChange}
-            required
-          />
-        </label>
-
-        <button
-          type="submit"
-          className="primary-button"
-          disabled={status.type === "submitting"}
-        >
-          {status.type === "submitting" ? "Sending..." : "Send"}
-        </button>
-
-        {status.type === "success" && (
-          <p className="text-body contact-confirmation">{status.message}</p>
+        {/* Learning / feedback invitation */}
+        {sections.learningNote && (
+          <TextBlock className="contact-learning-note">
+            {sections.learningNote}
+          </TextBlock>
         )}
 
-        {status.type === "error" && (
-          <p className="text-body contact-error">{status.message}</p>
+        {/* Primary intro */}
+        {sections.intro && <TextBlock>{sections.intro}</TextBlock>}
+
+        {/* Optional positioning */}
+        {sections.workWithMe && <TextBlock>{sections.workWithMe}</TextBlock>}
+
+        {/* Optional Aurora note */}
+        {sections.auroraNote && (
+          <TextBlock className="text-muted">
+            {sections.auroraNote}
+          </TextBlock>
         )}
+      </section>
 
-        {/* Resume CTA */}
-        <p className="text-body contact-resume">
-          Prefer a resume?{" "}
-          <a
-            href="/Luke-Smoker-Resume.pdf"
-            className="inline-link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Download resume (PDF) →
-          </a>
-        </p>
-
-        {/* Optional subtle positioning line */}
-        <p className="text-body contact-subtle">
-          Open to PM, Systems, and Internal Tools roles.
-        </p>
-      </form>
-    </div>
+      <section className="page-section">
+        <ContactForm />
+      </section>
+    </>
   );
 }

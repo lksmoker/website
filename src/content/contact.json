@@ -4,8 +4,9 @@
     "description": "Get in touch about roles, systems, or ideas."
   },
   "sections": {
-    "workWithMe": "I work at the intersection of operations, systems, and software — leading and building products where clarity, feedback, and explainable decisions matter.",
+    "learningNote": "I value learning as much as outcomes. If you’ve reviewed my work and have a thought to share — whether or not there’s interest right now — I’m always open to hearing from you.",
     "intro": "If you’d like to talk about a role, a system, or an idea, feel free to reach out. Whether you’re exploring something early or refining an existing product, I’m always open to a thoughtful conversation.",
+    "workWithMe": "I work at the intersection of operations, systems, and software — leading and building products where clarity, feedback, and explainable decisions matter.",
     "auroraNote": "If you’re curious about Aurora, I’m happy to talk at a high level about its concepts and direction — the patterns, ideas, and product thinking behind a more conversational approach to software.",
     "confirmationMessage": "Thanks for reaching out — I appreciate it. I’ll review your message and get back to you soon."
   }
