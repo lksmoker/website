@@ -9,10 +9,19 @@ const techById = techCatalog.reduce((acc, item) => {
 
 export { techById };
 
-export default function TechStackIcons({ ids, label = "Tech stack" }) {
-  if (!ids || ids.length === 0) return null;
+const normalizeIds = (ids) => {
+  if (!ids) return [];
+  if (Array.isArray(ids)) return ids.filter(Boolean);
+  if (typeof ids === "string") return ids.trim().split(/\s+/).filter(Boolean);
+  // last-resort: single value
+  return [ids].filter(Boolean);
+};
 
-  const items = ids
+export default function TechStackIcons({ ids, label = "Tech stack" }) {
+  const normalized = normalizeIds(ids);
+  if (normalized.length === 0) return null;
+
+  const items = normalized
     .map((id) => techById[id])
     .filter(Boolean);
 

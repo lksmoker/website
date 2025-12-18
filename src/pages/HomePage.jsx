@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import homeContent from "../content/home.json";
-import projects from "../content/projects.json";
+import projectsData from "../content/projects.json";
 import Hero from "../components/Hero.jsx";
 import SectionHeader from "../components/SectionHeader.jsx";
 import TextBlock from "../components/TextBlock.jsx";
@@ -37,12 +37,14 @@ export default function HomePage() {
     writingPreview,
     contactCta,
   } = sections;
-
+  
+  const projects = projectsData.value ?? [];
   // Selected projects for the homepage card row
   const featured = projects.filter((project) =>
     selectedWork.projectSlugs.includes(project.slug)
   );
 
+  
   // ── SECTION: render ─────────────────────────────────────────
   return (
     <>
