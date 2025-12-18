@@ -27,7 +27,7 @@ export default function ProjectLayout({ project }) {
     link,
     tech,
     keyDecisions,
-    tradeoffs, // NEW: Constraints & Tradeoffs content
+    tradeoffs, // Constraints & Tradeoffs content
   } = project;
 
   const isOpsLogistics = slug === "operations-workflow";
@@ -36,10 +36,39 @@ export default function ProjectLayout({ project }) {
   // Helpers
   // ─────────────────────────────────────────────────────────────
 
-  const toList = (val) => (Array.isArray(val) ? val : val ? [val] : []);
+  // Normal list coercion (supports array or single string)
+  const toList = (val) => {
+    if (val == null) return [];
+    if (Array.isArray(val)) return val.filter(Boolean);
+    return [val].filter(Boolean);
+  };
+
+  // Split a string like "react typescript supabase" into ["react","typescript","supabase"]
+  // Keeps arrays as-is.
+  const toSlugList = (val) => {
+    if (val == null) return [];
+    if (Array.isArray(val)) return val.filter(Boolean);
+
+    if (typeof val === "string") {
+      return val
+        .split(/\s+/)
+        .map((s) => s.trim())
+        .filter(Boolean);
+    }
+
+    // If somehow an object sneaks in, wrap it so we don't crash.
+    return [val].filter(Boolean);
+  };
+
   const hasList = (val) => toList(val).length > 0;
 
-  const hasTech = Boolean(tech && (tech.ids?.length > 0 || tech.bullets?.length > 0));
+  // Normalize tech shapes from projects.json (string or array)
+  const techIds = toSlugList(tech?.ids);
+  const techBullets = toList(tech?.bullets);
+
+  const tagsList = Array.isArray(tags) ? tags : toList(tags);
+
+  const hasTech = techIds.length > 0 || techBullets.length > 0;
   const hasRole = Boolean(role);
   const hasProblem = hasList(problem);
   const hasSolution = hasList(solution);
@@ -55,7 +84,10 @@ export default function ProjectLayout({ project }) {
   const renderBody = (items) => {
     const list = toList(items);
     if (list.length === 0) return null;
-    if (list.length === 1) return <p className="text-body">{list[0]}</p>;
+
+    if (list.length === 1) {
+      return <p className="text-body">{list[0]}</p>;
+    }
 
     return (
       <ul className="project-list">
@@ -108,17 +140,17 @@ export default function ProjectLayout({ project }) {
 
   const TechSection = hasTech ? (
     <Section title="Tech Stack" aside>
-      {tech?.ids && tech.ids.length > 0 && (
+      {techIds.length > 0 && (
         <div className="project-layout__meta project-layout__meta--tech">
-          {tech.ids.map((id) => (
-            <span key={id} className="project-layout__meta-item">
-              {id}
+          {techIds.map((id) => (
+            <span key={String(id)} className="project-layout__meta-item">
+              {String(id)}
             </span>
           ))}
         </div>
       )}
 
-      {tech?.bullets && tech.bullets.length > 0 && <div>{renderBody(tech.bullets)}</div>}
+      {techBullets.length > 0 && <div>{renderBody(techBullets)}</div>}
     </Section>
   ) : null;
 
@@ -158,12 +190,13 @@ export default function ProjectLayout({ project }) {
       <header className="project-layout__header">
         <h1 className="heading-l">{title}</h1>
 
-        {(timeline || (tags && tags.length > 0)) && (
+        {(timeline || (tagsList && tagsList.length > 0)) && (
           <div className="project-layout__meta">
             {timeline && <span className="project-layout__meta-item">{timeline}</span>}
-            {tags && tags.length > 0 && (
+
+            {tagsList && tagsList.length > 0 && (
               <span className="project-layout__meta-item project-layout__tags">
-                {tags.join(" · ")}
+                {tagsList.join(" · ")}
               </span>
             )}
           </div>
@@ -177,7 +210,6 @@ export default function ProjectLayout({ project }) {
          ──────────────────────────────────────────────── */}
       {isOpsLogistics ? (
         <>
-          {/* Narrative first (now supports the GAS mini-case fields) */}
           {/* Evidence (skimmable proof bullets) */}
           {(hasEvidence || hasLink) && (
             <section className="project-layout__section">
@@ -194,8 +226,7 @@ export default function ProjectLayout({ project }) {
             </section>
           )}
 
-
-          {/* Experience stays where it was (and now comes after the mini-case) */}
+          {/* Experience */}
           {experience && experience.length > 0 && (
             <section className="project-layout__section">
               <h2 className="heading-m section-header">Experience by Role</h2>
