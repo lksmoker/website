@@ -19,7 +19,7 @@ export default function ContactPage() {
         )}
 
         {/* Primary invitation */}
-        {sections.intro && <TextBlock>{sections.intro}</TextBlock>}
+        
 
         {/* Learning / feedback invitation */}
         {sections.learningNote && (
