@@ -4,28 +4,16 @@ import { Link } from "react-router-dom";
 
 import homeContent from "../content/home.json";
 import projectsData from "../content/projects.json";
+import { collection, list } from "../content/normalize";
+
 import Hero from "../components/Hero.jsx";
 import SectionHeader from "../components/SectionHeader.jsx";
 import TextBlock from "../components/TextBlock.jsx";
 import ProjectCard from "../components/ProjectCard.jsx";
 
-// @context: {
-//   "kind": "frontend.page",
-//   "layer": "frontend",
-//   "name": "HomePage",
-//   "route": "/",
-//   "domains": ["marketing", "portfolio", "navigation"],
-//   "description": "Homepage for hire.lukesmoker.com, featuring hero, selected work, product approach, skills, Aurora preview, About preview, optional writing, and contact CTA."
-// }
-
-// ─── BLOCK: configuration ─────────────────────────────────────
-
-const SHOW_WRITING_PREVIEW = true; // Flip to true when you're ready to show the writing section
-
-// ─── BLOCK: component ─────────────────────────────────────────
+const SHOW_WRITING_PREVIEW = true;
 
 export default function HomePage() {
-  // ── SECTION: content unpacking ──────────────────────────────
   const { hero, sections } = homeContent;
 
   const {
@@ -36,90 +24,86 @@ export default function HomePage() {
     aboutPreview,
     writingPreview,
     contactCta,
-  } = sections;
-  
-  const projects = projectsData.value ?? [];
-  // Selected projects for the homepage card row
+  } = sections ?? {};
+
+  // Normalize collections / lists (Option A boundary)
+  const projects = collection(projectsData);
+  const selectedSlugs = list(selectedWork?.projectSlugs);
+
   const featured = projects.filter((project) =>
-    selectedWork.projectSlugs.includes(project.slug)
+    selectedSlugs.includes(project.slug)
   );
 
-  
-  // ── SECTION: render ─────────────────────────────────────────
+  const pillars = list(productApproach?.pillars);
+  const categories = list(skillsGrid?.categories);
+  const writingItems = list(writingPreview?.items);
+
   return (
     <>
-      {/* ── HERO ──────────────────────────────────────────────── */}
       <Hero
-        title={hero.title}
-        subtitle={hero.subtitle}
-        supportingLine={hero.supportingLine}
+        title={hero?.title}
+        subtitle={hero?.subtitle}
+        supportingLine={hero?.supportingLine}
       />
 
-      {/* ── SELECTED PROJECTS / PORTFOLIO STRIP ───────────────── */}
-      <section className="page-section">
-        <SectionHeader eyebrow="Portfolio" title={selectedWork.heading} />
-        {selectedWork.intro && <TextBlock>{selectedWork.intro}</TextBlock>}
+      {/* Selected Work */}
+      {selectedWork && (
+        <section className="page-section">
+          <SectionHeader eyebrow="Portfolio" title={selectedWork.heading} />
+          {selectedWork.intro && <TextBlock>{selectedWork.intro}</TextBlock>}
 
-        <div className="card-row">
-          {featured.map((project) => (
-            <ProjectCard key={project.slug} project={project} />
-          ))}
-        </div>
-      </section>
+          <div className="card-row">
+            {featured.map((project) => (
+              <ProjectCard key={project.slug} project={project} />
+            ))}
+          </div>
+        </section>
+      )}
 
-      {/* ── PRODUCT APPROACH (PILLARS) ───────────────────────── */}
-      {productApproach && (
+      {/* Product Approach */}
+      {productApproach && pillars.length > 0 && (
         <section className="page-section">
           <SectionHeader
             eyebrow="Product Approach"
             title={productApproach.heading}
           />
-          {productApproach.pillars && productApproach.pillars.length > 0 && (
-            <div className="pillars-grid">
-              {productApproach.pillars.map((pillar, idx) => (
-                <article key={idx} className="card">
-                  <h3 className="card-title">{pillar.title}</h3>
-                  <p className="text-body">{pillar.body}</p>
-                </article>
-              ))}
-            </div>
-          )}
+          <div className="pillars-grid">
+            {pillars.map((pillar, idx) => (
+              <article key={idx} className="card">
+                <h3 className="card-title">{pillar.title}</h3>
+                <p className="text-body">{pillar.body}</p>
+              </article>
+            ))}
+          </div>
         </section>
       )}
 
-      {/* ── SKILLS & CAPABILITIES ─────────────────────────────── */}
-      {skillsGrid && (
+      {/* Skills */}
+      {skillsGrid && categories.length > 0 && (
         <section className="page-section">
           <SectionHeader eyebrow="Capabilities" title={skillsGrid.heading} />
           {skillsGrid.intro && <TextBlock>{skillsGrid.intro}</TextBlock>}
 
-          {skillsGrid.categories && skillsGrid.categories.length > 0 && (
-            <div className="skills-grid">
-              {skillsGrid.categories.map((category, idx) => (
-                <article key={idx} className="card">
-                  <h3 className="card-title">{category.label}</h3>
-                  <ul className="text-body">
-                    {category.items.map((item, itemIdx) => (
-                      <li key={itemIdx}>{item}</li>
-                    ))}
-                  </ul>
-                </article>
-              ))}
-            </div>
-          )}
+          <div className="skills-grid">
+            {categories.map((category, idx) => (
+              <article key={idx} className="card">
+                <h3 className="card-title">{category.label}</h3>
+                <ul className="text-body">
+                  {list(category?.items).map((item, itemIdx) => (
+                    <li key={itemIdx}>{item}</li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </div>
         </section>
       )}
 
-      {/* ── AURORA PREVIEW ────────────────────────────────────── */}
+      {/* Aurora Preview */}
       {auroraPreview && (
         <section className="page-section">
-          <SectionHeader
-            eyebrow="Concept Work"
-            title={auroraPreview.heading}
-          />
-
+          <SectionHeader eyebrow="Concept Work" title={auroraPreview.heading} />
           <TextBlock>{auroraPreview.body}</TextBlock>
-
           <div className="text-body">
             <Link to="/aurora" className="inline-link">
               Explore →
@@ -128,16 +112,11 @@ export default function HomePage() {
         </section>
       )}
 
-      {/* ── ABOUT PREVIEW ─────────────────────────────────────── */}
+      {/* About Preview */}
       {aboutPreview && (
         <section className="page-section">
-          <SectionHeader
-            eyebrow="About"
-            title={aboutPreview.heading}
-          />
-
+          <SectionHeader eyebrow="About" title={aboutPreview.heading} />
           <TextBlock>{aboutPreview.body}</TextBlock>
-
           <div className="text-body">
             <Link to="/about" className="inline-link">
               Learn more →
@@ -146,16 +125,13 @@ export default function HomePage() {
         </section>
       )}
 
-      {/* ── OPTIONAL WRITING PREVIEW ──────────────────────────── */}
+      {/* Writing Preview */}
       {SHOW_WRITING_PREVIEW && writingPreview && (
         <section className="page-section">
-          <SectionHeader
-            eyebrow="Writing"
-            title={writingPreview.heading}
-          />
+          <SectionHeader eyebrow="Writing" title={writingPreview.heading} />
 
           <ul className="text-body">
-            {writingPreview.items.map((item, idx) => (
+            {writingItems.map((item, idx) => (
               <li key={idx}>{item}</li>
             ))}
           </ul>
@@ -168,13 +144,12 @@ export default function HomePage() {
         </section>
       )}
 
-      {/* ── CONTACT CTA ───────────────────────────────────────── */}
-      {contactCta && (
+      {/* Contact CTA */}
+      {contactCta?.body && (
         <section className="page-section">
           <TextBlock>{contactCta.body}</TextBlock>
         </section>
       )}
     </>
   );
-// ─── END: component ─────────────────────────────────────────
 }
