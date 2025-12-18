@@ -13,23 +13,18 @@ export default function ContactPage() {
       <section className="page-section">
         <SectionHeader title="Contact" />
 
+        {/* Professional positioning */}
+        {sections.workWithMe && (
+          <TextBlock>{sections.workWithMe}</TextBlock>
+        )}
+
+        {/* Primary invitation */}
+        {sections.intro && <TextBlock>{sections.intro}</TextBlock>}
+
         {/* Learning / feedback invitation */}
         {sections.learningNote && (
           <TextBlock className="contact-learning-note">
             {sections.learningNote}
-          </TextBlock>
-        )}
-
-        {/* Primary intro */}
-        {sections.intro && <TextBlock>{sections.intro}</TextBlock>}
-
-        {/* Optional positioning */}
-        {sections.workWithMe && <TextBlock>{sections.workWithMe}</TextBlock>}
-
-        {/* Optional Aurora note */}
-        {sections.auroraNote && (
-          <TextBlock className="text-muted">
-            {sections.auroraNote}
           </TextBlock>
         )}
       </section>
