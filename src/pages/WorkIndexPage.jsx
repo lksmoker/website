@@ -27,7 +27,13 @@ export default function WorkIndexPage() {
       <section className="page-section">
         <div className="card-row">
           {featured.map((project) => (
-            <ProjectCard key={project.slug} project={project} />
+            <ProjectCard
+              key={project.slug}
+              project={project}
+              showRole={true}
+              showOwnership={true}
+              showSuccessCriteria={false}
+            />
           ))}
         </div>
       </section>

@@ -15,6 +15,8 @@ export default function ProjectLayout({ project }) {
     slug,
     title,
     summary,
+    ownership,
+    successCriteria,
     problem,
     role,
     solution,
@@ -77,9 +79,18 @@ export default function ProjectLayout({ project }) {
   const hasTradeoffs = hasList(tradeoffs);
   const hasLink = Boolean(link && link.href);
   const hasEvidence = hasList(evidence);
+  const hasOwnership = Boolean(ownership);
+  const hasSuccessCriteria = Boolean(successCriteria);
 
   // Option A: Right column is the "Evidence" column.
-  const hasAside = hasTech || hasKeyDecisions || hasImpact || hasTradeoffs || hasLink;
+  const hasAside =
+    hasTech ||
+    hasOwnership ||
+    hasSuccessCriteria ||
+    hasKeyDecisions ||
+    hasImpact ||
+    hasTradeoffs ||
+    hasLink;
 
   const renderBody = (items) => {
     const list = toList(items);
@@ -132,6 +143,18 @@ export default function ProjectLayout({ project }) {
 
   const ProblemSection = hasProblem ? (
     <Section title="Problem">{renderBody(problem)}</Section>
+  ) : null;
+
+  const OwnershipSection = hasOwnership ? (
+    <Section title="Ownership" aside>
+      <p className="text-body">{ownership}</p>
+    </Section>
+  ) : null;
+
+  const SuccessCriteriaSection = hasSuccessCriteria ? (
+    <Section title="Success criteria" aside>
+      <p className="text-body">{successCriteria}</p>
+    </Section>
   ) : null;
 
   const SolutionSection = hasSolution ? (
@@ -210,6 +233,31 @@ export default function ProjectLayout({ project }) {
          ──────────────────────────────────────────────── */}
       {isOpsLogistics ? (
         <>
+          {/* Product framing */}
+          {(hasRole || hasOwnership || hasSuccessCriteria) && (
+            <section className="project-layout__section">
+              <h2 className="heading-m section-header">Product Framing</h2>
+
+              {hasRole && (
+                <p className="text-body">
+                  <strong>Role:</strong> {role}
+                </p>
+              )}
+
+              {hasOwnership && (
+                <p className="text-body">
+                  <strong>Ownership:</strong> {ownership}
+                </p>
+              )}
+
+              {hasSuccessCriteria && (
+                <p className="text-body">
+                  <strong>Success criteria:</strong> {successCriteria}
+                </p>
+              )}
+            </section>
+          )}
+
           {/* Evidence (skimmable proof bullets) */}
           {(hasEvidence || hasLink) && (
             <section className="project-layout__section">
@@ -259,6 +307,8 @@ export default function ProjectLayout({ project }) {
           <div className="project-layout__mobile">
             {ScreenshotsSection}
             {RoleSection}
+            {OwnershipSection}
+            {SuccessCriteriaSection}
             {TechSection}
             {KeyDecisionsSection}
             {ImpactSection}
@@ -286,6 +336,8 @@ export default function ProjectLayout({ project }) {
             {hasAside && (
               <aside className="project-layout__aside" aria-label="Project evidence">
                 <div className="project-layout__aside-inner">
+                  {OwnershipSection}
+                  {SuccessCriteriaSection}
                   {TechSection}
                   {KeyDecisionsSection}
                   {ImpactSection}

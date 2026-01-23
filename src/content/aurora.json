@@ -6,7 +6,7 @@
   "sections": {
     "whatItIs": [
       "Aurora is a conceptual approach to building software through conversation.",
-      "It’s centered on the idea that people should be able to express intent in natural language, see clear, inspectable feedback, and guide systems through a shared understanding — a workflow that mirrors the way people naturally think, collaborate, and adapt."
+      "It’s centered on the idea that people should be able to express intent in natural language..."
     ],
     "whyItMatters": [
       "Software creation today is fragmented across documents, tools, and communication channels. People express meaning one way, systems expect something else, and clarity often gets lost in the translation.",

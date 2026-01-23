@@ -54,7 +54,13 @@ export default function HomePage() {
 
           <div className="card-row">
             {featured.map((project) => (
-              <ProjectCard key={project.slug} project={project} />
+              <ProjectCard
+                key={project.slug}
+                project={project}
+                showRole={true}
+                showOwnership={false}
+                showSuccessCriteria={false}
+              />
             ))}
           </div>
         </section>
@@ -67,6 +73,9 @@ export default function HomePage() {
             eyebrow="Product Approach"
             title={productApproach.heading}
           />
+
+          {productApproach.intro && <TextBlock>{productApproach.intro}</TextBlock>}
+
           <div className="pillars-grid">
             {pillars.map((pillar, idx) => (
               <article key={idx} className="card">
@@ -87,7 +96,7 @@ export default function HomePage() {
           <div className="skills-grid">
             {categories.map((category, idx) => (
               <article key={idx} className="card">
-                <h3 className="card-title">{category.label}</h3>
+                <h3 className="card-title">{category.label ?? category.title}</h3>
                 <ul className="text-body">
                   {list(category?.items).map((item, itemIdx) => (
                     <li key={itemIdx}>{item}</li>

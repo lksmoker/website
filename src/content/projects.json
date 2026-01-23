@@ -3,10 +3,14 @@
     {
       "slug": "dev-toolbox",
       "title": "Dev Toolbox",
-      "summary": "A mobile-first, self-hosted developer environment designed to keep context, reasoning, and feedback visible — enabling real software development on the go without cognitive drift.",
-      "role": "Independent designer and developer",
+      "summary": "A mobile-first, self-hosted developer environment designed to keep context, reasoning, and feedback visible — enabling sustained development on the go without cognitive drift.",
+      "role": "Product owner and full-stack builder (independent)",
       "timeline": "2022–Present",
       "tags": ["Internal tools", "Developer experience", "Full-stack"],
+
+      "ownership": "I owned problem framing, prioritization, and delivery decisions end-to-end, iterating the product through sustained real-world daily use.",
+      "successCriteria": "Success meant making mobile development reliable: preserving context across sessions, making system behavior observable, and reducing cognitive switching while shipping real work.",
+
       "problem": "Mobile software development was fragmented and unreliable. Existing tools buried context, obscured system behavior, and made it difficult to resume work without losing reasoning or intent. Feedback existed, but it was scattered and disconnected from decision-making.",
       "context": "Dev Toolbox began as a response to friction I experienced personally. My systems-thinking and restorative instincts pushed me toward a unified workspace — one where planning, execution, logs, and reasoning stayed connected so learning could feed directly back into the work.",
       "solution": "I designed and built a self-hosted, mobile-first developer environment that treats feedback and context as first-class system properties. The platform evolved through real daily use to support planning, version control, structured logs, and explainable reasoning — keeping intent, behavior, and outcome aligned.",
@@ -31,39 +35,42 @@
       ],
       "thumbnail": "/images/dev-toolbox/dev-toolbox-thumb.webp",
       "screenshots": [
-      {
-        "src": "/images/dev-toolbox/dev-toolbox-editor-context.webp",
-        "alt": "Code editor showing structured context metadata and backend route definitions",
-        "caption": "The editor pairs code with explicit contextual metadata, keeping structure, intent, and implementation visible together."
-      },
-      {
-        "src": "/images/dev-toolbox/dev-toolbox-project-planner.webp",
-        "alt": "Project planner showing active sprint status and work item progress",
-        "caption": "The project planner surfaces sprint state and work-in-progress, grounding daily execution in clear structure."
-      },
-      {
-        "src": "/images/dev-toolbox/dev-toolbox-logs.webp",
-        "alt": "Live logs view showing structured backend activity and request traces",
-        "caption": "Live, structured logs make system behavior observable and explainable while you work."
-      }
-    ],
-
+        {
+          "src": "/images/dev-toolbox/dev-toolbox-editor-context.webp",
+          "alt": "Code editor showing structured context metadata and backend route definitions",
+          "caption": "The editor pairs code with explicit contextual metadata, keeping structure, intent, and implementation visible together."
+        },
+        {
+          "src": "/images/dev-toolbox/dev-toolbox-project-planner.webp",
+          "alt": "Project planner showing active sprint status and work item progress",
+          "caption": "The project planner surfaces sprint state and work-in-progress, grounding daily execution in clear structure."
+        },
+        {
+          "src": "/images/dev-toolbox/dev-toolbox-logs.webp",
+          "alt": "Live logs view showing structured backend activity and request traces",
+          "caption": "Live, structured logs make system behavior observable and explainable while you work."
+        }
+      ],
       "tech": {
         "ids": "typescript react vite supabase postgres github cloudflare",
         "bullets": [
           "Frontend: React & TypeScript bundled with Vite.",
           "Backend & data: Supabase (Postgres + auth) with RLS and group-scoped tables.",
           "Infrastructure: Cloudflare Pages and Tunnels. Workflow: GitHub integration, structured logs, and AI context packets."
-          ]
+        ]
       }
     },
     {
       "slug": "simplicity",
       "title": "Finance Tools / Simplicity",
       "summary": "A calm, mobile-first budgeting system that emphasizes signal over noise — helping users make confident decisions through clear, revisitable financial feedback.",
-      "role": "Designer and full-stack developer",
+      "role": "Product lead responsible for problem framing, UX decisions, and implementation",
       "timeline": "2023–Present",
       "tags": ["Personal finance", "Product design", "Full-stack"],
+
+      "ownership": "I owned discovery framing, product decisions, UX direction, and delivery, iterating based on observed behavior and recurring decision points.",
+      "successCriteria": "Success meant users could understand their financial state at a glance, anticipate upcoming obligations, and adjust proactively without relying on alerts or dense dashboards.",
+
       "problem": "Most budgeting tools overwhelm users with dashboards and alerts while failing to support real financial behavior. Feedback is either too noisy or too late, making it difficult to understand what actually needs attention.",
       "context": "Simplicity was shaped by an adaptive systems mindset: meet people where they are, reduce cognitive load, and make financial state understandable at a glance. The goal was not exhaustive reporting, but honest, actionable feedback.",
       "solution": "I designed and built a mobile-first budgeting system focused on clarity and revisability. The product highlights upcoming obligations, category health, and headroom — allowing users to orient quickly, adjust plans, and learn from patterns over time.",
@@ -81,22 +88,22 @@
       ],
       "thumbnail": "/images/simplicity/simplicity-thumb.webp",
       "screenshots": [
-      {
-        "src": "/images/simplicity/simplicity-home.webp",
-        "alt": "Home dashboard showing bank balances, credit cards, and cash outlook",
-        "caption": "Home dashboard provides a calm snapshot of balances, credit cards, and estimated cash after bills."
-      },
-      {
-        "src": "/images/simplicity/simplicity-transactions.webp",
-        "alt": "Transaction history with categorized spending and income entries",
-        "caption": "Transaction history emphasizes clarity and organization through consistent categorization."
-      },
-      {
-        "src": "/images/simplicity/simplicity-budget.webp",
-        "alt": "Monthly budget view with income items and bills",
-        "caption": "Budget view supports forward-looking planning by showing income items and bills in a single timeline."
-      }
-    ],
+        {
+          "src": "/images/simplicity/simplicity-home.webp",
+          "alt": "Home dashboard showing bank balances, credit cards, and cash outlook",
+          "caption": "Home dashboard provides a calm snapshot of balances, credit cards, and estimated cash after bills."
+        },
+        {
+          "src": "/images/simplicity/simplicity-transactions.webp",
+          "alt": "Transaction history with categorized spending and income entries",
+          "caption": "Transaction history emphasizes clarity and organization through consistent categorization."
+        },
+        {
+          "src": "/images/simplicity/simplicity-budget.webp",
+          "alt": "Monthly budget view with income items and bills",
+          "caption": "Budget view supports forward-looking planning by showing income items and bills in a single timeline."
+        }
+      ],
       "tech": {
         "ids": "typescript react supabase postgres github",
         "bullets": [
@@ -109,9 +116,13 @@
       "slug": "gas-transportation-workflow",
       "title": "Transportation Scheduling Workflow (GAS)",
       "summary": "A unified scheduling and coordination workflow that reduced dropped handoffs by treating feedback and data integrity as system responsibilities.",
-      "role": "Office Manager & Transportation Coordinator",
+      "role": "Product owner for internal scheduling and coordination workflow",
       "timeline": "Grace College",
       "tags": ["Operations", "Workflow design", "Automation", "Scheduling"],
+
+      "ownership": "I identified the coordination failure, gathered requirements from stakeholders, prioritized reliability over informal flexibility, and delivered the workflow end-to-end.",
+      "successCriteria": "Success meant fewer dropped handoffs and conflicts, higher schedule completeness, and reduced manual reconciliation for assignments and billing.",
+
       "problem": "Transportation coordination relied on fragmented communication across emails, spreadsheets, and verbal handoffs. Feedback was delayed or lost entirely, leading to conflicts, errors, and repeated rework.",
       "solution": "Introduced a single, shared workflow that centralized requests, schedules, assignments, and costs. By consolidating where information lived, the system made state visible and errors harder to miss.",
       "keyDecisions": [
@@ -135,17 +146,17 @@
       },
       "thumbnail": "/images/gas/gas-thumb.svg",
       "screenshots": [
-    {
-      "src": "/images/gas/gas-sheet.png",
-      "alt": "Transportation request responses captured in a shared spreadsheet used as the operational source of truth",
-      "caption": "Form submissions flowed into a shared sheet, keeping requests and schedule data consistent and visible."
-    },
-    {
-      "src": "/images/gas/gas-thumb.svg",
-      "alt": "Workflow diagram showing Form → Sheets → Calendar automation for transportation scheduling",
-      "caption": "Apps Script connected Forms, Sheets, and Calendar so requests created schedule events automatically and stayed in sync."
-    }
-  ],
+        {
+          "src": "/images/gas/gas-sheet.png",
+          "alt": "Transportation request responses captured in a shared spreadsheet used as the operational source of truth",
+          "caption": "Form submissions flowed into a shared sheet, keeping requests and schedule data consistent and visible."
+        },
+        {
+          "src": "/images/gas/gas-thumb.svg",
+          "alt": "Workflow diagram showing Form → Sheets → Calendar automation for transportation scheduling",
+          "caption": "Apps Script connected Forms, Sheets, and Calendar so requests created schedule events automatically and stayed in sync."
+        }
+      ],
       "link": {
         "href": "#/work/operations-workflow",
         "label": "See broader Operations & Logistics work →"
@@ -158,7 +169,8 @@
       "role": "Operations leader, workflow designer, logistics coordinator",
       "timeline": "2000–Present",
       "tags": ["Operations", "Leadership", "Systems thinking"],
-      "framing": "Across higher-education facilities and logistics environments, I led teams and redesigned workflows so expectations, handoffs, and feedback stayed visible under real constraints.",
+
+      "framing": "This operations experience shaped how I work as a product manager — grounding product judgment in real constraints, accountability, cross-functional coordination, and delivery under pressure.",
       "themes": [
         "Workflow clarity and visible expectations",
         "Reliability under pressure",
@@ -268,7 +280,6 @@
           ]
         }
       ],
-
       "screenshots": [],
       "link": {
         "href": "#/work/gas-transportation-workflow",
@@ -278,8 +289,8 @@
     {
       "slug": "aurora",
       "title": "Aurora",
-      "summary": "A conceptual approach to building software through conversation, centered on intent, shared understanding, and explainable outcomes.",
-      "role": "Concept originator and systems designer",
+      "summary": "A conceptual framework to support product work through conversation — centered on intent, shared understanding, and explainable outcomes.",
+      "role": "Product thinking framework developed to support explainable, feedback-driven product decisions",
       "timeline": "Long-term exploration",
       "tags": ["Conceptual", "Systems thinking", "Human–AI collaboration"],
       "pmBridge": {

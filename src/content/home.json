@@ -1,21 +1,22 @@
 {
   "meta": {
     "title": "Home",
-    "description": "Technical + product leadership across operations, internal tools, and software — built around feedback loops, clarity, and revisable systems."
+    "description": "Product leadership across operations, internal tools, and software — built around feedback loops, clarity, and revisable systems."
   },
   "hero": {
     "title": "I lead and build systems that stay honest under change.",
-    "subtitle": "Technical + product leadership across operations, internal tools, and independent software development.",
-    "supportingLine": "I design feedback loops, clear reasoning, and revisable workflows—so teams can adapt without losing integrity."
+    "subtitle": "Product leadership across operations, internal tools, and software — from problem framing to delivery.",
+    "supportingLine": "I own product decisions end-to-end — framing problems, making tradeoffs visible, and designing feedback-rich workflows so teams can adapt without losing integrity."
   },
   "sections": {
     "selectedWork": {
       "heading": "Selected Projects",
-      "intro": "A few projects that show how I build: clarity through structure, feedback loops that actually close, and systems that can evolve without drifting.",
+      "intro": "A few projects that show how I build: clarity through structure, feedback loops that actually close, and systems that evolve without drifting.",
       "projectSlugs": ["dev-toolbox", "gas-transportation-workflow", "simplicity"]
     },
     "productApproach": {
       "heading": "How I Approach Product Work",
+      "intro": "These principles guide how I operate as a product manager — aligning intent, constraints, and outcomes across design, engineering, and operations.",
       "pillars": [
         {
           "title": "Start with intent, not output",
@@ -37,7 +38,7 @@
     },
     "skillsGrid": {
       "heading": "Skills & Capabilities",
-      "intro": "A mix of operations leadership, systems design, and full-stack building—applied with product judgment and a bias toward clarity and revision.",
+      "intro": "A mix of operations leadership, systems design, and full-stack building—applied with product judgment and accountability from problem framing through delivery.",
       "categories": [
         {
           "title": "Technical & Architecture",
@@ -53,7 +54,7 @@
           "title": "Product & System Leadership",
           "items": [
             "Problem framing, constraints, and success conditions",
-            "Decision-making that stays visible and revisitable",
+            "Prioritization and tradeoffs that stay visible and revisitable",
             "Feedback loops that connect intent → behavior → outcome",
             "Designing systems to evolve without losing integrity",
             "Reducing drift between what people mean and what systems do"
@@ -72,12 +73,12 @@
       ]
     },
     "auroraPreview": {
-      "heading": "Aurora: Conversational Software",
-      "body": "Aurora is a conceptual approach to building software through conversation—intent, shared understanding, and results tied together with clear feedback. It influences how I design products to be explainable, revisable, and structurally aligned with how people actually think."
+      "heading": "Aurora: A Product Thinking Lens",
+      "body": "Aurora is a conceptual framework I developed to support product work — tying intent, shared understanding, and outcomes together with clear feedback. It influences how I design products to be explainable, revisable, and structurally aligned with how people actually think."
     },
     "aboutPreview": {
       "heading": "My Background",
-      "body": "Before I wrote software, I led large-scale operations and redesigned the workflows beneath the work. That same instinct now shows up in tools and platforms: build the structure, close the loop, and keep the system honest as conditions change."
+      "body": "Before I wrote software, I led large-scale operations and redesigned the workflows beneath the work. That same instinct now shows up in products and internal tools: build the structure, close the loop, and keep the system honest as conditions change."
     },
     "writingPreview": {
       "heading": "Writing on Systems and Product",
@@ -88,7 +89,7 @@
       ]
     },
     "contactCta": {
-      "body": "If you’d like to talk about a role, a system, or an idea—especially work where feedback, explainability, and revisable design matter—I’m always open to a conversation."
+      "body": "If you’d like to talk about product roles, internal tools, or systems work — especially where feedback, explainability, and revisable design matter — I’m always open to a conversation."
     }
   }
 }
