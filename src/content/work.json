@@ -1,21 +1,21 @@
 {
   "meta": {
     "title": "Work & Projects",
-    "description": "Selected work across operations, internal tools, and software — built around clear feedback loops, explainable systems, and revisable design."
+    "description": "Selected systems and products spanning agentic AI workflows, internal automation, and operations-grounded software delivery."
   },
   "sections": {
-    "intro": "This page highlights systems I’ve led, shaped, or built — from large-scale operations and logistics workflows to internal tools, full-stack applications, and conceptual product work. Before I wrote software, I was redesigning real-world systems: leading teams responsible for hundreds of thousands of square feet, clarifying handoffs, stabilizing communication loops, and improving reliability in high-variance environments. That same approach now shows up in software: build the structure, make reasoning visible, close the feedback loop, and design the system so it can change without losing integrity.",
+    "intro": "This page highlights systems I have built and operated across operations, internal tooling, and software. Current focus is AI workflow execution: contract-driven planning, gated side effects, structured traces, and practical automation that supports real teams. Before software, I led high-variance operational environments, which is why my build style stays grounded in reliability, clear ownership, and feedback loops that close.",
     "categories": [
-      "Operations",
-      "Business Systems",
+      "AI Workflows",
+      "Automation",
       "Internal Tools",
-      "Software",
+      "Operations",
       "Conceptual Work"
     ],
     "featuredSlugs": [
       "dev-toolbox",
-      "gas-transportation-workflow",
       "simplicity",
+      "gas-transportation-workflow",
       "operations-workflow",
       "aurora"
     ]

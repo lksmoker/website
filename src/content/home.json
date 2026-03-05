@@ -1,95 +1,95 @@
 {
   "meta": {
     "title": "Home",
-    "description": "Product leadership across operations, internal tools, and software — built around feedback loops, clarity, and revisable systems."
+    "description": "AI generalist building agentic workflows, internal automation, and reliable systems from concept to shipped use."
   },
   "hero": {
-    "title": "I lead and build systems that stay honest under change.",
-    "subtitle": "Product leadership across operations, internal tools, and software — from problem framing to delivery.",
-    "supportingLine": "I own product decisions end-to-end — framing problems, making tradeoffs visible, and designing feedback-rich workflows so teams can adapt without losing integrity."
+    "title": "I build AI systems that do real work, not just generate output.",
+    "subtitle": "AI Generalist / Agentic Automation Builder focused on workflows across ops, marketing, sales, and research.",
+    "supportingLine": "I prototype fast, integrate APIs and models, and ship operational tooling with traceability, gated execution, and deterministic run options."
   },
   "sections": {
     "selectedWork": {
       "heading": "Selected Projects",
-      "intro": "A few projects that show how I build: clarity through structure, feedback loops that actually close, and systems that evolve without drifting.",
+      "intro": "Flagship work includes Dev Toolbox 2.0 and Toolbox GPT: systems for planning, execution, and audit-ready AI-assisted delivery.",
       "projectSlugs": ["dev-toolbox", "gas-transportation-workflow", "simplicity"]
     },
     "productApproach": {
-      "heading": "How I Approach Product Work",
-      "intro": "These principles guide how I operate as a product manager — aligning intent, constraints, and outcomes across design, engineering, and operations.",
+      "heading": "How I Build",
+      "intro": "My workflow stays practical: define contracts, run experiments, inspect traces, and iterate until behavior is stable.",
       "pillars": [
         {
-          "title": "Start with intent, not output",
-          "body": "I frame the job to be done, success conditions, and constraints early—so implementation stays aligned with what people actually need."
+          "title": "Systems before prompts",
+          "body": "I treat prompts as inputs to a workflow, not a product strategy. The system includes contracts, logs, guardrails, and clear ownership."
         },
         {
-          "title": "Design feedback as a system property",
-          "body": "I prefer structural inclusion over “bring people in.” The work should naturally surface signal: usage, outcomes, and why decisions were made."
+          "title": "Preview -> apply for side effects",
+          "body": "For side-effectful operations, I use contract-driven planning with explicit preview and apply phases so changes stay reviewable and safe."
         },
         {
-          "title": "Make reasoning and behavior explainable",
-          "body": "If a system can’t explain itself, it can’t be trusted. I build traceability into decisions, changes, and outcomes."
+          "title": "Traceability by default",
+          "body": "Runs emit structured traces and audit logs so decisions, outputs, and tool actions can be inspected and replayed."
         },
         {
-          "title": "Build for revision, not perfection",
-          "body": "I treat systems as living. The goal is stable improvement: iterate with integrity, reduce drift, and keep change safe."
+          "title": "Probe-fix-probe iteration",
+          "body": "I use probe loops to verify assumptions, apply small fixes, and retest until outputs are reliable under real conditions."
         }
       ]
     },
     "skillsGrid": {
       "heading": "Skills & Capabilities",
-      "intro": "A mix of operations leadership, systems design, and full-stack building—applied with product judgment and accountability from problem framing through delivery.",
+      "intro": "Builder/operator mix: agentic workflow design, practical integrations, and shipping internal systems teams can trust.",
       "categories": [
         {
-          "title": "Technical & Architecture",
+          "title": "AI Workflow & Agentic Systems",
           "items": [
+            "Agentic workflow orchestration with explicit contracts",
+            "Role-based addressee models (for example @flow, @dev, @jobs)",
+            "Deterministic run modes for repeatable execution",
+            "Filesystem-first context pulls and trace pointer architecture",
+            "Model integration experiments across Codex, Gemini CLI, and Claude"
+          ]
+        },
+        {
+          "title": "Automation & Integrations",
+          "items": [
+            "API and webhook integration across internal tools",
+            "Workflow assistants that support preview -> apply gating",
+            "Operational automations for routing, coordination, and reporting",
+            "Google Apps Script automation (Forms, Sheets, Calendar)",
+            "Structured NDJSON traces and audit logging pipelines"
+          ]
+        },
+        {
+          "title": "Product Delivery & Engineering",
+          "items": [
+            "Rapid prototyping and iterative hardening",
             "Full-stack web apps (React + TypeScript, Supabase/Postgres)",
-            "System design for clarity, traceability, and maintainability",
-            "Structured logging and observability-first workflows",
-            "Automation and integration (Google Apps Script, Forms/Sheets/Calendar)",
-            "Self-hosted and cloud-adjacent infrastructure (Cloudflare, GitHub)"
-          ]
-        },
-        {
-          "title": "Product & System Leadership",
-          "items": [
-            "Problem framing, constraints, and success conditions",
-            "Prioritization and tradeoffs that stay visible and revisitable",
-            "Feedback loops that connect intent → behavior → outcome",
-            "Designing systems to evolve without losing integrity",
-            "Reducing drift between what people mean and what systems do"
-          ]
-        },
-        {
-          "title": "Operations & People",
-          "items": [
-            "Leading teams in high-variance environments",
-            "Workflow design that reduces dropped handoffs",
-            "Clarity in expectations, communication, and coordination",
-            "Reliable execution under real constraints",
-            "Calm structure through change and ambiguity"
+            "Windows-safe Codex runner patterns with preflight checks",
+            "Git-clean branch isolation for safer AI-assisted changes",
+            "Shipping internal systems that reduce manual coordination"
           ]
         }
       ]
     },
     "auroraPreview": {
-      "heading": "Aurora: A Product Thinking Lens",
-      "body": "Aurora is a conceptual framework I developed to support product work — tying intent, shared understanding, and outcomes together with clear feedback. It influences how I design products to be explainable, revisable, and structurally aligned with how people actually think."
+      "heading": "Aurora: Conceptual Direction",
+      "body": "Aurora is my long-term exploration of conversational software development. It informs how I think about intent capture, explainability, and contract-driven agent behavior."
     },
     "aboutPreview": {
       "heading": "My Background",
-      "body": "Before I wrote software, I led large-scale operations and redesigned the workflows beneath the work. That same instinct now shows up in products and internal tools: build the structure, close the loop, and keep the system honest as conditions change."
+      "body": "I moved from operations leadership into software by solving the same problem in both worlds: reduce friction, clarify handoffs, and build systems that stay reliable as conditions change."
     },
     "writingPreview": {
-      "heading": "Writing on Systems and Product",
+      "heading": "Writing on Building Reliable AI Workflows",
       "items": [
-        "Clarity as a Leadership Skill",
-        "Why Systems Break—and How to Keep Them Honest",
-        "Designing Feedback Loops That Actually Close"
+        "Systems, Not Just Prompts",
+        "Probe-Fix-Probe as a Practical Build Loop",
+        "Why Traceability Matters in AI-Assisted Delivery"
       ]
     },
     "contactCta": {
-      "body": "If you’d like to talk about product roles, internal tools, or systems work — especially where feedback, explainability, and revisable design matter — I’m always open to a conversation."
+      "body": "If you are hiring for AI workflow, automation, or internal tooling work, I am open to roles where practical delivery and reliable systems matter."
     }
   }
 }

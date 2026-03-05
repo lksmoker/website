@@ -1,41 +1,41 @@
 {
   "meta": {
     "title": "About",
-    "description": "My background across systems, operations, leadership, and software — and how those experiences shape the way I lead and build products today."
+    "description": "Background across operations and software, now focused on building AI workflows and agentic automation systems that hold up in real use."
   },
   "sections": {
     "summary": {
-      "body": "My work centers on leading and building systems that help people work with clarity — and that continue to hold up as conditions change. I’ve led teams, shaped large-scale operations, designed workflows and automations, and independently built internal tools and software platforms. Across all of it, I focus on feedback, explainable decisions, and structures that allow systems to evolve without losing integrity."
+      "body": "I build practical AI-assisted systems that help teams move faster with less ambiguity. My focus is agentic workflow design, automation, and internal tooling that connects planning, execution, and traceability. I care about systems that are explainable, reviewable, and usable under day-to-day pressure."
     },
     "story": [
-      "My career began in environments where clarity and structure were essential to keeping daily operations running. In custodial and facilities management roles across multiple university campuses, I supervised large teams, coordinated coverage across high-variance spaces, and maintained productivity levels significantly above industry benchmarks. Over time, I became responsible not just for execution, but for the systems beneath the work — CMMS workflows, payroll and HR processes, accounts receivable, transportation coordination, and other information flows that determined whether teams could operate calmly and reliably.",
-      "Those roles gave me a deep understanding of how performance depends on workflow design, clear expectations, and feedback that actually closes the loop. When systems failed, it was rarely because people didn’t care — it was because information was fragmented, reasoning was invisible, or change wasn’t designed for.",
-      "That instinct to strengthen and clarify systems eventually led me toward building tools myself — first through workflow automations and internal reporting scripts, and later through full-stack application development. I’ve since designed budgeting tools, workflow systems, developer environments like Dev Toolbox, and conceptual models for conversational software through Aurora. What looks like a career shift is really a continuation of the same work: understanding how people interact with systems, and designing structures that make that interaction calmer, clearer, and more adaptable."
+      "I started in operations leadership, where reliability depended on workflow design more than heroics. I led teams, coordinated logistics, and managed high-variance environments where dropped handoffs created immediate problems. That work built my instincts around structure, visibility, and closing feedback loops.",
+      "As I moved into software, I kept the same operating model: define intent, make state visible, and reduce friction between planning and execution. I began by building workflow automations and internal reporting tools, then expanded into full-stack products and AI-enabled systems.",
+      "Recent work centers on Dev Toolbox 2.0 and Toolbox GPT, where I integrated Codex, Gemini CLI, and Claude into a contract-driven workflow assistant. The goal was straightforward: ship useful internal systems that support rapid iteration while keeping side effects controlled and decisions traceable."
     ],
     "howIWork": [
-      "As I moved from operations into software, I carried the same leadership mindset with me. I start with intent, constraints, and success conditions before implementation, so decisions stay aligned as the system grows.",
-      "I treat feedback as a system property, not a meeting artifact. Whether I’m working with people, processes, or code, I design workflows so signal surfaces naturally and decisions remain visible and revisitable.",
-      "I build for revision, not perfection. Systems change — the goal is to design them so learning can be incorporated without destabilizing everything downstream."
+      "I design systems, not one-off prompts. Prompting is part of the interface, but reliability comes from contracts, state management, and explicit control points.",
+      "I use preview -> apply gating for side-effectful operations so plans can be reviewed before execution.",
+      "I build around probe-fix-probe loops, deterministic runs where needed, and structured traces so outputs can be verified and improved over time."
     ],
     "skills": {
-      "systemsAndOperations": "Designing clear workflows and repeatable processes Improving communication and operational alignment Building structure around complex, variable work Translating real-world constraints into actionable systems",
-      "leadershipAndPeople": "Leading, coaching, and mentoring teams Creating shared understanding during change Supporting people through ambiguity with calm structure Designing systems that reduce friction rather than amplify it",
-      "softwareAndArchitecture": "Independently building internal tools and full-stack applications Designing systems for clarity, traceability, and explainability Automation and integration (Google Apps Script, internal tools) End-to-end development of platforms like Dev Toolbox and Simplicity",
-      "conceptualAndStrategic": "Systems thinking across operational and technical domains Product reasoning focused on intent, behavior, and outcome Vision development for emerging concepts like Aurora and App Kernel"
+      "systemsAndOperations": "Workflow architecture; process clarity; operational reliability; translating ambiguous needs into explicit execution paths.",
+      "leadershipAndPeople": "Builder/operator mindset; cross-functional coordination; clear handoffs; calm execution in changing environments.",
+      "softwareAndArchitecture": "Full-stack delivery (React, TypeScript, Supabase/Postgres); API and webhook integrations; file-oriented context systems; audit-friendly logging and traces.",
+      "conceptualAndStrategic": "Agentic workflow design; contract-driven planning (preview/apply); role-based addressee patterns; iterative experimentation across AI model providers."
     },
     "values": [
-      "Clarity — People work best when expectations, reasoning, and system behavior are visible and honest.",
-      "Calm Structure — Good systems reduce noise, support adaptation, and help people focus on what matters.",
-      "Transparency — Understanding should be built into the work, not inferred after the fact.",
-      "Human-Centered Design — Tools and processes should support people and real-world conditions, not idealized models."
+      "Clarity - If a system cannot explain what happened and why, it is hard to trust.",
+      "Practicality - Build what teams can actually use, not demos that collapse under real workflows.",
+      "Traceability - Keep decisions and actions inspectable so iteration is safer and faster.",
+      "Human-centered execution - Automation should reduce cognitive load and support better judgment."
     ],
     "auroraOriginSafe": [
-      "Aurora began as a series of questions about clarity, communication, and the growing gap between how people think and how software expects us to think.",
-      "It grew from the idea that software creation could be more conversational, more explainable, and more aligned with natural human reasoning — while keeping technical internals and implementation details safely abstracted."
+      "Aurora began as an exploration of conversational software development and intent-first system design.",
+      "It remains a conceptual track that informs how I think about agent behavior, explainability, and shared understanding between people and systems."
     ],
     "personalNotes": [
-      "I enjoy designing systems in any context — work, tools, writing, or personal organization.",
-      "I gravitate toward environments where clarity, integrity, and thoughtful design make work feel lighter and more sustainable over time."
+      "I enjoy turning messy, repetitive workflows into reliable systems people can trust.",
+      "I am most engaged in environments where fast experimentation and operational discipline are both valued."
     ]
   }
 }

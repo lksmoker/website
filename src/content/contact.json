@@ -1,13 +1,13 @@
 {
   "meta": {
     "title": "Contact",
-    "description": "Get in touch about roles, systems, or ideas."
+    "description": "Get in touch about AI workflow, automation, and internal tooling roles."
   },
   "sections": {
-    "learningNote": "I value learning as much as outcomes. If you’ve reviewed my work and have a thought to share — whether or not there’s interest right now — I’m always open to hearing from you.",
-    "intro": "If you’d like to talk about a role, a system, or an idea, feel free to reach out. Whether you’re exploring something early or refining an existing product, I’m always open to a thoughtful conversation.",
-    "workWithMe": "I work at the intersection of operations, systems, and software — leading and building products where clarity, feedback, and explainable decisions matter.",
-    "auroraNote": "If you’re curious about Aurora, I’m happy to talk at a high level about its concepts and direction — the patterns, ideas, and product thinking behind a more conversational approach to software.",
-    "confirmationMessage": "Thanks for reaching out — I appreciate it. I’ll review your message and get back to you soon."
+    "learningNote": "If you have feedback on my work, I welcome it. Practical input from real operators helps improve the systems I build.",
+    "intro": "If you are exploring an AI automation role, internal workflow tooling, or a build problem that needs structure and speed, feel free to reach out.",
+    "workWithMe": "I work at the intersection of AI workflows, operations, and product delivery - designing and shipping systems that are useful, traceable, and reliable.",
+    "auroraNote": "If you are curious about Aurora, I am open to high-level conversations about intent-first conversational systems and explainable agent behavior.",
+    "confirmationMessage": "Thanks for reaching out. I will review your message and respond soon."
   }
 }

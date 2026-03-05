@@ -1,65 +1,63 @@
 {
   "meta": {
     "title": "Aurora",
-    "description": "Aurora is a conceptual approach to building software through conversation."
+    "description": "Aurora is a conceptual direction for intent-first conversational software systems."
   },
   "sections": {
     "whatItIs": [
-      "Aurora is a conceptual approach to building software through conversation.",
-      "It’s centered on the idea that people should be able to express intent in natural language..."
+      "Aurora is a conceptual direction for building software through conversation.",
+      "It explores how intent, constraints, and outcomes can be made explicit before implementation."
     ],
     "whyItMatters": [
-      "Software creation today is fragmented across documents, tools, and communication channels. People express meaning one way, systems expect something else, and clarity often gets lost in the translation.",
-      "Aurora explores a more natural path — one where clarity, reasoning, and understanding are part of the process itself. It’s motivated by a desire to reduce drift, restore alignment between what people mean and what systems do, and make the development experience feel more human and less adversarial."
+      "Current AI-assisted development often fragments planning, execution, and verification across disconnected tools.",
+      "Aurora focuses on reducing that drift by treating understanding, traceability, and feedback as system-level requirements."
     ],
     "origin": [
-      "After building several apps with AI assistance, I ran into the same frustrations many others have described: bugs that didn’t make sense, feedback loops that went nowhere, and long chains of fixes that seemed disconnected from what I actually meant. Tools are improving — some models now sit right next to your code — but the process still feels murky and overly complicated.",
-      "I noticed a pattern repeating itself: a human speaks to an AI, the AI interprets the human’s intention, and then translates that understanding into Python, JavaScript, HTML, and so on. Each step is another layer where meaning can drift. We’re forcing AI to operate inside architectures that were never designed with AI in mind.",
-      "My background in operations and systems design made the gaps especially visible: unclear communication, unclear reasoning, unclear connections between cause and effect. My restorative instincts pushed me toward a simple question — how do we reduce this friction and bring systems back into alignment with human intention?",
-      "At the same time, my strengths in empathy and connectedness kept highlighting the human side of the problem: people think conversationally, relationally, iteratively. We clarify through dialogue. We refine meaning together. So why shouldn’t software follow the same pattern?",
-      "And that raised a new possibility: what if AI could work in an environment native to its reasoning — one where human intent could translate more directly into behavior, without detouring through multiple disconnected layers?",
-      "What if the conversation was the development environment?",
-      "As Aurora took shape, I began seeing the same challenges reflected in emerging articles and research, validating my intuition and direction:"
+      "After building apps with AI assistance, I repeatedly saw the same failure mode: quick output followed by unstable iteration loops.",
+      "The core issue was not model capability alone. It was workflow design: unclear contracts, weak traceability, and poor alignment between intent and execution.",
+      "My operations background made this familiar. In any system, unclear handoffs and hidden state create rework.",
+      "That led to an intent-first question: what if conversation could be a controlled workflow surface rather than an informal prompt layer?",
+      "Aurora is where I explore that idea.",
+      "As the concept developed, I tracked external signals that reinforced the importance of observability, legibility, and reliability in AI-assisted software delivery:"
     ],
     "signals": [
       {
         "id": "ai-coding-tools-observability",
-        "source": "ZDNET — \"Why AI coding tools like Cursor and Replit are doomed — and what comes next\"",
+        "source": "ZDNET - \"Why AI coding tools like Cursor and Replit are doomed - and what comes next\"",
         "href": "https://www.zdnet.com/article/why-ai-coding-tools-like-cursor-and-replit-are-doomed-and-what-comes-next/",
-        "idea": "Raises a blunt question: if AI coding tools are just thin wrappers around foundation models, how will they survive — and where will real differentiation come from?",
-        "auroraAnswer": "Aurora treats observability and understanding as the differentiator. Instead of competing on code generation alone, it focuses on making every change explainable: who asked for it, why it exists, and how it fits into the larger system."
+        "idea": "Raises the durability question for AI coding tools and highlights the need for real product differentiation.",
+        "auroraAnswer": "Aurora treats explainability and workflow observability as core value, not optional extras."
       },
       {
         "id": "mit-legible-modular-software",
-        "source": "MIT News — \"MIT researchers propose a new model for legible, modular software\"",
+        "source": "MIT News - \"MIT researchers propose a new model for legible, modular software\"",
         "href": "https://news.mit.edu/2025/mit-researchers-propose-new-model-for-legible-modular-software-1106",
-        "idea": "Argues that software should be structured so both humans and large language models can read, reason about, and safely extend it.",
-        "auroraAnswer": "Aurora takes a complementary approach: instead of reshaping code to be a little more AI-friendly, it imagines a kernel where human intent, system facts, and effects are first-class concepts the AI can work with directly."
+        "idea": "Argues for software structures that humans and models can both reason about safely.",
+        "auroraAnswer": "Aurora extends this by emphasizing intent and effect contracts alongside code-level structure."
       },
       {
         "id": "ai-assistants-bigger-flaws",
-        "source": "BankInfoSecurity — \"Coding With AI Assistants: Faster Performance, Bigger Flaws\"",
+        "source": "BankInfoSecurity - \"Coding With AI Assistants: Faster Performance, Bigger Flaws\"",
         "href": "https://www.bankinfosecurity.com/coding-ai-assistants-faster-performance-bigger-flaws-a-29375",
-        "idea": "Finds that AI coding assistants can speed up development while also introducing harder-to-see security and reliability issues.",
-        "auroraAnswer": "Aurora’s emphasis on traceability is one answer to this tension: if every AI-proposed change carries a visible rationale and causal trail, teams have a better shot at reviewing, trusting, or rolling back what the system produces."
+        "idea": "Notes the tradeoff between speed and hidden reliability/security issues.",
+        "auroraAnswer": "Aurora's response is stronger traceability and explicit review points before side effects are applied."
       }
     ],
     "whatItIsNot": [
       "Not a no-code tool",
-      "Not an IDE",
-      "Not an assistant",
-      "Not a rules engine",
-      "Not a schema or protocol",
-      "Not a product announcement"
+      "Not an IDE replacement",
+      "Not a generic assistant wrapper",
+      "Not a product launch announcement",
+      "Not a single protocol or schema"
     ],
     "howItWorksSafe": [
-      "Aurora uses a conversational workflow: people describe what they’re trying to achieve, the system reflects and refines its understanding, and both work together to shape the result.",
-      "This mirrors the way people naturally collaborate — through dialogue, shared meaning, and steady refinement — without revealing internal structures or technical mechanisms."
+      "Aurora uses a conversational workflow where people state goals, the system reflects constraints, and both refine the plan before execution.",
+      "The emphasis is on shared understanding, explicit contracts, and iteration safety without exposing implementation internals."
     ],
     "futureDirection": [
-      "Aurora will evolve gradually, beginning with narrative descriptions and eventually expanding to high-level examples.",
-      "Technical details, internals, and system mechanics will remain undisclosed."
+      "Aurora will continue as a gradual exploration through narratives and selected high-level examples.",
+      "Detailed mechanics and internals will remain undisclosed."
     ],
-    "cta": "If you’re interested in the ideas behind Aurora, I’m open to high-level conversations about the concepts and vision."
+    "cta": "If these ideas are relevant to your AI workflow or automation work, I am open to high-level discussion."
   }
 }
