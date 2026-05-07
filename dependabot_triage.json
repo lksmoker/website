@@ -1,0 +1,2705 @@
+[
+  {
+    "repo": "appkernel",
+    "severity": "high",
+    "package_name": "lodash",
+    "manifest_path": "ui/package-lock.json",
+    "first_patched_version": "4.18.0",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: high lodash in lksmoker/appkernel",
+        "cve_id": "CVE-2026-4800",
+        "ghsa_id": "GHSA-r5fr-rjxr-66jc",
+        "summary": "Open Dependabot alert for lodash in lksmoker/appkernel. Severity: high. lodash vulnerable to Code Injection via `_.template` imports key names First patched version: 4.18.0. Vulnerable range: >= 4.0.0, <= 4.17.23.",
+        "html_url": "https://github.com/lksmoker/appkernel/security/dependabot/30",
+        "severity": "high",
+        "incident_id": "014d2db6-9602-49a2-8344-3367c50cbb59",
+        "package_name": "lodash",
+        "manifest_path": "ui/package-lock.json",
+        "first_patched_version": "4.18.0",
+        "vulnerable_version_range": ">= 4.0.0, <= 4.17.23"
+      }
+    ]
+  },
+  {
+    "repo": "appkernel",
+    "severity": "high",
+    "package_name": "lodash-es",
+    "manifest_path": "ui/package-lock.json",
+    "first_patched_version": "4.18.0",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: high lodash-es in lksmoker/appkernel",
+        "cve_id": "CVE-2026-4800",
+        "ghsa_id": "GHSA-r5fr-rjxr-66jc",
+        "summary": "Open Dependabot alert for lodash-es in lksmoker/appkernel. Severity: high. lodash vulnerable to Code Injection via `_.template` imports key names First patched version: 4.18.0. Vulnerable range: >= 4.0.0, <= 4.17.23.",
+        "html_url": "https://github.com/lksmoker/appkernel/security/dependabot/31",
+        "severity": "high",
+        "incident_id": "ab0de1c0-b684-4737-99fa-4f07534aacb4",
+        "package_name": "lodash-es",
+        "manifest_path": "ui/package-lock.json",
+        "first_patched_version": "4.18.0",
+        "vulnerable_version_range": ">= 4.0.0, <= 4.17.23"
+      }
+    ]
+  },
+  {
+    "repo": "appkernel",
+    "severity": "high",
+    "package_name": "minimatch",
+    "manifest_path": "ui/package-lock.json",
+    "first_patched_version": "3.1.3",
+    "alert_count": 2,
+    "alerts": [
+      {
+        "title": "Dependabot alert: high minimatch in lksmoker/appkernel",
+        "cve_id": "CVE-2026-27903",
+        "ghsa_id": "GHSA-7r86-cg39-jmmj",
+        "summary": "Open Dependabot alert for minimatch in lksmoker/appkernel. Severity: high. minimatch has ReDoS: matchOne() combinatorial backtracking via multiple non-adjacent GLOBSTAR segments First patched version: 3.1.3. Vulnerable range: < 3.1.3.",
+        "html_url": "https://github.com/lksmoker/appkernel/security/dependabot/17",
+        "severity": "high",
+        "incident_id": "998970fd-539f-4b4d-9da8-17cd74272cd5",
+        "package_name": "minimatch",
+        "manifest_path": "ui/package-lock.json",
+        "first_patched_version": "3.1.3",
+        "vulnerable_version_range": "< 3.1.3"
+      },
+      {
+        "title": "Dependabot alert: high minimatch in lksmoker/appkernel",
+        "cve_id": "CVE-2026-26996",
+        "ghsa_id": "GHSA-3ppc-4f35-3m26",
+        "summary": "Open Dependabot alert for minimatch in lksmoker/appkernel. Severity: high. minimatch has a ReDoS via repeated wildcards with non-matching literal in pattern First patched version: 3.1.3. Vulnerable range: < 3.1.3.",
+        "html_url": "https://github.com/lksmoker/appkernel/security/dependabot/11",
+        "severity": "high",
+        "incident_id": "2943352a-7204-4568-a484-cafa0f0e77ac",
+        "package_name": "minimatch",
+        "manifest_path": "ui/package-lock.json",
+        "first_patched_version": "3.1.3",
+        "vulnerable_version_range": "< 3.1.3"
+      }
+    ]
+  },
+  {
+    "repo": "appkernel",
+    "severity": "high",
+    "package_name": "minimatch",
+    "manifest_path": "ui/package-lock.json",
+    "first_patched_version": "3.1.4",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: high minimatch in lksmoker/appkernel",
+        "cve_id": "CVE-2026-27904",
+        "ghsa_id": "GHSA-23c5-xmqv-rm74",
+        "summary": "Open Dependabot alert for minimatch in lksmoker/appkernel. Severity: high. minimatch ReDoS: nested *() extglobs generate catastrophically backtracking regular expressions First patched version: 3.1.4. Vulnerable range: < 3.1.4.",
+        "html_url": "https://github.com/lksmoker/appkernel/security/dependabot/15",
+        "severity": "high",
+        "incident_id": "3255f102-46e3-4d35-9696-d3c652feb7e9",
+        "package_name": "minimatch",
+        "manifest_path": "ui/package-lock.json",
+        "first_patched_version": "3.1.4",
+        "vulnerable_version_range": "< 3.1.4"
+      }
+    ]
+  },
+  {
+    "repo": "appkernel",
+    "severity": "high",
+    "package_name": "minimatch",
+    "manifest_path": "ui/package-lock.json",
+    "first_patched_version": "5.1.7",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: high minimatch in lksmoker/appkernel",
+        "cve_id": "CVE-2026-26996",
+        "ghsa_id": "GHSA-3ppc-4f35-3m26",
+        "summary": "Open Dependabot alert for minimatch in lksmoker/appkernel. Severity: high. minimatch has a ReDoS via repeated wildcards with non-matching literal in pattern First patched version: 5.1.7. Vulnerable range: >= 5.0.0, < 5.1.7.",
+        "html_url": "https://github.com/lksmoker/appkernel/security/dependabot/10",
+        "severity": "high",
+        "incident_id": "ae0b8672-da7b-4269-a290-9b911d811712",
+        "package_name": "minimatch",
+        "manifest_path": "ui/package-lock.json",
+        "first_patched_version": "5.1.7",
+        "vulnerable_version_range": ">= 5.0.0, < 5.1.7"
+      }
+    ]
+  },
+  {
+    "repo": "appkernel",
+    "severity": "high",
+    "package_name": "minimatch",
+    "manifest_path": "ui/package-lock.json",
+    "first_patched_version": "5.1.8",
+    "alert_count": 2,
+    "alerts": [
+      {
+        "title": "Dependabot alert: high minimatch in lksmoker/appkernel",
+        "cve_id": "CVE-2026-27903",
+        "ghsa_id": "GHSA-7r86-cg39-jmmj",
+        "summary": "Open Dependabot alert for minimatch in lksmoker/appkernel. Severity: high. minimatch has ReDoS: matchOne() combinatorial backtracking via multiple non-adjacent GLOBSTAR segments First patched version: 5.1.8. Vulnerable range: >= 5.0.0, < 5.1.8.",
+        "html_url": "https://github.com/lksmoker/appkernel/security/dependabot/16",
+        "severity": "high",
+        "incident_id": "64c4a8ab-5438-434c-826f-f2ae46860f61",
+        "package_name": "minimatch",
+        "manifest_path": "ui/package-lock.json",
+        "first_patched_version": "5.1.8",
+        "vulnerable_version_range": ">= 5.0.0, < 5.1.8"
+      },
+      {
+        "title": "Dependabot alert: high minimatch in lksmoker/appkernel",
+        "cve_id": "CVE-2026-27904",
+        "ghsa_id": "GHSA-23c5-xmqv-rm74",
+        "summary": "Open Dependabot alert for minimatch in lksmoker/appkernel. Severity: high. minimatch ReDoS: nested *() extglobs generate catastrophically backtracking regular expressions First patched version: 5.1.8. Vulnerable range: >= 5.0.0, < 5.1.8.",
+        "html_url": "https://github.com/lksmoker/appkernel/security/dependabot/14",
+        "severity": "high",
+        "incident_id": "b988d709-4f8c-4c53-b69c-1b7a38f03641",
+        "package_name": "minimatch",
+        "manifest_path": "ui/package-lock.json",
+        "first_patched_version": "5.1.8",
+        "vulnerable_version_range": ">= 5.0.0, < 5.1.8"
+      }
+    ]
+  },
+  {
+    "repo": "appkernel",
+    "severity": "high",
+    "package_name": "picomatch",
+    "manifest_path": "ui/package-lock.json",
+    "first_patched_version": "2.3.2",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: high picomatch in lksmoker/appkernel",
+        "cve_id": "CVE-2026-33671",
+        "ghsa_id": "GHSA-c2c7-rcm5-vvqj",
+        "summary": "Open Dependabot alert for picomatch in lksmoker/appkernel. Severity: high. Picomatch has a ReDoS vulnerability via extglob quantifiers First patched version: 2.3.2. Vulnerable range: < 2.3.2.",
+        "html_url": "https://github.com/lksmoker/appkernel/security/dependabot/21",
+        "severity": "high",
+        "incident_id": "9a1d3a64-c852-4498-8241-90a00ed94ebf",
+        "package_name": "picomatch",
+        "manifest_path": "ui/package-lock.json",
+        "first_patched_version": "2.3.2",
+        "vulnerable_version_range": "< 2.3.2"
+      }
+    ]
+  },
+  {
+    "repo": "appkernel",
+    "severity": "high",
+    "package_name": "picomatch",
+    "manifest_path": "ui/package-lock.json",
+    "first_patched_version": "4.0.4",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: high picomatch in lksmoker/appkernel",
+        "cve_id": "CVE-2026-33671",
+        "ghsa_id": "GHSA-c2c7-rcm5-vvqj",
+        "summary": "Open Dependabot alert for picomatch in lksmoker/appkernel. Severity: high. Picomatch has a ReDoS vulnerability via extglob quantifiers First patched version: 4.0.4. Vulnerable range: >= 4.0.0, < 4.0.4.",
+        "html_url": "https://github.com/lksmoker/appkernel/security/dependabot/20",
+        "severity": "high",
+        "incident_id": "93c46da4-6b01-485e-af57-50c950c24ce7",
+        "package_name": "picomatch",
+        "manifest_path": "ui/package-lock.json",
+        "first_patched_version": "4.0.4",
+        "vulnerable_version_range": ">= 4.0.0, < 4.0.4"
+      }
+    ]
+  },
+  {
+    "repo": "appkernel",
+    "severity": "high",
+    "package_name": "react-router",
+    "manifest_path": "ui/package-lock.json",
+    "first_patched_version": "7.12.0",
+    "alert_count": 2,
+    "alerts": [
+      {
+        "title": "Dependabot alert: high react-router in lksmoker/appkernel",
+        "cve_id": "CVE-2026-22029",
+        "ghsa_id": "GHSA-2w69-qvjg-hvjx",
+        "summary": "Open Dependabot alert for react-router in lksmoker/appkernel. Severity: high. React Router vulnerable to XSS via Open Redirects First patched version: 7.12.0. Vulnerable range: >= 7.0.0, <= 7.11.0.",
+        "html_url": "https://github.com/lksmoker/appkernel/security/dependabot/5",
+        "severity": "high",
+        "incident_id": "b26f80cd-4de5-42aa-ae3d-8fb373f9afa1",
+        "package_name": "react-router",
+        "manifest_path": "ui/package-lock.json",
+        "first_patched_version": "7.12.0",
+        "vulnerable_version_range": ">= 7.0.0, <= 7.11.0"
+      },
+      {
+        "title": "Dependabot alert: high react-router in lksmoker/appkernel",
+        "cve_id": "CVE-2026-21884",
+        "ghsa_id": "GHSA-8v8x-cx79-35w7",
+        "summary": "Open Dependabot alert for react-router in lksmoker/appkernel. Severity: high. React Router SSR XSS in ScrollRestoration First patched version: 7.12.0. Vulnerable range: >= 7.0.0, < 7.12.0.",
+        "html_url": "https://github.com/lksmoker/appkernel/security/dependabot/4",
+        "severity": "high",
+        "incident_id": "ae68fc8d-d270-499b-9864-15b201ccc67b",
+        "package_name": "react-router",
+        "manifest_path": "ui/package-lock.json",
+        "first_patched_version": "7.12.0",
+        "vulnerable_version_range": ">= 7.0.0, < 7.12.0"
+      }
+    ]
+  },
+  {
+    "repo": "appkernel",
+    "severity": "high",
+    "package_name": "rollup",
+    "manifest_path": "ui/package-lock.json",
+    "first_patched_version": "2.80.0",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: high rollup in lksmoker/appkernel",
+        "cve_id": "CVE-2026-27606",
+        "ghsa_id": "GHSA-mw96-cpmx-2vgc",
+        "summary": "Open Dependabot alert for rollup in lksmoker/appkernel. Severity: high. Rollup 4 has Arbitrary File Write via Path Traversal First patched version: 2.80.0. Vulnerable range: < 2.80.0.",
+        "html_url": "https://github.com/lksmoker/appkernel/security/dependabot/12",
+        "severity": "high",
+        "incident_id": "dbba719b-ca76-40a4-9365-b580404a4443",
+        "package_name": "rollup",
+        "manifest_path": "ui/package-lock.json",
+        "first_patched_version": "2.80.0",
+        "vulnerable_version_range": "< 2.80.0"
+      }
+    ]
+  },
+  {
+    "repo": "appkernel",
+    "severity": "high",
+    "package_name": "rollup",
+    "manifest_path": "ui/package-lock.json",
+    "first_patched_version": "4.59.0",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: high rollup in lksmoker/appkernel",
+        "cve_id": "CVE-2026-27606",
+        "ghsa_id": "GHSA-mw96-cpmx-2vgc",
+        "summary": "Open Dependabot alert for rollup in lksmoker/appkernel. Severity: high. Rollup 4 has Arbitrary File Write via Path Traversal First patched version: 4.59.0. Vulnerable range: >= 4.0.0, < 4.59.0.",
+        "html_url": "https://github.com/lksmoker/appkernel/security/dependabot/13",
+        "severity": "high",
+        "incident_id": "103fe18a-f04c-49f2-83cc-932ef6a12e6c",
+        "package_name": "rollup",
+        "manifest_path": "ui/package-lock.json",
+        "first_patched_version": "4.59.0",
+        "vulnerable_version_range": ">= 4.0.0, < 4.59.0"
+      }
+    ]
+  },
+  {
+    "repo": "appkernel",
+    "severity": "high",
+    "package_name": "serialize-javascript",
+    "manifest_path": "ui/package-lock.json",
+    "first_patched_version": "7.0.3",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: high serialize-javascript in lksmoker/appkernel",
+        "cve_id": null,
+        "ghsa_id": "GHSA-5c6j-r48x-rmvq",
+        "summary": "Open Dependabot alert for serialize-javascript in lksmoker/appkernel. Severity: high. Serialize JavaScript is Vulnerable to RCE via RegExp.flags and Date.prototype.toISOString() First patched version: 7.0.3. Vulnerable range: <= 7.0.2.",
+        "html_url": "https://github.com/lksmoker/appkernel/security/dependabot/18",
+        "severity": "high",
+        "incident_id": "6a57b09b-18c8-47ea-a2d9-aa7fbd397f2f",
+        "package_name": "serialize-javascript",
+        "manifest_path": "ui/package-lock.json",
+        "first_patched_version": "7.0.3",
+        "vulnerable_version_range": "<= 7.0.2"
+      }
+    ]
+  },
+  {
+    "repo": "appkernel",
+    "severity": "high",
+    "package_name": "vite",
+    "manifest_path": "ui/package-lock.json",
+    "first_patched_version": "7.3.2",
+    "alert_count": 2,
+    "alerts": [
+      {
+        "title": "Dependabot alert: high vite in lksmoker/appkernel",
+        "cve_id": "CVE-2026-39364",
+        "ghsa_id": "GHSA-v2wj-q39q-566r",
+        "summary": "Open Dependabot alert for vite in lksmoker/appkernel. Severity: high. Vite: `server.fs.deny` bypassed with queries First patched version: 7.3.2. Vulnerable range: >= 7.1.0, <= 7.3.1.",
+        "html_url": "https://github.com/lksmoker/appkernel/security/dependabot/35",
+        "severity": "high",
+        "incident_id": "efc16cda-ebcf-4c73-987a-edc69bb41fd7",
+        "package_name": "vite",
+        "manifest_path": "ui/package-lock.json",
+        "first_patched_version": "7.3.2",
+        "vulnerable_version_range": ">= 7.1.0, <= 7.3.1"
+      },
+      {
+        "title": "Dependabot alert: high vite in lksmoker/appkernel",
+        "cve_id": "CVE-2026-39363",
+        "ghsa_id": "GHSA-p9ff-h696-f583",
+        "summary": "Open Dependabot alert for vite in lksmoker/appkernel. Severity: high. Vite Vulnerable to Arbitrary File Read via Vite Dev Server WebSocket First patched version: 7.3.2. Vulnerable range: >= 7.0.0, <= 7.3.1.",
+        "html_url": "https://github.com/lksmoker/appkernel/security/dependabot/34",
+        "severity": "high",
+        "incident_id": "69a1129a-cdf3-439c-b018-dc35bb432e32",
+        "package_name": "vite",
+        "manifest_path": "ui/package-lock.json",
+        "first_patched_version": "7.3.2",
+        "vulnerable_version_range": ">= 7.0.0, <= 7.3.1"
+      }
+    ]
+  },
+  {
+    "repo": "Dev_Toolbox",
+    "severity": "high",
+    "package_name": "aiohttp",
+    "manifest_path": "backend/requirements.txt",
+    "first_patched_version": "3.13.3",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: high aiohttp in lksmoker/Dev_Toolbox",
+        "cve_id": "CVE-2025-69223",
+        "ghsa_id": "GHSA-6mq8-rvhq-8wgg",
+        "summary": "Open Dependabot alert for aiohttp in lksmoker/Dev_Toolbox. Severity: high. AIOHTTP's HTTP Parser auto_decompress feature is vulnerable to zip bomb First patched version: 3.13.3. Vulnerable range: <= 3.13.2.",
+        "html_url": "https://github.com/lksmoker/Dev_Toolbox/security/dependabot/1",
+        "severity": "high",
+        "incident_id": "92bc7ae2-7713-4bdb-894e-e7fff3d78c48",
+        "package_name": "aiohttp",
+        "manifest_path": "backend/requirements.txt",
+        "first_patched_version": "3.13.3",
+        "vulnerable_version_range": "<= 3.13.2"
+      }
+    ]
+  },
+  {
+    "repo": "Dev_Toolbox",
+    "severity": "high",
+    "package_name": "lodash-es",
+    "manifest_path": "frontend/package-lock.json",
+    "first_patched_version": "4.18.0",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: high lodash-es in lksmoker/Dev_Toolbox",
+        "cve_id": "CVE-2026-4800",
+        "ghsa_id": "GHSA-r5fr-rjxr-66jc",
+        "summary": "Open Dependabot alert for lodash-es in lksmoker/Dev_Toolbox. Severity: high. lodash vulnerable to Code Injection via `_.template` imports key names First patched version: 4.18.0. Vulnerable range: >= 4.0.0, <= 4.17.23.",
+        "html_url": "https://github.com/lksmoker/Dev_Toolbox/security/dependabot/27",
+        "severity": "high",
+        "incident_id": "2dc83d81-328a-4d9c-82d7-b367e481466b",
+        "package_name": "lodash-es",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "4.18.0",
+        "vulnerable_version_range": ">= 4.0.0, <= 4.17.23"
+      }
+    ]
+  },
+  {
+    "repo": "Dev_Toolbox",
+    "severity": "high",
+    "package_name": "serialize-javascript",
+    "manifest_path": "frontend/package-lock.json",
+    "first_patched_version": "7.0.3",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: high serialize-javascript in lksmoker/Dev_Toolbox",
+        "cve_id": null,
+        "ghsa_id": "GHSA-5c6j-r48x-rmvq",
+        "summary": "Open Dependabot alert for serialize-javascript in lksmoker/Dev_Toolbox. Severity: high. Serialize JavaScript is Vulnerable to RCE via RegExp.flags and Date.prototype.toISOString() First patched version: 7.0.3. Vulnerable range: <= 7.0.2.",
+        "html_url": "https://github.com/lksmoker/Dev_Toolbox/security/dependabot/22",
+        "severity": "high",
+        "incident_id": "8b51366e-276a-4785-aad2-2dd3c65af833",
+        "package_name": "serialize-javascript",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "7.0.3",
+        "vulnerable_version_range": "<= 7.0.2"
+      }
+    ]
+  },
+  {
+    "repo": "Dev_Toolbox",
+    "severity": "high",
+    "package_name": "vite",
+    "manifest_path": "frontend/package-lock.json",
+    "first_patched_version": "6.4.2",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: high vite in lksmoker/Dev_Toolbox",
+        "cve_id": "CVE-2026-39363",
+        "ghsa_id": "GHSA-p9ff-h696-f583",
+        "summary": "Open Dependabot alert for vite in lksmoker/Dev_Toolbox. Severity: high. Vite Vulnerable to Arbitrary File Read via Vite Dev Server WebSocket First patched version: 6.4.2. Vulnerable range: >= 6.0.0, <= 6.4.1.",
+        "html_url": "https://github.com/lksmoker/Dev_Toolbox/security/dependabot/30",
+        "severity": "high",
+        "incident_id": "4d9a6895-a9ab-4205-9790-ac4c245519ab",
+        "package_name": "vite",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "6.4.2",
+        "vulnerable_version_range": ">= 6.0.0, <= 6.4.1"
+      }
+    ]
+  },
+  {
+    "repo": "PLAIDSYNC_combined",
+    "severity": "high",
+    "package_name": "axios",
+    "manifest_path": "frontend/package-lock.json",
+    "first_patched_version": "1.13.5",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: high axios in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2026-25639",
+        "ghsa_id": "GHSA-43fc-jf86-j433",
+        "summary": "Open Dependabot alert for axios in lksmoker/PLAIDSYNC_combined. Severity: high. Axios is Vulnerable to Denial of Service via __proto__ Key in mergeConfig First patched version: 1.13.5. Vulnerable range: >= 1.0.0, <= 1.13.4.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/35",
+        "severity": "high",
+        "incident_id": "03878abf-7d4b-4b2b-967c-ddcf87e703a7",
+        "package_name": "axios",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "1.13.5",
+        "vulnerable_version_range": ">= 1.0.0, <= 1.13.4"
+      }
+    ]
+  },
+  {
+    "repo": "PLAIDSYNC_combined",
+    "severity": "high",
+    "package_name": "axios",
+    "manifest_path": "frontend/package-lock.json",
+    "first_patched_version": "1.12.0",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: high axios in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2025-58754",
+        "ghsa_id": "GHSA-4hjh-wcwx-xvwj",
+        "summary": "Open Dependabot alert for axios in lksmoker/PLAIDSYNC_combined. Severity: high. Axios is vulnerable to DoS attack through lack of data size check First patched version: 1.12.0. Vulnerable range: >= 1.0.0, < 1.12.0.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/13",
+        "severity": "high",
+        "incident_id": "47e88125-1bd1-4af6-b096-852b3f6d9172",
+        "package_name": "axios",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "1.12.0",
+        "vulnerable_version_range": ">= 1.0.0, < 1.12.0"
+      }
+    ]
+  },
+  {
+    "repo": "PLAIDSYNC_combined",
+    "severity": "high",
+    "package_name": "flatted",
+    "manifest_path": "frontend/package-lock.json",
+    "first_patched_version": "3.4.0",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: high flatted in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2026-32141",
+        "ghsa_id": "GHSA-25h7-pfq9-p65f",
+        "summary": "Open Dependabot alert for flatted in lksmoker/PLAIDSYNC_combined. Severity: high. flatted vulnerable to unbounded recursion DoS in parse() revive phase First patched version: 3.4.0. Vulnerable range: < 3.4.0.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/48",
+        "severity": "high",
+        "incident_id": "a8db7eac-dd61-4637-b5e2-a2a1bf02be25",
+        "package_name": "flatted",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "3.4.0",
+        "vulnerable_version_range": "< 3.4.0"
+      }
+    ]
+  },
+  {
+    "repo": "PLAIDSYNC_combined",
+    "severity": "high",
+    "package_name": "flatted",
+    "manifest_path": "frontend/package-lock.json",
+    "first_patched_version": "3.4.2",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: high flatted in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2026-33228",
+        "ghsa_id": "GHSA-rf6f-7fwh-wjgh",
+        "summary": "Open Dependabot alert for flatted in lksmoker/PLAIDSYNC_combined. Severity: high. Prototype Pollution via parse() in NodeJS flatted First patched version: 3.4.2. Vulnerable range: <= 3.4.1.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/49",
+        "severity": "high",
+        "incident_id": "1fd10b00-09ee-4193-9116-73b055e4695c",
+        "package_name": "flatted",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "3.4.2",
+        "vulnerable_version_range": "<= 3.4.1"
+      }
+    ]
+  },
+  {
+    "repo": "PLAIDSYNC_combined",
+    "severity": "high",
+    "package_name": "lodash",
+    "manifest_path": "frontend/package-lock.json",
+    "first_patched_version": "4.18.0",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: high lodash in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2026-4800",
+        "ghsa_id": "GHSA-r5fr-rjxr-66jc",
+        "summary": "Open Dependabot alert for lodash in lksmoker/PLAIDSYNC_combined. Severity: high. lodash vulnerable to Code Injection via `_.template` imports key names First patched version: 4.18.0. Vulnerable range: >= 4.0.0, <= 4.17.23.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/57",
+        "severity": "high",
+        "incident_id": "c52bbe70-49d8-4514-8b20-55b78babd145",
+        "package_name": "lodash",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "4.18.0",
+        "vulnerable_version_range": ">= 4.0.0, <= 4.17.23"
+      }
+    ]
+  },
+  {
+    "repo": "PLAIDSYNC_combined",
+    "severity": "high",
+    "package_name": "minimatch",
+    "manifest_path": "frontend/package-lock.json",
+    "first_patched_version": "3.1.4",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: high minimatch in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2026-27904",
+        "ghsa_id": "GHSA-23c5-xmqv-rm74",
+        "summary": "Open Dependabot alert for minimatch in lksmoker/PLAIDSYNC_combined. Severity: high. minimatch ReDoS: nested *() extglobs generate catastrophically backtracking regular expressions First patched version: 3.1.4. Vulnerable range: < 3.1.4.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/45",
+        "severity": "high",
+        "incident_id": "214a4d5d-26b2-4268-a923-9a8f19ed070d",
+        "package_name": "minimatch",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "3.1.4",
+        "vulnerable_version_range": "< 3.1.4"
+      }
+    ]
+  },
+  {
+    "repo": "PLAIDSYNC_combined",
+    "severity": "high",
+    "package_name": "minimatch",
+    "manifest_path": "frontend/package-lock.json",
+    "first_patched_version": "5.1.7",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: high minimatch in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2026-26996",
+        "ghsa_id": "GHSA-3ppc-4f35-3m26",
+        "summary": "Open Dependabot alert for minimatch in lksmoker/PLAIDSYNC_combined. Severity: high. minimatch has a ReDoS via repeated wildcards with non-matching literal in pattern First patched version: 5.1.7. Vulnerable range: >= 5.0.0, < 5.1.7.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/39",
+        "severity": "high",
+        "incident_id": "fdfce073-bc06-4504-9eab-04b7b35c106c",
+        "package_name": "minimatch",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "5.1.7",
+        "vulnerable_version_range": ">= 5.0.0, < 5.1.7"
+      }
+    ]
+  },
+  {
+    "repo": "PLAIDSYNC_combined",
+    "severity": "high",
+    "package_name": "minimatch",
+    "manifest_path": "frontend/package-lock.json",
+    "first_patched_version": "3.1.3",
+    "alert_count": 2,
+    "alerts": [
+      {
+        "title": "Dependabot alert: high minimatch in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2026-27903",
+        "ghsa_id": "GHSA-7r86-cg39-jmmj",
+        "summary": "Open Dependabot alert for minimatch in lksmoker/PLAIDSYNC_combined. Severity: high. minimatch has ReDoS: matchOne() combinatorial backtracking via multiple non-adjacent GLOBSTAR segments First patched version: 3.1.3. Vulnerable range: < 3.1.3.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/46",
+        "severity": "high",
+        "incident_id": "534ec155-d796-4a82-8812-724c20030d00",
+        "package_name": "minimatch",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "3.1.3",
+        "vulnerable_version_range": "< 3.1.3"
+      },
+      {
+        "title": "Dependabot alert: high minimatch in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2026-26996",
+        "ghsa_id": "GHSA-3ppc-4f35-3m26",
+        "summary": "Open Dependabot alert for minimatch in lksmoker/PLAIDSYNC_combined. Severity: high. minimatch has a ReDoS via repeated wildcards with non-matching literal in pattern First patched version: 3.1.3. Vulnerable range: < 3.1.3.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/40",
+        "severity": "high",
+        "incident_id": "8e60816c-d4c3-4704-acf6-181abf9ec5f5",
+        "package_name": "minimatch",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "3.1.3",
+        "vulnerable_version_range": "< 3.1.3"
+      }
+    ]
+  },
+  {
+    "repo": "PLAIDSYNC_combined",
+    "severity": "high",
+    "package_name": "minimatch",
+    "manifest_path": "frontend/package-lock.json",
+    "first_patched_version": "5.1.8",
+    "alert_count": 2,
+    "alerts": [
+      {
+        "title": "Dependabot alert: high minimatch in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2026-27903",
+        "ghsa_id": "GHSA-7r86-cg39-jmmj",
+        "summary": "Open Dependabot alert for minimatch in lksmoker/PLAIDSYNC_combined. Severity: high. minimatch has ReDoS: matchOne() combinatorial backtracking via multiple non-adjacent GLOBSTAR segments First patched version: 5.1.8. Vulnerable range: >= 5.0.0, < 5.1.8.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/44",
+        "severity": "high",
+        "incident_id": "2af7edf0-d398-4855-a3cf-3df7d89f204c",
+        "package_name": "minimatch",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "5.1.8",
+        "vulnerable_version_range": ">= 5.0.0, < 5.1.8"
+      },
+      {
+        "title": "Dependabot alert: high minimatch in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2026-27904",
+        "ghsa_id": "GHSA-23c5-xmqv-rm74",
+        "summary": "Open Dependabot alert for minimatch in lksmoker/PLAIDSYNC_combined. Severity: high. minimatch ReDoS: nested *() extglobs generate catastrophically backtracking regular expressions First patched version: 5.1.8. Vulnerable range: >= 5.0.0, < 5.1.8.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/43",
+        "severity": "high",
+        "incident_id": "c0db0608-53f5-4133-9f2a-b0b6d0ab5da3",
+        "package_name": "minimatch",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "5.1.8",
+        "vulnerable_version_range": ">= 5.0.0, < 5.1.8"
+      }
+    ]
+  },
+  {
+    "repo": "PLAIDSYNC_combined",
+    "severity": "high",
+    "package_name": "picomatch",
+    "manifest_path": "frontend/package-lock.json",
+    "first_patched_version": "2.3.2",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: high picomatch in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2026-33671",
+        "ghsa_id": "GHSA-c2c7-rcm5-vvqj",
+        "summary": "Open Dependabot alert for picomatch in lksmoker/PLAIDSYNC_combined. Severity: high. Picomatch has a ReDoS vulnerability via extglob quantifiers First patched version: 2.3.2. Vulnerable range: < 2.3.2.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/55",
+        "severity": "high",
+        "incident_id": "753a9017-dd80-47ac-a67a-19a4d2d0306f",
+        "package_name": "picomatch",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "2.3.2",
+        "vulnerable_version_range": "< 2.3.2"
+      }
+    ]
+  },
+  {
+    "repo": "PLAIDSYNC_combined",
+    "severity": "high",
+    "package_name": "picomatch",
+    "manifest_path": "frontend/package-lock.json",
+    "first_patched_version": "4.0.4",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: high picomatch in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2026-33671",
+        "ghsa_id": "GHSA-c2c7-rcm5-vvqj",
+        "summary": "Open Dependabot alert for picomatch in lksmoker/PLAIDSYNC_combined. Severity: high. Picomatch has a ReDoS vulnerability via extglob quantifiers First patched version: 4.0.4. Vulnerable range: >= 4.0.0, < 4.0.4.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/50",
+        "severity": "high",
+        "incident_id": "77c5b459-59e7-4e7d-bc1f-f4a6286f5342",
+        "package_name": "picomatch",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "4.0.4",
+        "vulnerable_version_range": ">= 4.0.0, < 4.0.4"
+      }
+    ]
+  },
+  {
+    "repo": "PLAIDSYNC_combined",
+    "severity": "high",
+    "package_name": "react-router",
+    "manifest_path": "frontend/package-lock.json",
+    "first_patched_version": "7.9.0",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: high react-router in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2025-59057",
+        "ghsa_id": "GHSA-3cgp-3xvw-98x8",
+        "summary": "Open Dependabot alert for react-router in lksmoker/PLAIDSYNC_combined. Severity: high. React Router has XSS Vulnerability First patched version: 7.9.0. Vulnerable range: >= 7.0.0, <= 7.8.2.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/27",
+        "severity": "high",
+        "incident_id": "40b65a1b-d8b0-4c22-be48-1f278bb8a4e9",
+        "package_name": "react-router",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "7.9.0",
+        "vulnerable_version_range": ">= 7.0.0, <= 7.8.2"
+      }
+    ]
+  },
+  {
+    "repo": "PLAIDSYNC_combined",
+    "severity": "high",
+    "package_name": "react-router",
+    "manifest_path": "frontend/package-lock.json",
+    "first_patched_version": "7.12.0",
+    "alert_count": 2,
+    "alerts": [
+      {
+        "title": "Dependabot alert: high react-router in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2026-22029",
+        "ghsa_id": "GHSA-2w69-qvjg-hvjx",
+        "summary": "Open Dependabot alert for react-router in lksmoker/PLAIDSYNC_combined. Severity: high. React Router vulnerable to XSS via Open Redirects First patched version: 7.12.0. Vulnerable range: >= 7.0.0, <= 7.11.0.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/30",
+        "severity": "high",
+        "incident_id": "c893913c-27e3-4502-af45-57c268c7c816",
+        "package_name": "react-router",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "7.12.0",
+        "vulnerable_version_range": ">= 7.0.0, <= 7.11.0"
+      },
+      {
+        "title": "Dependabot alert: high react-router in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2026-21884",
+        "ghsa_id": "GHSA-8v8x-cx79-35w7",
+        "summary": "Open Dependabot alert for react-router in lksmoker/PLAIDSYNC_combined. Severity: high. React Router SSR XSS in ScrollRestoration First patched version: 7.12.0. Vulnerable range: >= 7.0.0, < 7.12.0.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/29",
+        "severity": "high",
+        "incident_id": "0c87ccda-5396-475a-810f-3a5d62bc4378",
+        "package_name": "react-router",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "7.12.0",
+        "vulnerable_version_range": ">= 7.0.0, < 7.12.0"
+      }
+    ]
+  },
+  {
+    "repo": "PLAIDSYNC_combined",
+    "severity": "high",
+    "package_name": "rollup",
+    "manifest_path": "frontend/package-lock.json",
+    "first_patched_version": "4.59.0",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: high rollup in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2026-27606",
+        "ghsa_id": "GHSA-mw96-cpmx-2vgc",
+        "summary": "Open Dependabot alert for rollup in lksmoker/PLAIDSYNC_combined. Severity: high. Rollup 4 has Arbitrary File Write via Path Traversal First patched version: 4.59.0. Vulnerable range: >= 4.0.0, < 4.59.0.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/41",
+        "severity": "high",
+        "incident_id": "486c5da0-1aa8-491f-b4cf-5156d9ec1d19",
+        "package_name": "rollup",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "4.59.0",
+        "vulnerable_version_range": ">= 4.0.0, < 4.59.0"
+      }
+    ]
+  },
+  {
+    "repo": "PLAIDSYNC_combined",
+    "severity": "high",
+    "package_name": "rollup",
+    "manifest_path": "frontend/package-lock.json",
+    "first_patched_version": "2.80.0",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: high rollup in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2026-27606",
+        "ghsa_id": "GHSA-mw96-cpmx-2vgc",
+        "summary": "Open Dependabot alert for rollup in lksmoker/PLAIDSYNC_combined. Severity: high. Rollup 4 has Arbitrary File Write via Path Traversal First patched version: 2.80.0. Vulnerable range: < 2.80.0.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/42",
+        "severity": "high",
+        "incident_id": "56b81349-e836-44fb-96a9-837154b2095c",
+        "package_name": "rollup",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "2.80.0",
+        "vulnerable_version_range": "< 2.80.0"
+      }
+    ]
+  },
+  {
+    "repo": "PLAIDSYNC_combined",
+    "severity": "high",
+    "package_name": "serialize-javascript",
+    "manifest_path": "frontend/package-lock.json",
+    "first_patched_version": "7.0.3",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: high serialize-javascript in lksmoker/PLAIDSYNC_combined",
+        "cve_id": null,
+        "ghsa_id": "GHSA-5c6j-r48x-rmvq",
+        "summary": "Open Dependabot alert for serialize-javascript in lksmoker/PLAIDSYNC_combined. Severity: high. Serialize JavaScript is Vulnerable to RCE via RegExp.flags and Date.prototype.toISOString() First patched version: 7.0.3. Vulnerable range: <= 7.0.2.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/47",
+        "severity": "high",
+        "incident_id": "f509b328-6071-4433-8318-20e784fa554a",
+        "package_name": "serialize-javascript",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "7.0.3",
+        "vulnerable_version_range": "<= 7.0.2"
+      }
+    ]
+  },
+  {
+    "repo": "PLAIDSYNC_combined",
+    "severity": "high",
+    "package_name": "vite",
+    "manifest_path": "frontend/package-lock.json",
+    "first_patched_version": "6.4.2",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: high vite in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2026-39363",
+        "ghsa_id": "GHSA-p9ff-h696-f583",
+        "summary": "Open Dependabot alert for vite in lksmoker/PLAIDSYNC_combined. Severity: high. Vite Vulnerable to Arbitrary File Read via Vite Dev Server WebSocket First patched version: 6.4.2. Vulnerable range: >= 6.0.0, <= 6.4.1.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/54",
+        "severity": "high",
+        "incident_id": "63c23c87-a5cf-4f9e-acad-e434bc956e65",
+        "package_name": "vite",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "6.4.2",
+        "vulnerable_version_range": ">= 6.0.0, <= 6.4.1"
+      }
+    ]
+  },
+  {
+    "repo": "PLAIDSYNC_combined",
+    "severity": "high",
+    "package_name": "cryptography",
+    "manifest_path": "PlaidSync_Backend/uv.lock",
+    "first_patched_version": "46.0.5",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: high cryptography in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2026-26007",
+        "ghsa_id": "GHSA-r6ph-v2qm-q3c2",
+        "summary": "Open Dependabot alert for cryptography in lksmoker/PLAIDSYNC_combined. Severity: high. cryptography Vulnerable to a Subgroup Attack Due to Missing Subgroup Validation for SECT Curves First patched version: 46.0.5. Vulnerable range: <= 46.0.4.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/79",
+        "severity": "high",
+        "incident_id": "fdea76cd-c0e9-4bf2-8c53-809d6c1912a1",
+        "package_name": "cryptography",
+        "manifest_path": "PlaidSync_Backend/uv.lock",
+        "first_patched_version": "46.0.5",
+        "vulnerable_version_range": "<= 46.0.4"
+      }
+    ]
+  },
+  {
+    "repo": "PLAIDSYNC_combined",
+    "severity": "high",
+    "package_name": "pyopenssl",
+    "manifest_path": "PlaidSync_Backend/uv.lock",
+    "first_patched_version": "26.0.0",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: high pyopenssl in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2026-27459",
+        "ghsa_id": "GHSA-5pwr-322w-8jr4",
+        "summary": "Open Dependabot alert for pyopenssl in lksmoker/PLAIDSYNC_combined. Severity: high. pyOpenSSL DTLS cookie callback buffer overflow First patched version: 26.0.0. Vulnerable range: >= 22.0.0, < 26.0.0.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/83",
+        "severity": "high",
+        "incident_id": "92fdf8c5-f14b-45d0-ae00-ff1c1496fc18",
+        "package_name": "pyopenssl",
+        "manifest_path": "PlaidSync_Backend/uv.lock",
+        "first_patched_version": "26.0.0",
+        "vulnerable_version_range": ">= 22.0.0, < 26.0.0"
+      }
+    ]
+  },
+  {
+    "repo": "PLAIDSYNC_combined",
+    "severity": "high",
+    "package_name": "urllib3",
+    "manifest_path": "PlaidSync_Backend/uv.lock",
+    "first_patched_version": "2.6.3",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: high urllib3 in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2026-21441",
+        "ghsa_id": "GHSA-38jv-5279-wg99",
+        "summary": "Open Dependabot alert for urllib3 in lksmoker/PLAIDSYNC_combined. Severity: high. Decompression-bomb safeguards bypassed when following HTTP redirects (streaming API) First patched version: 2.6.3. Vulnerable range: >= 1.22, < 2.6.3.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/77",
+        "severity": "high",
+        "incident_id": "bda4521f-d77b-4603-8167-795e2fc8d582",
+        "package_name": "urllib3",
+        "manifest_path": "PlaidSync_Backend/uv.lock",
+        "first_patched_version": "2.6.3",
+        "vulnerable_version_range": ">= 1.22, < 2.6.3"
+      }
+    ]
+  },
+  {
+    "repo": "PLAIDSYNC_combined",
+    "severity": "high",
+    "package_name": "urllib3",
+    "manifest_path": "PlaidSync_Backend/uv.lock",
+    "first_patched_version": "2.6.0",
+    "alert_count": 2,
+    "alerts": [
+      {
+        "title": "Dependabot alert: high urllib3 in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2025-66471",
+        "ghsa_id": "GHSA-2xpw-w6gg-jr37",
+        "summary": "Open Dependabot alert for urllib3 in lksmoker/PLAIDSYNC_combined. Severity: high. urllib3 streaming API improperly handles highly compressed data First patched version: 2.6.0. Vulnerable range: >= 1.0, < 2.6.0.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/76",
+        "severity": "high",
+        "incident_id": "aca80b59-e4df-4ea3-979e-960f2edcb1d7",
+        "package_name": "urllib3",
+        "manifest_path": "PlaidSync_Backend/uv.lock",
+        "first_patched_version": "2.6.0",
+        "vulnerable_version_range": ">= 1.0, < 2.6.0"
+      },
+      {
+        "title": "Dependabot alert: high urllib3 in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2025-66418",
+        "ghsa_id": "GHSA-gm62-xv2j-4w53",
+        "summary": "Open Dependabot alert for urllib3 in lksmoker/PLAIDSYNC_combined. Severity: high. urllib3 allows an unbounded number of links in the decompression chain First patched version: 2.6.0. Vulnerable range: >= 1.24, < 2.6.0.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/75",
+        "severity": "high",
+        "incident_id": "a5d253e0-17b5-42e0-a6be-bcb795e27eb2",
+        "package_name": "urllib3",
+        "manifest_path": "PlaidSync_Backend/uv.lock",
+        "first_patched_version": "2.6.0",
+        "vulnerable_version_range": ">= 1.24, < 2.6.0"
+      }
+    ]
+  },
+  {
+    "repo": "website",
+    "severity": "high",
+    "package_name": "react-router",
+    "manifest_path": "package-lock.json",
+    "first_patched_version": "7.12.0",
+    "alert_count": 2,
+    "alerts": [
+      {
+        "title": "Dependabot alert: high react-router in lksmoker/website",
+        "cve_id": "CVE-2026-22029",
+        "ghsa_id": "GHSA-2w69-qvjg-hvjx",
+        "summary": "Open Dependabot alert for react-router in lksmoker/website. Severity: high. React Router vulnerable to XSS via Open Redirects First patched version: 7.12.0. Vulnerable range: >= 7.0.0, <= 7.11.0.",
+        "html_url": "https://github.com/lksmoker/website/security/dependabot/2",
+        "severity": "high",
+        "incident_id": "b6081acc-5803-47dd-819b-c9e8b27f5e35",
+        "package_name": "react-router",
+        "manifest_path": "package-lock.json",
+        "first_patched_version": "7.12.0",
+        "vulnerable_version_range": ">= 7.0.0, <= 7.11.0"
+      },
+      {
+        "title": "Dependabot alert: high react-router in lksmoker/website",
+        "cve_id": "CVE-2026-21884",
+        "ghsa_id": "GHSA-8v8x-cx79-35w7",
+        "summary": "Open Dependabot alert for react-router in lksmoker/website. Severity: high. React Router SSR XSS in ScrollRestoration First patched version: 7.12.0. Vulnerable range: >= 7.0.0, < 7.12.0.",
+        "html_url": "https://github.com/lksmoker/website/security/dependabot/1",
+        "severity": "high",
+        "incident_id": "a8448032-7640-497d-8db5-9bcf20cf723e",
+        "package_name": "react-router",
+        "manifest_path": "package-lock.json",
+        "first_patched_version": "7.12.0",
+        "vulnerable_version_range": ">= 7.0.0, < 7.12.0"
+      }
+    ]
+  },
+  {
+    "repo": "website",
+    "severity": "high",
+    "package_name": "rollup",
+    "manifest_path": "package-lock.json",
+    "first_patched_version": "4.59.0",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: high rollup in lksmoker/website",
+        "cve_id": "CVE-2026-27606",
+        "ghsa_id": "GHSA-mw96-cpmx-2vgc",
+        "summary": "Open Dependabot alert for rollup in lksmoker/website. Severity: high. Rollup 4 has Arbitrary File Write via Path Traversal First patched version: 4.59.0. Vulnerable range: >= 4.0.0, < 4.59.0.",
+        "html_url": "https://github.com/lksmoker/website/security/dependabot/4",
+        "severity": "high",
+        "incident_id": "1e47c31b-2a3e-4089-b8a8-039e3dba2e56",
+        "package_name": "rollup",
+        "manifest_path": "package-lock.json",
+        "first_patched_version": "4.59.0",
+        "vulnerable_version_range": ">= 4.0.0, < 4.59.0"
+      }
+    ]
+  },
+  {
+    "repo": "website",
+    "severity": "high",
+    "package_name": "vite",
+    "manifest_path": "package-lock.json",
+    "first_patched_version": "7.3.2",
+    "alert_count": 2,
+    "alerts": [
+      {
+        "title": "Dependabot alert: high vite in lksmoker/website",
+        "cve_id": "CVE-2026-39364",
+        "ghsa_id": "GHSA-v2wj-q39q-566r",
+        "summary": "Open Dependabot alert for vite in lksmoker/website. Severity: high. Vite: `server.fs.deny` bypassed with queries First patched version: 7.3.2. Vulnerable range: >= 7.1.0, <= 7.3.1.",
+        "html_url": "https://github.com/lksmoker/website/security/dependabot/8",
+        "severity": "high",
+        "incident_id": "8151f67c-21c4-4bef-8623-956c43f07697",
+        "package_name": "vite",
+        "manifest_path": "package-lock.json",
+        "first_patched_version": "7.3.2",
+        "vulnerable_version_range": ">= 7.1.0, <= 7.3.1"
+      },
+      {
+        "title": "Dependabot alert: high vite in lksmoker/website",
+        "cve_id": "CVE-2026-39363",
+        "ghsa_id": "GHSA-p9ff-h696-f583",
+        "summary": "Open Dependabot alert for vite in lksmoker/website. Severity: high. Vite Vulnerable to Arbitrary File Read via Vite Dev Server WebSocket First patched version: 7.3.2. Vulnerable range: >= 7.0.0, <= 7.3.1.",
+        "html_url": "https://github.com/lksmoker/website/security/dependabot/7",
+        "severity": "high",
+        "incident_id": "3c7471e4-6fa9-4fdd-b462-aeb1f0b80a19",
+        "package_name": "vite",
+        "manifest_path": "package-lock.json",
+        "first_patched_version": "7.3.2",
+        "vulnerable_version_range": ">= 7.0.0, <= 7.3.1"
+      }
+    ]
+  },
+  {
+    "repo": "appkernel",
+    "severity": "medium",
+    "package_name": "vite",
+    "manifest_path": "frontend/package.json",
+    "first_patched_version": "6.4.2",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium vite in lksmoker/appkernel",
+        "cve_id": "CVE-2026-39365",
+        "ghsa_id": "GHSA-4w7w-66w2-5vf9",
+        "summary": "Open Dependabot alert for vite in lksmoker/appkernel. Severity: medium. Vite Vulnerable to Path Traversal in Optimized Deps `.map` Handling First patched version: 6.4.2. Vulnerable range: <= 6.4.1.",
+        "html_url": "https://github.com/lksmoker/appkernel/security/dependabot/1",
+        "severity": "medium",
+        "incident_id": "7fc80e21-9987-4ee2-90d1-bf827b685dc0",
+        "package_name": "vite",
+        "manifest_path": "frontend/package.json",
+        "first_patched_version": "6.4.2",
+        "vulnerable_version_range": "<= 6.4.1"
+      }
+    ]
+  },
+  {
+    "repo": "appkernel",
+    "severity": "medium",
+    "package_name": "ajv",
+    "manifest_path": "ui/package-lock.json",
+    "first_patched_version": "8.18.0",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium ajv in lksmoker/appkernel",
+        "cve_id": "CVE-2025-69873",
+        "ghsa_id": "GHSA-2g4f-4pwh-qvx6",
+        "summary": "Open Dependabot alert for ajv in lksmoker/appkernel. Severity: medium. ajv has ReDoS when using `$data` option First patched version: 8.18.0. Vulnerable range: >= 7.0.0-alpha.0, < 8.18.0.",
+        "html_url": "https://github.com/lksmoker/appkernel/security/dependabot/9",
+        "severity": "medium",
+        "incident_id": "fa01c2d9-4d84-4196-92cb-ad66afbecb08",
+        "package_name": "ajv",
+        "manifest_path": "ui/package-lock.json",
+        "first_patched_version": "8.18.0",
+        "vulnerable_version_range": ">= 7.0.0-alpha.0, < 8.18.0"
+      }
+    ]
+  },
+  {
+    "repo": "appkernel",
+    "severity": "medium",
+    "package_name": "brace-expansion",
+    "manifest_path": "ui/package-lock.json",
+    "first_patched_version": "2.0.3",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium brace-expansion in lksmoker/appkernel",
+        "cve_id": "CVE-2026-33750",
+        "ghsa_id": "GHSA-f886-m6hf-6m8v",
+        "summary": "Open Dependabot alert for brace-expansion in lksmoker/appkernel. Severity: medium. brace-expansion: Zero-step sequence causes process hang and memory exhaustion First patched version: 2.0.3. Vulnerable range: >= 2.0.0, < 2.0.3.",
+        "html_url": "https://github.com/lksmoker/appkernel/security/dependabot/24",
+        "severity": "medium",
+        "incident_id": "f9427b92-384e-4647-a42a-e238cd77e371",
+        "package_name": "brace-expansion",
+        "manifest_path": "ui/package-lock.json",
+        "first_patched_version": "2.0.3",
+        "vulnerable_version_range": ">= 2.0.0, < 2.0.3"
+      }
+    ]
+  },
+  {
+    "repo": "appkernel",
+    "severity": "medium",
+    "package_name": "brace-expansion",
+    "manifest_path": "ui/package-lock.json",
+    "first_patched_version": "1.1.13",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium brace-expansion in lksmoker/appkernel",
+        "cve_id": "CVE-2026-33750",
+        "ghsa_id": "GHSA-f886-m6hf-6m8v",
+        "summary": "Open Dependabot alert for brace-expansion in lksmoker/appkernel. Severity: medium. brace-expansion: Zero-step sequence causes process hang and memory exhaustion First patched version: 1.1.13. Vulnerable range: < 1.1.13.",
+        "html_url": "https://github.com/lksmoker/appkernel/security/dependabot/25",
+        "severity": "medium",
+        "incident_id": "bea461d9-54a9-4c31-9211-11fbbdd75155",
+        "package_name": "brace-expansion",
+        "manifest_path": "ui/package-lock.json",
+        "first_patched_version": "1.1.13",
+        "vulnerable_version_range": "< 1.1.13"
+      }
+    ]
+  },
+  {
+    "repo": "appkernel",
+    "severity": "medium",
+    "package_name": "dompurify",
+    "manifest_path": "ui/package-lock.json",
+    "first_patched_version": "3.3.2",
+    "alert_count": 4,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium dompurify in lksmoker/appkernel",
+        "cve_id": null,
+        "ghsa_id": "GHSA-cjmm-f4jc-qw8r",
+        "summary": "Open Dependabot alert for dompurify in lksmoker/appkernel. Severity: medium. DOMPurify ADD_ATTR predicate skips URI validation First patched version: 3.3.2. Vulnerable range: <= 3.3.1.",
+        "html_url": "https://github.com/lksmoker/appkernel/security/dependabot/33",
+        "severity": "medium",
+        "incident_id": "8e4da3a2-4797-428c-8e3e-0c4363709290",
+        "package_name": "dompurify",
+        "manifest_path": "ui/package-lock.json",
+        "first_patched_version": "3.3.2",
+        "vulnerable_version_range": "<= 3.3.1"
+      },
+      {
+        "title": "Dependabot alert: medium dompurify in lksmoker/appkernel",
+        "cve_id": null,
+        "ghsa_id": "GHSA-cj63-jhhr-wcxv",
+        "summary": "Open Dependabot alert for dompurify in lksmoker/appkernel. Severity: medium. DOMPurify USE_PROFILES prototype pollution allows event handlers First patched version: 3.3.2. Vulnerable range: <= 3.3.1.",
+        "html_url": "https://github.com/lksmoker/appkernel/security/dependabot/32",
+        "severity": "medium",
+        "incident_id": "91b4e3d9-8b1e-4a2d-8a90-2fefbd2739d6",
+        "package_name": "dompurify",
+        "manifest_path": "ui/package-lock.json",
+        "first_patched_version": "3.3.2",
+        "vulnerable_version_range": "<= 3.3.1"
+      },
+      {
+        "title": "Dependabot alert: medium dompurify in lksmoker/appkernel",
+        "cve_id": null,
+        "ghsa_id": "GHSA-h8r8-wccr-v5f2",
+        "summary": "Open Dependabot alert for dompurify in lksmoker/appkernel. Severity: medium. DOMPurify is vulnerable to mutation-XSS via Re-Contextualization First patched version: 3.3.2. Vulnerable range: < 3.3.2.",
+        "html_url": "https://github.com/lksmoker/appkernel/security/dependabot/27",
+        "severity": "medium",
+        "incident_id": "4d5ae1ec-3229-452e-a9a4-237c13d2ae60",
+        "package_name": "dompurify",
+        "manifest_path": "ui/package-lock.json",
+        "first_patched_version": "3.3.2",
+        "vulnerable_version_range": "< 3.3.2"
+      },
+      {
+        "title": "Dependabot alert: medium dompurify in lksmoker/appkernel",
+        "cve_id": "CVE-2026-0540",
+        "ghsa_id": "GHSA-v2wj-7wpq-c8vv",
+        "summary": "Open Dependabot alert for dompurify in lksmoker/appkernel. Severity: medium. DOMPurify contains a Cross-site Scripting vulnerability First patched version: 3.3.2. Vulnerable range: >= 3.1.3, <= 3.3.1.",
+        "html_url": "https://github.com/lksmoker/appkernel/security/dependabot/19",
+        "severity": "medium",
+        "incident_id": "1dfbb68f-6955-441b-9156-214dc6b40419",
+        "package_name": "dompurify",
+        "manifest_path": "ui/package-lock.json",
+        "first_patched_version": "3.3.2",
+        "vulnerable_version_range": ">= 3.1.3, <= 3.3.1"
+      }
+    ]
+  },
+  {
+    "repo": "appkernel",
+    "severity": "medium",
+    "package_name": "dompurify",
+    "manifest_path": "ui/package-lock.json",
+    "first_patched_version": "3.4.0",
+    "alert_count": 4,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium dompurify in lksmoker/appkernel",
+        "cve_id": "CVE-2026-41240",
+        "ghsa_id": "GHSA-h7mw-gpvr-xq4m",
+        "summary": "Open Dependabot alert for dompurify in lksmoker/appkernel. Severity: medium. DOMPurify: FORBID_TAGS bypassed by function-based ADD_TAGS predicate (asymmetry with FORBID_ATTR fix) First patched version: 3.4.0. Vulnerable range: < 3.4.0.",
+        "html_url": "https://github.com/lksmoker/appkernel/security/dependabot/40",
+        "severity": "medium",
+        "incident_id": "399ca934-9c9c-4ec0-8125-001dd2ce6fed",
+        "package_name": "dompurify",
+        "manifest_path": "ui/package-lock.json",
+        "first_patched_version": "3.4.0",
+        "vulnerable_version_range": "< 3.4.0"
+      },
+      {
+        "title": "Dependabot alert: medium dompurify in lksmoker/appkernel",
+        "cve_id": "CVE-2026-41239",
+        "ghsa_id": "GHSA-crv5-9vww-q3g8",
+        "summary": "Open Dependabot alert for dompurify in lksmoker/appkernel. Severity: medium. DOMPurify has a SAFE_FOR_TEMPLATES bypass in RETURN_DOM mode First patched version: 3.4.0. Vulnerable range: >= 1.0.10, < 3.4.0.",
+        "html_url": "https://github.com/lksmoker/appkernel/security/dependabot/39",
+        "severity": "medium",
+        "incident_id": "5f1bdfce-48b5-420d-9a5c-eb60b2a58268",
+        "package_name": "dompurify",
+        "manifest_path": "ui/package-lock.json",
+        "first_patched_version": "3.4.0",
+        "vulnerable_version_range": ">= 1.0.10, < 3.4.0"
+      },
+      {
+        "title": "Dependabot alert: medium dompurify in lksmoker/appkernel",
+        "cve_id": "CVE-2026-41238",
+        "ghsa_id": "GHSA-v9jr-rg53-9pgp",
+        "summary": "Open Dependabot alert for dompurify in lksmoker/appkernel. Severity: medium. DOMPurify: Prototype Pollution to XSS Bypass via CUSTOM_ELEMENT_HANDLING Fallback First patched version: 3.4.0. Vulnerable range: >= 3.0.1, < 3.4.0.",
+        "html_url": "https://github.com/lksmoker/appkernel/security/dependabot/38",
+        "severity": "medium",
+        "incident_id": "67753a7e-843f-4491-85ee-8531f63a40f3",
+        "package_name": "dompurify",
+        "manifest_path": "ui/package-lock.json",
+        "first_patched_version": "3.4.0",
+        "vulnerable_version_range": ">= 3.0.1, < 3.4.0"
+      },
+      {
+        "title": "Dependabot alert: medium dompurify in lksmoker/appkernel",
+        "cve_id": null,
+        "ghsa_id": "GHSA-39q2-94rc-95cp",
+        "summary": "Open Dependabot alert for dompurify in lksmoker/appkernel. Severity: medium. DOMPurify's ADD_TAGS function form bypasses FORBID_TAGS due to short-circuit evaluation First patched version: 3.4.0. Vulnerable range: <= 3.3.3.",
+        "html_url": "https://github.com/lksmoker/appkernel/security/dependabot/37",
+        "severity": "medium",
+        "incident_id": "2f7ad40f-54a7-414e-9d73-9222d48dae2e",
+        "package_name": "dompurify",
+        "manifest_path": "ui/package-lock.json",
+        "first_patched_version": "3.4.0",
+        "vulnerable_version_range": "<= 3.3.3"
+      }
+    ]
+  },
+  {
+    "repo": "appkernel",
+    "severity": "medium",
+    "package_name": "lodash",
+    "manifest_path": "ui/package-lock.json",
+    "first_patched_version": "4.18.0",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium lodash in lksmoker/appkernel",
+        "cve_id": "CVE-2026-2950",
+        "ghsa_id": "GHSA-f23m-r3pf-42rh",
+        "summary": "Open Dependabot alert for lodash in lksmoker/appkernel. Severity: medium. lodash vulnerable to Prototype Pollution via array path bypass in `_.unset` and `_.omit` First patched version: 4.18.0. Vulnerable range: <= 4.17.23.",
+        "html_url": "https://github.com/lksmoker/appkernel/security/dependabot/28",
+        "severity": "medium",
+        "incident_id": "968815d6-e166-48fa-8242-96a8ad3b2c02",
+        "package_name": "lodash",
+        "manifest_path": "ui/package-lock.json",
+        "first_patched_version": "4.18.0",
+        "vulnerable_version_range": "<= 4.17.23"
+      }
+    ]
+  },
+  {
+    "repo": "appkernel",
+    "severity": "medium",
+    "package_name": "lodash",
+    "manifest_path": "ui/package-lock.json",
+    "first_patched_version": "4.17.23",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium lodash in lksmoker/appkernel",
+        "cve_id": "CVE-2025-13465",
+        "ghsa_id": "GHSA-xxjr-mmjv-4gpg",
+        "summary": "Open Dependabot alert for lodash in lksmoker/appkernel. Severity: medium. Lodash has Prototype Pollution Vulnerability in `_.unset` and `_.omit` functions First patched version: 4.17.23. Vulnerable range: >= 4.0.0, <= 4.17.22.",
+        "html_url": "https://github.com/lksmoker/appkernel/security/dependabot/7",
+        "severity": "medium",
+        "incident_id": "420970c4-0e0f-45e7-8f6b-4e1789af8121",
+        "package_name": "lodash",
+        "manifest_path": "ui/package-lock.json",
+        "first_patched_version": "4.17.23",
+        "vulnerable_version_range": ">= 4.0.0, <= 4.17.22"
+      }
+    ]
+  },
+  {
+    "repo": "appkernel",
+    "severity": "medium",
+    "package_name": "lodash-es",
+    "manifest_path": "ui/package-lock.json",
+    "first_patched_version": "4.18.0",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium lodash-es in lksmoker/appkernel",
+        "cve_id": "CVE-2026-2950",
+        "ghsa_id": "GHSA-f23m-r3pf-42rh",
+        "summary": "Open Dependabot alert for lodash-es in lksmoker/appkernel. Severity: medium. lodash vulnerable to Prototype Pollution via array path bypass in `_.unset` and `_.omit` First patched version: 4.18.0. Vulnerable range: <= 4.17.23.",
+        "html_url": "https://github.com/lksmoker/appkernel/security/dependabot/29",
+        "severity": "medium",
+        "incident_id": "107a150c-1294-4255-8374-4ad48d10e828",
+        "package_name": "lodash-es",
+        "manifest_path": "ui/package-lock.json",
+        "first_patched_version": "4.18.0",
+        "vulnerable_version_range": "<= 4.17.23"
+      }
+    ]
+  },
+  {
+    "repo": "appkernel",
+    "severity": "medium",
+    "package_name": "lodash-es",
+    "manifest_path": "ui/package-lock.json",
+    "first_patched_version": "4.17.23",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium lodash-es in lksmoker/appkernel",
+        "cve_id": "CVE-2025-13465",
+        "ghsa_id": "GHSA-xxjr-mmjv-4gpg",
+        "summary": "Open Dependabot alert for lodash-es in lksmoker/appkernel. Severity: medium. Lodash has Prototype Pollution Vulnerability in `_.unset` and `_.omit` functions First patched version: 4.17.23. Vulnerable range: >= 4.0.0, <= 4.17.22.",
+        "html_url": "https://github.com/lksmoker/appkernel/security/dependabot/8",
+        "severity": "medium",
+        "incident_id": "02593af6-5585-4579-b29f-505a18d47837",
+        "package_name": "lodash-es",
+        "manifest_path": "ui/package-lock.json",
+        "first_patched_version": "4.17.23",
+        "vulnerable_version_range": ">= 4.0.0, <= 4.17.22"
+      }
+    ]
+  },
+  {
+    "repo": "appkernel",
+    "severity": "medium",
+    "package_name": "picomatch",
+    "manifest_path": "ui/package-lock.json",
+    "first_patched_version": "4.0.4",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium picomatch in lksmoker/appkernel",
+        "cve_id": "CVE-2026-33672",
+        "ghsa_id": "GHSA-3v7f-55p6-f55p",
+        "summary": "Open Dependabot alert for picomatch in lksmoker/appkernel. Severity: medium. Picomatch: Method Injection in POSIX Character Classes causes incorrect Glob Matching First patched version: 4.0.4. Vulnerable range: >= 4.0.0, < 4.0.4.",
+        "html_url": "https://github.com/lksmoker/appkernel/security/dependabot/22",
+        "severity": "medium",
+        "incident_id": "71ce04a2-d413-421c-b360-67d24facdfd4",
+        "package_name": "picomatch",
+        "manifest_path": "ui/package-lock.json",
+        "first_patched_version": "4.0.4",
+        "vulnerable_version_range": ">= 4.0.0, < 4.0.4"
+      }
+    ]
+  },
+  {
+    "repo": "appkernel",
+    "severity": "medium",
+    "package_name": "picomatch",
+    "manifest_path": "ui/package-lock.json",
+    "first_patched_version": "2.3.2",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium picomatch in lksmoker/appkernel",
+        "cve_id": "CVE-2026-33672",
+        "ghsa_id": "GHSA-3v7f-55p6-f55p",
+        "summary": "Open Dependabot alert for picomatch in lksmoker/appkernel. Severity: medium. Picomatch: Method Injection in POSIX Character Classes causes incorrect Glob Matching First patched version: 2.3.2. Vulnerable range: < 2.3.2.",
+        "html_url": "https://github.com/lksmoker/appkernel/security/dependabot/23",
+        "severity": "medium",
+        "incident_id": "cd951434-25b2-4279-841b-b5dedc269178",
+        "package_name": "picomatch",
+        "manifest_path": "ui/package-lock.json",
+        "first_patched_version": "2.3.2",
+        "vulnerable_version_range": "< 2.3.2"
+      }
+    ]
+  },
+  {
+    "repo": "appkernel",
+    "severity": "medium",
+    "package_name": "postcss",
+    "manifest_path": "ui/package-lock.json",
+    "first_patched_version": "8.5.10",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium postcss in lksmoker/appkernel",
+        "cve_id": "CVE-2026-41305",
+        "ghsa_id": "GHSA-qx2v-qp2m-jg93",
+        "summary": "Open Dependabot alert for postcss in lksmoker/appkernel. Severity: medium. PostCSS has XSS via Unescaped </style> in its CSS Stringify Output First patched version: 8.5.10. Vulnerable range: < 8.5.10.",
+        "html_url": "https://github.com/lksmoker/appkernel/security/dependabot/41",
+        "severity": "medium",
+        "incident_id": "65f166ad-9c42-4dc8-b71b-62bb8f8f37c5",
+        "package_name": "postcss",
+        "manifest_path": "ui/package-lock.json",
+        "first_patched_version": "8.5.10",
+        "vulnerable_version_range": "< 8.5.10"
+      }
+    ]
+  },
+  {
+    "repo": "appkernel",
+    "severity": "medium",
+    "package_name": "react-router",
+    "manifest_path": "ui/package-lock.json",
+    "first_patched_version": "7.12.0",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium react-router in lksmoker/appkernel",
+        "cve_id": "CVE-2026-22030",
+        "ghsa_id": "GHSA-h5cw-625j-3rxh",
+        "summary": "Open Dependabot alert for react-router in lksmoker/appkernel. Severity: medium. React Router has CSRF issue in Action/Server Action Request Processing First patched version: 7.12.0. Vulnerable range: >= 7.0.0, <= 7.11.0.",
+        "html_url": "https://github.com/lksmoker/appkernel/security/dependabot/6",
+        "severity": "medium",
+        "incident_id": "8db85c1a-b70e-4034-81c5-e910052c7495",
+        "package_name": "react-router",
+        "manifest_path": "ui/package-lock.json",
+        "first_patched_version": "7.12.0",
+        "vulnerable_version_range": ">= 7.0.0, <= 7.11.0"
+      }
+    ]
+  },
+  {
+    "repo": "appkernel",
+    "severity": "medium",
+    "package_name": "react-router",
+    "manifest_path": "ui/package-lock.json",
+    "first_patched_version": "7.9.6",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium react-router in lksmoker/appkernel",
+        "cve_id": "CVE-2025-68470",
+        "ghsa_id": "GHSA-9jcx-v3wj-wh4m",
+        "summary": "Open Dependabot alert for react-router in lksmoker/appkernel. Severity: medium. React Router has unexpected external redirect via untrusted paths First patched version: 7.9.6. Vulnerable range: >= 7.0.0, < 7.9.6.",
+        "html_url": "https://github.com/lksmoker/appkernel/security/dependabot/3",
+        "severity": "medium",
+        "incident_id": "98f86b3c-098e-462a-9a77-12f73301382f",
+        "package_name": "react-router",
+        "manifest_path": "ui/package-lock.json",
+        "first_patched_version": "7.9.6",
+        "vulnerable_version_range": ">= 7.0.0, < 7.9.6"
+      }
+    ]
+  },
+  {
+    "repo": "appkernel",
+    "severity": "medium",
+    "package_name": "serialize-javascript",
+    "manifest_path": "ui/package-lock.json",
+    "first_patched_version": "7.0.5",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium serialize-javascript in lksmoker/appkernel",
+        "cve_id": "CVE-2026-34043",
+        "ghsa_id": "GHSA-qj8w-gfj5-8c6v",
+        "summary": "Open Dependabot alert for serialize-javascript in lksmoker/appkernel. Severity: medium. Serialize JavaScript has CPU Exhaustion Denial of Service via crafted array-like objects First patched version: 7.0.5. Vulnerable range: < 7.0.5.",
+        "html_url": "https://github.com/lksmoker/appkernel/security/dependabot/26",
+        "severity": "medium",
+        "incident_id": "6ab5a412-0948-4e44-97d8-20b6df677178",
+        "package_name": "serialize-javascript",
+        "manifest_path": "ui/package-lock.json",
+        "first_patched_version": "7.0.5",
+        "vulnerable_version_range": "< 7.0.5"
+      }
+    ]
+  },
+  {
+    "repo": "appkernel",
+    "severity": "medium",
+    "package_name": "uuid",
+    "manifest_path": "ui/package-lock.json",
+    "first_patched_version": "11.1.1",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium uuid in lksmoker/appkernel",
+        "cve_id": "CVE-2026-41907",
+        "ghsa_id": "GHSA-w5hq-g745-h8pq",
+        "summary": "Open Dependabot alert for uuid in lksmoker/appkernel. Severity: medium. uuid: Missing buffer bounds check in v3/v5/v6 when buf is provided First patched version: 11.1.1. Vulnerable range: >= 11.0.0, < 11.1.1.",
+        "html_url": "https://github.com/lksmoker/appkernel/security/dependabot/42",
+        "severity": "medium",
+        "incident_id": "55cf9d5e-684e-4a2c-8502-f5940f3dfadb",
+        "package_name": "uuid",
+        "manifest_path": "ui/package-lock.json",
+        "first_patched_version": "11.1.1",
+        "vulnerable_version_range": ">= 11.0.0, < 11.1.1"
+      }
+    ]
+  },
+  {
+    "repo": "appkernel",
+    "severity": "medium",
+    "package_name": "vite",
+    "manifest_path": "ui/package-lock.json",
+    "first_patched_version": "7.3.2",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium vite in lksmoker/appkernel",
+        "cve_id": "CVE-2026-39365",
+        "ghsa_id": "GHSA-4w7w-66w2-5vf9",
+        "summary": "Open Dependabot alert for vite in lksmoker/appkernel. Severity: medium. Vite Vulnerable to Path Traversal in Optimized Deps `.map` Handling First patched version: 7.3.2. Vulnerable range: >= 7.0.0, <= 7.3.1.",
+        "html_url": "https://github.com/lksmoker/appkernel/security/dependabot/36",
+        "severity": "medium",
+        "incident_id": "cd487271-3eaf-453a-8188-8fdcc9889e63",
+        "package_name": "vite",
+        "manifest_path": "ui/package-lock.json",
+        "first_patched_version": "7.3.2",
+        "vulnerable_version_range": ">= 7.0.0, <= 7.3.1"
+      }
+    ]
+  },
+  {
+    "repo": "Dev_Toolbox",
+    "severity": "medium",
+    "package_name": "aiohttp",
+    "manifest_path": "backend/requirements.txt",
+    "first_patched_version": "3.13.3",
+    "alert_count": 3,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium aiohttp in lksmoker/Dev_Toolbox",
+        "cve_id": "CVE-2025-69229",
+        "ghsa_id": "GHSA-g84x-mcqj-x9qq",
+        "summary": "Open Dependabot alert for aiohttp in lksmoker/Dev_Toolbox. Severity: medium. AIOHTTP vulnerable to DoS through chunked messages First patched version: 3.13.3. Vulnerable range: <= 3.13.2.",
+        "html_url": "https://github.com/lksmoker/Dev_Toolbox/security/dependabot/7",
+        "severity": "medium",
+        "incident_id": "4f0160d5-9e62-4f03-a3a5-904e70cebf7e",
+        "package_name": "aiohttp",
+        "manifest_path": "backend/requirements.txt",
+        "first_patched_version": "3.13.3",
+        "vulnerable_version_range": "<= 3.13.2"
+      },
+      {
+        "title": "Dependabot alert: medium aiohttp in lksmoker/Dev_Toolbox",
+        "cve_id": "CVE-2025-69228",
+        "ghsa_id": "GHSA-6jhg-hg63-jvvf",
+        "summary": "Open Dependabot alert for aiohttp in lksmoker/Dev_Toolbox. Severity: medium. AIOHTTP vulnerable to  denial of service through large payloads First patched version: 3.13.3. Vulnerable range: <= 3.13.2.",
+        "html_url": "https://github.com/lksmoker/Dev_Toolbox/security/dependabot/6",
+        "severity": "medium",
+        "incident_id": "68e14488-c9af-4b5f-9dc3-3c8064ad3dbc",
+        "package_name": "aiohttp",
+        "manifest_path": "backend/requirements.txt",
+        "first_patched_version": "3.13.3",
+        "vulnerable_version_range": "<= 3.13.2"
+      },
+      {
+        "title": "Dependabot alert: medium aiohttp in lksmoker/Dev_Toolbox",
+        "cve_id": "CVE-2025-69227",
+        "ghsa_id": "GHSA-jj3x-wxrx-4x23",
+        "summary": "Open Dependabot alert for aiohttp in lksmoker/Dev_Toolbox. Severity: medium. AIOHTTP vulnerable to DoS when bypassing asserts First patched version: 3.13.3. Vulnerable range: <= 3.13.2.",
+        "html_url": "https://github.com/lksmoker/Dev_Toolbox/security/dependabot/5",
+        "severity": "medium",
+        "incident_id": "821cfab1-3177-4f1a-ba7b-2166bc1596c4",
+        "package_name": "aiohttp",
+        "manifest_path": "backend/requirements.txt",
+        "first_patched_version": "3.13.3",
+        "vulnerable_version_range": "<= 3.13.2"
+      }
+    ]
+  },
+  {
+    "repo": "Dev_Toolbox",
+    "severity": "medium",
+    "package_name": "aiohttp",
+    "manifest_path": "backend/requirements.txt",
+    "first_patched_version": "3.13.4",
+    "alert_count": 4,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium aiohttp in lksmoker/Dev_Toolbox",
+        "cve_id": "CVE-2026-34525",
+        "ghsa_id": "GHSA-c427-h43c-vf67",
+        "summary": "Open Dependabot alert for aiohttp in lksmoker/Dev_Toolbox. Severity: medium. AIOHTTP accepts duplicate Host headers First patched version: 3.13.4. Vulnerable range: <= 3.13.3.",
+        "html_url": "https://github.com/lksmoker/Dev_Toolbox/security/dependabot/19",
+        "severity": "medium",
+        "incident_id": "f076d64d-1e98-4ebe-9717-ddbf7b2eb97d",
+        "package_name": "aiohttp",
+        "manifest_path": "backend/requirements.txt",
+        "first_patched_version": "3.13.4",
+        "vulnerable_version_range": "<= 3.13.3"
+      },
+      {
+        "title": "Dependabot alert: medium aiohttp in lksmoker/Dev_Toolbox",
+        "cve_id": "CVE-2026-34516",
+        "ghsa_id": "GHSA-m5qp-6w8w-w647",
+        "summary": "Open Dependabot alert for aiohttp in lksmoker/Dev_Toolbox. Severity: medium. AIOHTTP has a Multipart Header Size Bypass First patched version: 3.13.4. Vulnerable range: <= 3.13.3.",
+        "html_url": "https://github.com/lksmoker/Dev_Toolbox/security/dependabot/14",
+        "severity": "medium",
+        "incident_id": "d2b74981-3895-40e5-9d53-d4594ed04472",
+        "package_name": "aiohttp",
+        "manifest_path": "backend/requirements.txt",
+        "first_patched_version": "3.13.4",
+        "vulnerable_version_range": "<= 3.13.3"
+      },
+      {
+        "title": "Dependabot alert: medium aiohttp in lksmoker/Dev_Toolbox",
+        "cve_id": "CVE-2026-34515",
+        "ghsa_id": "GHSA-p998-jp59-783m",
+        "summary": "Open Dependabot alert for aiohttp in lksmoker/Dev_Toolbox. Severity: medium. AIOHTTP affected by UNC SSRF/NTLMv2 Credential Theft/Local File Read in static resource handler on Windows First patched version: 3.13.4. Vulnerable range: <= 3.13.3.",
+        "html_url": "https://github.com/lksmoker/Dev_Toolbox/security/dependabot/13",
+        "severity": "medium",
+        "incident_id": "618d890d-b018-4ca1-b559-67e0f5e516e1",
+        "package_name": "aiohttp",
+        "manifest_path": "backend/requirements.txt",
+        "first_patched_version": "3.13.4",
+        "vulnerable_version_range": "<= 3.13.3"
+      },
+      {
+        "title": "Dependabot alert: medium aiohttp in lksmoker/Dev_Toolbox",
+        "cve_id": "CVE-2026-22815",
+        "ghsa_id": "GHSA-w2fm-2cpv-w7v5",
+        "summary": "Open Dependabot alert for aiohttp in lksmoker/Dev_Toolbox. Severity: medium. aiohttp allows unlimited trailer headers, leading to possible uncapped memory usage First patched version: 3.13.4. Vulnerable range: <= 3.13.3.",
+        "html_url": "https://github.com/lksmoker/Dev_Toolbox/security/dependabot/10",
+        "severity": "medium",
+        "incident_id": "92525ad7-15eb-4727-9189-3b659008f1ac",
+        "package_name": "aiohttp",
+        "manifest_path": "backend/requirements.txt",
+        "first_patched_version": "3.13.4",
+        "vulnerable_version_range": "<= 3.13.3"
+      }
+    ]
+  },
+  {
+    "repo": "Dev_Toolbox",
+    "severity": "medium",
+    "package_name": "python-dotenv",
+    "manifest_path": "backend/requirements.txt",
+    "first_patched_version": "1.2.2",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium python-dotenv in lksmoker/Dev_Toolbox",
+        "cve_id": "CVE-2026-28684",
+        "ghsa_id": "GHSA-mf9w-mj56-hr94",
+        "summary": "Open Dependabot alert for python-dotenv in lksmoker/Dev_Toolbox. Severity: medium. python-dotenv: Symlink following in set_key allows arbitrary file overwrite via cross-device rename fallback First patched version: 1.2.2. Vulnerable range: < 1.2.2.",
+        "html_url": "https://github.com/lksmoker/Dev_Toolbox/security/dependabot/20",
+        "severity": "medium",
+        "incident_id": "0359a6fc-3fda-4963-83b5-76cb4e3a3fe4",
+        "package_name": "python-dotenv",
+        "manifest_path": "backend/requirements.txt",
+        "first_patched_version": "1.2.2",
+        "vulnerable_version_range": "< 1.2.2"
+      }
+    ]
+  },
+  {
+    "repo": "Dev_Toolbox",
+    "severity": "medium",
+    "package_name": "requests",
+    "manifest_path": "backend/requirements.txt",
+    "first_patched_version": "2.33.0",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium requests in lksmoker/Dev_Toolbox",
+        "cve_id": "CVE-2026-25645",
+        "ghsa_id": "GHSA-gc5v-m9x4-r6x2",
+        "summary": "Open Dependabot alert for requests in lksmoker/Dev_Toolbox. Severity: medium. Requests has Insecure Temp File Reuse in its extract_zipped_paths() utility function First patched version: 2.33.0. Vulnerable range: < 2.33.0.",
+        "html_url": "https://github.com/lksmoker/Dev_Toolbox/security/dependabot/9",
+        "severity": "medium",
+        "incident_id": "ddcaf39a-2e2d-4b2a-9729-3d58f7e0580c",
+        "package_name": "requests",
+        "manifest_path": "backend/requirements.txt",
+        "first_patched_version": "2.33.0",
+        "vulnerable_version_range": "< 2.33.0"
+      }
+    ]
+  },
+  {
+    "repo": "Dev_Toolbox",
+    "severity": "medium",
+    "package_name": "dompurify",
+    "manifest_path": "frontend/package-lock.json",
+    "first_patched_version": "3.4.0",
+    "alert_count": 4,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium dompurify in lksmoker/Dev_Toolbox",
+        "cve_id": "CVE-2026-41240",
+        "ghsa_id": "GHSA-h7mw-gpvr-xq4m",
+        "summary": "Open Dependabot alert for dompurify in lksmoker/Dev_Toolbox. Severity: medium. DOMPurify: FORBID_TAGS bypassed by function-based ADD_TAGS predicate (asymmetry with FORBID_ATTR fix) First patched version: 3.4.0. Vulnerable range: < 3.4.0.",
+        "html_url": "https://github.com/lksmoker/Dev_Toolbox/security/dependabot/35",
+        "severity": "medium",
+        "incident_id": "6ac95bd0-a78b-45cd-ab75-b8e961790ff9",
+        "package_name": "dompurify",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "3.4.0",
+        "vulnerable_version_range": "< 3.4.0"
+      },
+      {
+        "title": "Dependabot alert: medium dompurify in lksmoker/Dev_Toolbox",
+        "cve_id": "CVE-2026-41239",
+        "ghsa_id": "GHSA-crv5-9vww-q3g8",
+        "summary": "Open Dependabot alert for dompurify in lksmoker/Dev_Toolbox. Severity: medium. DOMPurify has a SAFE_FOR_TEMPLATES bypass in RETURN_DOM mode First patched version: 3.4.0. Vulnerable range: >= 1.0.10, < 3.4.0.",
+        "html_url": "https://github.com/lksmoker/Dev_Toolbox/security/dependabot/34",
+        "severity": "medium",
+        "incident_id": "2b8849db-9357-4113-b17f-860bdc55a697",
+        "package_name": "dompurify",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "3.4.0",
+        "vulnerable_version_range": ">= 1.0.10, < 3.4.0"
+      },
+      {
+        "title": "Dependabot alert: medium dompurify in lksmoker/Dev_Toolbox",
+        "cve_id": "CVE-2026-41238",
+        "ghsa_id": "GHSA-v9jr-rg53-9pgp",
+        "summary": "Open Dependabot alert for dompurify in lksmoker/Dev_Toolbox. Severity: medium. DOMPurify: Prototype Pollution to XSS Bypass via CUSTOM_ELEMENT_HANDLING Fallback First patched version: 3.4.0. Vulnerable range: >= 3.0.1, < 3.4.0.",
+        "html_url": "https://github.com/lksmoker/Dev_Toolbox/security/dependabot/33",
+        "severity": "medium",
+        "incident_id": "6307969c-7724-4ced-8544-b7f08eed0101",
+        "package_name": "dompurify",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "3.4.0",
+        "vulnerable_version_range": ">= 3.0.1, < 3.4.0"
+      },
+      {
+        "title": "Dependabot alert: medium dompurify in lksmoker/Dev_Toolbox",
+        "cve_id": null,
+        "ghsa_id": "GHSA-39q2-94rc-95cp",
+        "summary": "Open Dependabot alert for dompurify in lksmoker/Dev_Toolbox. Severity: medium. DOMPurify's ADD_TAGS function form bypasses FORBID_TAGS due to short-circuit evaluation First patched version: 3.4.0. Vulnerable range: <= 3.3.3.",
+        "html_url": "https://github.com/lksmoker/Dev_Toolbox/security/dependabot/32",
+        "severity": "medium",
+        "incident_id": "175048e8-840c-4090-adef-fcec5f61a5b7",
+        "package_name": "dompurify",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "3.4.0",
+        "vulnerable_version_range": "<= 3.3.3"
+      }
+    ]
+  },
+  {
+    "repo": "Dev_Toolbox",
+    "severity": "medium",
+    "package_name": "dompurify",
+    "manifest_path": "frontend/package-lock.json",
+    "first_patched_version": "3.3.2",
+    "alert_count": 4,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium dompurify in lksmoker/Dev_Toolbox",
+        "cve_id": null,
+        "ghsa_id": "GHSA-cjmm-f4jc-qw8r",
+        "summary": "Open Dependabot alert for dompurify in lksmoker/Dev_Toolbox. Severity: medium. DOMPurify ADD_ATTR predicate skips URI validation First patched version: 3.3.2. Vulnerable range: <= 3.3.1.",
+        "html_url": "https://github.com/lksmoker/Dev_Toolbox/security/dependabot/29",
+        "severity": "medium",
+        "incident_id": "f51ad8b7-7d83-4283-86d3-28bc5dd24ce2",
+        "package_name": "dompurify",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "3.3.2",
+        "vulnerable_version_range": "<= 3.3.1"
+      },
+      {
+        "title": "Dependabot alert: medium dompurify in lksmoker/Dev_Toolbox",
+        "cve_id": null,
+        "ghsa_id": "GHSA-cj63-jhhr-wcxv",
+        "summary": "Open Dependabot alert for dompurify in lksmoker/Dev_Toolbox. Severity: medium. DOMPurify USE_PROFILES prototype pollution allows event handlers First patched version: 3.3.2. Vulnerable range: <= 3.3.1.",
+        "html_url": "https://github.com/lksmoker/Dev_Toolbox/security/dependabot/28",
+        "severity": "medium",
+        "incident_id": "2a5f1027-1ef0-4b3c-975a-5f0d40f2a6ee",
+        "package_name": "dompurify",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "3.3.2",
+        "vulnerable_version_range": "<= 3.3.1"
+      },
+      {
+        "title": "Dependabot alert: medium dompurify in lksmoker/Dev_Toolbox",
+        "cve_id": null,
+        "ghsa_id": "GHSA-h8r8-wccr-v5f2",
+        "summary": "Open Dependabot alert for dompurify in lksmoker/Dev_Toolbox. Severity: medium. DOMPurify is vulnerable to mutation-XSS via Re-Contextualization First patched version: 3.3.2. Vulnerable range: < 3.3.2.",
+        "html_url": "https://github.com/lksmoker/Dev_Toolbox/security/dependabot/25",
+        "severity": "medium",
+        "incident_id": "79def56a-5b46-4bab-a139-0d2d92dbc68e",
+        "package_name": "dompurify",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "3.3.2",
+        "vulnerable_version_range": "< 3.3.2"
+      },
+      {
+        "title": "Dependabot alert: medium dompurify in lksmoker/Dev_Toolbox",
+        "cve_id": "CVE-2026-0540",
+        "ghsa_id": "GHSA-v2wj-7wpq-c8vv",
+        "summary": "Open Dependabot alert for dompurify in lksmoker/Dev_Toolbox. Severity: medium. DOMPurify contains a Cross-site Scripting vulnerability First patched version: 3.3.2. Vulnerable range: >= 3.1.3, <= 3.3.1.",
+        "html_url": "https://github.com/lksmoker/Dev_Toolbox/security/dependabot/23",
+        "severity": "medium",
+        "incident_id": "364fa78d-0e64-4fb6-9c38-ea56bba0ae64",
+        "package_name": "dompurify",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "3.3.2",
+        "vulnerable_version_range": ">= 3.1.3, <= 3.3.1"
+      }
+    ]
+  },
+  {
+    "repo": "Dev_Toolbox",
+    "severity": "medium",
+    "package_name": "esbuild",
+    "manifest_path": "frontend/package-lock.json",
+    "first_patched_version": "0.25.0",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium esbuild in lksmoker/Dev_Toolbox",
+        "cve_id": null,
+        "ghsa_id": "GHSA-67mh-4wv8-2f99",
+        "summary": "Open Dependabot alert for esbuild in lksmoker/Dev_Toolbox. Severity: medium. esbuild enables any website to send any requests to the development server and read the response First patched version: 0.25.0. Vulnerable range: <= 0.24.2.",
+        "html_url": "https://github.com/lksmoker/Dev_Toolbox/security/dependabot/21",
+        "severity": "medium",
+        "incident_id": "d3887897-55da-433e-8817-a7f3fc3536a0",
+        "package_name": "esbuild",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "0.25.0",
+        "vulnerable_version_range": "<= 0.24.2"
+      }
+    ]
+  },
+  {
+    "repo": "Dev_Toolbox",
+    "severity": "medium",
+    "package_name": "lodash-es",
+    "manifest_path": "frontend/package-lock.json",
+    "first_patched_version": "4.18.0",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium lodash-es in lksmoker/Dev_Toolbox",
+        "cve_id": "CVE-2026-2950",
+        "ghsa_id": "GHSA-f23m-r3pf-42rh",
+        "summary": "Open Dependabot alert for lodash-es in lksmoker/Dev_Toolbox. Severity: medium. lodash vulnerable to Prototype Pollution via array path bypass in `_.unset` and `_.omit` First patched version: 4.18.0. Vulnerable range: <= 4.17.23.",
+        "html_url": "https://github.com/lksmoker/Dev_Toolbox/security/dependabot/26",
+        "severity": "medium",
+        "incident_id": "e6637f67-8a9a-4e70-a9f6-351be48ee538",
+        "package_name": "lodash-es",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "4.18.0",
+        "vulnerable_version_range": "<= 4.17.23"
+      }
+    ]
+  },
+  {
+    "repo": "Dev_Toolbox",
+    "severity": "medium",
+    "package_name": "postcss",
+    "manifest_path": "frontend/package-lock.json",
+    "first_patched_version": "8.5.10",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium postcss in lksmoker/Dev_Toolbox",
+        "cve_id": "CVE-2026-41305",
+        "ghsa_id": "GHSA-qx2v-qp2m-jg93",
+        "summary": "Open Dependabot alert for postcss in lksmoker/Dev_Toolbox. Severity: medium. PostCSS has XSS via Unescaped </style> in its CSS Stringify Output First patched version: 8.5.10. Vulnerable range: < 8.5.10.",
+        "html_url": "https://github.com/lksmoker/Dev_Toolbox/security/dependabot/36",
+        "severity": "medium",
+        "incident_id": "8f9598ca-4d34-4944-8c02-00c721c9069a",
+        "package_name": "postcss",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "8.5.10",
+        "vulnerable_version_range": "< 8.5.10"
+      }
+    ]
+  },
+  {
+    "repo": "Dev_Toolbox",
+    "severity": "medium",
+    "package_name": "serialize-javascript",
+    "manifest_path": "frontend/package-lock.json",
+    "first_patched_version": "7.0.5",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium serialize-javascript in lksmoker/Dev_Toolbox",
+        "cve_id": "CVE-2026-34043",
+        "ghsa_id": "GHSA-qj8w-gfj5-8c6v",
+        "summary": "Open Dependabot alert for serialize-javascript in lksmoker/Dev_Toolbox. Severity: medium. Serialize JavaScript has CPU Exhaustion Denial of Service via crafted array-like objects First patched version: 7.0.5. Vulnerable range: < 7.0.5.",
+        "html_url": "https://github.com/lksmoker/Dev_Toolbox/security/dependabot/24",
+        "severity": "medium",
+        "incident_id": "e25000d6-0244-4ccb-8e15-cc2c4c6dc0af",
+        "package_name": "serialize-javascript",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "7.0.5",
+        "vulnerable_version_range": "< 7.0.5"
+      }
+    ]
+  },
+  {
+    "repo": "Dev_Toolbox",
+    "severity": "medium",
+    "package_name": "uuid",
+    "manifest_path": "frontend/package-lock.json",
+    "first_patched_version": "11.1.1",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium uuid in lksmoker/Dev_Toolbox",
+        "cve_id": "CVE-2026-41907",
+        "ghsa_id": "GHSA-w5hq-g745-h8pq",
+        "summary": "Open Dependabot alert for uuid in lksmoker/Dev_Toolbox. Severity: medium. uuid: Missing buffer bounds check in v3/v5/v6 when buf is provided First patched version: 11.1.1. Vulnerable range: >= 11.0.0, < 11.1.1.",
+        "html_url": "https://github.com/lksmoker/Dev_Toolbox/security/dependabot/37",
+        "severity": "medium",
+        "incident_id": "95feab21-8a1a-49a6-9287-eb0ada5b3ecd",
+        "package_name": "uuid",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "11.1.1",
+        "vulnerable_version_range": ">= 11.0.0, < 11.1.1"
+      }
+    ]
+  },
+  {
+    "repo": "Dev_Toolbox",
+    "severity": "medium",
+    "package_name": "vite",
+    "manifest_path": "frontend/package-lock.json",
+    "first_patched_version": "6.4.2",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium vite in lksmoker/Dev_Toolbox",
+        "cve_id": "CVE-2026-39365",
+        "ghsa_id": "GHSA-4w7w-66w2-5vf9",
+        "summary": "Open Dependabot alert for vite in lksmoker/Dev_Toolbox. Severity: medium. Vite Vulnerable to Path Traversal in Optimized Deps `.map` Handling First patched version: 6.4.2. Vulnerable range: <= 6.4.1.",
+        "html_url": "https://github.com/lksmoker/Dev_Toolbox/security/dependabot/31",
+        "severity": "medium",
+        "incident_id": "ec657133-a91a-47ac-b9ea-a2949717cc1d",
+        "package_name": "vite",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "6.4.2",
+        "vulnerable_version_range": "<= 6.4.1"
+      }
+    ]
+  },
+  {
+    "repo": "PLAIDSYNC_combined",
+    "severity": "medium",
+    "package_name": "ajv",
+    "manifest_path": "frontend/package-lock.json",
+    "first_patched_version": "8.18.0",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium ajv in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2025-69873",
+        "ghsa_id": "GHSA-2g4f-4pwh-qvx6",
+        "summary": "Open Dependabot alert for ajv in lksmoker/PLAIDSYNC_combined. Severity: medium. ajv has ReDoS when using `$data` option First patched version: 8.18.0. Vulnerable range: >= 7.0.0-alpha.0, < 8.18.0.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/37",
+        "severity": "medium",
+        "incident_id": "66de957c-794d-4de5-a863-b0919d13f13e",
+        "package_name": "ajv",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "8.18.0",
+        "vulnerable_version_range": ">= 7.0.0-alpha.0, < 8.18.0"
+      }
+    ]
+  },
+  {
+    "repo": "PLAIDSYNC_combined",
+    "severity": "medium",
+    "package_name": "ajv",
+    "manifest_path": "frontend/package-lock.json",
+    "first_patched_version": "6.14.0",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium ajv in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2025-69873",
+        "ghsa_id": "GHSA-2g4f-4pwh-qvx6",
+        "summary": "Open Dependabot alert for ajv in lksmoker/PLAIDSYNC_combined. Severity: medium. ajv has ReDoS when using `$data` option First patched version: 6.14.0. Vulnerable range: < 6.14.0.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/38",
+        "severity": "medium",
+        "incident_id": "310f7493-4d7a-4ac7-a8c1-32da033dd538",
+        "package_name": "ajv",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "6.14.0",
+        "vulnerable_version_range": "< 6.14.0"
+      }
+    ]
+  },
+  {
+    "repo": "PLAIDSYNC_combined",
+    "severity": "medium",
+    "package_name": "axios",
+    "manifest_path": "frontend/package-lock.json",
+    "first_patched_version": "1.15.0",
+    "alert_count": 2,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium axios in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2025-62718",
+        "ghsa_id": "GHSA-3p68-rc4w-qgx5",
+        "summary": "Open Dependabot alert for axios in lksmoker/PLAIDSYNC_combined. Severity: medium. Axios has a NO_PROXY Hostname Normalization Bypass that Leads to SSRF First patched version: 1.15.0. Vulnerable range: >= 1.0.0, < 1.15.0.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/65",
+        "severity": "medium",
+        "incident_id": "d277dcf1-0e62-451e-a7db-cc21d51f4bd1",
+        "package_name": "axios",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "1.15.0",
+        "vulnerable_version_range": ">= 1.0.0, < 1.15.0"
+      },
+      {
+        "title": "Dependabot alert: medium axios in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2026-40175",
+        "ghsa_id": "GHSA-fvcv-3m26-pcqx",
+        "summary": "Open Dependabot alert for axios in lksmoker/PLAIDSYNC_combined. Severity: medium. Axios has Unrestricted Cloud Metadata Exfiltration via Header Injection Chain First patched version: 1.15.0. Vulnerable range: >= 1.0.0, < 1.15.0.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/64",
+        "severity": "medium",
+        "incident_id": "cc5fe877-8bae-4c6e-8e24-7270becd6d69",
+        "package_name": "axios",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "1.15.0",
+        "vulnerable_version_range": ">= 1.0.0, < 1.15.0"
+      }
+    ]
+  },
+  {
+    "repo": "PLAIDSYNC_combined",
+    "severity": "medium",
+    "package_name": "brace-expansion",
+    "manifest_path": "frontend/package-lock.json",
+    "first_patched_version": "1.1.13",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium brace-expansion in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2026-33750",
+        "ghsa_id": "GHSA-f886-m6hf-6m8v",
+        "summary": "Open Dependabot alert for brace-expansion in lksmoker/PLAIDSYNC_combined. Severity: medium. brace-expansion: Zero-step sequence causes process hang and memory exhaustion First patched version: 1.1.13. Vulnerable range: < 1.1.13.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/86",
+        "severity": "medium",
+        "incident_id": "7629d182-f861-4f07-8ab7-1a23d21f9fa2",
+        "package_name": "brace-expansion",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "1.1.13",
+        "vulnerable_version_range": "< 1.1.13"
+      }
+    ]
+  },
+  {
+    "repo": "PLAIDSYNC_combined",
+    "severity": "medium",
+    "package_name": "brace-expansion",
+    "manifest_path": "frontend/package-lock.json",
+    "first_patched_version": "2.0.3",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium brace-expansion in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2026-33750",
+        "ghsa_id": "GHSA-f886-m6hf-6m8v",
+        "summary": "Open Dependabot alert for brace-expansion in lksmoker/PLAIDSYNC_combined. Severity: medium. brace-expansion: Zero-step sequence causes process hang and memory exhaustion First patched version: 2.0.3. Vulnerable range: >= 2.0.0, < 2.0.3.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/53",
+        "severity": "medium",
+        "incident_id": "e352ac66-65b0-4cb7-a66a-60f058ee10ca",
+        "package_name": "brace-expansion",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "2.0.3",
+        "vulnerable_version_range": ">= 2.0.0, < 2.0.3"
+      }
+    ]
+  },
+  {
+    "repo": "PLAIDSYNC_combined",
+    "severity": "medium",
+    "package_name": "follow-redirects",
+    "manifest_path": "frontend/package-lock.json",
+    "first_patched_version": "1.16.0",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium follow-redirects in lksmoker/PLAIDSYNC_combined",
+        "cve_id": null,
+        "ghsa_id": "GHSA-r4q5-vmmm-2653",
+        "summary": "Open Dependabot alert for follow-redirects in lksmoker/PLAIDSYNC_combined. Severity: medium. follow-redirects leaks Custom Authentication Headers to Cross-Domain Redirect Targets First patched version: 1.16.0. Vulnerable range: <= 1.15.11.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/63",
+        "severity": "medium",
+        "incident_id": "c6bf7b46-0f87-461d-9cc0-d7676ecb8270",
+        "package_name": "follow-redirects",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "1.16.0",
+        "vulnerable_version_range": "<= 1.15.11"
+      }
+    ]
+  },
+  {
+    "repo": "PLAIDSYNC_combined",
+    "severity": "medium",
+    "package_name": "js-yaml",
+    "manifest_path": "frontend/package-lock.json",
+    "first_patched_version": "4.1.1",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium js-yaml in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2025-64718",
+        "ghsa_id": "GHSA-mh29-5h37-fv8m",
+        "summary": "Open Dependabot alert for js-yaml in lksmoker/PLAIDSYNC_combined. Severity: medium. js-yaml has prototype pollution in merge (<<) First patched version: 4.1.1. Vulnerable range: >= 4.0.0, < 4.1.1.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/22",
+        "severity": "medium",
+        "incident_id": "c1e2d182-327b-4324-8ee9-00d977715614",
+        "package_name": "js-yaml",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "4.1.1",
+        "vulnerable_version_range": ">= 4.0.0, < 4.1.1"
+      }
+    ]
+  },
+  {
+    "repo": "PLAIDSYNC_combined",
+    "severity": "medium",
+    "package_name": "lodash",
+    "manifest_path": "frontend/package-lock.json",
+    "first_patched_version": "4.17.23",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium lodash in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2025-13465",
+        "ghsa_id": "GHSA-xxjr-mmjv-4gpg",
+        "summary": "Open Dependabot alert for lodash in lksmoker/PLAIDSYNC_combined. Severity: medium. Lodash has Prototype Pollution Vulnerability in `_.unset` and `_.omit` functions First patched version: 4.17.23. Vulnerable range: >= 4.0.0, <= 4.17.22.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/32",
+        "severity": "medium",
+        "incident_id": "cd0b1556-0b0b-49fe-a6c4-e704b0c4124e",
+        "package_name": "lodash",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "4.17.23",
+        "vulnerable_version_range": ">= 4.0.0, <= 4.17.22"
+      }
+    ]
+  },
+  {
+    "repo": "PLAIDSYNC_combined",
+    "severity": "medium",
+    "package_name": "lodash",
+    "manifest_path": "frontend/package-lock.json",
+    "first_patched_version": "4.18.0",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium lodash in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2026-2950",
+        "ghsa_id": "GHSA-f23m-r3pf-42rh",
+        "summary": "Open Dependabot alert for lodash in lksmoker/PLAIDSYNC_combined. Severity: medium. lodash vulnerable to Prototype Pollution via array path bypass in `_.unset` and `_.omit` First patched version: 4.18.0. Vulnerable range: <= 4.17.23.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/58",
+        "severity": "medium",
+        "incident_id": "38012999-4b1a-436d-97de-bc8e9070068a",
+        "package_name": "lodash",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "4.18.0",
+        "vulnerable_version_range": "<= 4.17.23"
+      }
+    ]
+  },
+  {
+    "repo": "PLAIDSYNC_combined",
+    "severity": "medium",
+    "package_name": "picomatch",
+    "manifest_path": "frontend/package-lock.json",
+    "first_patched_version": "2.3.2",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium picomatch in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2026-33672",
+        "ghsa_id": "GHSA-3v7f-55p6-f55p",
+        "summary": "Open Dependabot alert for picomatch in lksmoker/PLAIDSYNC_combined. Severity: medium. Picomatch: Method Injection in POSIX Character Classes causes incorrect Glob Matching First patched version: 2.3.2. Vulnerable range: < 2.3.2.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/56",
+        "severity": "medium",
+        "incident_id": "35d8e9b6-747d-41f9-ae10-f40754504e54",
+        "package_name": "picomatch",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "2.3.2",
+        "vulnerable_version_range": "< 2.3.2"
+      }
+    ]
+  },
+  {
+    "repo": "PLAIDSYNC_combined",
+    "severity": "medium",
+    "package_name": "picomatch",
+    "manifest_path": "frontend/package-lock.json",
+    "first_patched_version": "4.0.4",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium picomatch in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2026-33672",
+        "ghsa_id": "GHSA-3v7f-55p6-f55p",
+        "summary": "Open Dependabot alert for picomatch in lksmoker/PLAIDSYNC_combined. Severity: medium. Picomatch: Method Injection in POSIX Character Classes causes incorrect Glob Matching First patched version: 4.0.4. Vulnerable range: >= 4.0.0, < 4.0.4.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/51",
+        "severity": "medium",
+        "incident_id": "7aed8c13-7764-4326-b655-acd58f0e4eb1",
+        "package_name": "picomatch",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "4.0.4",
+        "vulnerable_version_range": ">= 4.0.0, < 4.0.4"
+      }
+    ]
+  },
+  {
+    "repo": "PLAIDSYNC_combined",
+    "severity": "medium",
+    "package_name": "react-router",
+    "manifest_path": "frontend/package-lock.json",
+    "first_patched_version": "7.9.6",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium react-router in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2025-68470",
+        "ghsa_id": "GHSA-9jcx-v3wj-wh4m",
+        "summary": "Open Dependabot alert for react-router in lksmoker/PLAIDSYNC_combined. Severity: medium. React Router has unexpected external redirect via untrusted paths First patched version: 7.9.6. Vulnerable range: >= 7.0.0, < 7.9.6.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/28",
+        "severity": "medium",
+        "incident_id": "abc7b878-f89b-4533-aebd-77007a1483fc",
+        "package_name": "react-router",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "7.9.6",
+        "vulnerable_version_range": ">= 7.0.0, < 7.9.6"
+      }
+    ]
+  },
+  {
+    "repo": "PLAIDSYNC_combined",
+    "severity": "medium",
+    "package_name": "react-router",
+    "manifest_path": "frontend/package-lock.json",
+    "first_patched_version": "7.12.0",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium react-router in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2026-22030",
+        "ghsa_id": "GHSA-h5cw-625j-3rxh",
+        "summary": "Open Dependabot alert for react-router in lksmoker/PLAIDSYNC_combined. Severity: medium. React Router has CSRF issue in Action/Server Action Request Processing First patched version: 7.12.0. Vulnerable range: >= 7.0.0, <= 7.11.0.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/31",
+        "severity": "medium",
+        "incident_id": "5bb1d350-8641-4716-b16d-62398bc5f7df",
+        "package_name": "react-router",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "7.12.0",
+        "vulnerable_version_range": ">= 7.0.0, <= 7.11.0"
+      }
+    ]
+  },
+  {
+    "repo": "PLAIDSYNC_combined",
+    "severity": "medium",
+    "package_name": "serialize-javascript",
+    "manifest_path": "frontend/package-lock.json",
+    "first_patched_version": "7.0.5",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium serialize-javascript in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2026-34043",
+        "ghsa_id": "GHSA-qj8w-gfj5-8c6v",
+        "summary": "Open Dependabot alert for serialize-javascript in lksmoker/PLAIDSYNC_combined. Severity: medium. Serialize JavaScript has CPU Exhaustion Denial of Service via crafted array-like objects First patched version: 7.0.5. Vulnerable range: < 7.0.5.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/52",
+        "severity": "medium",
+        "incident_id": "fbb750d1-6438-42bf-b881-eb39fa9e9abc",
+        "package_name": "serialize-javascript",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "7.0.5",
+        "vulnerable_version_range": "< 7.0.5"
+      }
+    ]
+  },
+  {
+    "repo": "PLAIDSYNC_combined",
+    "severity": "medium",
+    "package_name": "vite",
+    "manifest_path": "frontend/package-lock.json",
+    "first_patched_version": "6.4.2",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium vite in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2026-39365",
+        "ghsa_id": "GHSA-4w7w-66w2-5vf9",
+        "summary": "Open Dependabot alert for vite in lksmoker/PLAIDSYNC_combined. Severity: medium. Vite Vulnerable to Path Traversal in Optimized Deps `.map` Handling First patched version: 6.4.2. Vulnerable range: <= 6.4.1.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/59",
+        "severity": "medium",
+        "incident_id": "3fbd143f-f752-4a85-aa14-95d0c0efbe3f",
+        "package_name": "vite",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "6.4.2",
+        "vulnerable_version_range": "<= 6.4.1"
+      }
+    ]
+  },
+  {
+    "repo": "PLAIDSYNC_combined",
+    "severity": "medium",
+    "package_name": "vite",
+    "manifest_path": "frontend/package-lock.json",
+    "first_patched_version": "6.4.1",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium vite in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2025-62522",
+        "ghsa_id": "GHSA-93m4-6634-74q7",
+        "summary": "Open Dependabot alert for vite in lksmoker/PLAIDSYNC_combined. Severity: medium. vite allows server.fs.deny bypass via backslash on Windows First patched version: 6.4.1. Vulnerable range: >= 6.0.0, <= 6.4.0.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/16",
+        "severity": "medium",
+        "incident_id": "f675ad49-e72b-4724-8a22-045d6e822e03",
+        "package_name": "vite",
+        "manifest_path": "frontend/package-lock.json",
+        "first_patched_version": "6.4.1",
+        "vulnerable_version_range": ">= 6.0.0, <= 6.4.0"
+      }
+    ]
+  },
+  {
+    "repo": "PLAIDSYNC_combined",
+    "severity": "medium",
+    "package_name": "flask-cors",
+    "manifest_path": "PlaidSync_Backend/uv.lock",
+    "first_patched_version": "6.0.0",
+    "alert_count": 3,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium flask-cors in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2024-6839",
+        "ghsa_id": "GHSA-7rxf-gvfg-47g4",
+        "summary": "Open Dependabot alert for flask-cors in lksmoker/PLAIDSYNC_combined. Severity: medium. Flask-CORS improper regex path matching vulnerability First patched version: 6.0.0. Vulnerable range: <= 5.0.1.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/70",
+        "severity": "medium",
+        "incident_id": "1a703901-d5f4-42cb-b9df-cb6a2971e105",
+        "package_name": "flask-cors",
+        "manifest_path": "PlaidSync_Backend/uv.lock",
+        "first_patched_version": "6.0.0",
+        "vulnerable_version_range": "<= 5.0.1"
+      },
+      {
+        "title": "Dependabot alert: medium flask-cors in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2024-6866",
+        "ghsa_id": "GHSA-43qf-4rqw-9q2g",
+        "summary": "Open Dependabot alert for flask-cors in lksmoker/PLAIDSYNC_combined. Severity: medium. Flask-CORS vulnerable to Improper Handling of Case Sensitivity First patched version: 6.0.0. Vulnerable range: <= 5.0.1.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/69",
+        "severity": "medium",
+        "incident_id": "ce4b2e84-e34b-4192-b5ba-ac61d9ddfbc6",
+        "package_name": "flask-cors",
+        "manifest_path": "PlaidSync_Backend/uv.lock",
+        "first_patched_version": "6.0.0",
+        "vulnerable_version_range": "<= 5.0.1"
+      },
+      {
+        "title": "Dependabot alert: medium flask-cors in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2024-6844",
+        "ghsa_id": "GHSA-8vgw-p6qm-5gr7",
+        "summary": "Open Dependabot alert for flask-cors in lksmoker/PLAIDSYNC_combined. Severity: medium. Flask-CORS allows for inconsistent CORS matching First patched version: 6.0.0. Vulnerable range: <= 5.0.1.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/68",
+        "severity": "medium",
+        "incident_id": "efdc8b06-d63d-4556-a662-874fde984b52",
+        "package_name": "flask-cors",
+        "manifest_path": "PlaidSync_Backend/uv.lock",
+        "first_patched_version": "6.0.0",
+        "vulnerable_version_range": "<= 5.0.1"
+      }
+    ]
+  },
+  {
+    "repo": "PLAIDSYNC_combined",
+    "severity": "medium",
+    "package_name": "Jinja2",
+    "manifest_path": "PlaidSync_Backend/uv.lock",
+    "first_patched_version": "3.1.6",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium Jinja2 in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2025-27516",
+        "ghsa_id": "GHSA-cpwx-vrp4-4pq7",
+        "summary": "Open Dependabot alert for Jinja2 in lksmoker/PLAIDSYNC_combined. Severity: medium. Jinja2 vulnerable to sandbox breakout through attr filter selecting format method First patched version: 3.1.6. Vulnerable range: <= 3.1.5.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/66",
+        "severity": "medium",
+        "incident_id": "cdbf2ec3-9b90-4a11-a03f-33b931814f02",
+        "package_name": "Jinja2",
+        "manifest_path": "PlaidSync_Backend/uv.lock",
+        "first_patched_version": "3.1.6",
+        "vulnerable_version_range": "<= 3.1.5"
+      }
+    ]
+  },
+  {
+    "repo": "PLAIDSYNC_combined",
+    "severity": "medium",
+    "package_name": "requests",
+    "manifest_path": "PlaidSync_Backend/uv.lock",
+    "first_patched_version": "2.33.0",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium requests in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2026-25645",
+        "ghsa_id": "GHSA-gc5v-m9x4-r6x2",
+        "summary": "Open Dependabot alert for requests in lksmoker/PLAIDSYNC_combined. Severity: medium. Requests has Insecure Temp File Reuse in its extract_zipped_paths() utility function First patched version: 2.33.0. Vulnerable range: < 2.33.0.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/84",
+        "severity": "medium",
+        "incident_id": "e6f6899f-f3c2-4980-87f9-618703bf3055",
+        "package_name": "requests",
+        "manifest_path": "PlaidSync_Backend/uv.lock",
+        "first_patched_version": "2.33.0",
+        "vulnerable_version_range": "< 2.33.0"
+      }
+    ]
+  },
+  {
+    "repo": "PLAIDSYNC_combined",
+    "severity": "medium",
+    "package_name": "requests",
+    "manifest_path": "PlaidSync_Backend/uv.lock",
+    "first_patched_version": "2.32.4",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium requests in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2024-47081",
+        "ghsa_id": "GHSA-9hjg-9r4m-mvj7",
+        "summary": "Open Dependabot alert for requests in lksmoker/PLAIDSYNC_combined. Severity: medium. Requests vulnerable to .netrc credentials leak via malicious URLs First patched version: 2.32.4. Vulnerable range: < 2.32.4.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/71",
+        "severity": "medium",
+        "incident_id": "6358b107-9ee8-4901-bd05-c3856cd7a170",
+        "package_name": "requests",
+        "manifest_path": "PlaidSync_Backend/uv.lock",
+        "first_patched_version": "2.32.4",
+        "vulnerable_version_range": "< 2.32.4"
+      }
+    ]
+  },
+  {
+    "repo": "PLAIDSYNC_combined",
+    "severity": "medium",
+    "package_name": "urllib3",
+    "manifest_path": "PlaidSync_Backend/uv.lock",
+    "first_patched_version": "2.5.0",
+    "alert_count": 2,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium urllib3 in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2025-50182",
+        "ghsa_id": "GHSA-48p4-8xcf-vxj5",
+        "summary": "Open Dependabot alert for urllib3 in lksmoker/PLAIDSYNC_combined. Severity: medium. urllib3 does not control redirects in browsers and Node.js First patched version: 2.5.0. Vulnerable range: >= 2.2.0, < 2.5.0.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/73",
+        "severity": "medium",
+        "incident_id": "778303db-d562-42d6-ab09-e9c499f1be25",
+        "package_name": "urllib3",
+        "manifest_path": "PlaidSync_Backend/uv.lock",
+        "first_patched_version": "2.5.0",
+        "vulnerable_version_range": ">= 2.2.0, < 2.5.0"
+      },
+      {
+        "title": "Dependabot alert: medium urllib3 in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2025-50181",
+        "ghsa_id": "GHSA-pq67-6m6q-mj2v",
+        "summary": "Open Dependabot alert for urllib3 in lksmoker/PLAIDSYNC_combined. Severity: medium. urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation First patched version: 2.5.0. Vulnerable range: < 2.5.0.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/72",
+        "severity": "medium",
+        "incident_id": "57d353e0-26b7-41f4-8006-1d675a7caf86",
+        "package_name": "urllib3",
+        "manifest_path": "PlaidSync_Backend/uv.lock",
+        "first_patched_version": "2.5.0",
+        "vulnerable_version_range": "< 2.5.0"
+      }
+    ]
+  },
+  {
+    "repo": "PLAIDSYNC_combined",
+    "severity": "medium",
+    "package_name": "werkzeug",
+    "manifest_path": "PlaidSync_Backend/uv.lock",
+    "first_patched_version": "3.1.4",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium werkzeug in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2025-66221",
+        "ghsa_id": "GHSA-hgf8-39gv-g3f2",
+        "summary": "Open Dependabot alert for werkzeug in lksmoker/PLAIDSYNC_combined. Severity: medium. Werkzeug safe_join() allows Windows special device names First patched version: 3.1.4. Vulnerable range: < 3.1.4.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/74",
+        "severity": "medium",
+        "incident_id": "c87e8b40-ae5f-42e6-900a-e44997f462ef",
+        "package_name": "werkzeug",
+        "manifest_path": "PlaidSync_Backend/uv.lock",
+        "first_patched_version": "3.1.4",
+        "vulnerable_version_range": "< 3.1.4"
+      }
+    ]
+  },
+  {
+    "repo": "PLAIDSYNC_combined",
+    "severity": "medium",
+    "package_name": "werkzeug",
+    "manifest_path": "PlaidSync_Backend/uv.lock",
+    "first_patched_version": "3.1.6",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium werkzeug in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2026-27199",
+        "ghsa_id": "GHSA-29vq-49wr-vm6x",
+        "summary": "Open Dependabot alert for werkzeug in lksmoker/PLAIDSYNC_combined. Severity: medium. Werkzeug safe_join() allows Windows special device names First patched version: 3.1.6. Vulnerable range: < 3.1.6.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/80",
+        "severity": "medium",
+        "incident_id": "c6b8c3e4-d35f-49e0-8024-ae5815f50002",
+        "package_name": "werkzeug",
+        "manifest_path": "PlaidSync_Backend/uv.lock",
+        "first_patched_version": "3.1.6",
+        "vulnerable_version_range": "< 3.1.6"
+      }
+    ]
+  },
+  {
+    "repo": "PLAIDSYNC_combined",
+    "severity": "medium",
+    "package_name": "Werkzeug",
+    "manifest_path": "PlaidSync_Backend/uv.lock",
+    "first_patched_version": "3.1.5",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium Werkzeug in lksmoker/PLAIDSYNC_combined",
+        "cve_id": "CVE-2026-21860",
+        "ghsa_id": "GHSA-87hc-h4r5-73f7",
+        "summary": "Open Dependabot alert for Werkzeug in lksmoker/PLAIDSYNC_combined. Severity: medium. Werkzeug safe_join() allows Windows special device names with compound extensions First patched version: 3.1.5. Vulnerable range: < 3.1.5.",
+        "html_url": "https://github.com/lksmoker/PLAIDSYNC_combined/security/dependabot/78",
+        "severity": "medium",
+        "incident_id": "efd2947c-a9a5-4e48-9d11-50182cacf7ff",
+        "package_name": "Werkzeug",
+        "manifest_path": "PlaidSync_Backend/uv.lock",
+        "first_patched_version": "3.1.5",
+        "vulnerable_version_range": "< 3.1.5"
+      }
+    ]
+  },
+  {
+    "repo": "website",
+    "severity": "medium",
+    "package_name": "picomatch",
+    "manifest_path": "package-lock.json",
+    "first_patched_version": "4.0.4",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium picomatch in lksmoker/website",
+        "cve_id": "CVE-2026-33672",
+        "ghsa_id": "GHSA-3v7f-55p6-f55p",
+        "summary": "Open Dependabot alert for picomatch in lksmoker/website. Severity: medium. Picomatch: Method Injection in POSIX Character Classes causes incorrect Glob Matching First patched version: 4.0.4. Vulnerable range: >= 4.0.0, < 4.0.4.",
+        "html_url": "https://github.com/lksmoker/website/security/dependabot/6",
+        "severity": "medium",
+        "incident_id": "7d9bdd98-c089-4a3a-bdf2-699f3b9e5fa8",
+        "package_name": "picomatch",
+        "manifest_path": "package-lock.json",
+        "first_patched_version": "4.0.4",
+        "vulnerable_version_range": ">= 4.0.0, < 4.0.4"
+      }
+    ]
+  },
+  {
+    "repo": "website",
+    "severity": "medium",
+    "package_name": "postcss",
+    "manifest_path": "package-lock.json",
+    "first_patched_version": "8.5.10",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium postcss in lksmoker/website",
+        "cve_id": "CVE-2026-41305",
+        "ghsa_id": "GHSA-qx2v-qp2m-jg93",
+        "summary": "Open Dependabot alert for postcss in lksmoker/website. Severity: medium. PostCSS has XSS via Unescaped </style> in its CSS Stringify Output First patched version: 8.5.10. Vulnerable range: < 8.5.10.",
+        "html_url": "https://github.com/lksmoker/website/security/dependabot/10",
+        "severity": "medium",
+        "incident_id": "6cbc477c-43c1-4f0c-b3ae-526a7ade4abb",
+        "package_name": "postcss",
+        "manifest_path": "package-lock.json",
+        "first_patched_version": "8.5.10",
+        "vulnerable_version_range": "< 8.5.10"
+      }
+    ]
+  },
+  {
+    "repo": "website",
+    "severity": "medium",
+    "package_name": "react-router",
+    "manifest_path": "package-lock.json",
+    "first_patched_version": "7.12.0",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium react-router in lksmoker/website",
+        "cve_id": "CVE-2026-22030",
+        "ghsa_id": "GHSA-h5cw-625j-3rxh",
+        "summary": "Open Dependabot alert for react-router in lksmoker/website. Severity: medium. React Router has CSRF issue in Action/Server Action Request Processing First patched version: 7.12.0. Vulnerable range: >= 7.0.0, <= 7.11.0.",
+        "html_url": "https://github.com/lksmoker/website/security/dependabot/3",
+        "severity": "medium",
+        "incident_id": "fb6973ec-d47d-4a22-bfc5-bcc411b5f126",
+        "package_name": "react-router",
+        "manifest_path": "package-lock.json",
+        "first_patched_version": "7.12.0",
+        "vulnerable_version_range": ">= 7.0.0, <= 7.11.0"
+      }
+    ]
+  },
+  {
+    "repo": "website",
+    "severity": "medium",
+    "package_name": "vite",
+    "manifest_path": "package-lock.json",
+    "first_patched_version": "7.3.2",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: medium vite in lksmoker/website",
+        "cve_id": "CVE-2026-39365",
+        "ghsa_id": "GHSA-4w7w-66w2-5vf9",
+        "summary": "Open Dependabot alert for vite in lksmoker/website. Severity: medium. Vite Vulnerable to Path Traversal in Optimized Deps `.map` Handling First patched version: 7.3.2. Vulnerable range: >= 7.0.0, <= 7.3.1.",
+        "html_url": "https://github.com/lksmoker/website/security/dependabot/9",
+        "severity": "medium",
+        "incident_id": "c6967e10-8cc1-4170-a16d-cd7b28a00ee5",
+        "package_name": "vite",
+        "manifest_path": "package-lock.json",
+        "first_patched_version": "7.3.2",
+        "vulnerable_version_range": ">= 7.0.0, <= 7.3.1"
+      }
+    ]
+  },
+  {
+    "repo": "appkernel",
+    "severity": "low",
+    "package_name": "flask",
+    "manifest_path": "requirements.txt",
+    "first_patched_version": "3.1.3",
+    "alert_count": 1,
+    "alerts": [
+      {
+        "title": "Dependabot alert: low flask in lksmoker/appkernel",
+        "cve_id": "CVE-2026-27205",
+        "ghsa_id": "GHSA-68rp-wp8r-4726",
+        "summary": "Open Dependabot alert for flask in lksmoker/appkernel. Severity: low. Flask session does not add `Vary: Cookie` header when accessed in some ways First patched version: 3.1.3. Vulnerable range: < 3.1.3.",
+        "html_url": "https://github.com/lksmoker/appkernel/security/dependabot/2",
+        "severity": "low",
+        "incident_id": "b7506ede-32be-4d8a-aec3-4c53a7659064",
+        "package_name": "flask",
+        "manifest_path": "requirements.txt",
+        "first_patched_version": "3.1.3",
+        "vulnerable_version_range": "< 3.1.3"
+      }
+    ]
+  }
+]
